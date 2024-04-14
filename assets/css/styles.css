@@ -19,19 +19,19 @@ h1 {
   color: white;
 }
 
-.ThemeButton {
+.fa {
   font-size: 50px;
   cursor: pointer;
   user-select: none;
   color: #D6D6D6;
 }
 
-.ThemeButton:hover {
+.fa:hover {
   color: white;
 }
 
-function ToggleDarkMode(themm) {
-  themm.classList.toggle("dark-mode split ThemeButton fa-regular fa-sun");
+function ToggleDarkMode(themee) {
+  themee.classList.toggle("fa fa-sun");
 }
 
 
