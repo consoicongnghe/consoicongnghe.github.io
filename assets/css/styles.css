@@ -30,10 +30,6 @@ h1 {
   color: white;
 }
 
-function ToggleDarkMode(x) {
-  x.classList.toggle("fa-sun");
-}
-
 
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
 /* Create a top navigation bar with a black background color  */
