@@ -30,8 +30,8 @@ h1 {
   color: white;
 }
 
-function ToggleDarkMode(themee) {
-  themee.classList.toggle("fa-sun");
+function ToggleDarkMode(x) {
+  x.classList.toggle("fa-sun");
 }
 
 
