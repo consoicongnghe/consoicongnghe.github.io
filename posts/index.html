@@ -7,6 +7,17 @@
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/* indentation */
+			div.postss {
+				text-indent: 50px;
+				text-align: justify;
+			}
+			/* right alignment */
+			div.rightalign {
+				text-align: right;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="topnav">
@@ -14,11 +25,20 @@
 			<a href="/posts" class="active">Bài viết</a>
 			<a href="/about">Giới thiệu</a>
 			<a href="/contact">Liên hệ</a>
-			<!--<a href="/login" class="split">.</a>-->
-			<i onclick="ToggleDarkMode()" class="split ThemeButton fa-solid fa-moon"></i>
+			<div class="topnav-right">
+				<a href="/login">.</a>
+			</div>
+		</div>
+		<div class="rightalign">
+			<i onclick="ToggleDarkMode(this)" class="fa fa-moon"></i>
+			<script>
+				function ToggleDarkMode(x) {
+					x.classList.toggle("fa-sun");
+				}
+			</script>
 		</div>
 		<div class="postss">
-		<title>Bài đăng</title>
+		<h1 style="text-align:center;">Bài đăng</h1>
 		<h2><a href="/posts/240411">Pin dự phòng</a></h2>
 		</div>
 	</body>
