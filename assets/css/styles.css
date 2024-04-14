@@ -63,6 +63,8 @@ h1 {
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
+  color: #333;
+  text-align: center;
 }
 
 
