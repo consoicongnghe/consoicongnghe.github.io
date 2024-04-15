@@ -30,6 +30,11 @@ h1 {
   color: white;
 }
 
+function ToggleDarkMode(themee) {
+	themee.classList.toggle("fa-sun");
+	themee.classList.toggle("dark-mode");
+}
+
 
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
 /* Create a top navigation bar with a black background color  */
