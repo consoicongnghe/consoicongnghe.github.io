@@ -438,7 +438,6 @@ body /* or any selector you want */ {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 720px;
   text-align: center;
   /* width: 50%; */
 }
