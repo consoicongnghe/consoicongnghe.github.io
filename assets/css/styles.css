@@ -5,8 +5,8 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-    background-color: white;
-	color: black;
+    background-color: var(--color-bg);
+	color: var(--color-fg);
 }
 
 h1 {
