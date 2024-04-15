@@ -41,7 +41,7 @@ function ToggleDarkMode() {
 theme-switch {
 	width: 10px;
 	padding: 10px;
-	background: #000;
+	background: #333;
 	
 	/*
 	* There is a special property called --theme-switch-icon-color
@@ -49,7 +49,7 @@ theme-switch {
 	* You can even make the color change with animation (for example, on mouse hover);
 	* see https://gist.github.com/mahozad/a8114b6145cac721f7652aa7b0732cf6
 	*/
-	--theme-switch-icon-color: #333;
+	--theme-switch-icon-color: #fff;
 }
 
 /* These are applied for the default (light) theme */
@@ -87,7 +87,7 @@ body /* or any selector you want */ {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 0px 0px;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -102,6 +102,7 @@ body /* or any selector you want */ {
 .topnav a.active {
   background-color: #00FFFF;
   color: black;
+  text-decoration: bold;
 }
 
 /* Right-aligned section inside the top navigation */
