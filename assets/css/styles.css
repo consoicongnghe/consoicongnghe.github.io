@@ -39,8 +39,8 @@ function ToggleDarkMode() {
 
 /* https://github.com/mahozad/theme-switch*/
 theme-switch {
-	width: 10px;
-	padding: 10px;
+	width: 20px;
+	padding: 20px;
 	background: #333;
 	
 	/*
