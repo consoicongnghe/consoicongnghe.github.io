@@ -103,3 +103,9 @@ body /* or any selector you want */ {
   text-align: center;
   /* width: 50%; */
 }
+
+
+/* global text formatting */
+.a {
+	color=--my-text-color;
+}
