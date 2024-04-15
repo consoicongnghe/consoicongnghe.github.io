@@ -1,8 +1,3 @@
----
----
-
-@import "{{ site.theme }}";
-
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
@@ -12,7 +7,7 @@ body {
     line-height: 1.4;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
-    hyphens: auto
+    hyphens: auto;
     background-color: white;
 	color: black;
 }
@@ -255,7 +250,7 @@ blockquote author:before {
 }
 
 blockquote:before {
-    font-family: Times New Roman,Times,Arial;
+    font-family: "Times New Roman",Times,Arial;
     color: #666;
     content: open-quote;
     font-size: 2.2em;
@@ -354,44 +349,6 @@ button.cont-inv {
 }
 
 
-/* Dark mode toggle button: https://github.com/mahozad/theme-switch */
-const theme = localStorage.getItem('theme') /* get theme status */
-/* localStorage.setItem('theme', 'light') 	/* set auto theme across browser sessions. if null? */
-theme-switch {
-	width: 17px;
-	padding: 5px;
-	background: #333;
-	
-	/*
-	* There is a special property called --theme-switch-icon-color
-	* which you can set, to change the color of the icon (shapes) in the switch.
-	* You can even make the color change with animation (for example, on mouse hover);
-	* see https://gist.github.com/mahozad/a8114b6145cac721f7652aa7b0732cf6
-	*/
-	--theme-switch-icon-color: #fff;
-}
-
-/* These are applied for the default (light) theme */
-/* (or when the toggle is auto, and the OS theme is light) */
-html {
-	--my-page-background-color: #fff;
-	--my-text-color: #000;
-}
-
-/* These are applied for the dark theme */
-/* (or when the toggle is auto, and the OS theme is dark) */
-/* If a property has the same value for light and dark themes, no need to redeclare it here */
-html[data-theme="dark"] {
-	--my-page-background-color: #121212;
-	--my-text-color: #fff;
-}
-
-body /* or any selector you want */ {
-  background: var(--my-page-background-color);
-  color: var(--my-text-color);
-}
-
-
 /*------------------------*/
 
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
@@ -421,7 +378,7 @@ body /* or any selector you want */ {
 .topnav a.active {
   background-color: #00FFFF;
   color: black;
-  text-decoration: bold;
+  text-decoration: none;
 }
 
 /* Right-aligned section inside the top navigation */
