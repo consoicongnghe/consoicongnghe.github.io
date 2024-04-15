@@ -1,1 +1,1 @@
-var theme = localStorage.getItem('theme') /* get theme status */
+/* var theme = localStorage.getItem('theme') /* get theme status */
