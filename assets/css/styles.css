@@ -353,7 +353,6 @@ button.cont-inv {
 /*------------------------*/
 
 /* Dark mode toggle button: https://github.com/mahozad/theme-switch */
-/* localStorage.setItem('theme', 'light') 	/* set auto theme across browser sessions. if null? */
 theme-switch {
 	width: 20px;
 	padding: 10px;
