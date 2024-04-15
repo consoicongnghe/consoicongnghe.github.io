@@ -26,14 +26,11 @@ h1 {
   color: #D6D6D6;
 }
 
+/*
 .fa:hover {
-  color: white;
+  color: black;
 }
-
-function ToggleDarkMode(themee) {
-	themee.classList.toggle("fa-sun");
-	themee.classList.toggle("dark-mode");
-}
+*/
 
 
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
