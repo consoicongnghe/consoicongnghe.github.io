@@ -107,5 +107,5 @@ body /* or any selector you want */ {
 
 /* global text formatting */
 .a {
-	color=--my-text-color;
+	color:var(--my-text-color);
 }
