@@ -5,8 +5,8 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-    background-color: var(--color-bg);
-	color: var(--color-fg);
+    background-color: white;
+	color: black;
 }
 
 /*h1 {
@@ -14,7 +14,7 @@ body {
 }*/
 
 /* dark mode */
-.dark-mode {
+/*.dark-mode {
   background-color: #121212;
   color: white;
 }
@@ -34,7 +34,44 @@ body {
 function ToggleDarkMode() {
 	var userTheme = document.body;
 	userTheme.classList.toggle("dark-mode");
+}*/
+
+
+/* https://github.com/mahozad/theme-switch*/
+theme-switch {
+	width: 20px;
+	padding: 20px;
+	background: #fff;
+	
+	/*
+	* There is a special property called --theme-switch-icon-color
+	* which you can set, to change the color of the icon (shapes) in the switch.
+	* You can even make the color change with animation (for example, on mouse hover);
+	* see https://gist.github.com/mahozad/a8114b6145cac721f7652aa7b0732cf6
+	*/
+	--theme-switch-icon-color: #333;
 }
+
+/* These are applied for the default (light) theme */
+/* (or when the toggle is auto, and the OS theme is light) */
+html {
+	--my-page-background-color: #fff;
+	--my-text-color: #000;
+}
+
+/* These are applied for the dark theme */
+/* (or when the toggle is auto, and the OS theme is dark) */
+/* If a property has the same value for light and dark themes, no need to redeclare it here */
+html[data-theme="dark"] {
+	--my-page-background-color: #121212;
+	--my-text-color: #fff;
+}
+
+body /* or any selector you want */ {
+  background: var(--my-page-background-color);
+  color: var(--my-text-color);
+}
+
 
 /*------------------------*/
 
