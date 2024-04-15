@@ -14,7 +14,7 @@ h1 {
 }
 
 /* dark mode */
-.dark-mode {
+/*.dark-mode {
   background-color: #121212;
   color: white;
 }
@@ -26,12 +26,18 @@ h1 {
   color: #D6D6D6;
 }
 
-/*
 .fa:hover {
   color: black;
 }
-*/
 
+
+function ToggleDarkMode() {
+	var userTheme = document.body;
+	themeButton.classList.toggle("fa-sun");
+	userTheme.classList.toggle("dark-mode");
+} */
+
+/*------------------------*/
 
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
 /* Create a top navigation bar with a black background color  */
