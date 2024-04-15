@@ -30,11 +30,12 @@
 			</div>
 		</div>
 		<div class="rightalign">
-			<i onclick="ToggleDarkMode(body)" class="fa fa-moon fa-lg"></i>
+			<i onclick="ToggleDarkMode()" class="fa fa-moon fa-lg"></i>
 			<script>
-				function ToggleDarkMode(body) {
+				function ToggleDarkMode() {
+					var userTheme = document.body;
 					<!--body.classList.toggle("fa-sun");-->
-					body.classList.toggle("dark-mode");
+					userTheme.classList.toggle("dark-mode");
 				}
 			</script>
 		</div>
