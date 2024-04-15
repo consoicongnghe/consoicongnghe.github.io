@@ -39,9 +39,9 @@ function ToggleDarkMode() {
 
 /* https://github.com/mahozad/theme-switch*/
 theme-switch {
-	width: 20px;
-	padding: 20px;
-	background: #fff;
+	width: 10px;
+	padding: 10px;
+	background: #000;
 	
 	/*
 	* There is a special property called --theme-switch-icon-color
@@ -87,7 +87,7 @@ body /* or any selector you want */ {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 0px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -107,8 +107,14 @@ body /* or any selector you want */ {
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
-  color: #333;
+  background-color: #333;
   text-align: center;
+}
+.topnav-right a {
+	color: #333;
+}
+.topnav-right a:hover {
+  background-color: #333;
 }
 
 
