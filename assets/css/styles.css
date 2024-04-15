@@ -428,7 +428,11 @@ body /* or any selector you want */ {
   background-color: #333;
 }
 
-
+.postss {
+	text-indent: 50px;
+	text-align: right;
+}
+			
 /* center images */
 .center {
   display: block;
