@@ -109,3 +109,14 @@ body /* or any selector you want */ {
 a {
 	color: var(--my-text-color);
 }
+
+a.hover {
+	color: #3f9bf9;
+}
+
+.credit {
+	color: var(--my-text-color);
+	font-style: italic;
+	text-align: center;
+	font-size: 90%;
+}
