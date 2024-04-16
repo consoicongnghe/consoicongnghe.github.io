@@ -112,6 +112,7 @@ a {
 
 a.hover {
 	color: #3f9bf9;
+	text-decoration: underline;
 }
 
 .credit {
