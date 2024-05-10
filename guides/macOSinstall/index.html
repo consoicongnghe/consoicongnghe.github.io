@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 	<head>
-		<title>Các bước cài đặt Windows 11 - CSCN</title>
+		<title>Các bước cài đặt macOS - CSCN</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
@@ -52,55 +52,36 @@
 		</div>
 		<p><--&nbsp;<a href="/guides/">Quay về danh sách bài hướng dẫn</a></p>
 		<div class="postss">
-			<h1 style="text-align:center;">Các bước cài đặt Windows 11 của Sói</h1>
-			<p>Backup:</p>
+			<h1 style="text-align:center;">Các bước cài đặt macOS của Sói</h1>
 			<ul>
-			<li>User folders</li>
-			<li>Program list in control panel</li>
-			<li>Backup browser bookmarks (unless synced)</li>
-			<li>Check Recycle Bin</li>
-			<li>(OBS)</li>
-			<li>Export wifi</li>
+			<li>sudo scutil --set ComputerName Linh</li>
+			<li>sudo scutil --set LocalHostName dautay</li>
+			<li>sudo spctl --master-disable</li>
+			<li>udo trimforce enable</li>
+			<li>turn off screensaver</li>
+			<li>hot corners</li>
+			<li>smaller dock, turn on magnification</li>
+			<li>region Vietnam</li>
+			<li>security/firewall</li>
+			<li>security/privacy: Enable location services</li>
+			<li>display/Night shift auto</li>
+			<li>disable sleep?</li>
+			<li>keyboard settings: faster</li>
+			<li>shortcuts: Showlaunchpad, showDesktop</li>
+			<li>add input source</li>
+			<li>full keyboard access: all controlS</li>
+			<li>mouse uncheck Scroll direction?</li>
+			<li>sound show in menubar</li>
+			<li>internet acccount: uncheck unneeded syncs</li>
+			<li>app store: install app updates, always require+save pw</li>
+			<li>network advanced?</li>
+			<li>extension/share menu+today</li>
+			<li>user: disable guest.</li>
+			<li>login items</li>
+			<li>enable Siri</li>
+			<li>date and time: Asia server, Hanoi timezone. Flash time separators, 24h clock, show date.</li>
+			<li>mactricks.txt</li>
 			</ul>
-			<hr>
-			<p>Region: Vietnam</p>
-			<p>OOBE (first start setup): Shift+F10 --&gt; OOBE\BYPASSNRO</p>
-			<p>also check Bitlocker: Shift+F10 --&gt; manage-bde -status</p>
-			<p>Disable Bitlocker: Shift+F10 --&gt; regedit --&gt; HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker</p>
-			<p>right click BitLocker, New Dword (32-bit) value: PreventDeviceEncryption, value=1</p>
-			<hr>
-			<ul>
-			<li>Check Windows edition, go Pro.</li>
-			<li>(Rename PC, C:/, change Download folder location)</li>
-			<li>Windows/PostInstall/GroupPolicy: copy to C:/Windows/system32</li>
-			<li>Windows/PostInstall/RegTweak/ReclaimWindows/1_guest (+ Unpin + UninsOnedrive + UninsMSapps)</li>
-			<li>Windows/RegTweaks --&gt; windows post-install</li>
-			</ul>
-			<b>RESTART</b> <hr>
-			<ul>
-			<li>virus protection: turn off, (add exception)</li>
-			<li>import wifi</li>
-			<li>timezone, sync time</li>
-			<li>check for updates</li>
-			<li>Windows/Driver/fonts</li>
-			<li>Windows/Driver/VCRedist</li>
-			<li>Windows/PostInstall/winget/MicrosoftStoreAppUpdater.ps1</li>
-			<li>Windows/PostInstall/winget --&gt; 1_guest.cmd</li>
-			<li>setup chrome, office, unikey, (adobe, trafficMonitor)</li>
-			<li>Programs/Chrome --&gt; Ublock Origin, SponsorBlock, FastForward, Run In Background</li>
-			<li>settings: (touchpad settings -&gt; 3+4finger), language bar</li>
-			<li>set wp and lock screen pic</li>
-			<li>crack win+office</li>
-			</ul>
-			<b>RESTART</b> <hr>
-			<ul>
-			<li>post-update: control panel/power options</li>
-			<li>settings: recheck startup app list</li>
-			<li>cleanup C:/</li>
-			<li>Snipping Tool settings: dont auto save</li>
-			</ul>
-			<hr>
-			<p>Trường hợp cài gấp/công nghiệp: Chrome, Unikey, Office. 1_guest + post-install.reg. Crack.</p>
 		</div>
 		<div class="postss">
 			<br>
