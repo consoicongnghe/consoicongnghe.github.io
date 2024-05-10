@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 	<head>
-		<title>Bài viết - CSCN</title>
+		<title>Các bước cài đặt Windows - CSCN</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
@@ -43,21 +43,66 @@
 		<div class="topnav">
 			<a href="/">Trang chủ</a>
 			<a href="/posts" class="active">Bài viết</a>
-			<a href="/guides">Hướng dẫn</a>
 			<a href="/about">Giới thiệu</a>
 			<a href="/contact">Liên hệ</a>
 			<div class="topnav-right">
 				<theme-switch><i class="fa fa-circle-half-stroke fa-lg"></i></theme-switch>
 			</div>
 		</div>
+		<p><--&nbsp;<a href="/posts/">Quay về danh sách bài viết</a></p>
 		<div class="postss">
-			<h1 style="text-align:center;">Bài viết</h1>
-			<h2><a href="/posts/240511">USB</a></h2>
-			<!--<h2><a href="/posts/240411">Ổ cứng di động</a></h2>
-			<h2><a href="/posts/240411">Tai nghe Airpods 2</a></h2>
-			<h2><a href="/posts/240411">Bộ dây sạc</a></h2>-->
-			<h2><a href="/posts/240411">Pin dự phòng</a></h2>
-			<h2><a href="/posts/trustedstores">Những cửa hàng uy tín</a></h2>
+			<h1 style="text-align:center;">Các bước cài đặt Windows của Sói</h1>
+			<p>Backup:</p>
+			<ul>
+			<li>User folders</li>
+			<li>Program list in control panel</li>
+			<li>Backup browser bookmarks (unless synced)</li>
+			<li>Check Recycle Bin</li>
+			<li>(OBS)</li>
+			<li>Export wifi</li>
+			</ul>
+			<hr>
+			<p>Region: Vietnam</p>
+			<p>OOBE (first start setup): Shift+F10 --&gt; OOBE\BYPASSNRO</p>
+			<p>also check Bitlocker: Shift+F10 --&gt; manage-bde -status</p>
+			<p>Disable Bitlocker: Shift+F10 --&gt; regedit --&gt; HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker</p>
+			<p>right click BitLocker, New Dword (32-bit) value: PreventDeviceEncryption, value=1</p>
+			<hr>
+			<ul>
+			<li>Check Windows edition, go Pro.</li>
+			<li>(Rename PC, C:/, change Download folder location)</li>
+			<li>Windows/PostInstall/GroupPolicy: copy to C:/Windows/system32</li>
+			<li>Windows/PostInstall/RegTweak/ReclaimWindows/1_guest (+ Unpin + UninsOnedrive + UninsMSapps)</li>
+			<li>Windows/RegTweaks --&gt; windows post-install</li>
+			</ul>
+			<p>RESTART <hr></p>
+			<ul>
+			<li>virus protection: turn off, (add exception)</li>
+			<li>import wifi</li>
+			<li>timezone, sync time</li>
+			<li>check for updates</li>
+			<li>Windows/Driver/fonts</li>
+			<li>Windows/Driver/VCRedist</li>
+			<li>Windows/PostInstall/winget/MicrosoftStoreAppUpdater.ps1</li>
+			<li>Windows/PostInstall/winget --&gt; 1_guest.cmd</li>
+			<li>setup chrome, office, unikey, (adobe, trafficMonitor)</li>
+			<li>Programs/Chrome --&gt; Ublock Origin, SponsorBlock, FastForward, Run In Background</li>
+			<li>settings: (touchpad settings -&gt; 3+4finger), language bar</li>
+			<li>set wp and lock screen pic</li>
+			<li>crack win+office</li>
+			</ul>
+			<p>RESTART <hr></p>
+			<ul>
+			<li>post-update: control panel/power options</li>
+			<li>settings: recheck startup app list</li>
+			<li>cleanup C:/</li>
+			<li>Snipping Tool settings: dont auto save</li>
+			</ul>
+			<p><hr></p>
+			<p>Trường hợp cài gấp/công nghiệp: Chrome, Unikey, Office. 1_guest + post-install.reg. Crack.</p>
+		</div>
+			<br>
+			<h4>Sói.</h4>
 		</div>
 	</body>
 </html>
