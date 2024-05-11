@@ -124,7 +124,7 @@ ul.breadcrumb li {
 ul.breadcrumb li+li:before {
   padding: 6px;
   color: #121212;
-  content: "🢒";
+  content: ">";
 }
 
 /* Add a color to all links inside the list */
