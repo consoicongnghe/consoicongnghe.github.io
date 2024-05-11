@@ -4,7 +4,7 @@ body {
 	margin: 0em auto;
   max-width: 720px;
   padding: 0em;
-  /*line-height: 1.2;*/
+  line-height: 1.2;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
@@ -49,10 +49,6 @@ p {
 	text-indent: 30px;
 }
 
-.postss {
-	text-indent: 30px;
-}
-
 ul {
   padding-left: 30px;
 }
@@ -71,7 +67,11 @@ img, video {
   margin-right: auto;
   text-align: center;
 }
-			
+
+.postss {
+	text-indent: 30px;
+}
+
 /* center shits */
 .center {
   display: block;
