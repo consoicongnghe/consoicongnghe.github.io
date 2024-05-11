@@ -10,9 +10,7 @@ body {
   hyphens: auto;
 }
 
-/*------------------------*/
-
-/* Auto theme */
+/*-------------AUTO THEME-----------*/
 :root {
   --text: #000;
   --bg: #fff;
@@ -30,10 +28,9 @@ body {
   }
 }
 
-/*------------------------*/
-
+/*-------------TOP NAVBAR-----------*/
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
-/* Create a top navigation bar with a black background color  */
+/* Create a top navigation bar with a grey background color  */
 .topnav {
   background-color: #333;
   overflow: hidden;
