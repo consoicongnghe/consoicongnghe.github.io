@@ -2,14 +2,12 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	margin: 2em auto;
-    max-width: 720px;
-    padding: 1em;
-    line-height: 1.4;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    background-color: white;
-	color: black;
+  max-width: 720px;
+  padding: 1em;
+  line-height: 1.4;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /*------------------------*/
