@@ -28,6 +28,42 @@ body {
   }
 }
 
+/* global text formatting */
+a {
+	color: var(--my-text-color);
+}
+
+a.hover {
+	color: #3f9bf9;
+	text-decoration: underline;
+}
+
+.mediacredit {
+	color: var(--my-text-color);
+	font-style: italic;
+	text-align: center;
+	font-size: 90%;
+}
+
+/* text custom */
+ul {
+  text-indent: none;
+}
+
+.postss {
+	text-indent: 30px;
+	text-align: left;
+}
+			
+/* center shits */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* width: 50%; */
+}
+
 /*-------------TOP NAVBAR-----------*/
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
 /* Create a top navigation bar with a grey background color  */
@@ -72,38 +108,6 @@ body {
   background-color: #333;
 }
 
-.postss {
-	text-indent: 30px;
-	text-align: left;
-}
-			
-/* center shits */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  /* width: 50%; */
-}
-
-
-/* global text formatting */
-a {
-	color: var(--my-text-color);
-}
-
-a.hover {
-	color: #3f9bf9;
-	text-decoration: underline;
-}
-
-.mediacredit {
-	color: var(--my-text-color);
-	font-style: italic;
-	text-align: center;
-	font-size: 90%;
-}
-
 /*--------------------BREADCRUMBS-----------------------*/
 /* Style post breadcrumbs */
 ul.breadcrumb {
@@ -122,7 +126,7 @@ ul.breadcrumb li {
 ul.breadcrumb li+li:before {
   padding: 6px;
   color: var(--text);
-  content: ">";
+  content: "›";
 }
 
 /* Add a color to all links inside the list */
