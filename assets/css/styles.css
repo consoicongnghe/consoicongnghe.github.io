@@ -28,7 +28,7 @@ body {
   }
 }
 
-/* global text formatting */
+/*-------------CUSTOM TEXT FORMATTING-----------*/
 a {
 	color: var(--my-text-color);
 }
@@ -43,11 +43,6 @@ a.hover {
 	font-style: italic;
 	text-align: center;
 	font-size: 90%;
-}
-
-/* custom formattings */
-ul {
-  text-indent: none;
 }
 
 .postss {
