@@ -45,7 +45,7 @@ a.hover {
 	font-size: 90%;
 }
 
-/* text custom */
+/* custom formattings */
 ul {
   text-indent: none;
 }
@@ -53,6 +53,10 @@ ul {
 .postss {
 	text-indent: 30px;
 	text-align: left;
+}
+
+img, embed, object, video {
+  max-width: 100%;
 }
 			
 /* center shits */
