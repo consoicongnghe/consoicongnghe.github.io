@@ -3,7 +3,7 @@ body {
 	font-size: 18px;
 	margin: auto;
   max-width: 720px;
-  /*padding: 1em;*/
+  padding: 0px;
   line-height: 1.5;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
