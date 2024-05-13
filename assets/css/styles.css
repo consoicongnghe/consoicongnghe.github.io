@@ -79,8 +79,7 @@ img, video {
 }
 
 img.hover:hover {
-  -webkit-transform: scale(2,2);
-  
+  transform: scale(2,2);
 }
 
 /* https://www.w3schools.com/tags/tag_article.asp */
