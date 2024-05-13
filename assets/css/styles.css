@@ -30,16 +30,25 @@ body {
 
 /*-------------CUSTOM TEXT FORMATTING-----------*/
 a {
-	color: var(--my-text-color);
+	color: var(--link-text);
 }
 
-a.hover {
-	color: #3f9bf9;
-	text-decoration: underline;
+a:link, a:visited {
+  /* background-color: #f44336; */
+  color: #00ffff;
+  text-decoration: none;
+  /* padding: 15px 25px;
+  text-align: center;
+  display: inline-block; */
+}
+
+a:hover, a:active {
+  color: #00dddd;
+  /* text-decoration: underline; */
 }
 
 .mediacredit {
-	color: var(--my-text-color);
+	color: var(--text);
 	font-style: italic;
 	text-align: center;
 	font-size: 90%;
@@ -49,7 +58,8 @@ a.hover {
 	text-indent: 30px;
 }
 
-ul {
+ul, ol {
+  text-indent: 0px;
   padding-left: 30px;
 }
 
@@ -66,6 +76,39 @@ img, video {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+img.hover:hover {
+  -webkit-transform: scale(2,2);
+  
+}
+
+/* https://www.w3schools.com/tags/tag_article.asp */
+.post-list-all {
+  margin: 0;
+  padding: 5px;
+}
+
+.post-list-all > h1, .post-list {
+  margin: 10px;
+  padding: 5px;
+}
+
+.post-list > h2 {
+  margin: 4px;
+  font-size: 110%;
+}
+
+.post-list > p {
+  color: var(--text);
+}
+
+.post-list {
+  background: #222222;
+}
+
+.block{
+  display: block;
 }
 
 /* center shits */
