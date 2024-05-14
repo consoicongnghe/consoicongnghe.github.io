@@ -14,7 +14,7 @@ body {
 :root {
   --text: #000;
   --bg: #fff;
-  --bg-block: #eeeeee;
+  --bg-block: #f2f2f2;
   --text-link: #00adad;
   --text-link-hover: #00ffff;
 }
