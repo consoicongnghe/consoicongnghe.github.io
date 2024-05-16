@@ -1,54 +1,133 @@
 body {
 	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-	margin: 2em auto;
-    max-width: 720px;
-    padding: 1em;
-    line-height: 1.4;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    background-color: white;
-	color: black;
+	font-size: 18px;
+	margin: 0em auto;
+  max-width: 720px;
+  padding: 0em;
+  line-height: 1.6;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
-/*------------------------*/
-
-/* Dark mode toggle button: https://github.com/mahozad/theme-switch */
-theme-switch {
-	width: 20px;
-	padding: 10px;
-	background: #333;
-	
-	/*  if want animated then https://gist.github.com/mahozad/a8114b6145cac721f7652aa7b0732cf6 */
-	--theme-switch-icon-color: #fff;
+/*-------------AUTO THEME-----------*/
+:root {
+  --text: #000;
+  --bg: #fff;
+  --bg-block: #f2f2f2;
+  --text-link: #00adad;
+  --text-link-hover: #00ffff;
 }
 
-/* These are applied for the default (light) theme */
-/* (or when the toggle is auto, and the OS theme is light) */
-html {
-	--my-page-background-color: #fff;
-	--my-text-color: #000;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fff;
+    --bg: #121212;
+    --bg-block: #222222;
+    --text-link: #00ffff;
+    --text-link-hover: #00adad;
+  }
 }
 
-/* These are applied for the dark theme */
-/* (or when the toggle is auto, and the OS theme is dark) */
-/* If a property has the same value for light and dark themes, no need to redeclare it here */
-html[data-theme="dark"] {
-	--my-page-background-color: #121212;
-	--my-text-color: #fff;
+body {
+  background-color: var(--bg);
+  color: var(--text);
 }
 
-body /* or any selector you want */ {
-  background: var(--my-page-background-color);
-  color: var(--my-text-color);
+/*-------------CUSTOM TEXT FORMATTING-----------*/
+a {
+	color: var(--text-link);
 }
 
+a:link, a:visited {
+  /* background-color: #f44336; */
+  color: var(--text-link);
+  text-decoration: none;
+  /* padding: 15px 25px;
+  text-align: center;
+  display: inline-block; */
+}
 
-/*------------------------*/
+a:hover, a:active {
+  color: var(--text-link-hover);
+  /* text-decoration: underline; */
+}
 
+.mediacredit {
+	color: var(--text);
+	font-style: italic;
+	text-align: center;
+	font-size: 90%;
+}
+
+.indent {
+	text-indent: 30px;
+}
+
+ul, ol {
+  text-indent: 0px;
+  padding-left: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+img, video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+img.hover:hover {
+  transform: scale(2,2);
+}
+
+/* https://www.w3schools.com/tags/tag_article.asp */
+.post-list-all {
+  margin: 0;
+  padding: 5px;
+}
+
+.post-list-all > h1, .post-list {
+  margin: 10px;
+  padding: 5px;
+}
+
+.post-list > h2 {
+  margin: 4px;
+  font-size: 110%;
+}
+
+.post-list > p {
+  color: var(--text);
+}
+
+.post-list {
+  background: var(--bg-block);
+}
+
+.block{
+  display: block;
+}
+
+/* center shits */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* width: 50%; */
+}
+
+/*-------------TOP NAVBAR-----------*/
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
-/* Create a top navigation bar with a black background color  */
+/* Create a top navigation bar with a grey background color  */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -90,34 +169,36 @@ body /* or any selector you want */ {
   background-color: #333;
 }
 
-.postss {
-	text-indent: 30px;
-	text-align: left;
-}
-			
-/* center shits */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  /* width: 50%; */
+/*--------------------BREADCRUMBS-----------------------*/
+/* Style post breadcrumbs */
+ul.breadcrumb {
+  padding: 4px 10px;
+  list-style: none;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
-
-/* global text formatting */
-a {
-	color: var(--my-text-color);
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
 }
 
-a.hover {
-	color: #3f9bf9;
-	text-decoration: underline;
+/* Add a symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 6px;
+  color: var(--text);
+  content: "›";
 }
 
-.credit {
-	color: var(--my-text-color);
-	font-style: italic;
-	text-align: center;
-	font-size: 90%;
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--text-link-hover);
+  /* text-decoration: underline; */
 }

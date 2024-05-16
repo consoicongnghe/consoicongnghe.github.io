@@ -17,7 +17,6 @@
 		<link rel="shortcut icon" href="\assets\icons/favicon.ico">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
 		<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
 		<meta property="og:image:width" content="1222">
 		<meta property="og:image:height" content="640">
@@ -25,19 +24,17 @@
 		<meta property="og:title" content="Sói - Máy tính, điện thoại và mặt cười">
 		<meta property="og:url" content="https://consoicongnghe.com">
 		<meta property="og:image" content="https://consoicongnghe.com/assets/images/og-image.jpg">
-		<!-- dark mode toggle button -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<script src="https://kit.fontawesome.com/229383db42.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/@mahozad/theme-switch"></script>
 		<script src="/assets/js/main.js"></script>
-		<style>
-			<!-- indentation -->
-			div.postss {
-				text-indent: 50px;
-				text-align: right;
-			}
-		</style>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZLCH42TM0W');
+		</script>
 	</head>
 	<body>
 		<div class="topnav">
@@ -46,16 +43,32 @@
 			<a href="/guides" class="active">Hướng dẫn</a>
 			<a href="/about">Giới thiệu</a>
 			<a href="/contact">Liên hệ</a>
-			<div class="topnav-right">
-				<theme-switch><i class="fa fa-circle-half-stroke fa-lg"></i></theme-switch>
-			</div>
+			<!--<div class="topnav-right">
+				<a href="/login">.</a>
+			</div>-->
 		</div>
-		<div class="postss">
-			<h1 style="text-align:center;">Hướng dẫn</h1>
-			<h2><a href="/guides/windows11install">Cài đặt Windows 11</a></h2>
-			<h2><a href="/guides/windows10install">Cài đặt Windows 10</a></h2>
-			<h2><a href="/guides/windows7install">Cài đặt Windows 7</a></h2>
-			<h2><a href="/guides/macOSinstall">Cài đặt macOS</a></h2>
+		<div>
+			<h1>Hướng dẫn</h1>
+			<a class="block" href="/guides/windows11install">
+				<article class="post-list">
+					<h2>Cài đặt Windows 11</h2>
+				</article>
+			</a>
+			<a class="block" href="/guides/windows10install">
+				<article class="post-list">
+					<h2>Cài đặt Windows 10</h2>
+				</article>
+			</a>
+			<a class="block" href="/guides/windows7install">
+				<article class="post-list">
+					<h2>Cài đặt Windows 7</h2>
+				</article>
+			</a>
+			<a class="block" href="/guides/macOSinstall">
+				<article class="post-list">
+					<h2>Cài đặt macOS</h2>
+				</article>
+			</a>
 		</div>
 	</body>
 </html>

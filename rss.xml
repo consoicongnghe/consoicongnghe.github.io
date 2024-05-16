@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Con sói công nghệ</title>
+  <link>https://consoicongnghe.com</link>
+  <description>Những bài viết be bé về máy tính, điện thoại và cách sử dụng, chỉnh sửa chúng sao cho cuộc sống của cậu đơn giản và hiệu quả hơn.</description>
+  <language>vi-VN</language>
+  <atom:link href="https://consoicongnghe.com/rss.xml" rel="self" type="application/rss+xml" />
+  <image>
+    <url>https://consoicongnghe.com/assets/icons/android-chrome-192x192.png</url> 
+    <title>Con sói công nghệ</title>
+    <link>https://consoicongnghe.com</link>
+  </image>
+  <item>
+    <title>USB</title>
+    <link>https://consoicongnghe.com/posts/240511</link>
+    <description>Các cậu biết USB là cái gì mà: thiết bị lưu trữ dữ liệu di động. Dữ liệu này có thể là bất kì cái gì, từ tài liệu bảng biểu, ghi chú, nhạc, phim, v.v. và cả ảnh mèo cute nữa. Đừng quên ảnh mèo cute!</description>
+    <enclosure url="http://consoicongnghe.com/posts/240511/USB.jpg" length="214125" type="image/jpeg"/>
+    <pubDate>Sat, 11 May 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>Ổ cứng di động</title>
+    <link>https://consoicongnghe.com/posts/240504</link>
+    <description><![CDATA[<img src="http://consoicongnghe.com/posts/240511/T7.jpg"/>]]>Tớ đã xóa đi gõ lại mấy lần cố giải thích một cách dễ hiểu cụm từ “ổ cứng di động”, nhưng không có gì phù hợp hơn việc so sánh nó tương đương với một cái “USB to”.</description>
+    <pubDate>Sat, 04 May 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>Tai nghe Airpods 2</title>
+    <link>https://consoicongnghe.com/posts/240427</link>
+    <description><![CDATA[<img src="http://consoicongnghe.com/posts/240511/AP2.jpg"/>]]>Tai nghe này rất tiện ý kiểu đeo lên tai cái là kết nối luôn không phải đợi, pin khá lâu so với nhu cầu sử dụng, và còn có case sạc chứa 4-5 lần sạc thêm nữa.</description>
+    <pubDate>Wed, 24 Apr 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>Bộ dây sạc</title>
+    <link>https://consoicongnghe.com/posts/240419</link>
+    <description><![CDATA[<img src="http://consoicongnghe.com/posts/240511/remax-rc-190.jpg"/>]]>Đây là một bộ dây sạc nhiều cổng gọn nhẹ mà tớ mới biết đến gần đây, nhưng thực sự hài lòng. Bộ dây này giúp tớ tiết kiệm đáng kể chỗ chứa trong túi khi mang đi mang lại, và cũng gọn gàng dễ tháo lắp dễ sử dụng nữa.</description>
+    <pubDate>Fri, 19 Apr 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>Pin dự phòng</title>
+    <link>https://consoicongnghe.com/posts/240411</link>
+    <description><![CDATA[<img src="http://consoicongnghe.com/posts/240511/powerbank.jpg"/>]]>Các cậu biết rõ pin dự phòng là gì rồi. Đối với một số người, nó là một cục gạch nặng trịch cậu để trong túi mang đi khắp nơi nhưng không bao giờ dùng tới vì điện thoại vẫn còn tận 3% pin.</description>
+    <pubDate>Thu, 11 Apr 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>Những cửa hàng uy tín</title>
+    <link>https://consoicongnghe.com/posts/trustedstores</link>
+    <description>Đây là danh sách một số công ty, cửa hàng mà cá nhân Sói cảm thấy uy tín và có thể tin tưởng, dựa trên đánh giá khách quan kết hợp với trải nghiệm cá nhân.</description>
+    <pubDate>Wed, 10 Apr 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>[Windows] Widget thời tiết</title>
+    <link>https://consoicongnghe.com/posts/210820</link>
+    <description><![CDATA[<img src="http://consoicongnghe.com/posts/240511/win-weather.jpg"/>]]>Khoảng 2 tháng trước Windows 10 mới cập nhật cái mục widget thời tiết này. Bạn nào thấy đơ thì nên thử tắt nó đi xem thế nào nhé.</description>
+    <pubDate>Fri, 20 Aug 2021 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>[Windows] Clipboard History</title>
+    <link>https://consoicongnghe.com/posts/210223</link>
+    <description><![CDATA[<img src="http://consoicongnghe.com/posts/240511/clipboard-history.jpg"/>]]>Clipboard History là tính năng lưu lịch sử các thứ mà cậu copy, nhiều nhất 25 thứ. Clipboard History giúp cậu không còn phải lo lắng khi copy cái mới và sợ mất nội dung mình đã copy trước đó.</description>
+    <pubDate>Tue, 23 Feb 2021 20:00:00 +0700</pubDate>
+  </item>
+</channel>
+
+</rss>
