@@ -8,10 +8,10 @@
   <language>vi-VN</language>
   <atom:link href="http://consoicongnghe.com/rss.xml" rel="self" type="application/rss+xml" />
   <image>
-  <url>https://consoicongnghe.com/assets/icons/android-chrome-192x192.png</url>
-  <title>consoicongnghe logo</title>
-  <link>https://consoicongnghe.com</link>
-</image>
+    <url>https://consoicongnghe.com/assets/icons/android-chrome-192x192.png</url>
+    <title>consoicongnghe logo</title>
+    <link>https://consoicongnghe.com</link>
+  </image>
   <item>
     <title>USB</title>
     <link>https://consoicongnghe.com/posts/240511</link>
@@ -47,6 +47,12 @@
     <link>https://consoicongnghe.com/posts/trustedstores</link>
     <description>Đây là danh sách một số công ty, cửa hàng mà cá nhân Sói cảm thấy uy tín và có thể tin tưởng, dựa trên đánh giá khách quan kết hợp với trải nghiệm cá nhân.</description>
     <pubDate>Wed, 10 Apr 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>[Windows] Widget thời tiết</title>
+    <link>https://consoicongnghe.com/posts/210820</link>
+    <description>Khoảng 2 tháng trước Windows 10 mới cập nhật cái mục widget thời tiết này. Bạn nào thấy đơ thì nên thử tắt nó đi xem thế nào nhé.</description>
+    <pubDate>Thu, 20 Aug 2021 20:00:00 +0700</pubDate>
   </item>
 </channel>
 
