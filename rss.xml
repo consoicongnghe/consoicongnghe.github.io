@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 
 <channel>
   <title>Con sói công nghệ</title>
@@ -16,7 +16,7 @@
     <title>USB</title>
     <link>https://consoicongnghe.com/posts/240511</link>
     <description>Các cậu biết USB là cái gì mà: thiết bị lưu trữ dữ liệu di động. Dữ liệu này có thể là bất kì cái gì, từ tài liệu bảng biểu, ghi chú, nhạc, phim, v.v. và cả ảnh mèo cute nữa. Đừng quên ảnh mèo cute!</description>
-    <enclosure url="https://consoicongnghe.com/posts/240511/USB.jpg" length="0" type="image/jpeg"/>
+    <enclosure url="https://consoicongnghe.com/posts/240511/USB.jpg" type="image/jpeg" length="0"/>
     <pubDate>Sat, 11 May 2024 20:00:00 +0700</pubDate>
   </item>
   <item>
