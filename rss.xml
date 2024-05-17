@@ -141,7 +141,7 @@
   <item>
     <title>[Android] Root điện thoại để làm gì?</title>
     <link>https://consoicongnghe.com/posts/190828</link>
-    <description>Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng và các thiết bị khác chạy hệ điều hành Android giữ quyền kiểm soát tối cao đối với hệ điều hành trong máy (được gọi là quyền truy cập root)”. Đây là wikipedia bảo thế. Còn thực tiễn hơn thì root điện thoại giúp cậu sử dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp sâu vào file hệ thống của Android. Nó kiểu kiểu như jailbreak (phá khóa) trên các máy của Apple đó.</description>
+    <description>"Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng và các thiết bị khác chạy hệ điều hành Android giữ quyền kiểm soát tối cao đối với hệ điều hành trong máy (được gọi là quyền truy cập root)". Đây là wikipedia bảo thế. Còn thực tiễn hơn thì root điện thoại giúp cậu sử dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp sâu vào file hệ thống của Android. Nó kiểu kiểu như jailbreak (phá khóa) trên các máy của Apple đó.</description>
     <enclosure url="https://consoicongnghe.com/posts/190828/android-root-whatfor.jpg" type="image/jpeg" length="0"/>
     <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/190828/android-root-whatfor.jpg">
       <media:credit>consoicongnghe</media:credit>
@@ -149,6 +149,18 @@
       <media:title type="plain">[Android] Root điện thoại để làm gì?</media:title>
     </media:content>
     <pubDate>Wed, 28 Aug 2019 20:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>[Android] Các loại giao diện điện thoại Android</title>
+    <link>https://consoicongnghe.com/posts/190728</link>
+    <description>Android gốc (kiểu Android One) vẫn thường mượt mà nhất và đẹp nhất, nhưng không hẳn. Các hãng hiện tại dù chấp nhận rằng Android gốc rất đẹp, nhưng họ không từ bỏ giao diện cá nhân của họ, mà thay vào đó họ rút kinh nghiệm để cải thiện chúng.</description>
+    <enclosure url="https://consoicongnghe.com/posts/190728/android-aboutpage.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/190728/android-aboutpage.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>[Android] Các loại giao diện điện thoại Android</media:text>
+      <media:title type="plain">[Android] Các loại giao diện điện thoại Android</media:title>
+    </media:content>
+    <pubDate>Sun, 28 Jul 2019 20:00:00 +0700</pubDate>
   </item>
 </channel>
 
