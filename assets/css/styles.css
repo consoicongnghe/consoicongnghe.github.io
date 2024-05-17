@@ -1,8 +1,8 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
+  /* max-width: 720px; */ 
 	margin: 0em auto;
-  max-width: 720px;
   padding: 0em;
   line-height: 1.6;
   -webkit-hyphens: auto;
@@ -74,7 +74,7 @@ h1 {
 }
 
 img, embed, object, video {
-  max-width: 100%;
+  width: 100%;
 }
 
 img, video {
@@ -92,6 +92,12 @@ img.hover:hover {
 .post-list-all {
   margin: 0;
   padding: 5px;
+}
+
+.bodyy {
+  max-width: 720px;
+  margin: 0em auto;
+  padding: 0em;
 }
 
 .post-list-all > h1, .post-list {
@@ -143,10 +149,11 @@ img.hover:hover {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #FED766;
-  color: black;
+.topnav-txt {
+  float: left;
+  padding: 10px 10px;
+  color: #f2f2f2;
+  font-size: 17px;
 }
 
 /* Add an active class to highlight the current page */
@@ -159,14 +166,12 @@ img.hover:hover {
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
-  background-color: #333;
-  text-align: center;
 }
-.topnav-right a {
-	color: #333;
-}
+
+/* Change the color of links on hover */
 .topnav-right a:hover {
-  background-color: #333;
+  background-color: #FED766;
+  color: black;
 }
 
 /*--------------------BREADCRUMBS-----------------------*/

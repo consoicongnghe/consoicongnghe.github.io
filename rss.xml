@@ -102,6 +102,18 @@
     </media:content>
     <pubDate>Tue, 23 Feb 2021 20:00:00 +0700</pubDate>
   </item>
+  <item>
+    <title>[Windows] Refresh desktop</title>
+    <link>https://consoicongnghe.com/posts/200520</link>
+    <description>Nút Refresh được sinh ra chủ yếu để bảo bộ xử lí đồ họa vẽ lại toàn bộ khung hình dù có gì thay đổi không. Nút này cũng có thể được dùng nếu bạn copy file hay tạo shortcut gì đó trên desktop mà nó lại không hiện. Chứ nếu desktop đang hiện trên màn hình bình thường, không thiếu, không thừa, không lỗi, thì hành động bấm chuột phải chọn refresh của bạn là thừa, tốn công tốn sức và tốn cả thời gian.</description>
+    <enclosure url="https://consoicongnghe.com/posts/200520/refresh-desktop.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/posts/200520/refresh-desktop.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>[Windows] Refresh desktop</media:text>
+      <media:title type="plain">[Windows] Refresh desktop</media:title>
+    </media:content>
+    <pubDate>Wed, 20 May 2020 20:00:00 +0700</pubDate>
+  </item>
 </channel>
 
 </rss>
