@@ -16,7 +16,7 @@ body {
 	--bg: #fff;
 	--bg-block: #f2f2f2;
 	--text-link: #00adad;
-	--text-link-hover: #22ffff;
+	--text-link-hover: #3fffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,7 @@ body {
 		--text: #fff;
 		--bg: #121212;
 		--bg-block: #222222;
-		--text-link: #22ffff;
+		--text-link: #3fffff;
 		--text-link-hover: #00adad;
 	}
 }
