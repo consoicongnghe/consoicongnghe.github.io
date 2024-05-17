@@ -2,7 +2,7 @@
 <html lang="vi">
 
 <head>
-	<title>Giới thiệu - CSCN</title>
+	<title>Giới thiệu</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -24,14 +24,31 @@
 	<meta property="og:image:height" content="640">
 	<meta property="og:description"
 		content="Tớ muốn consoicongnghe là điểm đến dành cho tất cả mọi người, chứ không chỉ riêng những người đã có kiến thức nền về các vấn đề công nghệ.">
-	<meta property="og:title" content="Giới thiệu - CSCN">
-	<meta property="og:url" content="https://consoicongnghe.com">
+	<meta property="og:title" content="Giới thiệu">
+	<meta property="og:url" content="https://consoicongnghe.com/about/">
 	<meta property="og:image" content="https://consoicongnghe.com/assets/images/og-image.jpg">
 	<link rel="stylesheet" href="/assets/css/styles.css">
 	<!-- <script src="https://kit.fontawesome.com/229383db42.js" crossorigin="anonymous"></script> -->
 	<script src="/assets/js/main.js"></script>
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+			},{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Giới thiệu",
+			}]
+		}
+	</script>
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W" defer></script>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
