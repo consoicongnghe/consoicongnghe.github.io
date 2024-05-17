@@ -80,7 +80,7 @@ img,
 embed,
 object,
 video {
-	width: 100%;
+	height: auto;
 }
 
 img,
