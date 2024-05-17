@@ -1,37 +1,37 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
-  /* max-width: 720px; */ 
+	/* max-width: 720px; */
 	margin: 0em auto;
-  padding: 0em;
-  line-height: 1.6;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+	padding: 0em;
+	line-height: 1.6;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 /*-------------AUTO THEME-----------*/
 :root {
-  --text: #000;
-  --bg: #fff;
-  --bg-block: #f2f2f2;
-  --text-link: #00adad;
-  --text-link-hover: #00ffff;
+	--text: #000;
+	--bg: #fff;
+	--bg-block: #f2f2f2;
+	--text-link: #00adad;
+	--text-link-hover: #22ffff;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --text: #fff;
-    --bg: #121212;
-    --bg-block: #222222;
-    --text-link: #00ffff;
-    --text-link-hover: #00adad;
-  }
+	:root {
+		--text: #fff;
+		--bg: #121212;
+		--bg-block: #222222;
+		--text-link: #22ffff;
+		--text-link-hover: #00adad;
+	}
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
+	background-color: var(--bg);
+	color: var(--text);
 }
 
 /*-------------CUSTOM TEXT FORMATTING-----------*/
@@ -39,18 +39,20 @@ a {
 	color: var(--text-link);
 }
 
-a:link, a:visited {
-  /* background-color: #f44336; */
-  color: var(--text-link);
-  text-decoration: none;
-  /* padding: 15px 25px;
+a:link,
+a:visited {
+	/* background-color: #f44336; */
+	color: var(--text-link);
+	text-decoration: none;
+	/* padding: 15px 25px;
   text-align: center;
   display: inline-block; */
 }
 
-a:hover, a:active {
-  color: var(--text-link-hover);
-  /* text-decoration: underline; */
+a:hover,
+a:active {
+	color: var(--text-link-hover);
+	/* text-decoration: underline; */
 }
 
 .mediacredit {
@@ -64,151 +66,157 @@ a:hover, a:active {
 	text-indent: 30px;
 }
 
-ul, ol {
-  text-indent: 0px;
-  padding-left: 30px;
+ul,
+ol {
+	text-indent: 0px;
+	padding-left: 30px;
 }
 
 h1 {
-  text-align: center;
+	text-align: center;
 }
 
-img, embed, object, video {
-  width: 100%;
+img,
+embed,
+object,
+video {
+	width: 100%;
 }
 
-img, video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+img,
+video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 img.hover:hover {
-  transform: scale(2,2);
+	transform: scale(2, 2);
 }
 
 /* https://www.w3schools.com/tags/tag_article.asp */
 .post-list-all {
-  margin: 0;
-  padding: 5px;
+	margin: 0;
+	padding: 5px;
 }
 
 .bodyy {
-  max-width: 720px;
-  margin: 0em auto;
-  padding: 0em;
+	max-width: 720px;
+	margin: 0em auto;
+	padding: 0em;
 }
 
-.post-list-all > h1, .post-list {
-  margin: 10px;
-  padding: 5px;
+.post-list-all>h1,
+.post-list {
+	margin: 10px;
+	padding: 5px;
 }
 
-.post-list > h2 {
-  margin: 4px;
-  font-size: 110%;
+.post-list>h2 {
+	margin: 4px;
+	font-size: 110%;
 }
 
-.post-list > p {
-  color: var(--text);
+.post-list>p {
+	color: var(--text);
 }
 
 .post-list {
-  background: var(--bg-block);
+	background: var(--bg-block);
 }
 
-.block{
-  display: block;
+.block {
+	display: block;
 }
 
 /* center shits */
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  /* width: 50%; */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	/* width: 50%; */
 }
 
 /*-------------TOP NAVBAR-----------*/
 /* https://www.w3schools.com/howto/howto_css_topnav_right.asp */
 /* Create a top navigation bar with a grey background color  */
 .topnav {
-  background-color: #333;
-  overflow: hidden;
+	background-color: #333;
+	overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .topnav-txt {
-  float: left;
-  padding: 10px 10px;
-  color: #f2f2f2;
-  font-size: 17px;
+	float: left;
+	padding: 10px 10px;
+	color: #f2f2f2;
+	font-size: 17px;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #00FFFF;
-  color: black;
-  text-decoration: none;
+	background-color: #00FFFF;
+	color: black;
+	text-decoration: none;
 }
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
-  float: right;
+	float: right;
 }
 
 /* Change the color of links on hover */
 .topnav-right a:hover {
-  background-color: #FED766;
-  color: black;
+	background-color: #FED766;
+	color: black;
 }
 
 /* center */
 .topnav-center {
-    float: center;
+	float: center;
 }
 
 /*--------------------BREADCRUMBS-----------------------*/
 /* Style post breadcrumbs */
 ul.breadcrumb {
-  padding: 4px 10px;
-  list-style: none;
-  background-color: var(--bg);
-  color: var(--text);
+	padding: 4px 10px;
+	list-style: none;
+	background-color: var(--bg);
+	color: var(--text);
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
-  display: inline;
-  font-size: 14px;
+	display: inline;
+	font-size: 14px;
 }
 
 /* Add a symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
-  padding: 6px;
-  color: var(--text);
-  content: "›";
+	padding: 6px;
+	color: var(--text);
+	content: "›";
 }
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: var(--text-link);
-  text-decoration: none;
+	color: var(--text-link);
+	text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: var(--text-link-hover);
-  /* text-decoration: underline; */
+	color: var(--text-link-hover);
+	/* text-decoration: underline; */
 }
