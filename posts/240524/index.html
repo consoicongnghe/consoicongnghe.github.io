@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>Bảo mật hai lớp (two-factor authentication)</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="Bảo mật hai lớp là bổ sung thêm một lớp bảo vệ cho tài khoản của cậu. Khi có bảo mật hai lớp, trang web sẽ yêu cầu bất kì ai đăng nhập vào tài khoản của cậu phải điền đúng tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ ứng dụng xác thực 2 yếu tố trên điện thoại cậu.">
+	<meta name="keywords" content="2FA, QR, authenticator, authy, mật khẩu, đăng nhập">
+	<meta name="author" content="consoicongnghe">
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png">
+	<link rel="manifest" href="\assets\icons/site.webmanifest">
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="1222">
+	<meta property="og:image:height" content="640">
+	<meta property="og:description"
+		content="Bảo mật hai lớp là bổ sung thêm một lớp bảo vệ cho tài khoản của cậu. Khi có bảo mật hai lớp, trang web sẽ yêu cầu bất kì ai đăng nhập vào tài khoản của cậu phải điền đúng tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ ứng dụng xác thực 2 yếu tố trên điện thoại cậu.">
+	<meta property="og:title" content="Bảo mật hai lớp (two-step authentication)">
+	<meta property="og:url" content="https://consoicongnghe.com/posts/240524">
+	<meta property="og:image" content="https://consoicongnghe.com/posts/240524/2FA0.jpg">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <script src="https://kit.fontawesome.com/229383db42.js" crossorigin="anonymous"></script> -->
+	<script src="/assets/js/main.js"></script>
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://consoicongnghe.com",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Bài viết",
+			"item": "https://consoicongnghe.com/posts/"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Bảo mật hai lớp (two-factor authentication)",
+		  }]
+		}
+		</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W" async></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+</head>
+
+<body>
+	<div class="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right">
+			<a href="/">Trang chủ</a>
+			<a href="/posts" class="active">Bài viết</a>
+			<a href="/blog">Blog</a>
+			<a href="/about">Giới thiệu</a>
+			<a href="/contact">Liên hệ</a>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/posts">Bài viết</a></li>
+			<li>Bảo mật hai lớp</li>
+		</ul>
+		<div class="indent">
+			<h1>Bảo mật hai lớp</h1>
+			<p>Thường các tài khoản của cậu trên các trang web trên mạng được bảo vệ bằng một chiếc mật khẩu, là một cụm
+				kí tự mà chỉ mình cậu biết và nhớ. Nhưng với sự phát triển chóng mặt của công nghệ máy tính hiện nay, 1
+				cái khóa bằng mật khẩu không còn đủ an toàn nữa, bởi đã có rất nhiều cách để bẻ khóa mật khẩu đánh cắp
+				dữ liệu cá nhân. Hiện giờ rất nhiều các trang web đã cho phép cậu cài đặt bảo mật hai lớp (xác thực 2
+				yếu tố/<i>two-step authentication</i>), nhưng vẫn còn một số bạn vì “ngại” mà chưa thực hiện điều này,
+				đặt hệ thống tài khoản và mật khẩu của bản thân vào tình trạng nguy hiểm rủi ro mất cắp.</p>
+			<p>Vậy bảo mật hai lớp là gì, và cài đặt bảo mật hai lớp như thế nào?</p>
+			<img src="/posts/240524/2FA0.jpg" alt="two-factor authentication dialog box" width="581" height="240"
+				style="width:75%;"></img>
+			<p><strong>Bảo mật hai lớp là bổ sung thêm một lớp bảo vệ cho tài khoản của cậu.</strong></p>
+			<p>Khi có bảo mật hai lớp, trang web sẽ yêu cầu bất kì ai đăng nhập vào tài khoản của cậu phải điền đúng
+				tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ ứng
+				dụng xác thực 2 yếu tố trên điện thoại cậu.</p>
+			<h2>Cách cài đặt bảo mật hai lớp</h2>
+			<p>Mỗi trang web có cách cài đặt khác nhau, thường nằm trong mục <b>Cài đặt</b> (<i>Settings</i>) =&gt;
+				<b>Bảo mật</b> (<i>Security</i>). Tuy nhiên cơ cấu bảo mật hai lớp là tương tự nhau, có 2 cách chính:
+				nhận mã hoặc đường link đăng nhập qua SMS hoặc qua mail, và tạo mã bằng ứng dụng. Nhận mã thì đơn giản,
+				trong cài đặt sẽ nói rõ, thường chỉ bật lên rồi xác nhận email/số điện thoại là xong. Còn cách tạo code
+				bằng ứng dụng lần đầu cài đặt hơi phức tạp hơn, nhưng phương thức này an toàn hơn nhiều:
+			</p>
+			<ul>
+				<li>Cậu vào phần cài đặt bảo mật của tài khoản cậu. Bật Xác minh 2 yếu tố (<i>Two-factor
+						authentication</i>) lên, chọn sử dụng ứng dụng để tạo mã đăng nhập (<i>use Authenticator app to
+						generate code</i>) hoặc lựa chọn tương tự. Bấm Next cho tới khi hiện ra một mã QR (dạng hình
+					vuông có các ô trắng đen xen kẽ), hoặc/và một đoạn mã chữ in hoa.
+				</li>
+			</ul>
+			<img src="/posts/240524/2FA1.jpg" alt="two-factor authentication guide 1" class="hover" width="1440"
+				height="610" style="width:100%;"></img>
+			<ul>
+				<li>Cài đặt ứng dụng Authy (<a href="https://itunes.apple.com/us/app/authy/id494168017">iOS</a>/<a
+						href="https://play.google.com/store/apps/details?id=com.authy.authy">Android</a>) hoặc ứng dụng
+					Authenticator cậu muốn dùng và mở nó lên. </li>
+			</ul>
+			<img src="/posts/240524/2FA2.jpg" alt="two-factor authentication guide 2" width="720" height="710"
+				style="width:75%;"></img>
+			<ul>
+				<li>Tìm và bấm nút Add account, rồi bấm <b>Scan QR code</b>, rồi hướng điện thoại vào mã QR trên màn
+					hình máy
+					tính của cậu. Điện thoại sẽ tự thêm tài khoản của cậu vào ứng dụng Authy khi đã nhận diện được mã
+					QR. Cậu cũng có thể bấm vào “<kbd>Enter key manually</kbd>”, copy đoạn code trên
+					trang web vào rồi OK.</li>
+				<li>Quay trở lại máy tính. Bấm Next. Gõ chuỗi 6 con số hiện ra trong ứng dụng Authy, rồi bấm Next
+					trên máy tính để xác nhận.</li>
+			</ul>
+			<p>Vậy là xong. Authy hay các ứng dụng cùng loại hoạt động tốt cả khi không có mạng. Mỗi lần cần đăng nhập,
+				cậu cần gõ đúng tên và mật khẩu đăng nhập, rồi mở điện thoại vào ứng dụng Authy và copy mã 6 chữ số ấy
+				vào ô xác thực 2 yếu tố. Vậy là được :&gt;</p>
+			<p>Be safe out there~</p>
+			<br>
+			<p><b>Sói.</b></p>
+			<p>24/05/2024</p>
+		</div>
+	</div>
+</body>
+
+</html>

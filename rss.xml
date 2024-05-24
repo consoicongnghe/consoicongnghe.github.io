@@ -13,6 +13,18 @@
     <link>https://consoicongnghe.com</link>
   </image>
   <item>
+    <title>Bảo mật hai lớp (two-factor authentication)</title>
+    <link>https://consoicongnghe.com/posts/240524</link>
+    <description>Bảo mật hai lớp là bổ sung thêm một lớp bảo vệ cho tài khoản của cậu. Khi có bảo mật hai lớp, trang web sẽ yêu cầu bất kì ai đăng nhập vào tài khoản của cậu phải điền đúng tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ ứng dụng xác thực 2 yếu tố trên điện thoại cậu.</description>
+    <enclosure url="https://consoicongnghe.com/posts/240524/2FA0.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/240511/USB.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Bảo mật hai lớp (two-factor authentication)</media:text>
+      <media:title type="plain">Bảo mật hai lớp (two-factor authentication)</media:title>
+    </media:content>
+    <pubDate>Fri, 24 May 2024 14:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>USB</title>
     <link>https://consoicongnghe.com/posts/240511</link>
     <description>Các cậu biết USB là cái gì mà: thiết bị lưu trữ dữ liệu di động. Dữ liệu này có thể là bất kì cái gì, từ tài liệu bảng biểu, ghi chú, nhạc, phim, v.v. và cả ảnh mèo cute nữa. Đừng quên ảnh mèo cute!</description>
@@ -128,10 +140,10 @@
   </item>
   <item>
     <title>[Android] Những ứng dụng nên dùng</title>
-    <link>https://consoicongnghe.com/posts/190831</link>
+    <link>https://consoicongnghe.com/posts/archived/190831</link>
     <description>Chắc hẳn mỗi người có một sự lựa chọn ứng dụng điện thoại khác nhau. Không có ứng dụng nào là hay “nhất”, và không phải cái nào hợp với người này thì chắc chắn cũng hợp với người khác. Sau gần 7 năm dùng Android lục tung Google Play Store, tớ tự tổng hợp cho mình một danh sách dài các thể loại ứng dụng trên điện thoại Android mà tớ cảm thấy khá đặc biệt.</description>
-    <enclosure url="https://consoicongnghe.com/posts/190831/android-apps.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/190831/android-apps.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/archived/190831/android-apps.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/archived/190831/android-apps.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>[Android] Những ứng dụng nên dùng</media:text>
       <media:title type="plain">[Android] Những ứng dụng nên dùng</media:title>
@@ -140,10 +152,10 @@
   </item>
   <item>
     <title>[Android] Root điện thoại để làm gì?</title>
-    <link>https://consoicongnghe.com/posts/190828</link>
+    <link>https://consoicongnghe.com/posts/archived/190828</link>
     <description>"Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng và các thiết bị khác chạy hệ điều hành Android giữ quyền kiểm soát tối cao đối với hệ điều hành trong máy (được gọi là quyền truy cập root)". Đây là wikipedia bảo thế. Còn thực tiễn hơn thì root điện thoại giúp cậu sử dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp sâu vào file hệ thống của Android. Nó kiểu kiểu như jailbreak (phá khóa) trên các máy của Apple đó.</description>
-    <enclosure url="https://consoicongnghe.com/posts/190828/android-root-whatfor.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/190828/android-root-whatfor.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/archived/190828/android-root-whatfor.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/archived/190828/android-root-whatfor.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>[Android] Root điện thoại để làm gì?</media:text>
       <media:title type="plain">[Android] Root điện thoại để làm gì?</media:title>
@@ -152,10 +164,10 @@
   </item>
   <item>
     <title>[Android] Các loại giao diện điện thoại Android</title>
-    <link>https://consoicongnghe.com/posts/190728</link>
+    <link>https://consoicongnghe.com/posts/archived/190728</link>
     <description>Android gốc (kiểu Android One) vẫn thường mượt mà nhất và đẹp nhất, nhưng không hẳn. Các hãng hiện tại dù chấp nhận rằng Android gốc rất đẹp, nhưng họ không từ bỏ giao diện cá nhân của họ, mà thay vào đó họ rút kinh nghiệm để cải thiện chúng.</description>
-    <enclosure url="https://consoicongnghe.com/posts/190728/android-aboutpage.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/190728/android-aboutpage.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/archived/190728/android-aboutpage.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/archived/190728/android-aboutpage.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>[Android] Các loại giao diện điện thoại Android</media:text>
       <media:title type="plain">[Android] Các loại giao diện điện thoại Android</media:title>
