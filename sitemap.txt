@@ -17,8 +17,8 @@ https://consoicongnghe.com/posts/200111/
 https://consoicongnghe.com/posts/190831/
 https://consoicongnghe.com/posts/190828/
 https://consoicongnghe.com/posts/190728/
-https://consoicongnghe.com/guides/
-https://consoicongnghe.com/guides/macOSinstall/
-https://consoicongnghe.com/guides/windows7install/
-https://consoicongnghe.com/guides/windows10install/
-https://consoicongnghe.com/guides/windows11install/
+https://consoicongnghe.com/blog/
+https://consoicongnghe.com/blog/macOSinstall/
+https://consoicongnghe.com/blog/windows7install/
+https://consoicongnghe.com/blog/windows10install/
+https://consoicongnghe.com/blog/windows11install/
