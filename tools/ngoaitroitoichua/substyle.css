@@ -1,0 +1,10 @@
+.location {
+	text-align: center;
+}
+
+.answer {
+	text-align: center;
+	font-weight: bold;
+	font-size: 120pt;
+	text-transform: uppercase;
+}
