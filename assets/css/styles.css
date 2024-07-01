@@ -226,7 +226,7 @@ img.hover:hover {
 	}
 
 	.topnav.responsive a.tophamburger {
-		position: absolute;
+		position: fixed;
 		right: 0;
 		top: 0;
 	}
