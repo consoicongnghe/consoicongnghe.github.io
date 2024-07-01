@@ -226,3 +226,79 @@ ul.breadcrumb li a:hover {
 	color: var(--text-link-hover);
 	/* text-decoration: underline; */
 }
+
+/* 2 images side by side. 3 use 33% */
+.row {
+	display: flex;
+}
+
+.column2 {
+	flex: 50%;
+	padding: 5px;
+}
+
+.column3 {
+	flex: 33.33%;
+	padding: 5px;
+}
+
+/* Responsive layout - makes the above columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+	.column {
+		width: 100%;
+	}
+}
+
+/* https://css-tricks.com/a-perfect-table-of-contents-with-html-css */
+/* table of content */
+.toc-list,
+.toc-list ul {
+	list-style-type: none;
+}
+
+.toc-list {
+	padding: 0;
+}
+
+.toc-list ul {
+	padding-inline-start: 2ch;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.toc-list>li>a {
+	font-weight: bold;
+	margin-block-start: 1em;
+}
+
+.toc-list li>a>.page {
+	min-width: 2ch;
+	font-variant-numeric: tabular-nums;
+	text-align: right;
+}
+
+.toc-list li>a>.title {
+	position: relative;
+	overflow: hidden;
+}
+
+.toc-list li>a .leaders::after {
+	position: absolute;
+	padding-left: .25ch;
+	content: " . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . "
+		". . . . . . . . . . . . . . . . . . . . . . . ";
+	text-align: right;
+}
