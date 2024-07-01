@@ -105,6 +105,8 @@ img.hover:hover {
 	max-width: 720px;
 	margin: 0em auto;
 	padding: 4px;
+	margin-top: 20px;
+	/* Add a top margin to avoid content overlay for fixed header */
 }
 
 .post-list-all>h1,
@@ -163,6 +165,7 @@ img.hover:hover {
 	padding: 10px 10px;
 	text-decoration: none;
 	font-size: 17px;
+	display: block;
 }
 
 .topnav-txt {
