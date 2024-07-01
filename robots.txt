@@ -4,4 +4,5 @@ Disallow:
 Disallow: /cgi-bin/
 Disallow: /tdp/
 Disallow: /tools/
+Disallow: /blog/
 Sitemap: https://consoicongnghe.com/sitemap.txt
