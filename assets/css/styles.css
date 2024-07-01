@@ -150,6 +150,9 @@ img.hover:hover {
 .topnav {
 	background-color: #333;
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -190,6 +193,11 @@ img.hover:hover {
 /* center */
 .topnav-center {
 	float: center;
+}
+
+.main {
+	margin-top: 20px;
+	/* Add a top margin to avoid content overlay */
 }
 
 /*--------------------BREADCRUMBS-----------------------*/
@@ -300,18 +308,4 @@ ul.breadcrumb li a:hover {
 		". . . . . . . . . . . . . . . . . . . . . . . "
 		". . . . . . . . . . . . . . . . . . . . . . . ";
 	text-align: right;
-}
-
-
-/* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-	padding-top: 102px;
 }
