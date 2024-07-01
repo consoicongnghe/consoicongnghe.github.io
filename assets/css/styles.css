@@ -105,7 +105,7 @@ img.hover:hover {
 	max-width: 720px;
 	margin: 0em auto;
 	padding: 4px;
-	margin-top: 30px;
+	margin-top: 20px;
 	/* Add a top margin to avoid content overlay for fixed header */
 }
 
@@ -197,6 +197,14 @@ img.hover:hover {
 .topnav-center {
 	float: center;
 }
+
+/* When the screen is less than 600 pixels wide, remove position:fixed*/
+@media screen and (max-width: 600px) {
+	.topnav {
+		position: static;
+	}
+}
+
 
 /*--------------------BREADCRUMBS-----------------------*/
 /* Style post breadcrumbs */
