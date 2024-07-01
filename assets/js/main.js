@@ -10,7 +10,7 @@ function showHiddenString1() {
 // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function topnavHamburger() {
-	var x = document.getElementById("topnav-right");
+	var x = document.getElementById("topnav");
 	if (x.className === "topnav") {
 		x.className += " responsive";
 	} else {
