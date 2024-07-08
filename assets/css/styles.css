@@ -339,7 +339,7 @@ ul.breadcrumb li a:hover {
 	/* border: 1px; */
 	/* border-radius: 5px; */
 	flex: 1;
-	min-width: 720px;
+	/* min-width: 720px; */
 	padding: 4px;
 	text-align: left;
 	transition: box-shadow 0.2s ease;
