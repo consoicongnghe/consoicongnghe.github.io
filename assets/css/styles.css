@@ -426,3 +426,23 @@ ul.breadcrumb li a:hover {
 .block {
 	display: block;
 }
+
+
+/* icomoon.io */
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+.icon-bars {
+	width: 0.857421875em;
+}
+
+.icon-star {
+	width: 0.9287109375em;
+	fill: #ffc900;
+}

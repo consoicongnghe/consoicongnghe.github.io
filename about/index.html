@@ -29,7 +29,7 @@
 	<meta property="og:image" content="https://consoicongnghe.com/assets/images/og-image.jpg">
 	<!-- CSS -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<!-- <link rel="stylesheet" href="/assets/css/fontawesome.min.css"> -->
 	<script defer src="/assets/js/main.js"></script>
 	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
@@ -69,7 +69,20 @@
 			<a href="/about" class="active">Giới thiệu</a>
 			<a href="/contact">Liên hệ</a>
 			<a href="javascript:void(0);" class="tophamburger" onclick="topnavHamburger()">
-				<i class="fa fa-bars"></i>
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<defs>
+						<symbol id="icon-bars" viewBox="0 0 24 28">
+							<path
+								d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+							</path>
+						</symbol>
+					</defs>
+				</svg>
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
 			</a>
 		</div>
 	</div>
