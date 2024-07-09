@@ -363,15 +363,16 @@ ul.breadcrumb li a:hover {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10px;
+	font-size: 90%;
 }
 
 .shortcuts {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
 	gap: 16px;
 	margin: 10px 5px;
 }
@@ -389,26 +390,22 @@ ul.breadcrumb li a:hover {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.shortcut a {
-	color: #007BFF;
-	text-decoration: none;
-	display: block;
-	margin-top: 10px;
-}
-
-.shortcut>h2 {
+.shortcut>h3 {
 	margin: 4px;
+	font-size: 90%;
 }
 
 /* Responsive layout - makes a one column layout */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 	.shortcuts {
 		flex-direction: column;
+		align-items: stretch;
+		gap: 10px;
 	}
 
 	.shortcut {
-		max-width: 0px;
-		width: 100%;
+		max-width: 720px;
+		padding: 4px;
 	}
 }
 
