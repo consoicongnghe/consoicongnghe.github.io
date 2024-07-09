@@ -384,8 +384,8 @@ ul.breadcrumb li a:hover {
 .shortcut {
 	background-color: var(--bg-block);
 	flex: 1;
-	max-width: 150px;
-	padding: 20px;
+	/* max-width: 150px; */
+	padding: 10px;
 	text-align: center;
 	transition: box-shadow 0.3s ease;
 }
