@@ -324,6 +324,7 @@ ul.breadcrumb li a:hover {
 /* flexbox formatting - for post lists */
 .post-list {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 16px;
 	margin: 10px 5px;
@@ -346,6 +347,7 @@ ul.breadcrumb li a:hover {
 	flex: 1;
 	/* min-width: 720px; */
 	padding: 4px;
+	align-items: stretch;
 	text-align: left;
 	transition: box-shadow 0.2s ease;
 }
@@ -421,6 +423,10 @@ ul.breadcrumb li a:hover {
 	padding: 4px;
 	margin-top: 30px;
 	/* Add a top margin to avoid content overlay for fixed header */
+}
+
+.widebodyy {
+	max-width: 900px;
 }
 
 .block {
