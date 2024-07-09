@@ -125,7 +125,8 @@ img.hover:hover {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a,
+span {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
@@ -149,6 +150,12 @@ img.hover:hover {
 	text-decoration: none;
 }
 
+.topnav span.active {
+	background-color: #00FFFF;
+	color: black;
+	text-decoration: none;
+}
+
 /* Right-aligned section inside the top navigation */
 .topnav-right {
 	float: right;
@@ -156,6 +163,11 @@ img.hover:hover {
 
 /* Change the color of links on hover */
 .topnav-right a:hover {
+	background-color: #FED766;
+	color: black;
+}
+
+.topnav-right span:hover {
 	background-color: #FED766;
 	color: black;
 }
@@ -184,18 +196,18 @@ img.hover:hover {
 		display: none;
 	}
 
-	.topnav a.tophamburger {
+	.topnav span.tophamburger {
 		float: right;
 		display: block;
 	}
 
 	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 	.topnav.responsive {
-		position: fixed;
+		position: relative;
 	}
 
-	.topnav.responsive a.tophamburger {
-		position: fixed;
+	.topnav.responsive span.tophamburger {
+		position: absolute;
 		right: 0;
 		top: 0;
 	}
@@ -424,6 +436,10 @@ ul.breadcrumb li a:hover {
 }
 
 @media screen and (max-width: 800px) {
+	.bodyy {
+		margin-top: 0px;
+	}
+
 	.bodyy {
 		margin-top: 0px;
 	}
