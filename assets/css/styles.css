@@ -170,8 +170,8 @@ img.hover:hover {
 	display: none;
 }
 
-/* When the screen is less than 720 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 720px) {
+/* When the screen is less than [specified] pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
 	.topnav {
 		position: static;
 	}
@@ -188,10 +188,8 @@ img.hover:hover {
 		float: right;
 		display: block;
 	}
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 720px) {
+	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 	.topnav.responsive {
 		position: fixed;
 	}
@@ -421,8 +419,14 @@ ul.breadcrumb li a:hover {
 	max-width: 720px;
 	margin: 0em auto;
 	padding: 4px;
-	margin-top: 30px;
+	margin-top: 48px;
 	/* Add a top margin to avoid content overlay for fixed header */
+}
+
+@media screen and (max-width: 800px) {
+	.bodyy {
+		margin-top: 0px;
+	}
 }
 
 .widebodyy {
