@@ -1,6 +1,6 @@
 body {
 	font-family: "Open Sans", sans-serif;
-	font-size: 18px;
+	/* font-size: 18px; */
 	font-display: optional;
 	/* max-width: 720px; */
 	margin: 0em auto;
@@ -131,7 +131,7 @@ img.hover:hover {
 	text-align: center;
 	padding: 10px 10px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 110%;
 	display: block;
 }
 
@@ -139,7 +139,7 @@ img.hover:hover {
 	float: left;
 	padding: 10px 10px;
 	color: #f2f2f2;
-	font-size: 17px;
+	font-size: 110%;
 }
 
 /* Add an active class to highlight the current page */
@@ -172,6 +172,10 @@ img.hover:hover {
 
 /* When the screen is less than 720 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 720px) {
+	.topnav {
+		position: static;
+	}
+
 	.topnav a:not(:first-child) {
 		display: none;
 	}
@@ -218,7 +222,7 @@ ul.breadcrumb {
 /* Display list items side by side */
 ul.breadcrumb li {
 	display: inline;
-	font-size: 14px;
+	font-size: 90%;
 }
 
 /* Add a symbol (/) before/behind each list item */
@@ -387,7 +391,7 @@ ul.breadcrumb li a:hover {
 }
 
 .shortcut:hover {
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0px 8px var(--block-shadow);
 }
 
 .shortcut>h3 {
