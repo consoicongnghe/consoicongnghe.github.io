@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>uBlock Origin - Giải pháp chặn quảng cáo tối ưu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="uBlock Origin (uBO) là một tiện ích chặn quảng cáo miễn phí và mã nguồn mở, có sẵn cho các trình duyệt phổ biến hiện giờ. uBlock Origin (không phải uBlock) được thiết kế để chặn quảng cáo, trình theo dõi và các nội dung không mong muốn khác, cung cấp cho người dùng trải nghiệm duyệt web mượt mà và riêng tư hơn.">
+	<meta name="keywords" content="ublock origin, adguard, quảng cáo, ads, chặn quảng cáo">
+	<meta name="author" content="consoicongnghe">
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png">
+	<link rel="manifest" href="\assets\icons/site.webmanifest">
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="1222">
+	<meta property="og:image:height" content="640">
+	<meta property="og:description"
+		content="uBlock Origin (uBO) là một tiện ích chặn quảng cáo miễn phí và mã nguồn mở, có sẵn cho các trình duyệt phổ biến hiện giờ. uBlock Origin (không phải uBlock) được thiết kế để chặn quảng cáo, trình theo dõi và các nội dung không mong muốn khác, cung cấp cho người dùng trải nghiệm duyệt web mượt mà và riêng tư hơn.">
+	<meta property="og:title" content="uBlock Origin - Giải pháp chặn quảng cáo tối ưu">
+	<meta property="og:url" content="https://consoicongnghe.com/posts/ublock-origin">
+	<meta property="og:image" content="https://consoicongnghe.com/posts/ublock-origin/ublock-origin-og.jpg">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script defer src="/assets/js/main.js"></script>
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://consoicongnghe.com",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Bài viết",
+			"item": "https://consoicongnghe.com/posts/"
+		  },{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "uBlock Origin - Giải pháp chặn quảng cáo tối ưu",
+		  }]
+		}
+		</script>
+	<!-- Google tag (gtag.js) -->
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+</head>
+
+<body>
+	<div class="topnav" id="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right">
+			<a href="/">Trang chủ</a>
+			<a href="/posts" class="active">Bài viết</a>
+			<a href="/about">Giới thiệu</a>
+			<a href="/contact">Liên hệ</a>
+			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<symbol id="icon-bars" viewBox="0 0 24 20">
+						<path
+							d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+						</path>
+					</symbol>
+				</defs>
+			</svg>
+			<span class="tophamburger" onclick="return topnavHamburger()">
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/posts">Bài viết</a></li>
+			<li>uBlock Origin - Giải pháp chặn quảng cáo tối ưu</li>
+		</ul>
+		<div class="indent">
+			<h1>uBlock Origin</h1>
+			<p>Các cậu có thấy các trang web bây giờ đầy rẫy quảng cáo không? Từ quảng cáo trong bài báo, forum, quảng
+				cáo Youtube, popup, trang web giả mạo, spam, redirect, đủ thể loại, làm gián đoạn trải nghiệm duyệt web
+				của cậu, làm chậm tốc độ tải trang và thậm chí gây ra rủi ro về bảo mật. Đây là lí do uBlock Origin xuất
+				hiện:</p>
+			<img src="/posts/ublock-origin/uBO-superman.gif" alt="uBO superman gif" width="720" height="405"
+				style="width:50%;"></img>
+			<p><strong>uBlock Origin là gì?</strong></p>
+			<p><a href="https://github.com/gorhill/uBlock">uBlock Origin (uBO)</a> là một tiện ích chặn quảng cáo miễn
+				phí và mã nguồn mở, có sẵn cho các trình duyệt phổ biến hiện giờ. uBlock Origin (không phải uBlock) được
+				thiết kế để chặn quảng cáo, trình theo dõi và các nội dung không mong muốn khác, cung cấp cho người dùng
+				trải nghiệm duyệt web mượt mà và riêng tư hơn. Khác với nhiều tiện ích chặn quảng cáo khác chỉ tập trung
+				vào việc chặn quảng cáo, uBO nhấn mạnh vào hiệu suất hoạt động, đảm bảo tiêu thụ ít tài nguyên hệ thống
+				nhất trong khi vẫn lọc quảng cáo một cách hiệu quả, bảo vệ quyền riêng tư của cậu khi duyệt web. Nếu có
+				một đối thủ nào xứng đáng được nêu tên, đó có lẽ là <a
+					href="https://adguard.com/en/welcome.html">Adguard</a> và trình chặn quảng cáo của <a
+					href="https://brave.com/">Brave Browser</a> thôi nha.</p>
+			<img src="/posts/ublock-origin/ublock-origin-og.jpg" alt="uBO homepage" width="540" height="141"
+				style="width:50%;"></img>
+			<p><strong>Cách cài đặt uBlock Origin</strong></p>
+			<p>Cậu có thể cài đặt uBO bằng cách truy cập trang web cửa hàng tiện ích mở rộng của các trình duyệt khác
+				nhau như: <a href="https://addons.mozilla.org/addon/ublock-origin/">Mozilla Firefox</a>, <a
+					href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">Google
+					Chrome</a>, <a
+					href="https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak">Microsoft
+					Edge</a>, <a href="https://addons.opera.com/extensions/details/ublock/">Opera</a>.</p>
+			<p>Chú ý: Không nên dùng uBO song song với các tiện ích/phần mềm chặn quảng cáo khác để tránh xung đột.</p>
+			<p><strong>Sử dụng uBlock Origin</strong></p>
+			<ul>
+				<li><strong>Bật tắt uBlock Origin</strong></li>
+			</ul>
+			<p>Nếu có một trang web bị lỗi hiển thị, trắng trơn hoặc bị mất một vài thành phần, có thể đây là do uBO gặp
+				phải tình trạng chặn nhầm. Cậu có thể thao tác nhanh để cho phép hiện quảng cáo trên trang web đó bằng
+				cách bấm vào biểu tượng uBO trên thanh công cụ (hình cái khiên màu đỏ), bấm vào nút Bật/Tắt hình tròn to
+				đùng ở trên cùng, rồi tải lại trang.</p>
+			<ul>
+				<li><strong>Element Picker (Trình chọn phần tử)</strong></li>
+			</ul>
+			<p>Đôi khi có những quảng cáo trên trang web bị “lọt lưới bộ lọc”, do chưa được cập nhật trong bộ lọc của
+				uBO hay của cậu. Lúc này, cậu có thể sử dụng Element Picker để chặn những quảng cáo này bằng tay. Hãy
+				bấm vào biểu tượng uBO và chọn nút hình cây bút [INSERT PIC]. Sau đó, bấm vào phần tử cậu muốn chặn và
+				bấm nút "Create”.</p>
+			<p>Một cách khác đơn giản hơn là bấm chuột phải vào cái quảng cáo, chọn “Block element” trong menu vừa mở
+				lên, rồi bấm Create, vậy là được. Việc này sẽ tạo ra một quy tắc lọc mới trong “My filters”, giúp cho
+				những lần sau cậu vào trang web này thì quảng cáo cậu vừa chặn sẽ mặc định bị ẩn đi, không hiện lại nữa.
+			</p>
+			<p><strong>Tùy chỉnh uBlock Origin</strong></p>
+			<p>uBO có thể hoạt động ngay sau khi cài đặt mà không cần tùy biến gì thêm. Tuy nhiên, để tối ưu khả năng
+				chặn quảng cáo và giảm thiểu tới mức thấp nhất các trường hợp chặn nhầm, cậu nên chỉnh sửa cài đặt của
+				uBO.</p>
+			<ul>
+				<li><strong>1. Truy cập Bảng điều khiển (Dashboard)</strong></li>
+			</ul>
+			<p>Bấm vào biểu tượng uBlock Origin (hình cái khiên màu đỏ hoặc xám) trên thanh công cụ của trình duyệt. Sau
+				đó bấm nút "Dashboard" (hình bánh răng hoặc ba đường kẻ).</p>
+			<p>Tớ đã sử dụng uBO từ năm 2017, liên tục tối ưu hóa cài đặt tùy chỉnh của uBO để phù hợp nhất cho nhu cầu
+				duyệt web của mình. Cậu có thể tự tìm hiểu cách tùy chỉnh cài đặt của uBO theo hướng dẫn trong <a
+					href="https://github.com/gorhill/uBlock/wiki/Blocking-mode">wiki của nhà phát triển</a>, hoặc sử
+				dụng luôn cài đặt của tớ như sau:</p>
+			<p>Tải cài đặt của tớ tại <strong>đây</strong>.</p>
+			<p>Tại tab số 1 “Settings” (Cài đặt), kéo xuống dưới cùng có 3 nút bấm. Cậu bấm vào nút “Restore from
+				file...” ở giữa. Sau đó trỏ đến file ublock_easy.txt vừa tải về, bấm chọn, rồi bấm nút “OK” trong hộp
+				thoại mở ra. Chỉ cần vậy là xong, cậu có thể tận hưởng khả năng chặn quảng cáo vượt trội của uBlock
+				Origin rồi.</p>
+			<p>Tớ giải thích thêm về các cài đặt trong uBO như sau:</p>
+			<ul>
+				<li><strong>2. Cài đặt cơ bản</strong></li>
+				<li><strong>Danh sách lọc (Filter lists)</strong></li>
+			</ul>
+			<p>Danh sách lọc là thứ cốt lõi trong khả năng chặn quảng cáo của uBlock Origin. Danh sách lọc bao gồm các
+				quy tắc xác định nội dung nào nên bị chặn. uBlock Origin khi cài đặt xong đã bật sẵn một số danh sách
+				lọc cơ bản.</p>
+			<ul>
+				<li><strong>EasyList</strong>: Danh sách lọc chính để chặn quảng cáo.</li>
+				<li><strong>EasyPrivacy</strong>: Chặn các tập lệnh theo dõi và các yếu tố xâm phạm quyền riêng tư khác.
+				</li>
+				<li><strong>Malware Domain List</strong>: Chặn các trang web có chứa phần mềm độc hại.</li>
+			</ul>
+			<p>Cậu có thể bật hoặc tắt các danh sách lọc này bằng cách chọn hoặc bỏ chọn chúng trong tab số 2 "Filter
+				lists".</p>
+			<ul>
+				<li><strong>3. Tùy chỉnh nâng cao</strong></li>
+				<li><strong>My Filters</strong></li>
+			</ul>
+			<p>Tab số 3 "My Filters" cho phép cậu tự tạo các quy tắc lọc của riêng mình, nhằm lưu lại các quy tắc lọc cá
+				nhân mà không phụ thuộc vào các danh sách lọc có sẵn. Để thêm một quy tắc mới, nhập quy tắc vào ô danh
+				sách rồi bấm "Apply changes”.</p>
+			<ul>
+				<li><strong>Whitelist (Danh sách cho phép)</strong></li>
+			</ul>
+			<p>Nếu cậu muốn cho phép hiện quảng cáo trên một số trang web cụ thể, cậu nên thêm chúng vào danh sách cho
+				phép. Cậu cần nhập địa chỉ URL của trang web vào ô danh sách rồi bấm "Apply changes”. Hoặc khi đang mở
+				trang web đó, cậu có thể bấm vào biểu tượng uBO, bấm nút Bật/Tắt, rồi tải lại trang.</p>
+			<p><strong>Kết luận</strong></p>
+			<p>Đây mới chỉ là bề nổi của việc cài đặt uBlock Origin. Cậu có thể tìm hiểu cách cài đặt sâu kĩ hơn cho uBO
+				theo hướng dẫn trong <a href="https://github.com/gorhill/uBlock/wiki/Blocking-mode">wiki của nhà phát
+					triển</a> nhằm cá nhân hóa bộ lọc quảng cáo của cậu, giúp uBO hoạt động phù hợp hơn với thói quen
+				duyệt web của cậu. Chúc cậu có được trả nghiệm duyệt web nhanh hơn, mượt mà hơn và an toàn hơn :D</p>
+			<br>
+			<p><b>Sói.</b></p>
+			<p>11/07/2024</p>
+		</div>
+	</div>
+</body>
+
+</html>

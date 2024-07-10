@@ -13,6 +13,18 @@
     <link>https://consoicongnghe.com</link>
   </image>
   <item>
+    <title>USB OTG</title>
+    <link>https://consoicongnghe.com/posts/usb-otg</link>
+    <description>OTG là cụm viết tắt của On-The-Go, mang ý nghĩa loại USB này có thể sử dụng được cho các thiết bị di động như điện thoại thông minh, máy tính bảng, laptop, v.v. đối nghịch với USB truyền thống được quan niệm là chỉ sử dụng với các máy tính bàn ở nhà hoặc tại văn phòng làm việc.</description>
+    <enclosure url="https://consoicongnghe.com/posts/bao-mat-2-lop/2FA0.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/USB/USB.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Bảo mật hai lớp (two-factor authentication)</media:text>
+      <media:title type="plain">Bảo mật hai lớp (two-factor authentication)</media:title>
+    </media:content>
+    <pubDate>Fri, 24 May 2024 14:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Bảo mật hai lớp (two-factor authentication)</title>
     <link>https://consoicongnghe.com/posts/bao-mat-2-lop</link>
     <description>Bảo mật hai lớp là bổ sung thêm một lớp bảo vệ cho tài khoản của cậu. Khi có bảo mật hai lớp, trang web sẽ yêu cầu bất kì ai đăng nhập vào tài khoản của cậu phải điền đúng tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ ứng dụng xác thực 2 yếu tố trên điện thoại cậu.</description>
