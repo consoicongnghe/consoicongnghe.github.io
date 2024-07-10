@@ -124,8 +124,17 @@ img.hover:hover {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a,
-span {
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 110%;
+	display: block;
+}
+
+.topnav span {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
