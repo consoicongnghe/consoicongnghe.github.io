@@ -1,7 +1,7 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	/* font-size: 18px; */
-	font-display: optional;
+	font-display: auto;
 	/* max-width: 720px; */
 	margin: 0em auto;
 	padding: 0em;
@@ -172,11 +172,6 @@ span {
 	color: black;
 }
 
-/* center */
-.topnav-center {
-	float: center;
-}
-
 /* Hide the hamburger on the topnav on big screens */
 .topnav .tophamburger {
 	display: none;
@@ -292,8 +287,7 @@ ul.breadcrumb li a:hover {
 }
 
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(100%);
+	clip-path: inset(100% 0% 0% 0%);
 	height: 1px;
 	overflow: hidden;
 	position: absolute;
