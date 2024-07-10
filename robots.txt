@@ -3,5 +3,8 @@ Disallow:
 Disallow: /cgi-bin/
 Disallow: /tdp/
 Disallow: /tools/
-Disallow: /blog/
+Disallow: /blog/macOSinstall
+Disallow: /blog/windows7install
+Disallow: /blog/windows10install
+Disallow: /blog/windows11install
 Sitemap: https://consoicongnghe.com/sitemap.txt
