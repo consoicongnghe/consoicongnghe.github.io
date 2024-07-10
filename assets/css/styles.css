@@ -76,6 +76,7 @@ ol {
 
 h1 {
 	text-align: center;
+	color: var(--text-link);
 }
 
 img,
