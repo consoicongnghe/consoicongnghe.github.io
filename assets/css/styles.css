@@ -1,15 +1,3 @@
-body {
-	font-family: "Open Sans", sans-serif;
-	/* font-size: 18px; */
-	/* max-width: 720px; */
-	margin: 0em auto;
-	padding: 0em;
-	line-height: 1.6;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-}
-
 /*-------------AUTO THEME-----------*/
 :root {
 	--text: #000;
@@ -18,6 +6,7 @@ body {
 	--text-link: #007777;
 	--text-link-hover: #00aaaa;
 	--block-shadow: rgba(0, 0, 0, 0.1);
+	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,9 +21,19 @@ body {
 }
 
 body {
+	font-family: var(--system-ui);
+	/* font-size: 18px; */
+	/* max-width: 720px; */
+	margin: 0em auto;
+	padding: 0em;
+	line-height: 1.6;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 	background-color: var(--bg);
 	color: var(--text);
 }
+
 
 /*-------------CUSTOM TEXT FORMATTING-----------*/
 a {
