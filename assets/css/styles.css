@@ -99,13 +99,14 @@ img.hover:hover {
 	transform: scale(2, 2);
 }
 
-/* codeblock formatting */
+/* code formatting */
 code {
 	background: var(--bg-block);
 	color: var(--text-code);
 	padding: 4px;
 }
 
+/* codeblock formatting. <pre><code> will drag the code block to full width */
 pre {
 	white-space: pre-wrap;
 	background: var(--bg-block);
