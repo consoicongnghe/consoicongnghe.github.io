@@ -110,38 +110,42 @@
 					<p>Tắt toàn bộ các phần mềm Adobe đang chạy trên máy.</p>
 				</li>
 				<li>
-					<p>Mở Start Menu, gõ tìm kiếm "powershell". Bấm chuột phải vào <i>Windows Powershell</i>, chọn
-						"<b>Run as administrator</b>".</p>
+					<p>Mở Start Menu, gõ tìm kiếm
+						<code>powershell</code>. Bấm chuột phải vào <i>Windows Powershell</i>, chọn
+						<b>Run as administrator</b>.
+					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/4powershell.jpg" alt="powershell run as admin" width="829"
 							height="680" style="width:50%"></p>
 				</li>
 				<li>
 					<p>Dán cụm này vào Windows Powershell (bằng cách bấm <b>Ctrl+C</b> (Copy) rồi chuyển sang Windows
 						Powershell bấm <b>Ctrl+V</b> (Paste)):</p>
-					<code>Stop-Process -Name "Adobe Desktop Service" -force</code>
+					<pre><code>Stop-Process -Name "Adobe Desktop Service" -force</code></pre>
 					<p>Sau đó bấm <b>Enter</b> 1 lần, rồi đóng Powershell.</p>
 					<p><img src="/blog/adobe-unlicensed-popup/5powershell.jpg" alt="powershell run as admin" width="545"
 							height="187" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Mở Start menu, gõ tìm kiếm "notepad". Bấm chuột phải vào <i>Notepad</i>, chọn <b>Run as
+					<p>Mở Start menu, gõ tìm kiếm
+						<code>notepad</code>. Bấm chuột phải vào <i>Notepad</i>, chọn <b>Run as
 							administrator</b>".
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/6notepad.jpg" alt="notepad run as admin" width="669"
 							height="355" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Mở menu <i>File/Open</i>.</p>
+					<p>Mở menu <b>File/Open</b>.</p>
 					<p><img src="/blog/adobe-unlicensed-popup/7open.jpg" alt="notepad open" width="254" height="264"
 							style="width:50%"></p>
-					<p>Trong cửa sổ thư mục hiện ra, di chuyển tới:</p>
-					<code>C:/Windows/system32/drivers/etc</code>
+					<p>Trong cửa sổ thư mục hiện ra, di chuyển tới <code>C:/Windows/system32/drivers/etc</code></p>
 					<p><img src="/blog/adobe-unlicensed-popup/7directory.jpg" alt="notepad open host directory"
 							width="381" height="188" style="width:50%"></p>
 					<p>Bấm vào mục chọn ở góc dưới bên phải, chọn <b>All files</b>.</p>
 					<p><img src="/blog/adobe-unlicensed-popup/7hostallfile.jpg" alt="notepad all files" width="551"
 							height="273" style="width:50%"></p>
-					<p>Mở file tên là "<b>host</b>".</p>
+					<p>Mở file tên là
+						<code>host</code>.
+					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/7host.jpg" alt="notepad open host directory" width="459"
 							height="133" style="width:50%"></p>
 				</li>
@@ -155,8 +159,10 @@
 							height="129" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Quay lại phần mềm Notepad đã mở ở bước 6. Di chuyển con trỏ tới cuối file host, bấm <b>Ctrl+V</b>
-						(Paste) để dán nội dung mới copy ở bước trước vào file host.</p>
+					<p>Quay lại phần mềm <i>Notepad</i> đã mở ở bước 6. Di chuyển con trỏ tới cuối file
+						<code>host</code>, bấm <b>Ctrl+V</b>
+						(Paste) để dán nội dung mới copy ở bước trước vào file <code>host</code>.
+					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/9paste.jpg" alt="notepad open host directory" width="396"
 							height="251" style="width:50%"></p>
 					<p>Sau đó bấm <b>Ctrl+S</b> (Save) để lưu file.</p>

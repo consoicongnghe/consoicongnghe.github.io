@@ -5,6 +5,7 @@
 	--bg-block: #fff;
 	--text-link: #007777;
 	--text-link-hover: #00aaaa;
+	--text-code: #007700;
 	--block-shadow: rgba(0, 0, 0, 0.1);
 	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -16,6 +17,7 @@
 		--bg-block: #222222;
 		--text-link: #00dfdf;
 		--text-link-hover: #00ffff;
+		--text-code: #00ff00;
 		--block-shadow: rgba(255, 255, 255, 0.1);
 	}
 }
@@ -95,6 +97,18 @@ video {
 
 img.hover:hover {
 	transform: scale(2, 2);
+}
+
+/* codeblock formatting */
+code {
+	background: var(--bg-block);
+	color: var(--text-code);
+	padding: 4px;
+}
+
+pre {
+	white-space: pre-wrap;
+	background: var(--bg-block);
 }
 
 
