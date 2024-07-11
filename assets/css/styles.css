@@ -109,6 +109,8 @@ code {
 pre {
 	white-space: pre-wrap;
 	background: var(--bg-block);
+	display: block;
+	padding: 4px;
 }
 
 
