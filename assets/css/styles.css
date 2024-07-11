@@ -6,8 +6,7 @@
 	--text-link: #007777;
 	--text-link-hover: #00aaaa;
 	--block-shadow: rgba(0, 0, 0, 0.1);
-	/* --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-	--system-ui: "Segoe UI", Roboto, Helvetica, sans-serif, Arial, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui;
+	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @media (prefers-color-scheme: dark) {
