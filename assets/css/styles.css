@@ -495,3 +495,42 @@ ul.breadcrumb li a:hover {
 	width: 0.9287109375em;
 	fill: #ffc900;
 }
+
+
+/* align image to the right of text in articles. add this class */
+.align-right {
+	display: block;
+	margin-left: auto;
+}
+
+
+/* https://www.w3schools.com/css/css3_flexbox_responsive.asp */
+/* example: */
+/* <div class="flex-container">
+  <div class="flex-item-left">1</div>
+  <div class="flex-item-right">2</div>
+</div> */
+
+/* flexbox for article columns */
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-item-left {
+	flex: 75%;
+}
+
+.flex-item-right {
+	flex: 25%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 720px) {
+	.flex-container {
+		flex-direction: column;
+	}
+}
