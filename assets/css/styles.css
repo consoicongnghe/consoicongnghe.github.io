@@ -328,7 +328,7 @@ ul.breadcrumb li a:hover {
 }
 
 .toc-list li>a>.title {
-	position: relative;
+	/* position: relative; */
 	overflow: hidden;
 }
 
