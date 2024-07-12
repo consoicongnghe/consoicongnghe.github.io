@@ -74,6 +74,10 @@ a:active {
 	text-indent: 30px;
 }
 
+/* .indent a:hover {
+	text-decoration: underline;
+} */
+
 ul,
 ol {
 	text-indent: 0px;
@@ -446,6 +450,15 @@ ul.breadcrumb li a:hover {
 	/* Add a top margin to avoid content overlay for fixed header */
 }
 
+.bodyy a:hover {
+	text-decoration: underline;
+}
+
+/* remove underline from bodyy/div (class=post-list)/a in post lists */
+.bodyy>div.post-list>a:hover {
+	text-decoration: none;
+}
+
 img,
 video {
 	width: 75%;
@@ -461,10 +474,6 @@ video {
 	video {
 		width: 100%;
 	}
-}
-
-.bodyy a:hover {
-	text-decoration: underline;
 }
 
 .widebodyy {
