@@ -9,6 +9,7 @@
 	--text-link-hover: #009899;
 	--text-code: #005C00;
 	--text-red: #a80000;
+	--text-orange: #CC3500;
 	--block-shadow: rgba(0, 0, 0, 0.1);
 	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -24,6 +25,7 @@
 		--text-link-hover: #1FFFFF;
 		--text-code: #00ff00;
 		--text-red: #FF3D3D;
+		--text-orange: #FF3F00;
 		--block-shadow: rgba(255, 255, 255, 0.1);
 	}
 }
