@@ -4,6 +4,7 @@
 	--text: #000;
 	--bg: #f2f2f2;
 	--bg-block: #fff;
+	--bg-contrast: #222222;
 	--text-link: #007A7A;
 	--text-link-hover: #009899;
 	--text-code: #005C00;
@@ -18,6 +19,7 @@
 		--text: #fff;
 		--bg: #121212;
 		--bg-block: #222222;
+		--bg-contrast: #f2f2f2;
 		--text-link: #0fffff;
 		--text-link-hover: #1FFFFF;
 		--text-code: #00ff00;
@@ -29,7 +31,7 @@
 body {
 	font-family: var(--system-ui);
 	/* font-size: 18px; */
-	/* max-width: 720px; */
+	/* max-width: 800px; */
 	margin: 0em auto;
 	padding: 0em;
 	line-height: 1.6;
@@ -59,7 +61,6 @@ a:visited {
 a:hover,
 a:active {
 	color: var(--text-link-hover);
-	text-decoration: underline;
 }
 
 .creditmedia {
@@ -99,9 +100,10 @@ video {
 	text-align: center;
 }
 
-img.hover:hover {
+img.zoom:hover {
 	transform: scale(2, 2);
 }
+
 
 /* code formatting */
 code {
@@ -275,26 +277,12 @@ ul.breadcrumb li a {
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
 	color: var(--text-link-hover);
-	/* text-decoration: underline; */
+	text-decoration: underline;
 }
 
-/* 2 images side by side. 3 use 33% */
-.row {
-	display: flex;
-}
-
-.column2 {
-	flex: 50%;
-	padding: 5px;
-}
-
-.column3 {
-	flex: 33.33%;
-	padding: 5px;
-}
 
 /* Responsive layout - makes the image columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 	.column {
 		width: 100%;
 	}
@@ -378,7 +366,7 @@ ul.breadcrumb li a:hover {
 	/* border: 1px; */
 	/* border-radius: 5px; */
 	flex: 1;
-	/* min-width: 720px; */
+	/* min-width: 800px; */
 	padding: 4px;
 	align-items: stretch;
 	text-align: left;
@@ -435,7 +423,7 @@ ul.breadcrumb li a:hover {
 }
 
 /* Responsive layout - makes a one column layout */
-@media (max-width: 720px) {
+@media (max-width: 800px) {
 	.shortcuts {
 		flex-direction: column;
 		align-items: stretch;
@@ -443,7 +431,7 @@ ul.breadcrumb li a:hover {
 	}
 
 	.shortcut {
-		/* max-width: 720px; */
+		/* max-width: 800px; */
 		padding: 4px;
 	}
 }
@@ -451,21 +439,32 @@ ul.breadcrumb li a:hover {
 
 /* other formattings */
 .bodyy {
-	max-width: 720px;
+	max-width: 800px;
 	margin: 0em auto;
 	padding: 4px;
 	margin-top: 48px;
 	/* Add a top margin to avoid content overlay for fixed header */
 }
 
+img,
+video {
+	width: 75%;
+}
+
+/* when on mobile, img video stuff full width */
 @media screen and (max-width: 800px) {
 	.bodyy {
 		margin-top: 0px;
 	}
 
-	.bodyy {
-		margin-top: 0px;
+	img,
+	video {
+		width: 100%;
 	}
+}
+
+.bodyy a:hover {
+	text-decoration: underline;
 }
 
 .widebodyy {
@@ -512,7 +511,8 @@ ul.breadcrumb li a:hover {
 </div> */
 
 /* flexbox for article columns */
-.flex-container {
+.flex-container,
+.flex-container-uBO-toc {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
@@ -529,8 +529,12 @@ ul.breadcrumb li a:hover {
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 720px) {
+@media (max-width: 800px) {
 	.flex-container {
 		flex-direction: column;
+	}
+
+	.flex-container-uBO-toc {
+		flex-direction: column-reverse;
 	}
 }
