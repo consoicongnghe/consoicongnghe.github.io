@@ -28,7 +28,11 @@
 	<meta property="og:url" content="https://consoicongnghe.com/posts/ublock-origin">
 	<meta property="og:image" content="https://consoicongnghe.com/posts/ublock-origin/ublock-origin-og.jpg">
 	<!-- CSS -->
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+	<link rel="preload" href="/assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</noscript>
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<script defer src="/assets/js/main.js"></script>
 	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
