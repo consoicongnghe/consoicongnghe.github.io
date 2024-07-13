@@ -103,7 +103,7 @@
 		<div class="indent">
 			<h1>[Android] Những ứng dụng nên dùng</h1>
 			<img src="/posts/archived/android-root-dien-thoai-de-lam-gi/android-root-whatfor.jpg"
-				alt="screenshot android superuser root" width="1080" height="845"></img>
+				alt="screenshot android superuser root" width="1080" height="845">
 			<p><strong>Cảnh báo</strong>: bài viết khá dài, cân nhắc trước khi đọc.</p>
 			<p>Mà thôi đọc đi, tớ cute mà :”&gt;</p>
 			<p>Cậu đã nghe tới khái niệm “root” điện thoại chưa? Chắc đôi lúc cậu cũng tự hỏi root điện thoại thì có làm
@@ -169,7 +169,7 @@
 					Patcher. Lưu ý: quảng cáo của ứng dụng Facebook, Messenger hay Instagram là dạng quảng cáo đã mã hóa
 					cùng dữ liệu ứng dụng nên hiện chưa chặn được, nhưng có thể sử dụng custom client (patched apk) để
 					loại bỏ quảng cáo. Lưu ý phải thật cẩn thận khi dùng thử các custom client ngoài, chỉ tải tại nguồn
-					có thể tin tưởng được.
+					có thể tin tưởng được.</li>
 				<li>Khóa bớt các ứng dụng hệ thống: ROM gốc được cài sẵn trên máy các cậu lúc mua về thường có các ứng
 					dụng thừa, các ứng dụng ngầm mà cậu chẳng bao giờ dùng đến, nhưng lại không xóa nó đi được và nó cứ
 					ở đó tốn chỗ tốn pin. Sau khi root xong, cậu có thể dùng <a
@@ -212,7 +212,8 @@
 					mở app đóng app được rút ngắn thời gian nên cậu sẽ cảm giác máy nhanh hơn rõ rệt. Hãy bật USB
 					Debugging lên, cắm điện thoại vào máy tính, bật adb, và copy 6 dòng này vào rồi enter:</li>
 			</ul>
-			<code>adb devices<br />adb shell settings put system long_press_kill_delay 500<br />adb shell settings put secure long_press_timeout 400<br />adb shell settings put global window_animation_scale 0.7<br />adb shell settings put global transition_animation_scale 0.7<br />adb shell settings put global animator_duration_scale 0.7</code>
+			<pre
+				style="text-indent: 0px; margin-left: 30px;"><code>adb devices</code><br><code>adb shell settings put system long_press_kill_delay 500</code><br><code>adb shell settings put secure long_press_timeout 400</code><br><code>adb shell settings put global window_animation_scale 0.7</code><br><code>adb shell settings put global transition_animation_scale 0.7</code><br><code>adb shell settings put global animator_duration_scale 0.7</code></pre>
 			<p>Ban đầu cậu sẽ cảm giác ơ animation đẹp đẽ đâu hết mất rồi, nhưng dùng máy được vài phút xong cậu chỉnh
 				về 1x sẽ thấy máy cực kì chậm đó tin tớ đi!!</p>
 			<br>
