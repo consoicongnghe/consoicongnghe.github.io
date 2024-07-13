@@ -532,3 +532,23 @@ video {
 		flex-direction: column-reverse;
 	}
 }
+
+
+/* https://css-tricks.com/a-complete-guide-to-css-media-queries/ */
+/* accessibilities */
+@media screen and (prefers-reduced-motion: reduce) {
+	* {
+		/* Very short durations means JavaScript that relies on events still works */
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+	}
+}
+
+@media (inverted-colors) {
+
+	img,
+	video {
+		filter: invert(100%);
+	}
+}
