@@ -426,7 +426,7 @@ ul.breadcrumb li a:hover {
 .bodyy {
 	max-width: 800px;
 	margin: 0em auto;
-	padding: 4px;
+	padding: 8px;
 	margin-top: 48px;
 	/* Add a top margin to avoid content overlay for fixed header */
 }

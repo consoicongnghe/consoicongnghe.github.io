@@ -1,0 +1,9 @@
+.error404 {
+	font-size: 180%;
+}
+
+@media only screen and (min-width: 800px) {
+	.error404 {
+		font-size: 300%;
+	}
+}
