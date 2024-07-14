@@ -7,9 +7,11 @@
 	--bg-contrast: #222222;
 	--text-link: #007A7A;
 	--text-link-hover: #009899;
-	--text-code: #005C00;
-	--text-red: #a80000;
-	--text-orange: #CC3500;
+	--text-red: #DB0000;
+	--text-orange: #996300;
+	--text-yellow: #6F7000;
+	--text-green: #008000;
+	--text-blue: #0000FF;
 	--block-shadow: rgba(0, 0, 0, 0.1);
 	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -23,9 +25,11 @@
 		--bg-contrast: #f2f2f2;
 		--text-link: #0fffff;
 		--text-link-hover: #1FFFFF;
-		--text-code: #00ff00;
 		--text-red: #FF3D3D;
-		--text-orange: #FF3F00;
+		--text-orange: #FFA500;
+		--text-yellow: #FFFF00;
+		--text-green: #00ff00;
+		--text-blue: #7A7AFF;
 		--block-shadow: rgba(255, 255, 255, 0.1);
 	}
 }
@@ -114,7 +118,7 @@ img.zoom:hover {
 /* code formatting */
 code {
 	background: var(--bg-block);
-	color: var(--text-code);
+	color: var(--text-green);
 	padding: 4px;
 }
 
