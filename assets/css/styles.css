@@ -494,12 +494,6 @@ video {
 
 
 /* https://www.w3schools.com/css/css3_flexbox_responsive.asp */
-/* example: */
-/* <div class="flex-container">
-  <div class="flex-item-left">1</div>
-  <div class="flex-item-right">2</div>
-</div> */
-
 /* flexbox for article columns */
 .flex-container,
 .flex-container-uBO-toc {
@@ -518,11 +512,15 @@ video {
 	flex: 25%;
 }
 
-.flex-item-half {
+.flex-item-2 {
 	flex: 50%;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
+.flex-item-3 {
+	flex: 33%;
+}
+
+/* Responsive layout - makes a one column layout instead of a multiple-column layout */
 @media (max-width: 800px) {
 	.flex-container {
 		flex-direction: column;
