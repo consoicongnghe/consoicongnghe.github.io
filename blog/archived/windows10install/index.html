@@ -117,11 +117,25 @@
 				<li>(OBS)</li>
 				<li>Export wifi</li>
 			</ul>
+			<b>INSTALL</b>
+			<hr />
+			<p>check Bitlocker: Shift+F10 --&gt; manage-bde -status</p>
+			<p>
+				Disable Bitlocker: Shift+F10 --&gt; regedit --&gt;
+				HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker
+			</p>
+			<p>
+				right click BitLocker, New Dword (32-bit) value:
+				PreventDeviceEncryption, value=1
+			</p>
+			<b>FINISH OOBE</b>
 			<hr />
 			<ul>
 				<li>Check Windows edition, go Pro.</li>
 				<li>(Rename PC, C:/, change Download folder location)</li>
-				<li>RegTweak =&gt; 2_me + Unpin + LockDis</li>
+				<li>Windows/PostInstall/GroupPolicy: copy to C:/Windows/system32</li>
+				<li>Windows/PostInstall/RegTweak/ReclaimWindows/1_guest (+Unpin +UninsOnedrive +UninsMSapps)</li>
+				<li>Windows/RegTweaks --&gt; windows post-install</li>
 			</ul>
 			<b>RESTART</b>
 			<hr />
@@ -132,33 +146,30 @@
 				<li>check for updates</li>
 				<li>Windows/Driver/fonts</li>
 				<li>Windows/Driver/VCRedist</li>
-				<li>crack</li>
-				<li>Windows/PostInstall/winget --&gt; 1_guest.cmd</li>
-				<li>setup office, unikey, (adobe, trafficMonitor, Minitool)</li>
-				<li>
-					Programs/Chrome --&gt; Ublock Origin, SponsorBlock, FastForward, Run
-					In Background
-				</li>
+				<li>Windows/PostInstall/winget --&gt; MicrosoftStoreAppUpdater.ps1 --&gt; open MS Store</li>
+				<li>setup chrome, office, unikey, (adobe, trafficMonitor)</li>
+				<li>Programs/Chrome --&gt; Ublock Origin, SponsorBlock, FastForward, Run In Background</li>
 				<li>
 					settings: touchpad settings -&gt; 3+4finger, taskbar peek + replace
 					cmd, Time and lang -&gt; advanced time formatting, language bar.
 				</li>
 				<li>set wp and lock screen pic</li>
 				<li>setups/prog/1sthing</li>
-				<li>setup things except k-lite, adobe and office.</li>
+				<li>setup things except k-lite, adobe.</li>
+				<li>crack win+office</li>
+				<li>rustdesk: /security: enable remote cfg modification, set permanent pw</li>
 				<li>Razer Synapse? Logi Options+?</li>
 			</ul>
 			<b>RESTART</b>
 			<hr />
 			<ul>
-				<li>
-					UWP apps: Store, HEIC plugin, Spotify, Discord, Viber, Realtek Audio
-					Console
-				</li>
-				<li>control panel -&gt; power options</li>
+				<li>Windows/PostInstall/winget --&gt; 1_guest.cmd</li>
+				<li>UWP apps: Store, HEIC plugin, Spotify, Discord, Realtek Audio Console </li>
+				<li>post-update: control panel/power options</li>
 				<li>graphics settings (in Settings) -&gt; GPU scheduling OFF</li>
 				<li>settings: startup app list</li>
-				<li>run reg: windows post-install, browser magnet reg fix</li>
+				<li>Snipping Tool settings: dont auto save, separate windows</li>
+				<li>cleanup C:/</li>
 			</ul>
 			<br />
 			<p><b>Sói.</b></p>
