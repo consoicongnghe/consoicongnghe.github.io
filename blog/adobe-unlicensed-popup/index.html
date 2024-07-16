@@ -115,45 +115,44 @@
 					<p>Tắt toàn bộ các phần mềm Adobe đang chạy trên máy.</p>
 				</li>
 				<li>
-					<p>Mở Start Menu, gõ tìm kiếm
-						<code>powershell</code>. Bấm chuột phải vào <b>Windows Powershell</b>, chọn
-						<b>Run as administrator</b>.
+					<p>Mở Start Menu, gõ tìm kiếm <code>powershell</code>. Bấm chuột phải vào Windows Powershell, chọn
+						<span style="color: var(--text-red);">Run as administrator</span>.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/4powershell.jpg" alt="powershell run as admin" width="829"
 							height="680" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Dán cụm này vào Windows Powershell (bằng cách bấm <span
-							style="color: var(--text-orange);">Ctrl+C</span>
-						(Copy) rồi chuyển sang <b>Windows Powershell</b> bấm <span
-							style="color: var(--text-orange);">Ctrl+V</span>
-						(Paste)):</p>
+					<p>Dán cụm này vào Windows Powershell (bằng cách bấm
+						<span style="color: var(--text-blue);">Ctrl+C</span> (<i>Copy</i>) rồi chuyển sang Windows
+						Powershell bấm <span style="color: var(--text-blue);">Ctrl+V</span> (<i>Paste</i>)):
+					</p>
 					<pre><code>Stop-Process -Name "Adobe Desktop Service" -force</code></pre>
-					<p>Sau đó bấm <span style="color: var(--text-orange);">Enter</span> 1 lần, rồi đóng
-						<b>Powershell</b>.
+					<p>Sau đó bấm <span style="color: var(--text-blue);">Enter</span> 1 lần, rồi đóng
+						Powershell.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/5powershell.jpg" alt="powershell run as admin" width="545"
 							height="187" loading="lazy" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Mở <b>Start menu</b>, gõ tìm kiếm <code>notepad</code>. Bấm chuột phải vào <b>Notepad</b>, chọn
-						<b>Run as administrator</b>.
+					<p>Mở Start menu, gõ tìm kiếm <code>notepad</code>. Bấm chuột phải vào Notepad, chọn <span
+							style="color: var(--text-red);">Run as administrator</span>.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/6notepad.jpg" alt="notepad run as admin" width="669"
 							height="355" loading="lazy" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Mở menu <b>File/Open</b>.</p>
+					<p>Mở menu <span style="color: var(--text-red);">File/Open</span>.</p>
 					<p><img src="/blog/adobe-unlicensed-popup/7open.jpg" alt="notepad open" width="254" height="264"
 							loading="lazy" style="width:50%"></p>
 					<p>Trong cửa sổ thư mục hiện ra, di chuyển tới <code>C:/Windows/system32/drivers/etc</code></p>
 					<p><img src="/blog/adobe-unlicensed-popup/7directory.jpg" alt="notepad open host directory"
 							width="381" height="188" loading="lazy" style="width:50%"></p>
-					<p>Bấm vào mục chọn ở góc dưới bên phải, chọn <b>All files</b>.</p>
+					<p>Bấm vào mục chọn ở góc dưới bên phải, chọn <span style="color: var(--text-red);">All
+							files</span>.
+					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/7hostallfile.jpg" alt="notepad all files" width="551"
 							height="273" loading="lazy" style="width:50%"></p>
-					<p>Mở file tên là
-						<code>host</code>.
+					<p>Mở file tên là <span style="color: var(--text-red);">host</span>.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/7host.jpg" alt="notepad open host directory" width="459"
 							height="133" loading="lazy" style="width:50%"></p>
@@ -161,31 +160,32 @@
 				<li>
 					<p>Vào trình duyệt, mở link này: <a href="https://a.dove.isdumb.one/list.txt" target="_blank"
 							rel="noopener">https://a.dove.isdumb.one/list.txt</a>. Bấm <span
-							style="color: var(--text-orange);">Ctrl+A</span> để chọn tất cả, sau
-						đó <span style="color: var(--text-orange);">Ctrl+C</span> để copy.
+							style="color: var(--text-blue);">Ctrl+A</span> để chọn tất cả, sau
+						đó <span style="color: var(--text-blue);">Ctrl+C</span> để copy.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/8copy.jpg" alt="host link copy content" width="178"
 							height="129" loading="lazy" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Quay lại phần mềm <i>Notepad</i> đã mở ở bước 6. Di chuyển con trỏ tới cuối file
-						<code>host</code>, bấm <span style="color: var(--text-orange);">Ctrl+V</span>
-						(Paste) để dán nội dung mới copy ở bước trước vào file <code>host</code>.
+					<p>Quay lại phần mềm Notepad đã mở ở bước 6. Di
+						chuyển con trỏ tới cuối file <span style="color: var(--text-red);">host</span>, bấm <span
+							style="color: var(--text-blue);">Ctrl+V</span> (<i>Paste</i>) để dán nội dung mới copy ở
+						bước trước vào file <span style="color: var(--text-red);">host</span>.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/9paste.jpg" alt="notepad open host directory" width="396"
 							height="251" loading="lazy" style="width:50%"></p>
-					<p>Sau đó bấm <span style="color: var(--text-orange);">Ctrl+S</span> (Save) để lưu file.</p>
+					<p>Sau đó bấm <span style="color: var(--text-blue);">Ctrl+S</span> (<i>Save</i>) để lưu file.</p>
 				</li>
 				<li>
-					<p>Lưu hết các file đang mở, sau đó khởi động lại máy tính: Mở <b>Start menu</b>, bấm <b>Power</b>,
-						chọn
-						<b>Restart</b>.
+					<p>Lưu hết các file đang mở, sau đó khởi động lại máy tính: Mở Start menu, bấm <span
+							style="color: var(--text-red);">Power</span>, chọn <span
+							style="color: var(--text-red);">Restart</span>.
 					</p>
 					<p><img src="/blog/adobe-unlicensed-popup/9restart.jpg" alt="Windows restart" width="147"
 							height="232" loading="lazy" style="width:50%"></p>
 				</li>
 				<li>
-					<p>Mở lại phần mềm Adobe của cậu và tận hưởng thành quả.</p>
+					<p>Mở lại phần mềm Adobe của cậu và tận hưởng thành quả!!</p>
 				</li>
 			</ol>
 			<br>
