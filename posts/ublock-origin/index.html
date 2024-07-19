@@ -204,7 +204,8 @@
 					<p>Nếu có một trang web bị lỗi hiển thị, trắng trơn hoặc bị mất một vài thành phần, có thể đây là do
 						uBO gặp phải tình trạng chặn nhầm. Cậu có thể thao tác nhanh để cho phép hiện quảng cáo trên
 						trang web đó bằng cách bấm vào biểu tượng uBO trên thanh công cụ (hình cái khiên màu đỏ), bấm
-						vào nút <span style="color: var(--text-red);">Bật/Tắt</span> hình tròn to đùng ở trên cùng, rồi
+						vào nút <span style="color: var(--text-orange);">Bật/Tắt</span> hình tròn to đùng ở trên cùng,
+						rồi
 						tải lại trang.
 					</p>
 					<p><img src="/posts/ublock-origin/uBO-switch.jpg" alt="uBO switch" width="568" height="291"></p>
@@ -213,8 +214,8 @@
 					<p>Đôi khi có những quảng cáo trên trang web bị “lọt lưới bộ lọc”, do chưa được cập nhật trong bộ
 						lọc của uBO hay của cậu. Lúc này, cậu có thể sử dụng Element picker để chặn những quảng
 						cáo này bằng tay. Hãy bấm chuột phải vào cái quảng cáo, chọn <span
-							style="color: var(--text-red);">Block element</span> trong menu vừa
-						mở lên, rồi bấm <span style="color: var(--text-red);">Create</span>, vậy là được. Việc này sẽ
+							style="color: var(--text-orange);">Block element</span> trong menu vừa
+						mở lên, rồi bấm <span style="color: var(--text-orange);">Create</span>, vậy là được. Việc này sẽ
 						tạo ra một quy tắc lọc mới trong My filters, giúp cho những lần sau cậu vào trang web này thì
 						quảng cáo cậu vừa chặn sẽ mặc định bị ẩn đi, không hiện lại nữa.
 					</p>
@@ -230,10 +231,11 @@
 				<li>
 					<strong>Truy cập Bảng điều khiển (Dashboard)</strong>
 					<p>Bấm vào biểu tượng uBlock Origin (hình cái khiên
-						<svg class="icon icon-ublockorigin" style="background: var(--bg-contrast);">
+						<svg class="icon icon-ublockorigin" style="background: #f2f2f2;">
 							<use xlink:href="#icon-ublockorigin"></use>
 						</svg>) trên thanh công cụ của trình duyệt.
-						Sau đó bấm nút <span style="color: var(--text-red);">Dashboard</span> (hình bánh răng ở góc dưới
+						Sau đó bấm nút <span style="color: var(--text-orange);">Dashboard</span> (hình bánh răng ở góc
+						dưới
 						bên phải).
 					</p>
 					<img src="/posts/ublock-origin/uBO-dashboard.jpg" alt="uBO dashboard" width="646" loading="lazy"
@@ -252,11 +254,12 @@
 											style="font-size: 120%;" download>ĐÂY</a></strong>.</li>
 								<li>
 									Tại tab số 1 Settings (<i>Cài đặt</i>), kéo xuống dưới cùng có 3 nút bấm. Cậu bấm
-									vào nút <span style="color: var(--text-red);">Restore from file...</span> ở giữa.
-									Sau đó trỏ đến file <code>ublock_easy.txt</code> vừa tải về, bấm chọn, rồi bấm nút
-									<span style="color: var(--text-red);">OK</span> trong hộp thoại mở ra. Chỉ cần vậy
-									là xong, cậu có thể tận hưởng khả năng chặn quảng cáo vượt trội của uBlock Origin
-									rồi!
+									vào nút <span style="color: var(--text-orange);">Restore from file...</span> ở giữa.
+									Sau đó trỏ đến file <span style="color: var(--text-red);">ublock_easy.txt</span> vừa
+									tải về, bấm chọn, rồi bấm nút
+									<span style="color: var(--text-orange);">OK</span> trong hộp thoại mở ra. Chỉ cần
+									vậy là xong, cậu có thể tận hưởng khả năng chặn quảng cáo vượt trội của uBlock
+									Origin rồi!
 								</li>
 							</ul>
 						</div>
@@ -283,7 +286,8 @@
 				<li><strong>Cài đặt cơ bản</strong>
 					<div class="flex-container">
 						<div class="flex-item-left">
-							<p><b>Danh sách lọc</b> (Filter lists) là thứ cốt lõi trong khả năng chặn quảng cáo của
+							<p><b>Filter lists</b> (<i>Danh sách lọc</i>) là thứ cốt lõi trong khả năng chặn quảng cáo
+								của
 								uBlock Origin. Danh sách lọc bao gồm các quy tắc xác định nội dung nào nên bị chặn.
 								<span style="color: var(--text-link);">uBlock Origin</span> khi cài đặt xong đã bật sẵn
 								một số danh sách lọc cơ bản:
@@ -312,7 +316,7 @@
 							nhằm lưu lại các quy tắc lọc cá nhân mà không phụ thuộc vào các danh sách lọc có sẵn. Để
 							thêm
 							một quy tắc mới, nhập quy tắc vào ô danh sách rồi bấm <span
-								style="color: var(--text-red);">Apply changes</span>.
+								style="color: var(--text-orange);">Apply changes</span>.
 							<p>
 								<img src="/posts/ublock-origin/uBO-myFilters.jpg" alt="uBO my filters" width="725"
 									height="201" loading="lazy">
@@ -320,9 +324,9 @@
 						</li>
 						<li><strong>Whitelist (Danh sách cho phép)</strong>: Nếu cậu muốn cho phép hiện quảng cáo trên
 							một số trang web cụ thể, cậu nên thêm chúng vào danh sách cho phép. Cậu cần nhập địa chỉ URL
-							của trang web vào ô danh sách rồi bấm <span style="color: var(--text-red);">Apply
+							của trang web vào ô danh sách rồi bấm <span style="color: var(--text-orange);">Apply
 								changes</span>. Hoặc khi đang mở trang web đó, cậu có thể bấm vào biểu tượng uBO, bấm
-							nút <span style="color: var(--text-red);">Bật/Tắt</span>, rồi tải lại trang.
+							nút <span style="color: var(--text-orange);">Bật/Tắt</span>, rồi tải lại trang.
 							<p>
 								<img src="/posts/ublock-origin/uBO-whitelist.jpg" alt="uBO whitelist" width="1038"
 									height="541" loading="lazy">
