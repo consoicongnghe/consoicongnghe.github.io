@@ -1,34 +1,34 @@
 {
-	"sitemap.xml": {
-		"Protocol": "https",
-		"DomainName": "consoicongnghe.com",
-		"Root": "./",
-		"IncludeExt": [
-			".html",
-			".php"
-		],
-		"Exclude": [
-			"cgi-bin/*",
-			".github/*",
-			".vscode/*",
-			"tdp/*",
-			"tools/*",
-			"test/*",
-			"404.html",
-			"readme.md",
-			"blog/archived/*",
-			"assets/*"
-		],
-		"TagsToInclude": [
-			"priority",
-			"lastmod"
-		],
-		"DefaultChangeFrequency": "monthly",
-		"TabCharacters": "\t",
-		"bIncludeWWW": false,
-		"bRemoveFileExtentions": false,
-		"bUseTrailingSlash": true,
-		"bAutomaticallyUpdateSitemap": true,
-		"bMinimized": false
-	}
+  "sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "consoicongnghe.com",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php"
+    ],
+    "Exclude": [
+      "cgi-bin/*",
+      ".github/*",
+      ".vscode/*",
+      "tdp/*",
+      "tools/*",
+      "test/*",
+      "404.html",
+      "readme.md",
+      "blog/archived/*",
+      "assets/*"
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": false,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": true,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  }
 }
