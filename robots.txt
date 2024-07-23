@@ -2,8 +2,10 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Disallow: /.github/
+Disallow: /.vscode/
 Disallow: /tdp/
 Disallow: /tools/
+Disallow: /test/
 Disallow: /404.html
 Disallow: /readme.md
-Sitemap: https://consoicongnghe.com/sitemap.txt
+Sitemap: https://consoicongnghe.com/sitemap.xml
