@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>RustDesk - Phần mềm hỗ trợ máy tính từ xa</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="RustDesk là phần mềm điều khiển máy tính từ xa miễn phí mã nguồn mở. Đó là lí do chính Sói chọn Rustdesk làm phương thức hỗ trợ kĩ thuật máy tính cho các bạn của Sói thay vì Teamviewer.">
+	<meta name="keywords" content="rustdesk, anydesk, teamviewer">
+	<meta name="author" content="consoicongnghe">
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png">
+	<link rel="manifest" href="\assets\icons/site.webmanifest">
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="1461">
+	<meta property="og:image:height" content="1098">
+	<meta property="og:description"
+		content="RustDesk là phần mềm điều khiển máy tính từ xa miễn phí mã nguồn mở. Đó là lí do chính Sói chọn Rustdesk làm phương thức hỗ trợ kĩ thuật máy tính cho các bạn của Sói thay vì Teamviewer.">
+	<meta property="og:title" content="RustDesk - Phần mềm hỗ trợ máy tính từ xa">
+	<meta property="og:url" content="https://consoicongnghe.com/blog/rustdesk/">
+	<meta property="og:image" content="https://consoicongnghe.com/blog/rustdesk/rustdesk-og.jpg">
+	<meta name="google-adsense-account" content="ca-pub-4464056065715693">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script defer src="/assets/js/main.js"></script>
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://consoicongnghe.com",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Blog",
+			"item": "https://consoicongnghe.com/blog/"
+		  },{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "RustDesk - Phần mềm hỗ trợ máy tính từ xa"
+		  }]
+		}
+		</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+</head>
+
+<body>
+	<div class="topnav" id="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right">
+			<a href="/">Trang chủ</a>
+			<a href="/blog/" class="active">Bài viết</a>
+			<a href="/about/">Giới thiệu</a>
+			<a href="/contact/">Liên hệ</a>
+			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<symbol id="icon-bars" viewBox="0 0 24 20">
+						<path
+							d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+						</path>
+					</symbol>
+				</defs>
+			</svg>
+			<span class="tophamburger" onclick="return topnavHamburger()">
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/blog/">Blog</a></li>
+			<li>RustDesk</li>
+		</ul>
+		<div class="indent">
+			<h1>RustDesk - Phần mềm hỗ trợ máy tính từ xa</h1>
+			<p>Để tớ đoán nhé.</p>
+			<p>Cậu vừa nhờ anh Linh làm gì đấy hộ cậu trên máy tính, rồi anh ý gửi cậu trang web này đúng không?</p>
+			<hr>
+			<p><strong><a href="https://github.com/rustdesk/rustdesk/releases/download/1.2.7/rustdesk-1.2.7-x86_64.msi"
+						target="_blank" rel="noopener" style="font-size: 1.2em; color: var(--text-green);">Đây. Máy cậu
+						dùng Windows thì cậu bấm vào đây</a></strong>.</p>
+			<p>Nếu cậu dùng máy Mac/MacBook của Apple dùng chip M (đời 2020 trở lên) thì bấm vào <strong><a
+						href="https://github.com/rustdesk/rustdesk/releases/download/1.2.7/rustdesk-1.2.7-aarch64.dmg"
+						target="_blank" rel="noopener"
+						style="font-size: 1.2em; color: var(--text-red);">đây</a></strong>.</p>
+			<p style="font-size: 0.9em; margin-bottom: 20px;">Còn nếu máy Mac dùng chip Intel thì bấm vào <strong><a
+						href="https://github.com/rustdesk/rustdesk/releases/download/1.2.7/rustdesk-1.2.7-x86_64.dmg"
+						target="_blank" rel="noopener" style="color: var(--text-blue);">link này</a></strong>.</p>
+			<hr>
+			<p>Giờ cậu đang tải xuống bộ cài của RustDesk. <a href="https://rustdesk.com/" target="_blank"
+					rel="noopener">RustDesk</a> là phần mềm điều khiển máy tính từ xa miễn phí, cho phép tớ kết nối vào
+				máy tính của cậu để điều khiển, cài nọ chỉnh kia cho cậu từ xa. RustDesk hoạt động tương tự Teamviewer,
+				Ultraviewer hay Anydesk, nhưng <span style="color: var(--text-yellow);"><strong>RustDesk hoàn toàn miễn
+						phí không giới hạn</strong></span>, không như Teamviewer và Anydesk yêu cầu đăng kí tài khoản và
+				chỉ chực hiện popup "Commercial use detected" không cho cậu dùng nữa, còn Ultraviewer thì chậm lag và
+				không có tính năng chia sẻ file.</p>
+			<div class="flex-container">
+				<div class="flex-item-left" style="flex: 80%;">
+					<p>Tải xong bộ cài của RustDesk thì cậu mở nó lên, cài vào máy nhé. Sau khi cài xong, cậu mở
+						RustDesk, gửi ID và password qua cho tớ.</p>
+					<p><strong>Chú ý:</strong> Cậu để ý khi có bất kì hộp thoại nào hỏi quyền truy cập, hãy bấm <span
+							style="color: var(--text-orange);">Đồng ý</span>, <span
+							style="color: var(--text-orange);">OK</span>, <span style="color: var(--text-orange);">Cho
+							phép</span>,... chứ đừng bỏ qua. Phải cấp cho RustDesk mấy quyền này thì phía bên tớ mới
+						thấy máy cậu để hỗ trợ.</p>
+				</div>
+				<div class="flex-item-right" style="flex: 20%;"><img src="/blog/rustdesk/rustdesk-id-pw.png"
+						alt="RustDesk ID and password" width="210" height="260" style="width:100%;"></div>
+			</div>
+			<br>
+			<p><b>Sói.</b></p>
+		</div>
+	</div>
+</body>
+
+</html>
