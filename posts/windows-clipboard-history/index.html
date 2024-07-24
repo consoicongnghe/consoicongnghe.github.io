@@ -65,14 +65,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -83,7 +84,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -98,11 +99,14 @@
 		</ul>
 		<div class="indent">
 			<h1>Clipboard history</h1>
-			<p>Uầy nếu các cậu chưa biết đến tính năng Clipboard History của Windows thì có lẽ cuộc đời của cậu sắp trải
+			<p>Uầy nếu các cậu chưa biết đến tính năng Clipboard History của Windows thì có lẽ cuộc đời của cậu sắp
+				trải
 				qua một bước ngoặt mới đóoo.</p>
 			<p>
-				Trước giờ các cậu đã biết bấm tổ hợp phím <span style="color: var(--text-blue);">Ctrl+C</span> để copy,
-				và <span style="color: var(--text-blue);">Ctrl+V</span> để dán (<i>paste</i>) từ chữ, câu, cả đoạn văn,
+				Trước giờ các cậu đã biết bấm tổ hợp phím <span style="color: var(--text-blue);">Ctrl+C</span> để
+				copy,
+				và <span style="color: var(--text-blue);">Ctrl+V</span> để dán (<i>paste</i>) từ chữ, câu, cả đoạn
+				văn,
 				cho tới hình ảnh, file nhạc, video các thứ rồi đúng không? Trên máy tính Windows 10 cập nhật bản mới
 				nhất (thật ra từ 1809 đã có rồi), cậu hãy thử bấm tổ hợp phím này nhé: <span
 					style="color: var(--text-blue);"><b>Windows+V</b></span>.
@@ -119,9 +123,11 @@
 			<img src="/posts/windows-clipboard-history/clipboard-history.jpg" alt="screenshot clipboard history"
 				width="751" height="515">
 			<p>Tính năng này rất tiện lợi đối với tớ cả khi chat (copy ảnh và caption rồi vào chat dán từng cái
-				một), gõ văn bản (copy từ nhiều nguồn rồi vào Word dán một thể), và đặc biệt là Excel (copy và paste các
+				một), gõ văn bản (copy từ nhiều nguồn rồi vào Word dán một thể), và đặc biệt là Excel (copy và paste
+				các
 				giá trị khác nhau vào các ô tương ứng).</p>
-			<p>Thử đi nhé. <span style="color: var(--text-blue);"><b>Windows+V</b></span>, rồi cậu sẽ không còn phải lo
+			<p>Thử đi nhé. <span style="color: var(--text-blue);"><b>Windows+V</b></span>, rồi cậu sẽ không còn phải
+				lo
 				lắng mỗi lần cần copy cái gì đó mới nữa :&gt;</p>
 			<br>
 			<p><b>Sói.</b></p>

@@ -70,14 +70,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -88,7 +89,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -107,115 +108,184 @@
 				alt="screenshot android superuser root" width="1080" height="845">
 			<p><strong>Cảnh báo</strong>: bài viết khá dài, cân nhắc trước khi đọc.</p>
 			<p>Mà thôi đọc đi, tớ cute mà :”&gt;</p>
-			<p>Cậu đã nghe tới khái niệm “root” điện thoại chưa? Chắc đôi lúc cậu cũng tự hỏi root điện thoại thì có làm
-				sao không, có lợi ích gì không, có tác hại gì không ha? Vậy lướt tiếp đi, bài này không nói đâu :-“</p>
-			<p>Đùa thôi…</p>
-			<p>“Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng và các thiết
-				bị khác chạy hệ điều hành Android giữ quyền kiểm soát tối cao đối với hệ điều hành trong máy (được gọi
-				là quyền truy cập root)”. Đây là wikipedia bảo thế. Còn thực tiễn hơn thì root điện thoại giúp cậu sử
-				dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp sâu vào file hệ thống của Android. Nó kiểu
-				kiểu như jailbreak (phá khóa) trên các máy của Apple đó.</p>
-			<p><em>(bài viết này được viết hoàn toàn dựa trên cách hiểu và cách ứng dụng root của cá nhân tớ, không mang
-					tính chất khách quan. Sau này tớ không nên làm nhà báo ._.)</em></p>
-			<p><strong>Thế tại sao mấy cửa hàng bán điện thoại lại bảo cậu không được root máy?</strong> Bởi vì với hầu
-				hết các hãng và cửa hàng bán điện thoại, quá trình root yêu cầu cậu mở khóa bootloader của máy. Hành
-				động mở bootloader này cho phép bất kì ai chạy đoạn mã/hệ điều hành không được hãng kiểm duyệt trước về
-				độ an toàn và tính tương thích với máy, do đó một khi cậu mở khóa bootloader, máy của cậu mất bảo hành.
-				Sau khi cậu mở khóa bootloader rồi, nếu cậu có làm hỏng máy thì hãng sẽ không sửa chữa miễn phí cho cậu.
+			<p>Cậu đã nghe tới khái niệm “root” điện thoại chưa? Chắc đôi lúc cậu cũng tự hỏi root điện thoại thì có
+				làm
+				sao không, có lợi ích gì không, có tác hại gì không ha? Vậy lướt tiếp đi, bài này không nói đâu :-“
 			</p>
-			<p><strong>Thế tại sao vẫn có những người root máy?</strong> Bởi vì cái “quyền can thiệp” kia giúp họ tinh
-				chỉnh khá nhiều thứ trên máy của họ, cùng với đó là việc sử dụng được các tính năng can thiệp sâu vào hệ
-				thống như đã nói ở trên. Nhưng nói vầy thì chung chung quá. Cơ mà ví dụ ra thì dài lắm, nên đoạn dưới
+			<p>Đùa thôi…</p>
+			<p>“Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng và các
+				thiết
+				bị khác chạy hệ điều hành Android giữ quyền kiểm soát tối cao đối với hệ điều hành trong máy (được
+				gọi
+				là quyền truy cập root)”. Đây là wikipedia bảo thế. Còn thực tiễn hơn thì root điện thoại giúp cậu
+				sử
+				dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp sâu vào file hệ thống của Android. Nó
+				kiểu
+				kiểu như jailbreak (phá khóa) trên các máy của Apple đó.</p>
+			<p><em>(bài viết này được viết hoàn toàn dựa trên cách hiểu và cách ứng dụng root của cá nhân tớ, không
+					mang
+					tính chất khách quan. Sau này tớ không nên làm nhà báo ._.)</em></p>
+			<p><strong>Thế tại sao mấy cửa hàng bán điện thoại lại bảo cậu không được root máy?</strong> Bởi vì với
+				hầu
+				hết các hãng và cửa hàng bán điện thoại, quá trình root yêu cầu cậu mở khóa bootloader của máy. Hành
+				động mở bootloader này cho phép bất kì ai chạy đoạn mã/hệ điều hành không được hãng kiểm duyệt trước
+				về
+				độ an toàn và tính tương thích với máy, do đó một khi cậu mở khóa bootloader, máy của cậu mất bảo
+				hành.
+				Sau khi cậu mở khóa bootloader rồi, nếu cậu có làm hỏng máy thì hãng sẽ không sửa chữa miễn phí cho
+				cậu.
+			</p>
+			<p><strong>Thế tại sao vẫn có những người root máy?</strong> Bởi vì cái “quyền can thiệp” kia giúp họ
+				tinh
+				chỉnh khá nhiều thứ trên máy của họ, cùng với đó là việc sử dụng được các tính năng can thiệp sâu
+				vào hệ
+				thống như đã nói ở trên. Nhưng nói vầy thì chung chung quá. Cơ mà ví dụ ra thì dài lắm, nên đoạn
+				dưới
 				nếu lười đọc thì hãy nhìn đầu mục thôi nha =_=</p>
 			<ul>
-				<li>Cài được ROM cook/custom: cài ROM là cách hiệu quả nhất để thay đổi rõ rệt trải nghiệm sử dụng điện
+				<li>Cài được ROM cook/custom: cài ROM là cách hiệu quả nhất để thay đổi rõ rệt trải nghiệm sử dụng
+					điện
 					thoại của cậu. Các bản ROM custom nổi tiếng như LineageOS, ResurrectionRemix, PixelExperience,
-					crDroid, etc. đều là các phiên bản Android với mức độ tùy biến người dùng khác nhau, nghĩa là cậu có
-					thể tinh chỉnh chúng theo ý thích của riêng mình chứ không phụ thuộc vào giao diện của ROM của hãng
+					crDroid, etc. đều là các phiên bản Android với mức độ tùy biến người dùng khác nhau, nghĩa là
+					cậu có
+					thể tinh chỉnh chúng theo ý thích của riêng mình chứ không phụ thuộc vào giao diện của ROM của
+					hãng
 					nữa. ROM custom thật ra không liên quan tới root máy .-. nhưng vì muốn root máy thì phải mở khóa
 					bootloader, mà đã mở khóa thì tội gì không dùng ROM custom ha :-“ Ưu điểm là trải nghiệm sử dụng
-					mới, thường thì sẽ mượt mà hơn, nhiều tính năng hơn, nhưng nhược điểm là sẽ mất hết các tính năng
-					đặc trưng chỉ có trên ROM gốc, đồng thời không phải máy nào cũng có ROM custom, và tùy loại máy mà
-					ROM custom có thể không ổn định bằng ROM gốc hoặc dính lỗi như camera bị ám màu, khóa vân tay không
+					mới, thường thì sẽ mượt mà hơn, nhiều tính năng hơn, nhưng nhược điểm là sẽ mất hết các tính
+					năng
+					đặc trưng chỉ có trên ROM gốc, đồng thời không phải máy nào cũng có ROM custom, và tùy loại máy
+					mà
+					ROM custom có thể không ổn định bằng ROM gốc hoặc dính lỗi như camera bị ám màu, khóa vân tay
+					không
 					hoạt động, etc.</li>
 				<li>Cài được custom kernel: dù có cài ROM cook hay không thì việc cài kernel mới vẫn có sự ảnh hưởng
-					đáng kể tới hiệu năng của máy cậu. Mỗi kernel có những tính năng riêng, có cái nâng cao hiệu năng
-					máy, có cái ưu tiên thời lượng pin, có cái lại mở khóa một số tính năng đặc biệt mà ROM gốc không có
-					như gõ 2 lần để mở máy (double-tap-to-wake, dt2w), chỉnh mức độ rung, chặn wakelock, etc. Nhưng ưu
-					điểm của hầu hết các kernel lại nằm ở những gì mà các cậu không thấy bên ngoài như mở rộng khả năng
-					undervolt/underclock/overclock CPU và GPU, tinh chỉnh lại thông số tốc độ bộ nhớ, tinh chỉnh hoặc
-					thay đổi driver của camera giúp cải thiện chất lượng hình ảnh, etc. Nhược điểm của custom kernel hầu
-					hết nằm ở công đoạn cài đặt: nếu cài đặt kernel không đúng cách hoặc kernel không tương thích có thể
+					đáng kể tới hiệu năng của máy cậu. Mỗi kernel có những tính năng riêng, có cái nâng cao hiệu
+					năng
+					máy, có cái ưu tiên thời lượng pin, có cái lại mở khóa một số tính năng đặc biệt mà ROM gốc
+					không có
+					như gõ 2 lần để mở máy (double-tap-to-wake, dt2w), chỉnh mức độ rung, chặn wakelock, etc. Nhưng
+					ưu
+					điểm của hầu hết các kernel lại nằm ở những gì mà các cậu không thấy bên ngoài như mở rộng khả
+					năng
+					undervolt/underclock/overclock CPU và GPU, tinh chỉnh lại thông số tốc độ bộ nhớ, tinh chỉnh
+					hoặc
+					thay đổi driver của camera giúp cải thiện chất lượng hình ảnh, etc. Nhược điểm của custom kernel
+					hầu
+					hết nằm ở công đoạn cài đặt: nếu cài đặt kernel không đúng cách hoặc kernel không tương thích có
+					thể
 					làm hỏng cả ROM, và trong trường hợp đó cậu sẽ phải cài lại cả máy.</li>
-				<li>Sau lưu dữ liệu hiệu quả hơn: trước đây khi cậu sử dụng điện thoại, nếu máy có hỏng cái gì mà cậu
-					phải cài lại máy thì tất cả mọi dữ liệu trong máy <strong>sẽ bị xóa sạch</strong>. Giờ đây sau khi
+				<li>Sau lưu dữ liệu hiệu quả hơn: trước đây khi cậu sử dụng điện thoại, nếu máy có hỏng cái gì mà
+					cậu
+					phải cài lại máy thì tất cả mọi dữ liệu trong máy <strong>sẽ bị xóa sạch</strong>. Giờ đây sau
+					khi
 					đã root, cậu có thể sử dụng các ứng dụng sau lưu (backup) như <a
 						href="https://play.google.com/store/apps/details?id=balti.migrate" target="_blank"
 						rel="noopener">Migrate</a> hay <a
 						href="https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup"
-						target="_blank" rel="noopener">TitaniumBackup</a> để lưu lại dữ liệu cá nhân của tất cả các ứng
-					dụng. Khi cài lại ứng dụng hay cài lại máy, cậu có thể dùng nó để khôi phục ứng dụng về trạng thái
-					cũ, mọi thiết lập cài đặt kiểu login hay setting gì đều được trả về nguyên trạng hết. Có một cách
-					sao lưu còn dữ hơn, đó là tính năng sao lưu trong custom recovery thông dụng tên TWRP. Bản sao của
-					TWRP lưu toàn bộ dữ liệu trong máy cậu, để khi khôi phục, máy cậu sẽ về đúng trạng thái lúc cậu tạo
-					bản sao lưu. Tưởng tượng như kiểu cậu chụp lại toàn bộ vũ trụ hiện giờ tính cả cậu, để sau này lúc
-					cậu sắp chết cậu có thể khôi phục lại tất cả mọi thứ (<strong>TẤT CẢ ẤY</strong>) về nguyên trạng và
-					cậu lại trở thành một người bạn khỏe mạnh đáng yêu của tớ ngồi đọc bài viết này và nở một nụ cười
-					ấy. Cá nhân tớ luôn giữ một bản sao lưu của TWRP trong máy phòng việc lúc nào đó tớ nghịch ngợm làm
+						target="_blank" rel="noopener">TitaniumBackup</a> để lưu lại dữ liệu cá nhân của tất cả các
+					ứng
+					dụng. Khi cài lại ứng dụng hay cài lại máy, cậu có thể dùng nó để khôi phục ứng dụng về trạng
+					thái
+					cũ, mọi thiết lập cài đặt kiểu login hay setting gì đều được trả về nguyên trạng hết. Có một
+					cách
+					sao lưu còn dữ hơn, đó là tính năng sao lưu trong custom recovery thông dụng tên TWRP. Bản sao
+					của
+					TWRP lưu toàn bộ dữ liệu trong máy cậu, để khi khôi phục, máy cậu sẽ về đúng trạng thái lúc cậu
+					tạo
+					bản sao lưu. Tưởng tượng như kiểu cậu chụp lại toàn bộ vũ trụ hiện giờ tính cả cậu, để sau này
+					lúc
+					cậu sắp chết cậu có thể khôi phục lại tất cả mọi thứ (<strong>TẤT CẢ ẤY</strong>) về nguyên
+					trạng và
+					cậu lại trở thành một người bạn khỏe mạnh đáng yêu của tớ ngồi đọc bài viết này và nở một nụ
+					cười
+					ấy. Cá nhân tớ luôn giữ một bản sao lưu của TWRP trong máy phòng việc lúc nào đó tớ nghịch ngợm
+					làm
 					hỏng máy .-.</li>
-				<li>Chặn quảng cáo toàn bộ máy: bởi vì giờ cậu đã có quyền kiểm soát cả hệ điều hành, việc thêm địa chỉ
-					server quảng cáo vào file host để chặn nó trở nên quá ư là đơn giản. Một khi file host đã chặn rồi
-					thì không ứng dụng nào trong máy có thể tải quảng cáo từ các trang ấy nữa. Hãy sử dụng một ứng dụng
-					đáng tin cậy để làm điều này nhé, ví dụ như AdGuard. Hiện tại cá nhân tớ dùng file host của Lucky
-					Patcher. Lưu ý: quảng cáo của ứng dụng Facebook, Messenger hay Instagram là dạng quảng cáo đã mã hóa
-					cùng dữ liệu ứng dụng nên hiện chưa chặn được, nhưng có thể sử dụng custom client (patched apk) để
-					loại bỏ quảng cáo. Lưu ý phải thật cẩn thận khi dùng thử các custom client ngoài, chỉ tải tại nguồn
+				<li>Chặn quảng cáo toàn bộ máy: bởi vì giờ cậu đã có quyền kiểm soát cả hệ điều hành, việc thêm địa
+					chỉ
+					server quảng cáo vào file host để chặn nó trở nên quá ư là đơn giản. Một khi file host đã chặn
+					rồi
+					thì không ứng dụng nào trong máy có thể tải quảng cáo từ các trang ấy nữa. Hãy sử dụng một ứng
+					dụng
+					đáng tin cậy để làm điều này nhé, ví dụ như AdGuard. Hiện tại cá nhân tớ dùng file host của
+					Lucky
+					Patcher. Lưu ý: quảng cáo của ứng dụng Facebook, Messenger hay Instagram là dạng quảng cáo đã mã
+					hóa
+					cùng dữ liệu ứng dụng nên hiện chưa chặn được, nhưng có thể sử dụng custom client (patched apk)
+					để
+					loại bỏ quảng cáo. Lưu ý phải thật cẩn thận khi dùng thử các custom client ngoài, chỉ tải tại
+					nguồn
 					có thể tin tưởng được.</li>
-				<li>Khóa bớt các ứng dụng hệ thống: ROM gốc được cài sẵn trên máy các cậu lúc mua về thường có các ứng
-					dụng thừa, các ứng dụng ngầm mà cậu chẳng bao giờ dùng đến, nhưng lại không xóa nó đi được và nó cứ
+				<li>Khóa bớt các ứng dụng hệ thống: ROM gốc được cài sẵn trên máy các cậu lúc mua về thường có các
+					ứng
+					dụng thừa, các ứng dụng ngầm mà cậu chẳng bao giờ dùng đến, nhưng lại không xóa nó đi được và nó
+					cứ
 					ở đó tốn chỗ tốn pin. Sau khi root xong, cậu có thể dùng <a
 						href="https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup&amp;hl=en"
-						target="_blank" rel="noopener">TitaniumBackup</a> để xóa hẳn các ứng dụng thừa khỏi hệ thống,
+						target="_blank" rel="noopener">TitaniumBackup</a> để xóa hẳn các ứng dụng thừa khỏi hệ
+					thống,
 					phần nào giúp máy cậu mượt mà hơn và tiết kiệm pin hơn đó 😉</li>
-				<li>Undervolt/underclock/overclock máy: như mọi khi, việc thay đổi thông số điện áp hay tần số hoạt động
+				<li>Undervolt/underclock/overclock máy: như mọi khi, việc thay đổi thông số điện áp hay tần số hoạt
+					động
 					của các linh kiện trong máy là <strong>không an toàn</strong>, có thể dẫn tới hỏng máy hoàn toàn
 					không sửa được. Tuy nhiên nếu ở trong một giới hạn an toàn thì vẫn chấp nhận được.
 					<ul>
-						<li>Undervolt (<strong>nguy hiểm</strong>): giảm mức điện áp lên CPU ở cùng tần số, ưu điểm giúp
-							làm máy bớt nóng đáng kể khi hoạt động ở cường độ cao như chơi game liên tục, nhưng nhược
-							điểm là máy dễ tự động tắt đi bật lại hơn, có nguy cơ hỏng. Quá trình undervolt <strong>rất
-								nguy hiểm</strong>, yêu cầu có kiến thức tương đối trước khi thử. Mức độ giảm khác nhau
-							theo từng máy, thông dụng là khoảng -25 đến -50mV. Hồi xưa tớ dùng chiếc Google Nexus 4 bị
-							lỗi tản nhiệt CPU, chạy một tẹo là nóng, nhưng tớ lại may mắn mua được chiếc có CPU tốt; tớ
-							đã undervolt tận -175mV mà máy không bị crash hay hỏng, và nhiệt độ của máy giảm hẳn từ 46
-							xuống 36 độ khi xem video trên Youtube.</li>
-						<li>Underclock (<strong>an toàn</strong>): giới hạn tần số của CPU. Ví dụ mặc định máy của cậu
-							chạy ở 2GHz, nhưng nhu cầu sử dụng máy của cậu chỉ có nghe gọi lướt web nhẹ nhàng không cần
-							máy chạy mạnh thế, thì giới hạn lại còn 1.5GHz thôi. Ưu điểm là máy vẫn đủ mượt mà lại tiết
-							kiệm pin đi một ít, đồng thời cũng bớt nóng đi một ít, nhược điểm là khi máy phải làm các
+						<li>Undervolt (<strong>nguy hiểm</strong>): giảm mức điện áp lên CPU ở cùng tần số, ưu điểm
+							giúp
+							làm máy bớt nóng đáng kể khi hoạt động ở cường độ cao như chơi game liên tục, nhưng
+							nhược
+							điểm là máy dễ tự động tắt đi bật lại hơn, có nguy cơ hỏng. Quá trình undervolt
+							<strong>rất
+								nguy hiểm</strong>, yêu cầu có kiến thức tương đối trước khi thử. Mức độ giảm khác
+							nhau
+							theo từng máy, thông dụng là khoảng -25 đến -50mV. Hồi xưa tớ dùng chiếc Google Nexus 4
+							bị
+							lỗi tản nhiệt CPU, chạy một tẹo là nóng, nhưng tớ lại may mắn mua được chiếc có CPU tốt;
+							tớ
+							đã undervolt tận -175mV mà máy không bị crash hay hỏng, và nhiệt độ của máy giảm hẳn từ
+							46
+							xuống 36 độ khi xem video trên Youtube.
+						</li>
+						<li>Underclock (<strong>an toàn</strong>): giới hạn tần số của CPU. Ví dụ mặc định máy của
+							cậu
+							chạy ở 2GHz, nhưng nhu cầu sử dụng máy của cậu chỉ có nghe gọi lướt web nhẹ nhàng không
+							cần
+							máy chạy mạnh thế, thì giới hạn lại còn 1.5GHz thôi. Ưu điểm là máy vẫn đủ mượt mà lại
+							tiết
+							kiệm pin đi một ít, đồng thời cũng bớt nóng đi một ít, nhược điểm là khi máy phải làm
+							các
 							tác vụ nặng mà CPU không đủ khỏe thì cậu có thể thấy máy lag/giật nhẹ/chạy chậm hơn bình
 							thường một ít.</li>
-						<li>Overclock (<strong>khá nguy hiểm</strong>): tăng giới hạn tần số của CPU. Quá trình này cũng
-							yêu cầu cậu có kiến thức trước khi làm. Ưu điểm là máy cậu có thể chạy mượt game ở mức đồ
+						<li>Overclock (<strong>khá nguy hiểm</strong>): tăng giới hạn tần số của CPU. Quá trình này
+							cũng
+							yêu cầu cậu có kiến thức trước khi làm. Ưu điểm là máy cậu có thể chạy mượt game ở mức
+							đồ
 							họa cao hơn, nhược điểm là máy nhanh hết pin hơn và khả năng máy sẽ nóng hơn.</li>
 					</ul>
 				</li>
 				<li>Một vài thứ linh tinh nhỏ nhặt hơn: xóa boot animation để máy khởi động nhanh hơn bằng cách thêm
-					dòng <code>debug.sf.nobootanimation=1</code> xuống cuối file <code>/system/build.prop</code>; đổi
+					dòng <code>debug.sf.nobootanimation=1</code> xuống cuối file <code>/system/build.prop</code>;
+					đổi
 					font và emoji tự chọn trên toàn bộ máy (tớ dùng font San Francisco của Apple); dùng <a
 						href="https://www.celsoazevedo.com/files/android/google-camera/" target="_blank"
-						rel="noopener">Google Camera mod</a> để có được những bức ảnh đẹp, nét hơn, màu đẹp hơn hẳn so
-					với camera gốc; cài Xposed/Edxposed để sử dụng hàng trăm module mod giao diện và tính năng của máy
-					(nổi tiếng nhất là GravityBox) như thêm thanh màu hiển thị pin trên thanh trạng thái (status bar),
+						rel="noopener">Google Camera mod</a> để có được những bức ảnh đẹp, nét hơn, màu đẹp hơn hẳn
+					so
+					với camera gốc; cài Xposed/Edxposed để sử dụng hàng trăm module mod giao diện và tính năng của
+					máy
+					(nổi tiếng nhất là GravityBox) như thêm thanh màu hiển thị pin trên thanh trạng thái (status
+					bar),
 					thêm tính năng ghi âm cuộc gọi, đặt giờ delay chụp màn hình, thêm nút Undo, chặn quảng cáo
 					Instagram, etc.</li>
-				<li>Tăng tốc hiệu ứng máy sử dụng animation scale: máy cậu không chạy nhanh hơn, nhưng vì các hiệu ứng
+				<li>Tăng tốc hiệu ứng máy sử dụng animation scale: máy cậu không chạy nhanh hơn, nhưng vì các hiệu
+					ứng
 					mở app đóng app được rút ngắn thời gian nên cậu sẽ cảm giác máy nhanh hơn rõ rệt. Hãy bật USB
 					Debugging lên, cắm điện thoại vào máy tính, bật adb, và copy 6 dòng này vào rồi enter:</li>
 			</ul>
 			<pre
 				style="text-indent: 0px; margin-left: 30px;"><code>adb devices</code><br><code>adb shell settings put system long_press_kill_delay 500</code><br><code>adb shell settings put secure long_press_timeout 400</code><br><code>adb shell settings put global window_animation_scale 0.7</code><br><code>adb shell settings put global transition_animation_scale 0.7</code><br><code>adb shell settings put global animator_duration_scale 0.7</code></pre>
-			<p>Ban đầu cậu sẽ cảm giác ơ animation đẹp đẽ đâu hết mất rồi, nhưng dùng máy được vài phút xong cậu chỉnh
+			<p>Ban đầu cậu sẽ cảm giác ơ animation đẹp đẽ đâu hết mất rồi, nhưng dùng máy được vài phút xong cậu
+				chỉnh
 				về 1x sẽ thấy máy cực kì chậm đó tin tớ đi!!</p>
 			<br>
 			<p><b>Sói.</b></p>

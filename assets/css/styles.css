@@ -145,6 +145,7 @@ pre {
 	/* width: 50%; */
 }
 
+
 /* review star color https://www.w3schools.com/howto/howto_css_star_rating.asp */
 .checked {
 	color: orange;
@@ -163,7 +164,8 @@ pre {
 
 /* Style the links inside the navigation bar */
 .topnav a,
-.topnav span {
+.topnav-right .topnav-subpages a,
+.topnav-right span.topnav-hamburger {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
@@ -173,16 +175,16 @@ pre {
 	display: block;
 }
 
-.topnav-txt {
+.topnav .topnav-txt {
 	float: left;
-	padding: 10px 10px;
+	padding: 12px 0px 10px;
 	color: #f2f2f2;
-	font-size: 110%;
+	font-size: 100%;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active,
-.topnav span.active {
+.topnav-right div.topnav-subpages a.active,
+.topnav-right span.active {
 	background-color: #00FFFF;
 	color: black;
 	text-decoration: none;
@@ -194,45 +196,49 @@ pre {
 }
 
 /* Change the color of links on hover */
-.topnav-right a:hover,
-.topnav-right span:hover {
+.topnav-right div.topnav-subpages a:hover {
 	background-color: #FED766;
 	color: black;
 }
 
 /* Hide the hamburger on the topnav on big screens */
-.topnav .tophamburger {
+.topnav-right span.topnav-hamburger {
 	display: none;
 }
 
-/* When the screen is less than [specified] pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than [specified] pixels wide, hide all links, not excepting for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
 	.topnav {
 		position: static;
 	}
 
-	.topnav-txt,
-	.topnav a:not(:first-child) {
+	/* .topnav a:not(:first-child) { */
+	.topnav-right .topnav-subpages a {
 		display: none;
+		padding: 5px 10px;
 	}
 
-	.topnav span.tophamburger {
+	.topnav-right span.topnav-hamburger {
 		float: right;
 		display: block;
 	}
 
 	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-	.topnav.responsive {
+	.topnav-right.responsive {
 		position: relative;
 	}
 
-	.topnav.responsive span.tophamburger {
+	.topnav-right.responsive span.topnav-hamburger {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
 
-	.topnav.responsive a {
+	.topnav-right.responsive .topnav-subpages {
+		margin-top: 48px;
+	}
+
+	.topnav-right.responsive .topnav-subpages a {
 		float: none;
 		display: block;
 		text-align: left;

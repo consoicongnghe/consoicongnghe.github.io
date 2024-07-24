@@ -64,14 +64,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -82,7 +83,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -127,11 +128,15 @@
 					</symbol>
 				</defs>
 			</svg>
-			<p>Nếu các cậu đọc cái này mà nghĩ là bài viết nói về việc chặn mấy cái quảng cáo linh tinh do Youtube chèn
+			<p>Nếu các cậu đọc cái này mà nghĩ là bài viết nói về việc chặn mấy cái quảng cáo linh tinh do Youtube
+				chèn
 				vào xong có nút skip thì không phải đâu nhé. Muốn chặn cái đó, các cậu hãy dùng <a
-					href="/posts/ublock-origin/" target="_blank">uBlock Origin</a>.<br>Tớ đang nói tới quảng cáo TRONG
-				video cơ. Một tình trạng khá phổ biến hiện nay là các “Youtuber” thay vì nhận tiền quảng cáo từ Youtube,
-				họ nhận tiền từ các hãng thứ ba, với điều kiện họ chèn một đoạn trong video để quảng cáo sản phẩm cho
+					href="/posts/ublock-origin/" target="_blank">uBlock Origin</a>.<br>Tớ đang nói tới quảng cáo
+				TRONG
+				video cơ. Một tình trạng khá phổ biến hiện nay là các “Youtuber” thay vì nhận tiền quảng cáo từ
+				Youtube,
+				họ nhận tiền từ các hãng thứ ba, với điều kiện họ chèn một đoạn trong video để quảng cáo sản phẩm
+				cho
 				hãng thứ ba đó.<br />Và vì cái quảng cáo này là một phần của video, các chương trình chặn quảng cáo
 				không thể chặn được.</p>
 			<p>Giới thiệu với các cậu: <a href="https://sponsor.ajay.app/" target="_blank"
@@ -139,10 +144,14 @@
 			<img src="/posts/windows-sponsorblock/sponsorblock.jpg" alt="screenshot sponsorblock extension" width="819"
 				height="517">
 			<p>Đây là một tiện ích mở rộng được tạo ra nhằm tự động bỏ qua các đoạn quảng cáo sản phẩm của bên thứ
-				ba trong các video. Cơ sở dữ liệu của nó (thông tin về các đoạn quảng cáo) được người dùng chủ động đóng
-				góp cung cấp. Các cậu có thể tải SB về và chỉ lướt Youtube, HOẶC các cậu có thể đóng góp cho cộng đồng
-				bằng cách dùng nút “chấm phẩy” để đánh dấu thời điểm bắt đầu và kết thúc của đoạn video quảng cáo, nút
-				“dấu ngoặc kép” để gửi thông tin đó tới server của SponsorBlock để khi người khác xem thì đoạn quảng cáo
+				ba trong các video. Cơ sở dữ liệu của nó (thông tin về các đoạn quảng cáo) được người dùng chủ động
+				đóng
+				góp cung cấp. Các cậu có thể tải SB về và chỉ lướt Youtube, HOẶC các cậu có thể đóng góp cho cộng
+				đồng
+				bằng cách dùng nút “chấm phẩy” để đánh dấu thời điểm bắt đầu và kết thúc của đoạn video quảng cáo,
+				nút
+				“dấu ngoặc kép” để gửi thông tin đó tới server của SponsorBlock để khi người khác xem thì đoạn quảng
+				cáo
 				đó sẽ bị bỏ qua.<br /><a href="https://sponsor.ajay.app/" target="_blank"
 					rel="noopener">SponsorBlock</a> có mã nguồn mở, hỗ trợ một số trình duyệt web phổ
 				biến như <svg class="icon icon-mozillafirefox">

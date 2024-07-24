@@ -67,15 +67,16 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/">Bài viết</a>
-			<a href="/blog/" class="active">Blog</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/">Bài viết</a>
+				<a href="/blog/" class="active">Blog</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -86,7 +87,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -108,7 +109,7 @@
 				<li>Backup browser bookmarks (unless synced)</li>
 				<li>Fonts</li>
 				<li>Check Recycle Bin</li>
-				<li>(OBS)</li>
+				<li>(OBS, steam userdata)</li>
 				<li>Export wifi</li>
 			</ul>
 			<b>INSTALL</b>
@@ -122,8 +123,8 @@
 			<p>
 				Disable Bitlocker: <span style="color: var(--text-blue);">Shift+F10</span> --&gt; <span
 					style="color: var(--text-red);">regedit</span> --&gt;
-				<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker</code>. Right click BitLocker, <span
-					style="color: var(--text-orange);">New Dword (32-bit) value</span>:
+				<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker</code>. Right click BitLocker,
+				<span style="color: var(--text-orange);">New Dword (32-bit) value</span>:
 				<code>PreventDeviceEncryption</code>, value=1
 			</p>
 			<b>FINISH OOBE</b>
@@ -152,11 +153,14 @@
 				<li>Windows/Driver/fonts/</li>
 				<li>Windows/Driver/VCRedist/</li>
 				<li><span style="color: var(--text-yellow);">Windows/PostInstall/winget/</span><span
-						style="color: var(--text-red);">MicrosoftStoreAppUpdater.ps1</span> --&gt; open MS Store</li>
+						style="color: var(--text-red);">MicrosoftStoreAppUpdater.ps1</span> --&gt; open MS Store
+				</li>
 				<li>setup chrome, office, unikey, (adobe, trafficMonitor)</li>
-				<li><span style="color: var(--text-yellow);">Programs/Chrome/</span> --&gt; Ublock Origin, SponsorBlock,
+				<li><span style="color: var(--text-yellow);">Programs/Chrome/</span> --&gt; Ublock Origin,
+					SponsorBlock,
 					FastForward, Run In Background</li>
-				<li>Settings: (<code>touchpad</code> -&gt; 3+4finger = middle click), <code>language bar</code>)</li>
+				<li>Settings: (<code>touchpad</code> -&gt; 3+4finger = middle click), <code>language bar</code>)
+				</li>
 				<li>set wp and lock screen pic</li>
 				<li>setups/prog/1sthing/</li>
 				<li>setup things except k-lite, adobe.</li>

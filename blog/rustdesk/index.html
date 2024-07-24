@@ -65,14 +65,16 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/blog/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/">Bài viết</a>
+				<a href="/blog/" class="active">Blog</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -83,7 +85,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -102,7 +104,8 @@
 			<p>Cậu vừa nhờ anh Linh làm gì đấy hộ cậu trên máy tính, rồi anh ý gửi cậu trang web này đúng không?</p>
 			<hr>
 			<p><strong><a href="https://github.com/rustdesk/rustdesk/releases/download/1.2.7/rustdesk-1.2.7-x86_64.msi"
-						target="_blank" rel="noopener" style="font-size: 1.2em; color: var(--text-green);">Đây. Máy cậu
+						target="_blank" rel="noopener" style="font-size: 1.2em; color: var(--text-green);">Đây. Máy
+						cậu
 						dùng Windows thì cậu bấm vào đây</a></strong>.</p>
 			<p>Nếu cậu dùng máy Mac/MacBook của Apple dùng chip M (đời 2020 trở lên) thì bấm vào <strong><a
 						href="https://github.com/rustdesk/rustdesk/releases/download/1.2.7/rustdesk-1.2.7-aarch64.dmg"
@@ -113,21 +116,27 @@
 						target="_blank" rel="noopener" style="color: var(--text-blue);">link này</a></strong>.</p>
 			<hr>
 			<p>Giờ cậu đang tải xuống bộ cài của RustDesk. <a href="https://rustdesk.com/" target="_blank"
-					rel="noopener">RustDesk</a> là phần mềm điều khiển máy tính từ xa miễn phí, cho phép tớ kết nối vào
-				máy tính của cậu để điều khiển, cài nọ chỉnh kia cho cậu từ xa. RustDesk hoạt động tương tự Teamviewer,
-				Ultraviewer hay Anydesk, nhưng <span style="color: var(--text-yellow);"><strong>RustDesk hoàn toàn miễn
-						phí không giới hạn</strong></span>, không như Teamviewer và Anydesk yêu cầu đăng kí tài khoản và
-				chỉ chực hiện popup "Commercial use detected" không cho cậu dùng nữa, còn Ultraviewer thì chậm lag và
+					rel="noopener">RustDesk</a> là phần mềm điều khiển máy tính từ xa miễn phí, cho phép tớ kết nối
+				vào
+				máy tính của cậu để điều khiển, cài nọ chỉnh kia cho cậu từ xa. RustDesk hoạt động tương tự
+				Teamviewer,
+				Ultraviewer hay Anydesk, nhưng <span style="color: var(--text-yellow);"><strong>RustDesk hoàn toàn
+						miễn
+						phí không giới hạn</strong></span>, không như Teamviewer và Anydesk yêu cầu đăng kí tài
+				khoản và
+				chỉ chực hiện popup "Commercial use detected" không cho cậu dùng nữa, còn Ultraviewer thì chậm lag
+				và
 				không có tính năng chia sẻ file.</p>
 			<div class="flex-container">
 				<div class="flex-item-left" style="flex: 80%;">
 					<p>Tải xong bộ cài của RustDesk thì cậu mở nó lên, cài vào máy nhé. Sau khi cài xong, cậu mở
 						RustDesk, gửi ID và password qua cho tớ.</p>
-					<p><strong>Chú ý:</strong> Cậu để ý khi có bất kì hộp thoại nào hỏi quyền truy cập, hãy bấm <span
-							style="color: var(--text-orange);">Đồng ý</span>, <span
+					<p><strong>Chú ý:</strong> Cậu để ý khi có bất kì hộp thoại nào hỏi quyền truy cập, hãy bấm
+						<span style="color: var(--text-orange);">Đồng ý</span>, <span
 							style="color: var(--text-orange);">OK</span>, <span style="color: var(--text-orange);">Cho
 							phép</span>,... chứ đừng bỏ qua. Phải cấp cho RustDesk mấy quyền này thì phía bên tớ mới
-						thấy máy cậu để hỗ trợ.</p>
+						thấy máy cậu để hỗ trợ.
+					</p>
 				</div>
 				<div class="flex-item-right" style="flex: 20%;"><img src="/blog/rustdesk/rustdesk-id-pw.png"
 						alt="RustDesk ID and password" width="210" height="260" style="width:100%;"></div>

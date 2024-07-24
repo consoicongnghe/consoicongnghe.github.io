@@ -59,14 +59,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/">Bài viết</a>
-			<a href="/about/" class="active">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/">Bài viết</a>
+				<a href="/about/" class="active">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -77,7 +78,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -88,20 +89,29 @@
 	<div class="bodyy">
 		<h1>Giới thiệu về consoicongnghe</h1>
 		<div class="indent">
-			<p>Tớ muốn consoicongnghe là điểm đến dành cho tất cả mọi người, chứ không chỉ riêng những người đã có kiến
-				thức nền về các vấn đề công nghệ. Trong thời đại ngày nay, nơi các thiết bị công nghệ ngày càng trở nên
+			<p>Tớ muốn consoicongnghe là điểm đến dành cho tất cả mọi người, chứ không chỉ riêng những người đã có
+				kiến
+				thức nền về các vấn đề công nghệ. Trong thời đại ngày nay, nơi các thiết bị công nghệ ngày càng trở
+				nên
 				thiết yếu trong cuộc sống hàng ngày, consoicongnghe đặt mục tiêu phổ cập, cải thiện cách sử dụng các
-				công cụ công nghệ cho tất cả mọi người, nhằm giúp người đọc, người xem ở mọi lứa tuổi hiểu biết thêm về
-				những thiết bị mình có và cách sử dụng chúng hiệu quả hơn. Đến với consoicongnghe, cậu không chỉ được
-				cập nhật thông tin về những điều mới mẻ nên biết trong thế giới công nghệ mà còn nhận được câu trả lời
-				cho những vấn đề cậu gặp phải khi sử dụng các thiết bị công nghệ. Consoicongnghe sẽ tập trung chủ yếu
-				vào máy tính và điện thoại, 2 loại thiết bị gần gũi, phổ biến nhất với công việc hàng ngày của mọi người
+				công cụ công nghệ cho tất cả mọi người, nhằm giúp người đọc, người xem ở mọi lứa tuổi hiểu biết thêm
+				về
+				những thiết bị mình có và cách sử dụng chúng hiệu quả hơn. Đến với consoicongnghe, cậu không chỉ
+				được
+				cập nhật thông tin về những điều mới mẻ nên biết trong thế giới công nghệ mà còn nhận được câu trả
+				lời
+				cho những vấn đề cậu gặp phải khi sử dụng các thiết bị công nghệ. Consoicongnghe sẽ tập trung chủ
+				yếu
+				vào máy tính và điện thoại, 2 loại thiết bị gần gũi, phổ biến nhất với công việc hàng ngày của mọi
+				người
 				hiện giờ.</p>
 			<hr>
 			<p>Đấy là trang web bình thường thì sẽ ghi dài dòng văn tự hoa mĩ như vậy. <span
 					style="color: var(--text-yellow);">Ở đây Sói không làm thế</span>.
-				Consoicongnghe nói thẳng nói thật, có gì nói nấy, không vòng vo. Consoicongnghe lấy chất lượng, không
-				lấy số lượng. Ước muốn của Sói là khi cậu đọc một bài viết của consoicongnghe, cậu chỉ có các phản ứng
+				Consoicongnghe nói thẳng nói thật, có gì nói nấy, không vòng vo. Consoicongnghe lấy chất lượng,
+				không
+				lấy số lượng. Ước muốn của Sói là khi cậu đọc một bài viết của consoicongnghe, cậu chỉ có các phản
+				ứng
 				cảm xúc sau:
 			</p>
 			<ul>
@@ -109,24 +119,31 @@
 				<li><i>“Ê mình cũng làm như thế này nè, tiện ơi là tiện”</i></li>
 				<li><i>“Hóa ra đây không phải là lỗi, đây là tính năng”</i></li>
 			</ul>
-			<p>Consoicongnghe là một dự án bán thời gian do một mình Sói (và anh Linh) duy trì. Không như các trang web
+			<p>Consoicongnghe là một dự án bán thời gian do một mình Sói (và anh Linh) duy trì. Không như các trang
+				web
 				khác bố trí
 				quảng cáo chằng chịt khiến việc tìm nội dung để đọc khó như dò đường trong phố cổ, <span
 					style="color:var(--text-green)">trang web này <strong>RẤT NHANH</strong> và
 					<strong>KHÔNG
-						CÓ QUẢNG CÁO</strong></span>. Trang duy nhất có thể có quảng cáo trên consoicongnghe.com là <a
-					href="/posts/ublock-origin/">bài viết hướng dẫn sử dụng tiện ích chặn quảng cáo</a>. Nguồn tiền nuôi
-				Sói khôn lớn hiện tại hoàn toàn từ túi anh Linh mà ra. Mà anh Linh thì có giàu có gì cho cam, nuôi Sói
+						CÓ QUẢNG CÁO</strong></span>. Trang duy nhất có thể có quảng cáo trên consoicongnghe.com là
+				<a href="/posts/ublock-origin/">bài viết hướng dẫn sử dụng tiện ích chặn quảng cáo</a>. Nguồn tiền
+				nuôi
+				Sói khôn lớn hiện tại hoàn toàn từ túi anh Linh mà ra. Mà anh Linh thì có giàu có gì cho cam, nuôi
+				Sói
 				vì đam mê thôi :&#60; Nếu em Sói có mang lại cho cậu thêm kiến thức, hiểu biết mang tính “bước ngoặt
-				cuộc đời” hay chỉ cần là một tiếng cười vang, hãy đóng góp cùng Linh nuôi em Sói nhé. Em Sói hứa sẽ sử
-				dụng hầu hết đóng góp để mua đồ ăn thức uống giúp em Sói khôn lớn, sống thọ hơn, chỉ xin một ít để mua
-				đồ chơi thôi ạ. <strong>Một tí tẹo tèo teo thôi</strong>. Xin hứa xin thề xin đảm bảo. Thông tin đóng
+				cuộc đời” hay chỉ cần là một tiếng cười vang, hãy đóng góp cùng Linh nuôi em Sói nhé. Em Sói hứa sẽ
+				sử
+				dụng hầu hết đóng góp để mua đồ ăn thức uống giúp em Sói khôn lớn, sống thọ hơn, chỉ xin một ít để
+				mua
+				đồ chơi thôi ạ. <strong>Một tí tẹo tèo teo thôi</strong>. Xin hứa xin thề xin đảm bảo. Thông tin
+				đóng
 				góp đây ạ, mọi người nhớ ghi chú là <q>Gửi em Sói</q> nhé kẻo anh Linh chôm hết mang đi tán gái đấy
 				:&#60;
 			</p>
 			<hr>
 			<p>Donate ở đây nà:<br>
-				<span style="margin-left: 30px;">Techcombank: 8800 8008 0088 / consoicongnghe (NGUYEN TUAN LINH)</span>
+				<span style="margin-left: 30px;">Techcombank: 8800 8008 0088 / consoicongnghe (NGUYEN TUAN
+					LINH)</span>
 			</p>
 			<img src="/assets/images/Linh-QRbank.png" alt="Bank QR code donate" class="zoom" width="400" height="400"
 				style="width:200px; transform-origin:bottom center">

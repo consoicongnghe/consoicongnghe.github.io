@@ -70,14 +70,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -88,7 +89,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -103,33 +104,50 @@
 		</ul>
 		<div class="indent">
 			<h1>[Android] Các loại giao diện điện thoại Android</h1>
-			<p>Ngày xửa ngày xưa, xưa lằm xưa lắm, từ hồi Android 4.4 Kitkat trở về trước, hồi ấy Android phân mảnh ghê
-				lắm. Dù điện thoại các hãng khác nhau cùng chạy Android, nhưng nhìn giao diện của mỗi máy một khác. Các
-				hãng máy thi nhau tạo bộ giao diện mới trên Android để tạo hình ảnh thương hiệu cho riêng mình. Samsung
-				thì có TouchWiz, Asus có ZenUI, HTC có Sense,… Hồi ấy thì phong trào “Android gốc” nổi lên dữ dội lắm,
-				bởi vì các bộ giao diện của các hãng đều làm máy chậm đi và lag đi trông thấy, còn các máy chạy ROM càng
+			<p>Ngày xửa ngày xưa, xưa lằm xưa lắm, từ hồi Android 4.4 Kitkat trở về trước, hồi ấy Android phân mảnh
+				ghê
+				lắm. Dù điện thoại các hãng khác nhau cùng chạy Android, nhưng nhìn giao diện của mỗi máy một khác.
+				Các
+				hãng máy thi nhau tạo bộ giao diện mới trên Android để tạo hình ảnh thương hiệu cho riêng mình.
+				Samsung
+				thì có TouchWiz, Asus có ZenUI, HTC có Sense,… Hồi ấy thì phong trào “Android gốc” nổi lên dữ dội
+				lắm,
+				bởi vì các bộ giao diện của các hãng đều làm máy chậm đi và lag đi trông thấy, còn các máy chạy ROM
+				càng
 				gần với Android gốc thì càng mượt mà, đơn giản và dễ dùng.</p>
 			<img src="/posts/archived/android-cac-loai-giao-dien/android-aboutpage.jpg"
 				alt="screenshot android about OxygenOS" width="1080" height="1271">
 			<p>Bây giờ phong trào ấy đi xuống rồi. Không phải vì Android gốc hết mượt (trái lại ấy chứ, mượt vchg),
-				nhưng vì với những cố gắng chống phân mảnh của Google và sau khoảng thời gian dài các hãng nghiên cứu
-				tâm lí khách hàng, các bộ giao diện dần dần thoái hóa. Các hãng làm điện thoại chuyển mục tiêu từ việc
-				làm ra bộ giao diện thật đặc biệt, bắt mắt, quay sang việc làm ra bộ giao diện gần với Android gốc và
-				thêm thật nhiều tính năng hữu ích. Tất nhiên vẫn có những ngoại lệ, nhưng những hãng thành công nhất và
-				ăn điểm trong mắt người dùng nhất là những hãng chú tâm vào tính năng thay vì ngoại hình, chấp nhận hi
+				nhưng vì với những cố gắng chống phân mảnh của Google và sau khoảng thời gian dài các hãng nghiên
+				cứu
+				tâm lí khách hàng, các bộ giao diện dần dần thoái hóa. Các hãng làm điện thoại chuyển mục tiêu từ
+				việc
+				làm ra bộ giao diện thật đặc biệt, bắt mắt, quay sang việc làm ra bộ giao diện gần với Android gốc
+				và
+				thêm thật nhiều tính năng hữu ích. Tất nhiên vẫn có những ngoại lệ, nhưng những hãng thành công nhất
+				và
+				ăn điểm trong mắt người dùng nhất là những hãng chú tâm vào tính năng thay vì ngoại hình, chấp nhận
+				hi
 				sinh hình ảnh thương hiệu thông qua giao diện để đánh vào các tinh chỉnh nhỏ nhặt hữu ích cho người
 				dùng.</p>
 			<p>Ơ mấy cái đấy thì cậu cần biết làm gì?</p>
 			<p>Ừ nhỉ, hết bài.</p>
-			<p>Ờm… Kể để các cậu biết rằng Android gốc (kiểu Android One) thì vẫn thường là mượt mà nhất và đẹp nhất,
-				nhưng không hẳn. Các hãng hiện tại dù chấp nhận rằng Android gốc rất đẹp, nhưng họ không từ bỏ giao diện
-				cá nhân của họ, mà thay vào đó họ rút kinh nghiệm để cải thiện chúng. Khi đi mua điện thoại, các cậu nên
+			<p>Ờm… Kể để các cậu biết rằng Android gốc (kiểu Android One) thì vẫn thường là mượt mà nhất và đẹp
+				nhất,
+				nhưng không hẳn. Các hãng hiện tại dù chấp nhận rằng Android gốc rất đẹp, nhưng họ không từ bỏ giao
+				diện
+				cá nhân của họ, mà thay vào đó họ rút kinh nghiệm để cải thiện chúng. Khi đi mua điện thoại, các cậu
+				nên
 				mở máy lên, vuốt qua vuốt lại, mở app các thứ xem có mượt không, giao diện ấy các cậu có thích mắt
-				không, rồi hẵng quyết định mua. Các giao diện thông dụng bây giờ gồm có Android One gần với Android gốc
+				không, rồi hẵng quyết định mua. Các giao diện thông dụng bây giờ gồm có Android One gần với Android
+				gốc
 				của Google (khỏi bàn), OneUI mới của Samsung (khá đẹp, tiện dụng, nhưng một số bạn review là vẫn có
-				những chỗ không mượt?), OxygenOS của OnePlus (ý kiến cá nhân của mình là nhanh và mượt nhất giới Android
-				ý ;_;), MIUI của Xiaomi (tùy thị giác các bạn, có những bạn thấy nó đẹp và thống nhất nhiều tính năng,
-				mình thì thấy nó đầy quảng cáo với cả quản lí ứng dụng ngầm quá chặt, hông thích), và còn nhiều nữa…</p>
+				những chỗ không mượt?), OxygenOS của OnePlus (ý kiến cá nhân của mình là nhanh và mượt nhất giới
+				Android
+				ý ;_;), MIUI của Xiaomi (tùy thị giác các bạn, có những bạn thấy nó đẹp và thống nhất nhiều tính
+				năng,
+				mình thì thấy nó đầy quảng cáo với cả quản lí ứng dụng ngầm quá chặt, hông thích), và còn nhiều nữa…
+			</p>
 			<p>Hãy mua OnePlus 7 Pro hoặc Samsung Note 9 thôi các cậu ạ ahihi</p>
 			<br>
 			<p><b>Sói.</b></p>

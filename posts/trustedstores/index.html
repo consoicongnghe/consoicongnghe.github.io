@@ -64,14 +64,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -82,7 +83,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -97,13 +98,16 @@
 		</ul>
 		<div class="indent">
 			<h1>Những cửa hàng uy tín</h1>
-			<p>Đây là danh sách một số công ty, cửa hàng mà cá nhân Sói cảm thấy uy tín và có thể tin tưởng, dựa trên
-				đánh giá khách quan kết hợp với trải nghiệm cá nhân. Chủ yếu các cửa hàng có địa chỉ tại Hà Nội do đây
+			<p>Đây là danh sách một số công ty, cửa hàng mà cá nhân Sói cảm thấy uy tín và có thể tin tưởng, dựa
+				trên
+				đánh giá khách quan kết hợp với trải nghiệm cá nhân. Chủ yếu các cửa hàng có địa chỉ tại Hà Nội do
+				đây
 				là địa bàn hoạt động chủ yếu của Sói.</p>
 			<ul>
-				<li>Linh kiện máy tính: <a href="https://hacom.vn" target="_blank" rel="noopener">Hanoicomputer</a>, <a
-						href="https://anphatpc.com.vn" target="_blank" rel="noopener">Anphatpc</a>, <a
-						href="https://gearvn.com" target="_blank" rel="noopener">Gearvn</a></li>
+				<li>Linh kiện máy tính: <a href="https://hacom.vn" target="_blank" rel="noopener">Hanoicomputer</a>,
+					<a href="https://anphatpc.com.vn" target="_blank" rel="noopener">Anphatpc</a>, <a
+						href="https://gearvn.com" target="_blank" rel="noopener">Gearvn</a>
+				</li>
 				<li>Gaming gear: <a href="https://gearvn.com" target="_blank" rel="noopener">Gearvn</a>, <a
 						href="https://playzone.vn" target="_blank" rel="noopener">Playzone</a></li>
 				<li>Laptop: <a href="https://www.phucanh.vn" target="_blank" rel="noopener">Phucanh</a>, <a
@@ -111,9 +115,10 @@
 						href="https://thinkpro.vn" target="_blank" rel="noopener">Thinkpro</a>, <a
 						href="https://macone.vn" target="_blank" rel="noopener">Mac One</a>, <a href="https://mac24h.vn"
 						target="_blank" rel="noopener">Mac24h</a></li>
-				<li>Phụ kiện máy tính: <a href="https://tuanphong.vn" target="_blank" rel="noopener">Tuanphong</a>, <a
-						href="https://memoryzone.com.vn" target="_blank" rel="noopener">Memoryzone</a>, <a
-						href="https://saiback.com" target="_blank" rel="noopener">Saiback</a></li>
+				<li>Phụ kiện máy tính: <a href="https://tuanphong.vn" target="_blank" rel="noopener">Tuanphong</a>,
+					<a href="https://memoryzone.com.vn" target="_blank" rel="noopener">Memoryzone</a>, <a
+						href="https://saiback.com" target="_blank" rel="noopener">Saiback</a>
+				</li>
 				<li>Sửa chữa laptop: <a href="https://tritienlaptop.com" target="_blank" rel="noopener">Trí Tiến
 						laptop</a>, <a href="https://suachualaptop24h.com" target="_blank"
 						rel="noopener">suachualaptop24h (chi nhánh Thái Hà)</a></li>

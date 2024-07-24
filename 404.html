@@ -43,14 +43,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -61,7 +62,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -74,7 +75,8 @@
 		<p>Có hiểu lỗi 404 là gì không?</p>
 		<p>Không cần hiểu.</p>
 		<p>Đi chỗ khác chơi đi. Về <a href="/">trang chủ</a> i, ở đây làm zì &#x1F621;</p>
-		<p>Nhớ bảo tớ một câu xem link này bị sao nhé. Nhắn cho tớ vào fb ở trang <a href="contact/">Liên hệ</a> ý.</p>
+		<p>Nhớ bảo tớ một câu xem link này bị sao nhé. Nhắn cho tớ vào fb ở trang <a href="contact/">Liên hệ</a> ý.
+		</p>
 	</div>
 </body>
 

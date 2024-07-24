@@ -64,14 +64,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -82,7 +83,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -101,9 +102,12 @@
 				<article class="posts">
 					<h2>[Android] Những ứng dụng nên dùng</h2>
 					<p>
-						Chắc hẳn mỗi người có một sự lựa chọn ứng dụng điện thoại khác nhau. Không có ứng dụng nào là
-						hay “nhất”, và không phải cái nào hợp với người này thì chắc chắn cũng hợp với người khác. Sau
-						gần 7 năm dùng Android lục tung Google Play Store, tớ tự tổng hợp cho mình một danh sách dài các
+						Chắc hẳn mỗi người có một sự lựa chọn ứng dụng điện thoại khác nhau. Không có ứng dụng nào
+						là
+						hay “nhất”, và không phải cái nào hợp với người này thì chắc chắn cũng hợp với người khác.
+						Sau
+						gần 7 năm dùng Android lục tung Google Play Store, tớ tự tổng hợp cho mình một danh sách dài
+						các
 						thể loại ứng dụng trên điện thoại Android mà tớ cảm thấy khá đặc biệt.
 					</p>
 				</article>
@@ -112,11 +116,15 @@
 				<article class="posts">
 					<h2>[Android] Root điện thoại để làm gì?</h2>
 					<p>
-						"Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng và
+						"Root điện thoại là một quá trình cho phép người dùng điện thoại thông minh, máy tính bảng
+						và
 						các thiết bị khác chạy hệ điều hành Android giữ quyền kiểm soát tối cao đối với hệ điều hành
-						trong máy (được gọi là quyền truy cập root)". Đây là wikipedia bảo thế. Còn thực tiễn hơn thì
-						root điện thoại giúp cậu sử dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp sâu
-						vào file hệ thống của Android. Nó kiểu kiểu như jailbreak (phá khóa) trên các máy của Apple đó.
+						trong máy (được gọi là quyền truy cập root)". Đây là wikipedia bảo thế. Còn thực tiễn hơn
+						thì
+						root điện thoại giúp cậu sử dụng được các tính năng tinh chỉnh nâng cao yêu cầu can thiệp
+						sâu
+						vào file hệ thống của Android. Nó kiểu kiểu như jailbreak (phá khóa) trên các máy của Apple
+						đó.
 					</p>
 				</article>
 			</a>
@@ -124,8 +132,10 @@
 				<article class="posts">
 					<h2>[Android] Các loại giao diện điện thoại Android</h2>
 					<p>
-						Android gốc (kiểu Android One) vẫn thường mượt mà nhất và đẹp nhất, nhưng không hẳn. Các hãng
-						hiện tại dù chấp nhận rằng Android gốc rất đẹp, nhưng họ không từ bỏ giao diện cá nhân của họ,
+						Android gốc (kiểu Android One) vẫn thường mượt mà nhất và đẹp nhất, nhưng không hẳn. Các
+						hãng
+						hiện tại dù chấp nhận rằng Android gốc rất đẹp, nhưng họ không từ bỏ giao diện cá nhân của
+						họ,
 						mà thay vào đó họ rút kinh nghiệm để cải thiện chúng.
 					</p>
 				</article>

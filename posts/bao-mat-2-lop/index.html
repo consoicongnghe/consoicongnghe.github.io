@@ -64,14 +64,15 @@
 </head>
 
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav">
 		<b><a href="/">Sói</a></b>
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
-		<div class="topnav-right">
-			<a href="/">Trang chủ</a>
-			<a href="/posts/" class="active">Bài viết</a>
-			<a href="/about/">Giới thiệu</a>
-			<a href="/contact/">Liên hệ</a>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
 			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
@@ -82,7 +83,7 @@
 					</symbol>
 				</defs>
 			</svg>
-			<span class="tophamburger" onclick="return topnavHamburger()">
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
 				<!-- <i class="fa fa-bars"></i> -->
 				<svg class="icon icon-bars">
 					<use xlink:href="#icon-bars"></use>
@@ -99,40 +100,53 @@
 			<h1>Bảo mật hai lớp</h1>
 			<p>
 				Dạo này tớ hay nghe người ta chia sẻ việc bị hack fb nhắn tin vay tiền lừa đảo, trộm iPhone gửi link
-				hỏi mật khẩu iCloud, hay nhận email giả mạo chứa link spam đòi đăng nhập email/tài khoản ngân hàng. Điều
+				hỏi mật khẩu iCloud, hay nhận email giả mạo chứa link spam đòi đăng nhập email/tài khoản ngân hàng.
+				Điều
 				quan trọng nhất để đảm bảo an toàn trên mạng vẫn là ý thức của mình, điều quan trọng nhì là đặt mật
 				khẩu an toàn, và điều quan trọng thứ ba phải nói là bật tính năng bảo mật hai lớp.
 			</p>
-			<p>Thường các tài khoản của cậu trên các trang web trên mạng được bảo vệ bằng một chiếc mật khẩu, là một cụm
-				kí tự mà chỉ mình cậu biết và nhớ. Nhưng với sự phát triển chóng mặt của công nghệ máy tính hiện nay, 1
-				cái khóa bằng mật khẩu không còn đủ an toàn nữa, bởi đã có rất nhiều cách để bẻ khóa mật khẩu đánh cắp
-				dữ liệu cá nhân. Hiện giờ rất nhiều các trang web đã cho phép cậu cài đặt bảo mật hai lớp (xác thực 2
-				yếu tố/<i>two-factor authentication</i>), nhưng vẫn còn một số bạn vì “ngại” mà chưa thực hiện điều này,
+			<p>Thường các tài khoản của cậu trên các trang web trên mạng được bảo vệ bằng một chiếc mật khẩu, là một
+				cụm
+				kí tự mà chỉ mình cậu biết và nhớ. Nhưng với sự phát triển chóng mặt của công nghệ máy tính hiện
+				nay, 1
+				cái khóa bằng mật khẩu không còn đủ an toàn nữa, bởi đã có rất nhiều cách để bẻ khóa mật khẩu đánh
+				cắp
+				dữ liệu cá nhân. Hiện giờ rất nhiều các trang web đã cho phép cậu cài đặt bảo mật hai lớp (xác thực
+				2
+				yếu tố/<i>two-factor authentication</i>), nhưng vẫn còn một số bạn vì “ngại” mà chưa thực hiện điều
+				này,
 				đặt hệ thống tài khoản và mật khẩu của bản thân vào tình trạng nguy hiểm rủi ro mất cắp.</p>
 			<p>Vậy bảo mật hai lớp là gì, và cài đặt bảo mật hai lớp như thế nào?</p>
 			<img src="/posts/bao-mat-2-lop/2FA0-og.jpg" alt="two-factor authentication dialog box" width="581"
 				height="240">
 			<p><strong>Bảo mật hai lớp là bổ sung thêm một lớp bảo vệ cho tài khoản của cậu.</strong></p>
-			<p>Bảo mật hai lớp giống như kiểu nhà cậu đang có cửa gỗ, giờ cậu lắp thêm cửa sắt ý. Phiền hơn một chút vì
+			<p>Bảo mật hai lớp giống như kiểu nhà cậu đang có cửa gỗ, giờ cậu lắp thêm cửa sắt ý. Phiền hơn một chút
+				vì
 				phải dùng 2 chìa khóa, nhưng an toàn hơn gấp đôi vì mấy thằng trộm phá 2 khóa khác nhau bao giờ mới
 				xong???</p>
 			<p>Khi có bảo mật hai lớp, trang web sẽ yêu cầu bất kì ai đăng nhập vào tài khoản của cậu phải điền đúng
-				tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ ứng
+				tên, mật khẩu đăng nhập và mã truy cập. Mã này có thể được gửi tới cậu qua email, SMS hoặc lấy từ
+				ứng
 				dụng xác thực 2 yếu tố trên điện thoại cậu.</p>
 			<h2>Cách cài đặt bảo mật hai lớp</h2>
 			<p>Hiện nay những phương thức bảo mật phổ biến gồm có nhận mã <abbr title="One Time Password">OTP</abbr>
 				thông qua cuộc gọi, tin nhắn SMS, ứng dụng tạo mã, email;
-				nhận thông báo yêu cầu đăng nhập qua ứng dụng điện thoại; hoặc nhận đường link đăng nhập qua email. Để
+				nhận thông báo yêu cầu đăng nhập qua ứng dụng điện thoại; hoặc nhận đường link đăng nhập qua email.
+				Để
 				bật bảo mật hai lớp cho tài khoản, hãy tìm mục <b>Cài đặt</b> (<i>Settings</i>) =&gt; <b>Bảo mật</b>
 				(<i>Security</i>). Nhận mã thì đơn giản, trong cài đặt sẽ nói rõ, thường chỉ bật lên rồi xác nhận
-				email/số điện thoại là xong. Tuy nhiên ở đây tớ khuyên dùng tính năng tạo mã OTP bằng ứng dụng tạo mã,
-				lần đầu cài đặt hơi phức tạp, nhưng phương thức này an toàn hơn nhiều so với nhận code qua SMS hay email
-				bởi nó hoạt động không phụ thuộc vào kết nối mạng (cậu không cần đợi tổng đài nhắn tin/gửi email tới,
+				email/số điện thoại là xong. Tuy nhiên ở đây tớ khuyên dùng tính năng tạo mã OTP bằng ứng dụng tạo
+				mã,
+				lần đầu cài đặt hơi phức tạp, nhưng phương thức này an toàn hơn nhiều so với nhận code qua SMS hay
+				email
+				bởi nó hoạt động không phụ thuộc vào kết nối mạng (cậu không cần đợi tổng đài nhắn tin/gửi email
+				tới,
 				chỉ mở app là có code):
 			</p>
 			<ul>
 				<li>Vào phần cài đặt bảo mật của tài khoản cậu. Bật <b>Xác minh 2 yếu tố</b> (<i>Two-factor
-						authentication</i>) lên, chọn sử dụng ứng dụng để tạo mã đăng nhập (<i>use Authenticator app to
+						authentication</i>) lên, chọn sử dụng ứng dụng để tạo mã đăng nhập (<i>use Authenticator app
+						to
 						generate code</i>) hoặc lựa chọn tương tự. Bấm Next cho tới khi hiện ra một mã QR (dạng hình
 					vuông có các ô trắng đen xen kẽ), hoặc/và một đoạn mã chữ in hoa.
 				</li>
@@ -155,18 +169,22 @@
 					rel="noopener">Authy</a>
 			</div>
 			<ul>
-				<li>Tìm và bấm nút <b>Add account</b>, rồi bấm <b>Scan QR code</b>, rồi hướng điện thoại vào mã QR trên
+				<li>Tìm và bấm nút <b>Add account</b>, rồi bấm <b>Scan QR code</b>, rồi hướng điện thoại vào mã QR
+					trên
 					màn
 					hình máy
 					tính của cậu. Điện thoại sẽ tự thêm tài khoản của cậu vào ứng dụng <a href="https://authy.com"
-						target="_blank" rel="noopener">Authy</a> khi đã nhận diện được mã QR. Cậu cũng có thể bấm vào
+						target="_blank" rel="noopener">Authy</a> khi đã nhận diện được mã QR. Cậu cũng có thể bấm
+					vào
 					<b>Enter key manually</b>, copy đoạn code trên trang web vào rồi OK.
 				</li>
 				<li>Quay trở lại máy tính. Bấm Next. Gõ chuỗi 6 con số hiện ra trong ứng dụng Authy, rồi bấm Next
 					trên máy tính để xác nhận.</li>
 			</ul>
-			<p>Vậy là xong. Mỗi lần cần đăng nhập, cậu cần gõ đúng tên và mật khẩu đăng nhập, rồi mở điện thoại vào ứng
-				dụng <a href="https://authy.com" target="_blank" rel="noopener">Authy</a> và copy mã 6 chữ số ấy vào ô
+			<p>Vậy là xong. Mỗi lần cần đăng nhập, cậu cần gõ đúng tên và mật khẩu đăng nhập, rồi mở điện thoại vào
+				ứng
+				dụng <a href="https://authy.com" target="_blank" rel="noopener">Authy</a> và copy mã 6 chữ số ấy vào
+				ô
 				xác thực 2 yếu tố. Vậy là được
 				:&gt;</p>
 			<img src="/posts/bao-mat-2-lop/2FA3.jpg" alt="Authy copy 2FA code" loading="lazy" width="1170" height="800">
