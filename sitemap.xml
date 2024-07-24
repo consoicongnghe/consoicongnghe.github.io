@@ -6,17 +6,7 @@
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/about/</loc>
-		<priority>0.75</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/blog/</loc>
-		<priority>0.75</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/chickengang/</loc>
+		<loc>https://consoicongnghe.com/posts/</loc>
 		<priority>0.75</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
@@ -26,82 +16,22 @@
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/posts/</loc>
+		<loc>https://consoicongnghe.com/chickengang/</loc>
 		<priority>0.75</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/blog/adobe-unlicensed-popup/</loc>
-		<priority>0.50</priority>
+		<loc>https://consoicongnghe.com/blog/</loc>
+		<priority>0.75</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/blog/rustdesk/</loc>
-		<priority>0.50</priority>
+		<loc>https://consoicongnghe.com/about/</loc>
+		<priority>0.75</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/posts/archived/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/bao-mat-2-lop/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/bo-day-sac/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/o-cung-di-dong/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/pin-du-phong/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/tai-nghe-airpods-2/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/trustedstores/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/ublock-origin/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/USB/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/usb-otg/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/win11-transparency-effects/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/windows-clipboard-history/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-24</lastmod>
-	</url>
-	<url>
-		<loc>https://consoicongnghe.com/posts/windows-refresh-desktop/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
@@ -111,12 +41,82 @@
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-refresh-desktop/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/posts/archived/android-cac-loai-giao-dien/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-clipboard-history/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/win11-transparency-effects/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/usb-otg/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/USB/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/ublock-origin/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/trustedstores/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/tai-nghe-airpods-2/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/pin-du-phong/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/o-cung-di-dong/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/bo-day-sac/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/bao-mat-2-lop/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/archived/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/blog/rustdesk/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/blog/adobe-unlicensed-popup/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-24</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/archived/android-root-dien-thoai-de-lam-gi/</loc>
 		<priority>0.25</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
@@ -126,7 +126,7 @@
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/posts/archived/android-root-dien-thoai-de-lam-gi/</loc>
+		<loc>https://consoicongnghe.com/posts/archived/android-cac-loai-giao-dien/</loc>
 		<priority>0.25</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
