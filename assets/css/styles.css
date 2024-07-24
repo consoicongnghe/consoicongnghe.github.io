@@ -113,10 +113,13 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	width: 75%;
+	transition: transform 0.1s ease-in-out;
 }
 
 img.zoom:hover {
 	transform: scale(2, 2);
+	box-shadow: 0 0 50px var(--block-shadow);
 }
 
 
@@ -453,11 +456,6 @@ ul.breadcrumb li a:hover {
 /* remove underline from bodyy/div (class=post-list)/a in post lists */
 .bodyy>div.post-list>a:hover {
 	text-decoration: none;
-}
-
-img,
-video {
-	width: 75%;
 }
 
 /* when on mobile, img video stuff full width */
