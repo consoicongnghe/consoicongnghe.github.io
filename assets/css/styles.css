@@ -69,9 +69,14 @@ a:visited {
  	 display: inline-block; */
 }
 
-a:hover,
 a:active {
 	color: var(--text-link-hover);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	a:hover {
+		color: var(--text-link-hover);
+	}
 }
 
 .creditmedia {
@@ -84,10 +89,6 @@ a:active {
 .indent {
 	text-indent: 30px;
 }
-
-/* .indent a:hover {
-	text-decoration: underline;
-} */
 
 ul,
 ol {
@@ -118,9 +119,13 @@ video {
 	box-shadow: 0 0 5px 2px var(--block-shadow);
 }
 
-img.zoom:hover {
-	transform: scale(2, 2);
-	box-shadow: 0 0 20px 4px var(--block-shadow);
+@media (hover: hover) and (pointer: fine) {
+
+	img.zoom:hover,
+	video.zoom:hover {
+		transform: scale(2, 2);
+		box-shadow: 0 0 20px 4px var(--block-shadow);
+	}
 }
 
 
@@ -200,9 +205,11 @@ pre {
 }
 
 /* Change the color of links on hover */
-.topnav-right div.topnav-subpages a:hover {
-	background-color: #FED766;
-	color: black;
+@media (hover: hover) and (pointer: fine) {
+	.topnav-right div.topnav-subpages a:hover {
+		background-color: #FED766;
+		color: black;
+	}
 }
 
 /* Hide the hamburger on the topnav on big screens */
@@ -279,9 +286,11 @@ ul.breadcrumb li a {
 }
 
 /* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-	color: var(--text-link-hover);
-	text-decoration: underline;
+@media (hover: hover) and (pointer: fine) {
+	ul.breadcrumb li a:hover {
+		color: var(--text-link-hover);
+		text-decoration: underline;
+	}
 }
 
 
@@ -377,8 +386,10 @@ ul.breadcrumb li a:hover {
 	transition: box-shadow 0.2s ease;
 }
 
-.posts:hover {
-	box-shadow: 0 0px 8px var(--block-shadow);
+@media (hover: hover) and (pointer: fine) {
+	.posts:hover {
+		box-shadow: 0 0px 8px var(--block-shadow);
+	}
 }
 
 .posts a {
@@ -417,8 +428,10 @@ ul.breadcrumb li a:hover {
 	transition: box-shadow 0.3s ease;
 }
 
-.shortcut:hover {
-	box-shadow: 0 0px 8px var(--block-shadow);
+@media (hover: hover) and (pointer: fine) {
+	.shortcut:hover {
+		box-shadow: 0 0px 8px var(--block-shadow);
+	}
 }
 
 .shortcut>h3 {
@@ -450,13 +463,15 @@ ul.breadcrumb li a:hover {
 	/* Add a top margin to avoid content overlay for fixed header */
 }
 
-.bodyy a:hover {
-	text-decoration: underline;
-}
+@media (hover: hover) and (pointer: fine) {
+	.bodyy a:hover {
+		text-decoration: underline;
+	}
 
-/* remove underline from bodyy/div (class=post-list)/a in post lists */
-.bodyy>div.post-list>a:hover {
-	text-decoration: none;
+	/* remove underline from bodyy/div (class=post-list)/a in post lists */
+	.bodyy div.post-list a:hover {
+		text-decoration: none;
+	}
 }
 
 /* when on mobile, img video stuff full width */
