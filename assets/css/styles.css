@@ -119,7 +119,7 @@ video {
 
 img.zoom:hover {
 	transform: scale(2, 2);
-	box-shadow: 0 0 50px var(--block-shadow);
+	box-shadow: 0 0 20px 5px var(--block-shadow);
 }
 
 
