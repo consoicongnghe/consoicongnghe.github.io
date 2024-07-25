@@ -17,7 +17,7 @@
 			"404.html",
 			"readme.md",
 			"blog/archived/*",
-			"blog/private/*",
+			"blog/secret/*",
 			"assets/*"
 		],
 		"TagsToInclude": [
