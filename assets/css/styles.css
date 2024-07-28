@@ -41,7 +41,7 @@
 
 body {
 	font-family: var(--system-ui);
-	/* font-size: 18px; */
+	/* font-size: 1.1em; */
 	/* max-width: 800px; */
 	margin: 0em auto;
 	padding: 0em;
@@ -457,10 +457,8 @@ ul.breadcrumb li a {
 /* other formattings */
 .bodyy {
 	max-width: 800px;
+	padding: 0px 8px;
 	margin: 0em auto;
-	padding: 8px;
-	margin-top: 48px;
-	/* Add a top margin to avoid content overlay for fixed header */
 }
 
 @media (hover: hover) and (pointer: fine) {
