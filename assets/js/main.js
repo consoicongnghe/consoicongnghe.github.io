@@ -7,6 +7,30 @@ function showHiddenString1() {
 		x.style.display = "none";
 	}
 }
+function showHiddenString2() {
+	var x = document.getElementById("hiddenString2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+function showHiddenString3() {
+	var x = document.getElementById("hiddenString3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+function showHiddenString4() {
+	var x = document.getElementById("hiddenString4");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
 
 // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 // Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
