@@ -127,13 +127,13 @@
 			<b>FINISH OOBE</b>
 			<hr />
 			<ul>
-				<li>Check Windows edition, go <strong>Pro</strong>.</li>
+				<li>Check Windows edition, go <strong>Pro</strong>: <code>irm https://get.activated.win | iex</code></li>
 				<li>(Rename PC, C:/, change Download folder location)</li>
 				<li>Run <span style="color: var(--text-red);">GuestSetup1.cmd</span>, which includes these 3:</li>
 				<li><span style="color: var(--text-yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
 					<span style="color: var(--text-yellow);">C:/Windows/system32</span>
 				</li>
-				<li><span style="color: var(--text-yellow);">/PostInstall/RegTweaks/zScript/</span><span
+				<li><span style="color: var(--text-yellow);">/PostInstall/RegTweaks/r1_script/</span><span
 						style="color: var(--text-red);">1_guest.cmd</span></li>
 				<li><span style="color: var(--text-yellow);">/RegTweaks/</span><span
 						style="color: var(--text-red);">windows11_postInstall.reg</span></li>
