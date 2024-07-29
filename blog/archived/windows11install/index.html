@@ -127,7 +127,8 @@
 			<b>FINISH OOBE</b>
 			<hr />
 			<ul>
-				<li>Check Windows edition, go <strong>Pro</strong>: <code>irm https://get.activated.win | iex</code></li>
+				<li>Check Windows edition, go <strong>Pro</strong>: <code>irm https://get.activated.win | iex</code>
+				</li>
 				<li>(Rename PC, C:/, change Download folder location)</li>
 				<li>Run <span style="color: var(--text-red);">GuestSetup1.cmd</span>, which includes these 3:</li>
 				<li><span style="color: var(--text-yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
@@ -146,7 +147,7 @@
 				<li>check for updates</li>
 				<li><span style="color: var(--text-yellow);">/Driver/fonts/</span> --&gt; install all</li>
 				<li>Run <span style="color: var(--text-red);">GuestSetup2.cmd</span>, which include these except for
-					chrome + ext, touchpad, lock screen pic + wp</li>
+					chrome + ext, touchpad, lock screen pic + wp:</li>
 				<li><span style="color: var(--text-yellow);">/Driver/VCRedist/</span><span
 						style="color: var(--text-red);">install_all.bat</span></li>
 				<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
