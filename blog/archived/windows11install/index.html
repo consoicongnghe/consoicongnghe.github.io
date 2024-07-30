@@ -118,19 +118,22 @@
 			<p>OOBE (first start setup): <span style="color: var(--text-blue);">Shift+F10</span> --&gt;
 				<code>OOBE\BYPASSNRO</code>
 			</p>
-			<p>also check Bitlocker: <span style="color: var(--text-blue);">Shift+F10</span> --&gt;
-				<code>manage-bde -status</code>
-			</p>
-			<p>
-				Disable Bitlocker: <span style="color: var(--text-blue);">Shift+F10</span> --&gt; <span
-					style="color: var(--text-red);">regedit</span> --&gt;
-				<code>HKLM\SYSTEM\CurrentControlSet\Control\BitLocker</code>
-			</p>
-			<p>
-				Right click BitLocker,
-				<span style="color: var(--text-orange);">New Dword (32-bit) value</span>:
-				<code>PreventDeviceEncryption</code>, value=<strong>1</strong>
-			</p>
+			<p>also <button onclick="showHiddenString('bitlockerHidden')">check Bitlocker</button>.
+			<div id="bitlockerHidden" style="display: none;">
+				<ul>
+					<li><span style="color: var(--text-blue);">Shift+F10</span> --&gt; <code>manage-bde -status</code>
+					</li>
+					<li>
+						Disable Bitlocker: <span style="color: var(--text-blue);">Shift+F10</span> --&gt; <span
+							style="color: var(--text-red);">regedit</span> --&gt;
+						<code>HKLM\SYSTEM\CurrentControlSet\Control\BitLocker</code>
+					</li>
+					<li>
+						Right click BitLocker, <span style="color: var(--text-orange);">New Dword (32-bit) value</span>:
+						<code>PreventDeviceEncryption</code>, value=<strong>1</strong>
+					</li>
+				</ul>
+			</div>
 			<b>FINISH OOBE</b>
 			<hr />
 			<ul>
