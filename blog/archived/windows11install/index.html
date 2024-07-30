@@ -98,13 +98,20 @@
 			<h1>Các bước cài đặt Windows 11 của Sói</h1>
 			<p><b>Backup</b>:</p>
 			<ul>
-				<li>User folders</li>
 				<li>Program list in control panel</li>
 				<li>Backup browser bookmarks (unless synced)</li>
-				<li>Fonts</li>
 				<li>Check Recycle Bin</li>
-				<li>(OBS, steam userdata)</li>
-				<li>Export wifi</li>
+				<li>Run <span style="color: var(--text-red);">BackupPreInstall.cmd</span>, <button
+						onclick="showHiddenString('hiddenString1')"><b>which include these</b></button>
+					<div id="hiddenString1" style="display: none;">
+						<ul>
+							<li>User folders</li>
+							<li>Fonts</li>
+							<li>(OBS, steam userdata)</li>
+							<li>Export wifi</li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 			<b>INSTALL</b>
 			<hr />
@@ -127,60 +134,82 @@
 			<b>FINISH OOBE</b>
 			<hr />
 			<ul>
-				<li>Check Windows edition, go <strong>Pro</strong>: <code>irm https://get.activated.win | iex</code></li>
-				<li>(Rename PC, C:/, change Download folder location)</li>
-				<li><span style="color: var(--text-yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
-					<span style="color: var(--text-yellow);">C:/Windows/system32</span>
+				<li>Check Windows edition, go <strong>Pro</strong>: <code>irm https://get.activated.win | iex</code>
 				</li>
-				<li><span style="color: var(--text-yellow);">/PostInstall/RegTweaks/r1_script/</span><span
-						style="color: var(--text-red);">1_guest.cmd</span></li>
-				<li><span style="color: var(--text-yellow);">/RegTweaks/</span><span
-						style="color: var(--text-red);">windows11_postInstall.reg</span></li>
+				<li>(Rename PC, C:/, change Download folder location)</li>
+				<li>Run <span style="color: var(--text-red);">GuestSetup1.cmd</span>, <button
+						onclick="showHiddenString('hiddenString2')"><b>which include these</b></button>
+					<div id="hiddenString2" style="display: none;">
+						<ul>
+							<li><span style="color: var(--text-yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
+								<span style="color: var(--text-yellow);">C:/Windows/system32</span>
+							</li>
+							<li><span style="color: var(--text-yellow);">/PostInstall/RegTweaks/r1_script/</span><span
+									style="color: var(--text-red);">1_guest.cmd</span></li>
+							<li><span style="color: var(--text-yellow);">/RegTweaks/</span><span
+									style="color: var(--text-red);">windows11_postInstall.reg</span></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<b>RESTART</b>
+			<hr />
+			<ul>
+				<li>connect internet / import wifi</li>
+				<li>auto timezone, toggle auto time sync</li>
+				<li>check for updates</li>
+				<li><span style="color: var(--text-yellow);">/Driver/fonts/</span> --&gt; install all</li>
+				<li>setup chrome (<i>office, unikey, trafficMonitor, Logi Options+</i>)</li>
+				<li><span style="color: var(--text-yellow);">Programs/Chrome/</span><span
+						style="color: var(--text-red);">extensions.bat</span>: Ublock Origin, SponsorBlock, FastForward,
+					Run In Background</li>
+				<li>set wp and lock screen pic</li>
+				<li>Run <span style="color: var(--text-red);">GuestSetup2.cmd</span>, <button
+						onclick="showHiddenString('hiddenString3')"><b>which include these</b></button>
+					<div id="hiddenString3" style="display: none;">
+						<ul>
+							<li>Restore previously backed up user folders</li>
+							<li><span style="color: var(--text-yellow);">/Driver/VCRedist/</span><span
+									style="color: var(--text-red);">install_all.bat</span></li>
+							<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
+									style="color: var(--text-red);">MsStore_UpdateAll.ps1</span> --&gt; open <span
+									style="color: var(--text-red);">MS Store</span>
+							</li>
+							<li>(<span style="color: var(--text-yellow);">/Programs/1sthing/</span>)</li>
+							<li>setup things except k-lite, adobe.</li>
+							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
+						</ul>
+					</div>
+				</li>
+
 			</ul>
 			<b>RESTART</b>
 			<hr />
 			<ul>
 				<li>virus protection: turn off, (<i>add exception GG Drive</i>)</li>
-				<li>connect internet / import wifi</li>
-				<li>auto timezone, toggle auto time sync</li>
-				<li>check for updates</li>
-				<li><span style="color: var(--text-yellow);">/Driver/fonts/</span> --&gt; install all</li>
-				<li><span style="color: var(--text-yellow);">/Driver/VCRedist/</span><span
-						style="color: var(--text-red);">install_all.bat</span></li>
-				<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
-						style="color: var(--text-red);">MsStore_UpdateAll.cmd</span> --&gt; open <span
-						style="color: var(--text-red);">MS Store</span>
-				</li>
-				<li>setup chrome, office, unikey, (<i>trafficMonitor, Logi Options+</i>)</li>
-				<li><span style="color: var(--text-yellow);">Programs/Chrome/</span><span
-						style="color: var(--text-red);">extensions.bat</span>: Ublock Origin, SponsorBlock, FastForward,
-					Run In Background</li>
-				<li><span style="color: var(--text-red);">Settings</span>:<code>touchpad</code> -&gt;
-					3+4finger = middle click; <code>language bar</code>
-				</li>
-				<li>set wp and lock screen pic</li>
-				<li>(<span style="color: var(--text-yellow);">/Programs/1sthing/</span>)</li>
-				<li>setup things except k-lite, adobe.</li>
-				<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
-			</ul>
-			<b>RESTART</b>
-			<hr />
-			<ul>
 				<li>k-lite, adobe</li>
-				<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
-						style="color: var(--text-red);">1_guest.cmd</span></li>
-				<li>post-update: <span style="color: var(--text-red);">Control Panel</span><span
-						style="color: var(--text-yellow);">/Power options</span></li>
 				<li><span style="color: var(--text-red);">Settings</span>: <code>startup app</code></li>
-				<li><span style="color: var(--text-red);">Rustdesk</span>: <span
-						style="color: var(--text-yellow);">/security</span>: enable remote cfg modification,
-					set permanent pw</li>
-				<li><span style="color: var(--text-red);">Snipping Tool</span><span
-						style="color: var(--text-yellow);">/Settings</span>: dont auto save, multiple
-					windows</li>
 				<li>Laptop: check modern standby status: <code>powercfg /a</code>. Enable/Disable by registry tweak.
 				</li>
-				<li>Disk cleanup C:/. Delete files in C:\.</li>
+				<li>Run <span style="color: var(--text-red);">GuestSetup3.cmd</span>, <button
+						onclick="showHiddenString('hiddenString4')"><b>which include these</b></button>
+					<div id="hiddenString4" style="display: none;">
+						<ul>
+							<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
+									style="color: var(--text-red);">1_guest.cmd</span></li>
+							<li>post-update: <span style="color: var(--text-red);">Control Panel</span><span
+									style="color: var(--text-yellow);">/Power options</span></li>
+							<li><span style="color: var(--text-red);">Rustdesk</span>: <span
+									style="color: var(--text-yellow);">/security</span>: enable remote cfg modification,
+								set permanent pw</li>
+							<li><span style="color: var(--text-red);">Snipping Tool</span><span
+									style="color: var(--text-yellow);">/Settings</span>: dont auto save, multiple
+								windows</li>
+							<li>Disk cleanup C:/</li>
+						</ul>
+					</div>
+				</li>
+
 			</ul>
 			<hr />
 			<p>
