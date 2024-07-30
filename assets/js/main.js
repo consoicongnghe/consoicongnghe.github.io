@@ -1,30 +1,7 @@
+// https://stackoverflow.com/questions/66927938/how-do-i-create-show-hide-elements-for-different-buttons
 // press the button to show hidden string
-function showHiddenString1() {
-	var x = document.getElementById("hiddenString1");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-function showHiddenString2() {
-	var x = document.getElementById("hiddenString2");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-function showHiddenString3() {
-	var x = document.getElementById("hiddenString3");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-function showHiddenString4() {
-	var x = document.getElementById("hiddenString4");
+function showHiddenString(ID) {
+	var x = document.getElementById(ID);
 	if (x.style.display === "none") {
 		x.style.display = "block";
 	} else {

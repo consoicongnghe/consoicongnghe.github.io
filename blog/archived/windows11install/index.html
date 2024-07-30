@@ -102,7 +102,7 @@
 				<li>Backup browser bookmarks (unless synced)</li>
 				<li>Check Recycle Bin</li>
 				<li>Run <span style="color: var(--text-red);">BackupPreInstall.cmd</span>, <button
-						onclick="showHiddenString1()"><b>which include these</b></button>
+						onclick="showHiddenString('hiddenString1')"><b>which include these</b></button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
 							<li>User folders</li>
@@ -138,7 +138,7 @@
 				</li>
 				<li>(Rename PC, C:/, change Download folder location)</li>
 				<li>Run <span style="color: var(--text-red);">GuestSetup1.cmd</span>, <button
-						onclick="showHiddenString2()"><b>which include these</b></button>
+						onclick="showHiddenString('hiddenString2')"><b>which include these</b></button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
 							<li><span style="color: var(--text-yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
@@ -165,7 +165,7 @@
 					Run In Background</li>
 				<li>set wp and lock screen pic</li>
 				<li>Run <span style="color: var(--text-red);">GuestSetup2.cmd</span>, <button
-						onclick="showHiddenString3()"><b>which include these</b></button>
+						onclick="showHiddenString('hiddenString3')"><b>which include these</b></button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
 							<li>Restore previously backed up user folders</li>
@@ -192,7 +192,7 @@
 				<li>Laptop: check modern standby status: <code>powercfg /a</code>. Enable/Disable by registry tweak.
 				</li>
 				<li>Run <span style="color: var(--text-red);">GuestSetup3.cmd</span>, <button
-						onclick="showHiddenString4()"><b>which include these</b></button>
+						onclick="showHiddenString('hiddenString4')"><b>which include these</b></button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
 							<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
