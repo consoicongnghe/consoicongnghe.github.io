@@ -458,7 +458,7 @@ ul.breadcrumb li a {
 .bodyy {
 	max-width: 800px;
 	padding: 0px 8px;
-	margin: 0em auto;
+	margin: 70px auto;
 }
 
 @media (hover: hover) and (pointer: fine) {
