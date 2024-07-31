@@ -53,6 +53,12 @@ body {
 	color: var(--text);
 }
 
+.bodyy {
+	max-width: 800px;
+	padding: 0px 8px;
+	margin: 70px auto 0px;
+}
+
 
 /*-------------CUSTOM TEXT FORMATTING-----------*/
 a {
@@ -73,9 +79,45 @@ a:active {
 	color: var(--text-link-hover);
 }
 
+img,
+embed,
+object,
+video {
+	height: auto;
+}
+
+img,
+video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 75%;
+	transition: transform 0.1s ease-in-out;
+	box-shadow: 0 0 5px 2px var(--block-shadow);
+}
+
 @media (hover: hover) and (pointer: fine) {
 	a:hover {
 		color: var(--text-link-hover);
+	}
+
+	/* underline links */
+	.bodyy a:hover {
+		text-decoration: underline;
+	}
+
+	/* zoom media on hover with class "hover" */
+	img.zoom:hover,
+	video.zoom:hover {
+		transform: scale(2, 2);
+		box-shadow: 0 0 20px 4px var(--block-shadow);
+	}
+
+	/* when on mobile, img video stuff full width */
+	img,
+	video {
+		width: 100%;
 	}
 }
 
@@ -99,33 +141,6 @@ ol {
 h1 {
 	text-align: center;
 	color: var(--text-link);
-}
-
-img,
-embed,
-object,
-video {
-	height: auto;
-}
-
-img,
-video {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	width: 75%;
-	transition: transform 0.1s ease-in-out;
-	box-shadow: 0 0 5px 2px var(--block-shadow);
-}
-
-@media (hover: hover) and (pointer: fine) {
-
-	img.zoom:hover,
-	video.zoom:hover {
-		transform: scale(2, 2);
-		box-shadow: 0 0 20px 4px var(--block-shadow);
-	}
 }
 
 
@@ -341,19 +356,6 @@ ul.breadcrumb li a {
 	overflow: hidden;
 }
 
-.toc-list li>a .leaders::after {
-	position: absolute;
-	padding-left: .25ch;
-	content: " . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . ";
-	text-align: right;
-}
-
 
 /* flexbox formatting - for post lists */
 .post-list {
@@ -389,6 +391,11 @@ ul.breadcrumb li a {
 @media (hover: hover) and (pointer: fine) {
 	.posts:hover {
 		box-shadow: 0 0px 8px var(--block-shadow);
+	}
+
+	/* remove underline from bodyy/div (class=post-list)/a in post lists */
+	.bodyy div.post-list a:hover {
+		text-decoration: none;
 	}
 }
 
@@ -440,7 +447,7 @@ ul.breadcrumb li a {
 }
 
 /* Responsive layout - makes a one column layout */
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.shortcuts {
 		flex-direction: column;
 		align-items: stretch;
@@ -455,32 +462,9 @@ ul.breadcrumb li a {
 
 
 /* other formattings */
-.bodyy {
-	max-width: 800px;
-	padding: 0px 8px;
-	margin: 70px auto;
-}
-
-@media (hover: hover) and (pointer: fine) {
-	.bodyy a:hover {
-		text-decoration: underline;
-	}
-
-	/* remove underline from bodyy/div (class=post-list)/a in post lists */
-	.bodyy div.post-list a:hover {
-		text-decoration: none;
-	}
-}
-
-/* when on mobile, img video stuff full width */
 @media screen and (max-width: 800px) {
 	.bodyy {
-		margin-top: 0px;
-	}
-
-	img,
-	video {
-		width: 100%;
+		margin: 0px auto;
 	}
 }
 
