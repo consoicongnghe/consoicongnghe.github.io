@@ -49,7 +49,7 @@
 		  },{
 			"@type": "ListItem",
 			"position": 3,
-			"name": "Bài viết blog đã lưu trữ",
+			"name": "Blog trong kho",
 			"item": "https://consoicongnghe.com/blog/archived/"
 		  },{
 			"@type": "ListItem",
@@ -91,7 +91,7 @@
 	</div>
 	<div class="bodyy">
 		<ul class="breadcrumb">
-			<li><a href="/blog/">Blog</a></li>
+			<li><a href="/blog/archived/">Blog trong kho</a></li>
 			<li>Cài đặt Windows 11</li>
 		</ul>
 		<div class="indent">
@@ -101,7 +101,7 @@
 				<li>Program list in control panel</li>
 				<li>Backup browser bookmarks (unless synced)</li>
 				<li>Check Recycle Bin</li>
-				<li>Run <span style="color: var(--text-red);">BackupPreInstall.cmd</span>, <button
+				<li>Run <span style="color: var(--red);">BackupPreInstall.cmd</span>, <button
 						onclick="showHiddenString('hiddenString1')"><b>which include these</b></button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
@@ -115,21 +115,21 @@
 			</ul>
 			<b>INSTALL</b>
 			<hr />
-			<p>OOBE (first start setup): <span style="color: var(--text-blue);">Shift+F10</span> --&gt;
+			<p>OOBE (first start setup): <span style="color: var(--blue);">Shift+F10</span> --&gt;
 				<code>OOBE\BYPASSNRO</code>
 			</p>
 			<p>also <button onclick="showHiddenString('bitlockerHidden')">check Bitlocker</button>.
 			<div id="bitlockerHidden" style="display: none;">
 				<ul>
-					<li><span style="color: var(--text-blue);">Shift+F10</span> --&gt; <code>manage-bde -status</code>
+					<li><span style="color: var(--blue);">Shift+F10</span> --&gt; <code>manage-bde -status</code>
 					</li>
 					<li>
-						Disable Bitlocker: <span style="color: var(--text-blue);">Shift+F10</span> --&gt; <span
-							style="color: var(--text-red);">regedit</span> --&gt;
+						Disable Bitlocker: <span style="color: var(--blue);">Shift+F10</span> --&gt; <span
+							style="color: var(--red);">regedit</span> --&gt;
 						<code>HKLM\SYSTEM\CurrentControlSet\Control\BitLocker</code>
 					</li>
 					<li>
-						Right click BitLocker, <span style="color: var(--text-orange);">New Dword (32-bit) value</span>:
+						Right click BitLocker, <span style="color: var(--orange);">New Dword (32-bit) value</span>:
 						<code>PreventDeviceEncryption</code>, value=<strong>1</strong>
 					</li>
 				</ul>
@@ -140,17 +140,17 @@
 			<ul>
 				<li>Check Windows edition, go <strong>Pro</strong></li>
 				<li>(Rename PC, C:/, change Download folder location)</li>
-				<li>Run <span style="color: var(--text-red);">GuestSetup1.cmd</span>, <button
+				<li>Run <span style="color: var(--red);">GuestSetup1.cmd</span>, <button
 						onclick="showHiddenString('hiddenString2')"><b>which include these</b></button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
-							<li><span style="color: var(--text-yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
-								<span style="color: var(--text-yellow);">C:/Windows/system32</span>
+							<li><span style="color: var(--yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
+								<span style="color: var(--yellow);">C:/Windows/system32</span>
 							</li>
-							<li><span style="color: var(--text-yellow);">/PostInstall/RegTweaks/r1_script/</span><span
-									style="color: var(--text-red);">1_guest.cmd</span></li>
-							<li><span style="color: var(--text-yellow);">/RegTweaks/</span><span
-									style="color: var(--text-red);">windows11_postInstall.reg</span></li>
+							<li><span style="color: var(--yellow);">/PostInstall/RegTweaks/r1_script/</span><span
+									style="color: var(--red);">1_guest.cmd</span></li>
+							<li><span style="color: var(--yellow);">/RegTweaks/</span><span
+									style="color: var(--red);">windows11_postInstall.reg</span></li>
 						</ul>
 					</div>
 				</li>
@@ -161,58 +161,56 @@
 				<li>connect internet / import wifi</li>
 				<li>auto timezone, toggle auto time sync</li>
 				<li>check for updates</li>
-				<li><span style="color: var(--text-yellow);">/Driver/fonts/</span> --&gt; install all</li>
+				<li><span style="color: var(--yellow);">/Driver/fonts/</span> --&gt; install all</li>
 				<li>setup chrome (<i>office, unikey, trafficMonitor, Logi Options+</i>)</li>
-				<li><span style="color: var(--text-yellow);">Programs/Chrome/</span><span
-						style="color: var(--text-red);">extensions.bat</span>: Ublock Origin, SponsorBlock, FastForward,
+				<li><span style="color: var(--yellow);">Programs/Chrome/</span><span
+						style="color: var(--red);">extensions.bat</span>: Ublock Origin, SponsorBlock, FastForward,
 					Run In Background</li>
 				<li>set wp and lock screen pic</li>
-				<li>Run <span style="color: var(--text-red);">GuestSetup2.cmd</span>, <button
+				<li>Run <span style="color: var(--red);">GuestSetup2.cmd</span>, <button
 						onclick="showHiddenString('hiddenString3')"><b>which include these</b></button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
 							<li>Restore previously backed up user folders</li>
-							<li><span style="color: var(--text-yellow);">/Driver/VCRedist/</span><span
-									style="color: var(--text-red);">install_all.bat</span></li>
-							<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
-									style="color: var(--text-red);">MsStore_UpdateAll.ps1</span> --&gt; open <span
-									style="color: var(--text-red);">MS Store</span>
+							<li><span style="color: var(--yellow);">/Driver/VCRedist/</span><span
+									style="color: var(--red);">install_all.bat</span></li>
+							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
+									style="color: var(--red);">MsStore_UpdateAll.ps1</span> --&gt; open <span
+									style="color: var(--red);">MS Store</span>
 							</li>
-							<li>(<span style="color: var(--text-yellow);">/Programs/1sthing/</span>)</li>
+							<li>(<span style="color: var(--yellow);">/Programs/1sthing/</span>)</li>
 							<li>setup things except k-lite, adobe.</li>
 							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
 						</ul>
 					</div>
 				</li>
-
 			</ul>
 			<b>RESTART</b>
 			<hr />
 			<ul>
 				<li>virus protection: turn off, (<i>add exception GG Drive</i>)</li>
 				<li>k-lite, adobe</li>
-				<li><span style="color: var(--text-red);">Settings</span>: <code>startup app</code></li>
+				<li><span style="color: var(--red);">Settings</span>: <code>startup app</code></li>
 				<li>Laptop: check modern standby status: <code>powercfg /a</code>. Enable/Disable by registry tweak.
 				</li>
-				<li>Run <span style="color: var(--text-red);">GuestSetup3.cmd</span>, <button
+				<li>Run <span style="color: var(--red);">GuestSetup3.cmd</span>, <button
 						onclick="showHiddenString('hiddenString4')"><b>which include these</b></button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
-							<li><span style="color: var(--text-yellow);">/PostInstall/winget/</span><span
-									style="color: var(--text-red);">1_guest.cmd</span></li>
-							<li>post-update: <span style="color: var(--text-red);">Control Panel</span><span
-									style="color: var(--text-yellow);">/Power options</span></li>
-							<li><span style="color: var(--text-red);">Rustdesk</span>: <span
-									style="color: var(--text-yellow);">/security</span>: enable remote cfg modification,
+							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
+									style="color: var(--red);">1_guest.cmd</span></li>
+							<li>post-update: <span style="color: var(--red);">Control Panel</span><span
+									style="color: var(--yellow);">/Power options</span></li>
+							<li><span style="color: var(--red);">Rustdesk</span>: <span
+									style="color: var(--yellow);">/security</span>: enable remote cfg modification,
 								set permanent pw</li>
-							<li><span style="color: var(--text-red);">Snipping Tool</span><span
-									style="color: var(--text-yellow);">/Settings</span>: dont auto save, multiple
+							<li><span style="color: var(--red);">Snipping Tool</span><span
+									style="color: var(--yellow);">/Settings</span>: dont auto save, multiple
 								windows</li>
 							<li>Disk cleanup C:/</li>
 						</ul>
 					</div>
 				</li>
-
 			</ul>
 			<hr />
 			<p>
