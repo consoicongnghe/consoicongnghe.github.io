@@ -121,7 +121,7 @@ video {
 	}
 }
 
-.creditmedia {
+.caption {
 	color: var(--text);
 	font-style: italic;
 	text-align: center;
