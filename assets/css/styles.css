@@ -97,6 +97,7 @@ video {
 	box-shadow: 0 0 5px 2px var(--block-shadow);
 }
 
+/* NOT on mobile (so only on PC n stuff) */
 @media (hover: hover) and (pointer: fine) {
 	a:hover {
 		color: var(--cyan-hover);
@@ -113,6 +114,9 @@ video {
 		transform: scale(2, 2);
 		box-shadow: 0 0 20px 4px var(--block-shadow);
 	}
+}
+
+@media screen and (max-width: 800px) {
 
 	/* when on mobile, img video stuff full width */
 	img,
