@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<link rel="preload" href="/assets/css/styles.css" as="style" />
+	<title>[Windows] HEVC video extension</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="Hướng dẫn cài extension xem các file định dạng HEIF, HEIC, HEVC,... trên máy tính Windows.">
+	<meta name="keywords" content="dây sạc, gọn, usb-c, lightning">
+	<meta name="author" content="consoicongnghe">
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png">
+	<link rel="manifest" href="\assets\icons/site.webmanifest">
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="1200">
+	<meta property="og:description"
+		content="Hướng dẫn cài extension xem các file định dạng HEIF, HEVC, RAW,... trên máy tính Windows.">
+	<meta property="og:title" content="[Windows] HEVC video extension">
+	<meta property="og:url" content="https://consoicongnghe.com/posts/windows-hevc-extension/">
+	<meta property="og:image" content="https://consoicongnghe.com/posts/windows-hevc-extension/win-hevc-ext-error.png">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script async src="/assets/js/main.js"></script>
+	<!-- Google search site name -->
+	<script type="application/ld+json">
+		{
+		  "@context" : "https://schema.org",
+		  "@type" : "WebSite",
+		  "name" : "Con sói công nghệ",
+		  "url" : "https://consoicongnghe.com/"
+		}
+	  </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Bài viết",
+			"item": "https://consoicongnghe.com/posts/"
+		  },{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "[Windows] HEVC video extension",
+			"item": "https://consoicongnghe.com/posts/windows-hevc-extension/"
+		  }]
+		}
+	</script>
+</head>
+
+<body>
+	<div class="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
+			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<symbol id="icon-bars" viewBox="0 0 24 20">
+						<path
+							d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+						</path>
+					</symbol>
+				</defs>
+			</svg>
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/posts/">Bài viết</a></li>
+			<li>HEVC Video Extension</li>
+		</ul>
+		<div class="indent">
+			<h1>[Windows] HEVC Video Extension</h1>
+			<p>Vì lí do bản quyền, Windows 10+ sau khi cài sạch mặc định không mở được một số định dạng file như HEIF,
+				HEIC, HEVC,... Khi cậu mở sẽ gặp phải lỗi yêu cầu cài đặt thêm phần mở rộng (<i>extension</i>) có trả
+				phí dạng như thế này:</p>
+			<img src="/posts/windows-hevc-extension/win-hevc-ext-error.png" alt="HEVC extension error" width="1056"
+				height="498" style="width: 50%;;">
+			<p><strong>Cách xử lí:</strong> Cài đặt các extension còn thiếu.</p>
+			<ul>
+				<li><a href="ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq">HEVC Video Extension</a> giúp đọc các file
+					ảnh định dạng HEIC (Apple), xem các file video HEVC.</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9pmmsr1cgpwg">HEIF Video Extension</a> giúp đọc các file
+					ảnh định dạng HEIF.</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9n4d0msmp0pt">VP9 Video Extensions</a> giúp đọc các file
+					video VP9 (Google).</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9mvzqvxjbq9v">AV1 Video Extension</a> giúp đọc các file
+					video AV1 (Google).</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9n95q1zzpmh4">MPEG-2 Video Extension</a> giúp đọc các
+					MPEG-2 (Apple).</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9nctdw2w1bh8">Raw Image Extension</a> giúp đọc các file
+					ảnh định dạng raw.</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9pg2dk419drg">Webp Image Extensions</a> giúp đọc các file
+					ảnh định dạng WEBP.</li>
+				<li><a href="ms-windows-store://pdp/?ProductId=9n5tdp8vcmhs">Web Media Extensions</a> giúp đọc các file
+					OGG, codec Vorbis và Theora.</li>
+			</ul>
+			<br>
+			<p><b>Sói</b></p>
+		</div>
+	</div>
+</body>
+
+</html>

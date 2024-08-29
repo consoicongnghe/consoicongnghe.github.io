@@ -15,7 +15,7 @@
   </image>
   <item>
     <title>Hub USB Type-C</title>
-    <link>https://consoicongnghe.com/posts/windows-character-map/</link>
+    <link>https://consoicongnghe.com/posts/hub-usb-type-c/</link>
     <description>Cái này là một chiếc hub USB. Mục đích của nó chủ yếu để giúp các laptop nhỏ gọn đời mới (thường chỉ có cổng USB type-C) kết nối với nhiều thiết bị khác với các loại cổng kết nối khác.</description>
     <enclosure url="https://consoicongnghe.com/posts/DA310-og.jpg" type="image/jpeg" length="0"/>
     <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/DA310-og.jpg">
@@ -26,8 +26,20 @@
     <pubDate>Fri, 06 Sep 2024 20:00:00 +0700</pubDate>
   </item>
   <item>
+    <title>[Windows] HEVC video extension</title>
+    <link>https://consoicongnghe.com/posts/windows-hevc-extension/</link>
+    <description>Hướng dẫn cài extension xem các file định dạng HEIF, HEIC, HEVC,... trên máy tính Windows.</description>
+    <enclosure url="https://consoicongnghe.com/posts/windows-hevc-extension/win-hevc-ext-error.png" type="image/png" length="0"/>
+    <media:content type="image/png" url="https://consoicongnghe.com/posts/windows-hevc-extension/win-hevc-ext-error.png">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Hướng dẫn cài extension xem các file định dạng HEIF, HEIC, HEVC,... trên máy tính Windows.</media:text>
+      <media:title type="plain">[Windows] HEVC video extension</media:title>
+    </media:content>
+    <pubDate>Fri, 30 Aug 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Ổ cứng SSD</title>
-    <link>https://consoicongnghe.com/posts/windows-character-map/</link>
+    <link>https://consoicongnghe.com/posts/SSD/</link>
     <description>Người ta phổ cập SSD lâu lắm rồi mà cậu vẫn chưa biết ổ cứng nghĩa là cái gì! Là để lưu dữ liệu, nhé. Như não cậu ấy. Nếu cậu không có não thì mua ổ cứng để nó nhớ hộ cho, nhưng mua SSD ấy, nhảy số cho nhanh. Đừng mua HDD nữa hic.</description>
     <enclosure url="https://consoicongnghe.com/posts/SSD-og.jpg" type="image/jpeg" length="0"/>
     <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/SSD-og.jpg">
