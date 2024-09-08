@@ -77,10 +77,11 @@ if (!(Test-Path C:\Temp))
 
 cd C:\Temp
 
+Write-Output "Downloading RustDesk..."
 Invoke-WebRequest $RustDeskOnGitHub.Downloadlink -Outfile "rustdesk.exe"
 Write-Output "Installing RustDesk..."
 Start-Process .\rustdesk.exe --silent-install
-Start-Sleep -seconds 5
+Start-Sleep -seconds 1
 
 $ServiceName = 'Rustdesk'
 $arrService = Get-Service -Name $ServiceName -ErrorAction SilentlyContinue
@@ -90,17 +91,17 @@ if ($arrService -eq $null)
     Write-Output "Installing service..."
     cd $env:ProgramFiles\RustDesk
     Start-Process .\rustdesk.exe --install-service
-    Start-Sleep -seconds 3
+    Start-Sleep -seconds 1
 }
 
 while ($arrService.Status -ne 'Running')
 {
     Start-Service $ServiceName
-    Start-Sleep -seconds 2
+    Start-Sleep -seconds 1
     $arrService.Refresh()
 }
 
-net stop rustdesk
+net stop rustdesk Out-Null
 
 $username = ((Get-WMIObject -ClassName Win32_ComputerSystem).Username).Split('\')[1]
 Remove-Item C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk_default.toml
@@ -111,10 +112,10 @@ Remove-Item C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml
 New-Item C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml
 Set-Content C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml "rendezvous_server = 'rustdesk.consoicongnghe.com:21116' `nnat_type = 1`nserial = 0`n`n[options]`ndirect-server = 'Y'`nallow-remote-config-modification = 'Y'`ncustom-rendezvous-server = 'rustdesk.consoicongnghe.com'`nkey = 'N3V5GGIIcsXUd9TD8rzuEB2F3+1jyoslIBwp3Na3028='"
 
-net start rustdesk
+net start rustdesk Out-Null
 
 cd $env:ProgramFiles\RustDesk\
-.\rustdesk.exe --get-id | Write-Output -OutVariable rustdesk_id
+.\rustdesk.exe --get-id | Write-Verbose -OutVariable rustdesk_id
 
 .\rustdesk.exe --config $rustdesk_cfg
 
@@ -122,7 +123,7 @@ cd $env:ProgramFiles\RustDesk\
 
 Write-Output "..............................................."
 Write-Output "Copy 2 dong nay gui cho Linh:"
-Write-Output ""
+Write-Output " "
 
 # Show the value of the ID Variable
 Write-Output "RustDesk ID: $rustdesk_id"
