@@ -78,8 +78,8 @@ if (!(Test-Path C:\Temp))
 cd C:\Temp
 
 Invoke-WebRequest $RustDeskOnGitHub.Downloadlink -Outfile "rustdesk.exe"
-Start-Process .\rustdesk.exe --silent-install -wait
-# Start-Sleep -seconds 20
+Start-Process .\rustdesk.exe --silent-install
+Start-Sleep -seconds 20
 
 $ServiceName = 'Rustdesk'
 $arrService = Get-Service -Name $ServiceName -ErrorAction SilentlyContinue
