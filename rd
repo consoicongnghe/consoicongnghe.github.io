@@ -110,7 +110,7 @@ Set-Content C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk_default.
 
 Remove-Item C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml
 New-Item C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml
-Set-Content C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml "rendezvous_server = 'rustdesk.consoicongnghe.com:21116' `nnat_type = 1`nserial = 0`n`n[options]`ndirect-server = 'Y'`nallow-remote-config-modification = 'Y'`ncustom-rendezvous-server = 'rustdesk.consoicongnghe.com'`nkey = 'N3V5GGIIcsXUd9TD8rzuEB2F3+1jyoslIBwp3Na3028='"
+Set-Content C:\Users\$username\AppData\Roaming\RustDesk\config\RustDesk2.toml "rendezvous_server = 'rustdesk.consoicongnghe.com:21116' `nnat_type = 1`nserial = 0`n`n[options]`nallow-remote-config-modification = 'Y'`ncustom-rendezvous-server = 'rustdesk.consoicongnghe.com'`nkey = 'N3V5GGIIcsXUd9TD8rzuEB2F3+1jyoslIBwp3Na3028='"
 
 net start rustdesk Out-Null
 
