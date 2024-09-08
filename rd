@@ -91,13 +91,13 @@ if ($arrService -eq $null)
     Write-Output "Installing service..."
     cd $env:ProgramFiles\RustDesk
     Start-Process .\rustdesk.exe --install-service
-    Start-Sleep -seconds 1
+    Start-Sleep -seconds 2
 }
 
 while ($arrService.Status -ne 'Running')
 {
     Start-Service $ServiceName
-    Start-Sleep -seconds 1
+    Start-Sleep -seconds 2
     $arrService.Refresh()
 }
 
