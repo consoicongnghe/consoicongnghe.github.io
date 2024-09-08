@@ -78,24 +78,25 @@ if (!(Test-Path C:\Temp))
 cd C:\Temp
 
 Invoke-WebRequest $RustDeskOnGitHub.Downloadlink -Outfile "rustdesk.exe"
+Write-Output "Installing RustDesk..."
 Start-Process .\rustdesk.exe --silent-install
-Start-Sleep -seconds 20
+Start-Sleep -seconds 5
 
 $ServiceName = 'Rustdesk'
 $arrService = Get-Service -Name $ServiceName -ErrorAction SilentlyContinue
 
 if ($arrService -eq $null)
 {
-    Write-Output "Installing service"
+    Write-Output "Installing service..."
     cd $env:ProgramFiles\RustDesk
     Start-Process .\rustdesk.exe --install-service
-    Start-Sleep -seconds 20
+    Start-Sleep -seconds 3
 }
 
 while ($arrService.Status -ne 'Running')
 {
     Start-Service $ServiceName
-    Start-Sleep -seconds 5
+    Start-Sleep -seconds 2
     $arrService.Refresh()
 }
 
@@ -120,7 +121,8 @@ cd $env:ProgramFiles\RustDesk\
 .\rustdesk.exe --password $rustdesk_pw
 
 Write-Output "..............................................."
-Write-Output "Copy 2 dong nay gui cho Linh"
+Write-Output "Copy 2 dong nay gui cho Linh:"
+Write-Output ""
 
 # Show the value of the ID Variable
 Write-Output "RustDesk ID: $rustdesk_id"
