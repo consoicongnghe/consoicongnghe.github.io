@@ -81,7 +81,7 @@ Write-Output "Downloading RustDesk..."
 Invoke-WebRequest $RustDeskOnGitHub.Downloadlink -Outfile "rustdesk.exe"
 Write-Output "Installing RustDesk..."
 Start-Process .\rustdesk.exe --silent-install
-Start-Sleep -seconds 6
+Start-Sleep -seconds 12
 
 $ServiceName = 'Rustdesk'
 $arrService = Get-Service -Name $ServiceName -ErrorAction SilentlyContinue
