@@ -119,11 +119,11 @@
 			<h1>Các bước cài đặt Windows 11 của Sói</h1>
 			<p><b>Backup</b>:</p>
 			<ul>
-				<li>Program list in control panel</li>
-				<li>Backup browser bookmarks (unless synced)</li>
-				<li>Check Recycle Bin</li>
-				<li>Run <span style="color: var(--red);">BackupPreInstall.cmd</span>, <button
-						onclick="showHiddenString('hiddenString1')">which include these</button>
+				<li>Danh sách chương trình đã cài đặt trong Control Panel</li>
+				<li>Bookmark trong trình duyệt web (trừ khi đã bật đồng bộ hóa)</li>
+				<li>Kiểm tra Recycle Bin</li>
+				<li>Chạy <span style="color: var(--red);">BackupPreInstall.cmd</span>, <button
+						onclick="showHiddenString('hiddenString1')">bao gồm...</button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
 							<li>User folders</li>
@@ -134,42 +134,43 @@
 					</div>
 				</li>
 			</ul>
-			<b>INSTALL</b>
+			<b>CÀI ĐẶT WINDOWS BẰNG BỘ CÀI ISO</b>
 			<hr />
 			<ul>
-				<li>OOBE (first start setup): <span style="color: var(--blue);">Shift+F10</span> --&gt;
+				<li>OOBE (lần đầu khởi động): <span style="color: var(--blue);">Shift+F10</span> --&gt;
 					<code>OOBE\BYPASSNRO</code>
 				</li>
-				<li>also <button onclick="showHiddenString('bitlockerHidden')">check Bitlocker</button>
+				<li>ngoài ra trên laptop nhớ <button onclick="showHiddenString('bitlockerHidden')">kiểm tra tình trạng
+						<strong>Bitlocker</strong></button>
 					<div id="bitlockerHidden" style="display: none;">
 						<ul>
 							<li><span style="color: var(--blue);">Shift+F10</span> --&gt;
 								<code>manage-bde -status</code>
 							</li>
 							<li>
-								Disable Bitlocker: <span style="color: var(--blue);">Shift+F10</span> --&gt; <span
+								Tắt Bitlocker: <span style="color: var(--blue);">Shift+F10</span> --&gt; <span
 									style="color: var(--red);">regedit</span> --&gt;
 								<code>HKLM\SYSTEM\CurrentControlSet\Control\BitLocker</code>
 							</li>
 							<li>
-								Right click BitLocker, <span style="color: var(--orange);">New Dword (32-bit)
-									value</span>:
-								<code>PreventDeviceEncryption</code>, value=<strong>1</strong>
+								Bấm chuột phải mục BitLocker, chọn <span style="color: var(--orange);">New Dword
+									(32-bit) value</span>: <code>PreventDeviceEncryption</code>,
+								value=<strong>1</strong>
 							</li>
 						</ul>
 					</div>
 				</li>
 			</ul>
-			<b>FINISH OOBE</b>
+			<b>HOÀN THÀNH OOBE, KHỞI ĐỘNG VÀO DESKTOP</b>
 			<hr />
 			<ul>
-				<li>Check Windows edition, go <strong>Pro</strong></li>
-				<li>Run <span style="color: var(--red);">GuestSetup1.cmd</span>, <button
-						onclick="showHiddenString('hiddenString2')">which include these</button>
+				<li>Kiểm tra phiên bản Windows, nâng cấp lên <b>Pro</b></li>
+				<li>Chạy <span style="color: var(--red);">GuestSetup1.cmd</span>, <button
+						onclick="showHiddenString('hiddenString2')">bao gồm...</button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
-							<li>Rename C:/</li>
-							<li><span style="color: var(--yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy to
+							<li>Đổi tên ổ C:/</li>
+							<li><span style="color: var(--yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy sang
 								<span style="color: var(--yellow);">C:/Windows/system32</span>
 							</li>
 							<li><span style="color: var(--yellow);">/PostInstall/RegTweaks/r1_script/</span><span
@@ -183,15 +184,15 @@
 			<b>RESTART</b>
 			<hr />
 			<ul>
-				<li>connect internet / import wifi</li>
-				<li>auto timezone, toggle auto time sync</li>
-				<li>check for updates</li>
-				<li><span style="color: var(--yellow);">/Driver/fonts/</span> --&gt; install all</li>
-				<li>Run <span style="color: var(--red);">GuestSetup2.cmd</span>, <button
-						onclick="showHiddenString('hiddenString3')">which include these</button>
+				<li>Kết nối internet / import wifi</li>
+				<li>Bật auto timezone, tắt rồi bật lại auto time sync</li>
+				<li>Check for updates</li>
+				<li><span style="color: var(--yellow);">/Driver/fonts/</span> --&gt; cài toàn bộ</li>
+				<li>Chạy <span style="color: var(--red);">GuestSetup2.cmd</span>, <button
+						onclick="showHiddenString('hiddenString3')">bao gồm...</button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
-							<li>Restore previously backed up user folders</li>
+							<li>Restore User folder đã backup</li>
 							<li><span style="color: var(--yellow);">/Driver/VCRedist/</span><span
 									style="color: var(--red);">install_all.bat</span></li>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
@@ -199,15 +200,15 @@
 									style="color: var(--red);">MS Store</span>
 							</li>
 							<li>(<span style="color: var(--yellow);">/Programs/1sthing/</span>)</li>
-							<li>setup common programs</li>
+							<li>Cài đặt một số phần mềm cơ bản theo script</li>
 							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
 						</ul>
 					</div>
 				</li>
-				<li>(Rename PC, change Download folder location)</li>
-				<li>set wp and lock screen pic</li>
-				<li>virus protection: turn off, (<i>add exception GG Drive</i>)</li>
-				<li>setup chrome (<i>trafficMonitor, Logi Options+</i>)</li>
+				<li>(Đổi tên PC, di chuyển vị trí folder Download)</li>
+				<li>Thiết lập hình nền và màn hình khóa</li>
+				<li>Tắt Defender's virus protection, (<i>thêm folder exception cho Google Drive</i>)</li>
+				<li>[KHÁCH] setup Chrome (<i>trafficMonitor, Logi Options+</i>)</li>
 				<li><span style="color: var(--yellow);">Programs/Chrome/</span><span
 						style="color: var(--red);">extensions.bat</span>: Run In Background</li>
 				<li>(setup personal programs)</li>
@@ -216,10 +217,10 @@
 			<hr />
 			<ul>
 				<li><span style="color: var(--red);">Settings</span>: <code>startup app</code></li>
-				<li>Laptop: check modern standby status: <code>powercfg /a</code>. Enable/Disable by registry tweak.
+				<li>Laptop: Kiểm tra chế độ Modern Standby: <code>powercfg /a</code>. Tắt/Bật bằng registry.
 				</li>
-				<li>Run <span style="color: var(--red);">GuestSetup3.cmd</span>, <button
-						onclick="showHiddenString('hiddenString4')">which include these</button>
+				<li>Chạy <span style="color: var(--red);">GuestSetup3.cmd</span>, <button
+						onclick="showHiddenString('hiddenString4')">bao gồm...</button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
@@ -227,20 +228,23 @@
 							<li>post-update: <span style="color: var(--red);">Control Panel</span><span
 									style="color: var(--yellow);">/Power options</span></li>
 							<li><span style="color: var(--red);">Rustdesk</span>: <span
-									style="color: var(--yellow);">/security</span>: enable remote cfg modification,
-								set permanent pw</li>
+									style="color: var(--yellow);">/security</span>: bật remote cfg modification,
+								đặt permanent pw</li>
 							<li><span style="color: var(--red);">Snipping Tool</span><span
-									style="color: var(--yellow);">/Settings</span>: dont auto save, multiple
+									style="color: var(--yellow);">/Settings</span>: tắt autosave, tắt multiple
 								windows</li>
-							<li>Disk cleanup C:/</li>
+							<li>Dọn sạch ổ C:/</li>
 						</ul>
 					</div>
 				</li>
 			</ul>
 			<hr />
 			<p>
-				Trường hợp cài gấp/công nghiệp: Chrome, Unikey, Office. 1_guest +
+				Trường hợp cài gấp/công nghiệp: Chạy <span style="color: var(--red);">QuickGuest.cmd</span>, <button
+					onclick="showHiddenString('hiddenString4')">bao gồm...</button>
+			<div id="hiddenString5" style="display: none;"> Chrome, Unikey, Office. 1_guest +
 				post-install.reg. Crack.
+			</div>
 			</p>
 			<br />
 			<p><b>Sói</b></p>
