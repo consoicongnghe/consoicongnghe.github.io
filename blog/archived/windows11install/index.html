@@ -129,7 +129,7 @@
 						<ul>
 							<li>User folders</li>
 							<li>Fonts</li>
-							<li>(OBS, steam userdata)</li>
+							<li>(OBS, steam userdata, qbittorrent, TrafficMonitor)</li>
 							<li>Export wifi</li>
 						</ul>
 					</div>
@@ -170,7 +170,7 @@
 						onclick="showHiddenString('hiddenString2')">bao gồm...</button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
-							<li>Đổi tên ổ C:/</li>
+							<li>Đổi tên ổ C:/ thành "Windows"</li>
 							<li><span style="color: var(--yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy sang
 								<span style="color: var(--yellow);">C:/Windows/system32</span>
 							</li>
@@ -194,21 +194,19 @@
 					<div id="hiddenString3" style="display: none;">
 						<ul>
 							<li>Restore User folder đã backup</li>
+							<li>Cài đặt Unikey, Office</li>
 							<li><span style="color: var(--yellow);">/Driver/VCRedist/</span><span
 									style="color: var(--red);">install_all.bat</span></li>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
 									style="color: var(--red);">MsStore_UpdateAll.ps1</span> --&gt; open <span
 									style="color: var(--red);">MS Store</span>
 							</li>
-							<li>(<span style="color: var(--yellow);">/Programs/1sthing/</span>)</li>
-							<li>Cài đặt một số phần mềm cơ bản theo script</li>
-							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
 						</ul>
 					</div>
 				</li>
-				<li>(Đổi tên PC, di chuyển vị trí folder Download)</li>
+				<li>(<span style="color: var(--yellow);">/Programs/1sthing/</span>)</li>
+				<li>(Đổi tên PC, di chuyển vị trí folder Downloads)</li>
 				<li>Thiết lập hình nền và màn hình khóa</li>
-				<li>Tắt Defender's virus protection, (<i>thêm folder exception cho Google Drive</i>)</li>
 				<li>[KHÁCH] setup Chrome (<i>trafficMonitor, Logi Options+</i>)</li>
 				<li><span style="color: var(--yellow);">Programs/Chrome/</span><span
 						style="color: var(--red);">extensions.bat</span>: Run In Background</li>
@@ -217,6 +215,7 @@
 			<b>RESTART</b>
 			<hr />
 			<ul>
+				<li>Tắt Defender's virus protection, (<i>thêm folder exception cho Google Drive</i>)</li>
 				<li><span style="color: var(--red);">Settings</span>: <code>startup app</code></li>
 				<li>Laptop: Kiểm tra chế độ Modern Standby: <code>powercfg /a</code>. Tắt/Bật bằng registry.
 				</li>
@@ -224,6 +223,7 @@
 						onclick="showHiddenString('hiddenString4')">bao gồm...</button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
+							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
 									style="color: var(--red);">1_guest.cmd</span></li>
 							<li>post-update: <span style="color: var(--red);">Control Panel</span><span
@@ -234,7 +234,16 @@
 							<li><span style="color: var(--red);">Snipping Tool</span><span
 									style="color: var(--yellow);">/Settings</span>: tắt autosave, tắt multiple
 								windows</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					Chạy <span style="color: var(--red);">GuestSetupCleanup.cmd</span>, <button
+						onclick="showHiddenString('hiddenString5')">bao gồm...</button>
+					<div id="hiddenString5" style="display: none;">
+						<ul>
 							<li>Dọn sạch ổ C:/</li>
+							<li>Xóa <span style="color: var(--yellow);">C:\z\</span></li>
 						</ul>
 					</div>
 				</li>
@@ -242,8 +251,8 @@
 			<hr />
 			<p>
 				Trường hợp cài gấp/công nghiệp: Chạy <span style="color: var(--red);">QuickGuest.cmd</span>, <button
-					onclick="showHiddenString('hiddenString5')">bao gồm...</button>
-			<div id="hiddenString5" style="display: none;"> Chrome, Unikey, Office. 1_guest +
+					onclick="showHiddenString('hiddenString6')">bao gồm...</button>
+			<div id="hiddenString6" style="display: none;"> Chrome, Unikey, Office. 1_guest +
 				post-install.reg. Crack.
 			</div>
 			</p>
