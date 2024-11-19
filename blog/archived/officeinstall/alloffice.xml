@@ -1,0 +1,79 @@
+<Configuration ID="ec3ef6d2-3cea-4c94-b629-fabec29ab43a">
+  <Info Description="personalize for Linh" />
+  <Add OfficeClientEdition="64" Channel="Current">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <Language ID="vi-vn" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Bing" />
+      <ExcludeApp ID="Bing" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+    <Product ID="LanguagePack">
+      <Language ID="en-us" />
+      <Language ID="vi-vn" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+    <Product ID="VisioPro2021Volume" PIDKEY="KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4">
+      <Language ID="en-us" />
+      <Language ID="vi-vn" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Bing" />
+      <ExcludeApp ID="Bing" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+    <Product ID="ProjectPro2021Volume" PIDKEY="FTNWT-C6WBT-8HMGF-K9PRX-QV9H8">
+      <Language ID="en-us" />
+      <Language ID="vi-vn" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Bing" />
+      <ExcludeApp ID="Bing" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="FALSE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="1" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\common\toolbars" Name="showkbdshortcuts" Value="1" Type="REG_DWORD" App="office16" Id="L_ShowshortcutkeysinScreenTips" />
+    <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
+    <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
+    <User Key="software\microsoft\office\16.0\common\general" Name="disableboottoofficestart" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeStartGlobal" />
+    <User Key="software\microsoft\office\16.0\word" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationWord" />
+    <User Key="software\microsoft\office\16.0\common" Name="linkedin" Value="0" Type="REG_DWORD" App="office16" Id="L_AllowLinkedInFeatures" />
+    <User Key="software\microsoft\office\16.0\common" Name="default ui theme" Value="0" Type="REG_DWORD" App="office16" Id="L_DefaultUIThemeUser" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defsheets" Value="1" Type="REG_DWORD" App="excel16" Id="L_DefaultSheets" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="font" Value="Times New Roman" Type="REG_SZ" App="excel16" Id="L_Font" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultpath" Value="%userprofile%/Desktop" Type="REG_EXPAND_SZ" App="excel16" Id="L_Defaultfilelocation" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="alertifnotdefault" Value="1" Type="REG_DWORD" App="excel16" Id="L_ShowAlertIfNotDefault" />
+    <User Key="software\microsoft\office\16.0\onenote\options\editing" Name="defaultfontface" Value="Times New Roman" Type="REG_SZ" App="onent16" Id="L_DefaultFontName" />
+    <User Key="software\microsoft\office\16.0\onenote\options\editing" Name="defaultfontsize" Value="4" Type="REG_SZ" App="onent16" Id="L_DefaultFontSize" />
+    <User Key="software\microsoft\office\16.0\powerpoint\recentfolderlist" Name="default" Value="%userprofile%/Desktop" Type="REG_EXPAND_SZ" App="ppt16" Id="L_Defaultfilelocation" />
+    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
+    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="alertifnotdefault" Value="1" Type="REG_DWORD" App="ppt16" Id="L_PromptIfPowerPointIsNotDefault" />
+    <User Key="software\microsoft\office\16.0\word\options\assist" Name="ffirstindent_344_1" Value="1" Type="REG_DWORD" App="word16" Id="L_Firstlineindent" />
+    <User Key="software\microsoft\office\16.0\word\options\assist" Name="ftabindent_128_1" Value="1" Type="REG_DWORD" App="word16" Id="L_Setleftindentontabsandbackspace" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="compatmode" Value="15" Type="REG_DWORD" App="word16" Id="L_SetDefaultCompatibilityModeOnFileCreation" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="doc-path" Value="%userprofile%/Desktop" Type="REG_EXPAND_SZ" App="word16" Id="L_DefaultFileLocation" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="smartsentencewordspacing" Value="1" Type="REG_DWORD" App="word16" Id="L_Adjustsentenceandwordspacingautomatically" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="smartparapaste" Value="1" Type="REG_DWORD" App="word16" Id="L_Adjustparagraphspacingonpaste" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="alertifnotdefault" Value="1" Type="REG_DWORD" App="word16" Id="L_AlertIfNotDefault" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="disableboottoofficestart" Value="1" Type="REG_DWORD" App="word16" Id="L_DisableOfficeStartWord" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
