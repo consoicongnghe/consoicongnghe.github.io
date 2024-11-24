@@ -127,10 +127,10 @@
 						onclick="showHiddenString('hiddenString1')">bao gồm...</button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
-							<li>User folders</li>
-							<li>Fonts</li>
-							<li>(OBS, steam userdata, qbittorrent, TrafficMonitor)</li>
 							<li>Export wifi</li>
+							<li>User folders</li>
+							<li>(Firefox, OBS, steam userdata, qbittorrent, TrafficMonitor)</li>
+							<li>Experimental: Desktop icon layout</li>
 						</ul>
 					</div>
 				</li>
@@ -174,10 +174,10 @@
 							<li><span style="color: var(--yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy sang
 								<span style="color: var(--yellow);">C:/Windows/system32</span>
 							</li>
-							<li><span style="color: var(--yellow);">/PostInstall/RegTweaks/r1_script/</span><span
-									style="color: var(--red);">1_guest.cmd</span></li>
 							<li><span style="color: var(--yellow);">/RegTweaks/</span><span
 									style="color: var(--red);">windows11_postInstall.reg</span></li>
+							<li><span style="color: var(--yellow);">/PostInstall/RegTweaks/r1_script/</span><span
+									style="color: var(--red);">1_guest.cmd</span></li>
 						</ul>
 					</div>
 				</li>
@@ -186,28 +186,27 @@
 			<hr />
 			<ul>
 				<li>Kết nối internet / import wifi</li>
-				<li>Bật auto timezone, tắt rồi bật lại auto time sync</li>
 				<li>Check for updates</li>
-				<li><span style="color: var(--yellow);">/Driver/fonts/</span> --&gt; cài toàn bộ</li>
 				<li>Chạy <span style="color: var(--red);">GuestSetup2.cmd</span>, <button
 						onclick="showHiddenString('hiddenString3')">bao gồm...</button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
-							<li>Restore User folder đã backup</li>
-							<li>Cài đặt Unikey, Office</li>
-							<li><span style="color: var(--yellow);">/Driver/VCRedist/</span><span
-									style="color: var(--red);">install_all.bat</span></li>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
 									style="color: var(--red);">MsStore_UpdateAll.ps1</span> --&gt; open <span
 									style="color: var(--red);">MS Store</span>
 							</li>
+							<li>Cài đặt Unikey, Office</li>
+							<li><span style="color: var(--yellow);">/Driver/VCRedist/</span><span
+									style="color: var(--red);">install_all.bat</span></li>
+							<li><span style="color: var(--yellow);">/Driver/fonts/</span> --&gt; cài toàn bộ</li>
+							<li>Restore User folder đã backup</li>
 						</ul>
 					</div>
 				</li>
 				<li>(<span style="color: var(--yellow);">/Programs/1sthing/</span>)</li>
 				<li>(Đổi tên PC, di chuyển vị trí folder Downloads)</li>
 				<li>Thiết lập hình nền và màn hình khóa</li>
-				<li>[KHÁCH] setup Chrome (<i>trafficMonitor, Logi Options+</i>)</li>
+				<li>[KHÁCH] setup Chrome (<i>trafficMonitor</i>)</li>
 				<li><span style="color: var(--yellow);">Programs/Chrome/</span><span
 						style="color: var(--red);">extensions.bat</span>: Run In Background</li>
 				<li>(setup personal programs)</li>
@@ -216,23 +215,17 @@
 			<hr />
 			<ul>
 				<li>Tắt Defender's virus protection, (<i>thêm folder exception cho Google Drive</i>)</li>
-				<li><span style="color: var(--red);">Settings</span>: <code>startup app</code></li>
-				<li>Laptop: Kiểm tra chế độ Modern Standby: <code>powercfg /a</code>. Tắt/Bật bằng registry.
-				</li>
 				<li>Chạy <span style="color: var(--red);">GuestSetup3.cmd</span>, <button
 						onclick="showHiddenString('hiddenString4')">bao gồm...</button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
+							<li><span style="color: var(--red);">Snipping Tool: </span><span
+									style="color: var(--yellow);">/settings</span>: tắt autosave, tắt multiple
+								windows</li>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
 									style="color: var(--red);">1_guest.cmd</span></li>
-							<li>post-update: <span style="color: var(--red);">Control Panel</span><span
-									style="color: var(--yellow);">/Power options</span></li>
-							<li><span style="color: var(--red);">Rustdesk</span>: <span
-									style="color: var(--yellow);">/security</span>: bật remote cfg modification,
-								đặt permanent pw</li>
-							<li><span style="color: var(--red);">Snipping Tool</span><span
-									style="color: var(--yellow);">/Settings</span>: tắt autosave, tắt multiple
-								windows</li>
+							<li><span style="color: var(--yellow);">Control Panel: </span><code>Screen timeouts</code>
+							</li>
 						</ul>
 					</div>
 				</li>
@@ -247,6 +240,11 @@
 						</ul>
 					</div>
 				</li>
+				<li><span style="color: var(--red);">Rustdesk</span>: <span
+						style="color: var(--yellow);">/security</span>: bật remote cfg modification,
+					đặt permanent pw</li>
+				<li><span style="color: var(--red);">Task Manager</span>: <code>Startup apps</code></li>
+				<li><span style="color: var(--red);">Control Panel</span>: <code>Fast Startup</code></li>
 			</ul>
 			<hr />
 			<p>
