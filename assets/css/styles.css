@@ -370,26 +370,29 @@ ul.breadcrumb li a {
 	margin: 10px 5px;
 }
 
-.posts>h2 {
+.postoverview>h2 {
 	margin: 4px;
 	font-size: 110%;
 }
 
-.posts>p {
+.postoverview>p {
 	margin: 4px;
 	color: var(--text);
 }
 
+.postoverview {
+	text-align: left;
+	padding: 4px;
+}
+
 .posts {
 	background-color: var(--bg-block);
+	transition: box-shadow 0.2s ease;
+	flex: 1;
+	align-items: stretch;
 	/* border: 1px; */
 	/* border-radius: 5px; */
-	flex: 1;
 	/* min-width: 800px; */
-	padding: 4px;
-	align-items: stretch;
-	text-align: left;
-	transition: box-shadow 0.2s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
