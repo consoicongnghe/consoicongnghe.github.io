@@ -124,7 +124,7 @@
 				<li>Bookmark trong trình duyệt web (trừ khi đã bật đồng bộ hóa)</li>
 				<li>Kiểm tra Recycle Bin</li>
 				<li>Chạy <span style="color: var(--red);">BackupPreInstall.cmd</span>, <button
-						onclick="showHiddenString('hiddenString1')">bao gồm...</button>
+						class="hiddenStringButton" onclick="showHiddenString('hiddenString1')">bao gồm...</button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
 							<li>Export wifi</li>
@@ -141,7 +141,8 @@
 				<li>OOBE (lần đầu khởi động): <span style="color: var(--blue);">Shift+F10</span> --&gt;
 					<code>OOBE\BYPASSNRO</code>
 				</li>
-				<li>ngoài ra trên laptop nhớ <button onclick="showHiddenString('bitlockerHidden')">kiểm tra tình trạng
+				<li>ngoài ra trên laptop nhớ <button class="hiddenStringButton"
+						onclick="showHiddenString('bitlockerHidden')">kiểm tra tình trạng
 						<strong>Bitlocker</strong></button>
 					<div id="bitlockerHidden" style="display: none;">
 						<ul>
@@ -166,7 +167,7 @@
 			<hr />
 			<ul>
 				<li>Kiểm tra phiên bản Windows, nâng cấp lên <b>Pro</b></li>
-				<li>Chạy <span style="color: var(--red);">GuestSetup1.cmd</span>, <button
+				<li>Chạy <span style="color: var(--red);">GuestSetup1.cmd</span>, <button class="hiddenStringButton"
 						onclick="showHiddenString('hiddenString2')">bao gồm...</button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
@@ -187,7 +188,7 @@
 			<ul>
 				<li>Kết nối internet / import wifi</li>
 				<li>Check for updates</li>
-				<li>Chạy <span style="color: var(--red);">GuestSetup2.cmd</span>, <button
+				<li>Chạy <span style="color: var(--red);">GuestSetup2.cmd</span>, <button class="hiddenStringButton"
 						onclick="showHiddenString('hiddenString3')">bao gồm...</button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
@@ -215,7 +216,7 @@
 			<hr />
 			<ul>
 				<li>Tắt Defender's virus protection, (<i>thêm folder exception cho Google Drive</i>)</li>
-				<li>Chạy <span style="color: var(--red);">GuestSetup3.cmd</span>, <button
+				<li>Chạy <span style="color: var(--red);">GuestSetup3.cmd</span>, <button class="hiddenStringButton"
 						onclick="showHiddenString('hiddenString4')">bao gồm...</button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
@@ -231,7 +232,7 @@
 				</li>
 				<li>
 					Chạy <span style="color: var(--red);">GuestSetupCleanup.cmd</span>, <button
-						onclick="showHiddenString('hiddenString5')">bao gồm...</button>
+						class="hiddenStringButton" onclick="showHiddenString('hiddenString5')">bao gồm...</button>
 					<div id="hiddenString5" style="display: none;">
 						<ul>
 							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
@@ -248,9 +249,10 @@
 			</ul>
 			<hr />
 			<p>
-				Trường hợp cài gấp/công nghiệp: Chạy <span style="color: var(--red);">QuickGuest.cmd</span>, <button
-					onclick="showHiddenString('hiddenString6')">bao gồm...</button> <span id="hiddenString6"
-					style="display: none;"> Chrome, Unikey, (Office), 1_guest + GrpPolicy + RestorePostInstall +
+				Trường hợp cài gấp: Chạy <span style="color: var(--red);">QuickGuest.cmd</span>, <button
+					class="hiddenStringButton" onclick="showHiddenString('hiddenString6')">bao gồm...</button> <span
+					id="hiddenString6" style="display: none;"> Chrome, Unikey, (Office), 1_guest + GrpPolicy +
+					RestorePostInstall +
 					post-install.reg</span> sau đó chạy <span style="color: var(--red);">GuestSetupCleanup.cmd</span>.
 			</p>
 			<br />

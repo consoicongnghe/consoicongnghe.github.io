@@ -18,6 +18,8 @@
 	/*what keyboard buttons to press*/
 	--blue: #0000FF;
 	--block-shadow: rgba(0, 0, 0, 0.1);
+	--button-shadow: rgba(0, 0, 0, 0.5);
+	--text-shadow: rgba(0, 255, 255, 0.8);
 	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -35,7 +37,9 @@
 		--yellow: #FFFF00;
 		--green: #00ff00;
 		--blue: #3385FF;
-		--block-shadow: rgba(255, 255, 255, 0.1);
+		--block-shadow: rgba(0, 255, 255, 0.1);
+		--button-shadow: rgba(0, 255, 255, 0.5);
+		--text-shadow: rgba(0, 255, 255, 0.8);
 	}
 }
 
@@ -406,11 +410,8 @@ ul.breadcrumb li a {
 	}
 }
 
-.posts a {
-	color: var(--cyan);
-	text-decoration: none;
-	display: block;
-	margin-top: 10px;
+.posts a:active {
+	box-shadow: 0 0px 0px var(--block-shadow);
 }
 
 
@@ -439,18 +440,24 @@ ul.breadcrumb li a {
 	/* max-width: 150px; */
 	padding: 10px;
 	text-align: center;
-	transition: box-shadow 0.3s ease;
-}
-
-@media (hover: hover) and (pointer: fine) {
-	.shortcut:hover {
-		box-shadow: 0 0px 8px var(--block-shadow);
-	}
+	transition: all 0.2s ease;
+	color: var(--text);
 }
 
 .shortcut>h3 {
 	margin: 4px;
 	font-size: 90%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.shortcut:hover {
+		box-shadow: 0 0px 8px var(--block-shadow);
+		text-shadow: 0 0px 8px var(--text-shadow);
+	}
+}
+
+.shortcut:active {
+	box-shadow: 0 0px 2px var(--block-shadow);
 }
 
 /* Responsive layout - makes a one column layout */
@@ -467,6 +474,28 @@ ul.breadcrumb li a {
 	}
 }
 
+
+.hiddenStringButton {
+	background-color: var(--bg);
+	color: var(--text);
+	border: none;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0px 8px var(--button-shadow);
+	transition: all 0.1s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.hiddenStringButton:hover {
+		box-shadow: 0 0px 12px var(--button-shadow);
+		text-shadow: 0 0 12px var(--text-shadow);
+	}
+}
+
+.hiddenStringButton:active {
+	transform: translateY(1px);
+	box-shadow: 0 0px 4px var(--button-shadow);
+}
 
 /* other formattings */
 @media screen and (max-width: 800px) {
