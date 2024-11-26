@@ -480,13 +480,15 @@ ul.breadcrumb li a {
 	border: none;
 	border-radius: 5px;
 	overflow: hidden;
-	box-shadow: 0 0px 4px var(--button-shadow);
+	/* padding: 2px; */
+	font-size: 90%;
+	box-shadow: 0 0px 6px var(--button-shadow);
 	transition: all 0.1s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
 	.hiddenStringButton:hover {
-		box-shadow: 0 0px 8px var(--button-shadow);
+		box-shadow: 0 0px 10px var(--button-shadow);
 		text-shadow: 0 0 6px var(--text-shadow);
 	}
 }
