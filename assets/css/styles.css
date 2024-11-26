@@ -97,7 +97,7 @@ video {
 	margin-right: auto;
 	text-align: center;
 	width: 75%;
-	transition: transform 0.1s ease-in-out;
+	transition: transform 0.2s ease;
 	box-shadow: 0 0 5px 2px var(--block-shadow);
 }
 
@@ -394,14 +394,13 @@ ul.breadcrumb li a {
 	transition: box-shadow 0.2s ease;
 	flex: 1;
 	align-items: stretch;
-	/* border: 1px; */
-	/* border-radius: 5px; */
+	box-shadow: 0 0px 4px var(--block-shadow);
 	/* min-width: 800px; */
 }
 
 @media (hover: hover) and (pointer: fine) {
 	.posts:hover {
-		box-shadow: 0 0px 8px var(--block-shadow);
+		box-shadow: 0 0px 12px var(--block-shadow);
 	}
 
 	/* remove underline from bodyy/div (class=post-list)/a in post lists */
@@ -411,7 +410,7 @@ ul.breadcrumb li a {
 }
 
 .posts a:active {
-	box-shadow: 0 0px 0px var(--block-shadow);
+	box-shadow: 0 0px 2px var(--block-shadow);
 }
 
 
