@@ -123,8 +123,8 @@
 				<li>Danh sách chương trình đã cài đặt trong Control Panel</li>
 				<li>Bookmark trong trình duyệt web (trừ khi đã bật đồng bộ hóa)</li>
 				<li>Kiểm tra Recycle Bin</li>
-				<li>Chạy <span style="color: var(--red);">BackupPreInstall.cmd</span>, <button
-						class="hiddenStringButton" onclick="showHiddenString('hiddenString1')">bao gồm...</button>
+				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString1')"
+						style="color: var(--red);">BackupPreInstall.cmd</button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
 							<li>Export wifi</li>
@@ -167,8 +167,8 @@
 			<hr />
 			<ul>
 				<li>Kiểm tra phiên bản Windows, nâng cấp lên <b>Pro</b></li>
-				<li>Chạy <span style="color: var(--red);">GuestSetup1.cmd</span>, <button class="hiddenStringButton"
-						onclick="showHiddenString('hiddenString2')">bao gồm...</button>
+				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString2')"
+						style="color: var(--red);">GuestSetup1.cmd</button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
 							<li>Đổi tên ổ C:/ thành "Windows"</li>
@@ -188,8 +188,8 @@
 			<ul>
 				<li>Kết nối internet / import wifi</li>
 				<li>Check for updates</li>
-				<li>Chạy <span style="color: var(--red);">GuestSetup2.cmd</span>, <button class="hiddenStringButton"
-						onclick="showHiddenString('hiddenString3')">bao gồm...</button>
+				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString3')"
+						style="color: var(--red);">GuestSetup2.cmd</button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
 							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
@@ -216,8 +216,8 @@
 			<hr />
 			<ul>
 				<li>Tắt Defender's virus protection, (<i>thêm folder exception cho Google Drive</i>)</li>
-				<li>Chạy <span style="color: var(--red);">GuestSetup3.cmd</span>, <button class="hiddenStringButton"
-						onclick="showHiddenString('hiddenString4')">bao gồm...</button>
+				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString4')"
+						style="color: var(--red);">GuestSetup3.cmd</button>
 					<div id="hiddenString4" style="display: none;">
 						<ul>
 							<li><span style="color: var(--red);">Snipping Tool: </span><span
@@ -231,8 +231,8 @@
 					</div>
 				</li>
 				<li>
-					Chạy <span style="color: var(--red);">GuestSetupCleanup.cmd</span>, <button
-						class="hiddenStringButton" onclick="showHiddenString('hiddenString5')">bao gồm...</button>
+					Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString5')"
+						style="color: var(--red);">GuestSetupCleanup.cmd</button>
 					<div id="hiddenString5" style="display: none;">
 						<ul>
 							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
@@ -249,11 +249,10 @@
 			</ul>
 			<hr />
 			<p>
-				Trường hợp cài gấp: Chạy <span style="color: var(--red);">QuickGuest.cmd</span>, <button
-					class="hiddenStringButton" onclick="showHiddenString('hiddenString6')">bao gồm...</button> <span
-					id="hiddenString6" style="display: none;"> Chrome, Unikey, (Office), 1_guest + GrpPolicy +
-					RestorePostInstall + post-install.reg</span> sau đó chạy <span
-					style="color: var(--red);">GuestSetupCleanup.cmd</span>.
+				Trường hợp cài gấp: Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString6')"
+					style="color: var(--red);">QuickGuest.cmd</button><span id="hiddenString6" style="display: none;">
+					Chrome, Unikey, (Office), 1_guest + GrpPolicy + RestorePostInstall + post-install.reg</span>, sau đó
+				chạy <span style="color: var(--red);">GuestSetupCleanup.cmd</span>.
 			</p>
 			<br />
 			<p><b>Sói</b></p>
