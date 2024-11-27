@@ -31,14 +31,14 @@
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/blog/macos-gatekeeper/</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-09-26</lastmod>
-	</url>
-	<url>
 		<loc>https://consoicongnghe.com/about/</loc>
 		<priority>0.75</priority>
 		<lastmod>2024-11-27</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/blog/macos-gatekeeper/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-09-26</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
