@@ -36,7 +36,12 @@
 		<lastmod>2024-09-26</lastmod>
 	</url>
 	<url>
-		<loc>https://consoicongnghe.com/blog/adobe-unlicensed-popup/</loc>
+		<loc>https://consoicongnghe.com/about/</loc>
+		<priority>0.75</priority>
+		<lastmod>2024-11-27</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-09</lastmod>
 	</url>
@@ -123,7 +128,7 @@
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-hevc-extension/</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-11-25</lastmod>
+		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-refresh-desktop/</loc>
