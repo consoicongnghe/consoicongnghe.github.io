@@ -15,8 +15,9 @@
 	--yellow: #6F7000;
 	/*text to copy, codes*/
 	--green: #008000;
-	/*what keyboard buttons to press*/
+	/*keyboard shortcuts, combinations*/
 	--blue: #0000FF;
+	/* translate something? in nghieng */
 	--block-shadow: rgba(0, 0, 0, 0.1);
 	--button-shadow: rgba(0, 0, 0, 0.5);
 	--text-shadow: rgba(0, 255, 255, 0.8);
@@ -113,10 +114,28 @@ video {
 	}
 
 	/* zoom media on hover with class "hover" */
-	img.zoom:hover,
-	video.zoom:hover {
+	img.zoom150:hover,
+	video.zoom150:hover {
+		transform: scale(1.5, 1.5);
+		box-shadow: 0 0 15px 3px var(--block-shadow);
+	}
+
+	img.zoom200:hover,
+	video.zoom200:hover {
 		transform: scale(2, 2);
-		box-shadow: 0 0 20px 4px var(--block-shadow);
+		box-shadow: 0 0 16px 3px var(--block-shadow);
+	}
+
+	img.zoom250:hover,
+	video.zoom250:hover {
+		transform: scale(2.5, 2.5);
+		box-shadow: 0 0 18px 3px var(--block-shadow);
+	}
+
+	img.zoom300:hover,
+	video.zoom300:hover {
+		transform: scale(3, 3);
+		box-shadow: 0 0 20px 3px var(--block-shadow);
 	}
 }
 
@@ -545,7 +564,7 @@ ul.breadcrumb li a {
 /* https://www.w3schools.com/css/css3_flexbox_responsive.asp */
 /* flexbox for article columns */
 .flex-container,
-.flex-container-uBO-toc {
+.flex-container-toc {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
@@ -575,7 +594,7 @@ ul.breadcrumb li a {
 		flex-direction: column;
 	}
 
-	.flex-container-uBO-toc {
+	.flex-container-toc {
 		flex-direction: column-reverse;
 	}
 }
