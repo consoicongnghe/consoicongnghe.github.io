@@ -14,6 +14,19 @@
     <link>https://consoicongnghe.com</link>
   </image>
   <item>
+    <title>Hãy dùng 7-Zip thay vì WinRAR</title>
+    <link>https://consoicongnghe.com/posts/bitwarden/</link>
+    <description>7-zip là phần mềm xử lí file nén miễn phí mã nguồn mở uy tín lâu đời.</description>
+    <enclosure url="https://consoicongnghe.com/posts/7-Zip/7-zip-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/7-Zip/7-zip-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>7-zip là phần mềm xử lí file nén miễn phí mã nguồn mở uy tín lâu đời.</media:text>
+      <media:title type="plain">Hãy dùng 7-Zip thay vì WinRAR</media:title>
+    </media:content>
+    <pubDate>Fri, 13 Nov 2024 19:00:00 +0700</pubDate>
+  </item>
+  <item>
+  <item>
     <title>Bitwarden - Phần mềm quản lí mật khẩu</title>
     <link>https://consoicongnghe.com/posts/bitwarden/</link>
     <description>Bitwarden là phần mềm quản lí mật khẩu miễn phí mã nguồn mở, đủ an toàn để những hạt cát vũ trụ như chúng mình không phải lo lắng sợ lộ mật khẩu cá nhân, nhưng lại đủ tiện lợi để sử dụng.</description>
