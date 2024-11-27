@@ -23,9 +23,20 @@
       <media:text>7-zip là phần mềm xử lí file nén miễn phí mã nguồn mở uy tín lâu đời.</media:text>
       <media:title type="plain">Hãy dùng 7-Zip thay vì WinRAR</media:title>
     </media:content>
-    <pubDate>Fri, 13 Nov 2024 19:00:00 +0700</pubDate>
+    <pubDate>Fri, 13 Dec 2024 19:00:00 +0700</pubDate>
   </item>
   <item>
+    <title>VoLTE</title>
+    <link>https://consoicongnghe.com/posts/VoLTE/</link>
+    <description>VoLTE (viết tắt của Voice over LTE) là công nghệ sử dụng dữ liệu di động 4G LTE để thực hiện cuộc gọi.</description>
+    <enclosure url="https://consoicongnghe.com/posts/VoLTE/VoLTE-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/VoLTE/VoLTE-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>VoLTE (viết tắt của Voice over LTE) là công nghệ sử dụng dữ liệu di động 4G LTE để thực hiện cuộc gọi.</media:text>
+      <media:title type="plain">VoLTE</media:title>
+    </media:content>
+    <pubDate>Fri, 06 Dec 2024 19:00:00 +0700</pubDate>
+  </item>
   <item>
     <title>Bitwarden - Phần mềm quản lí mật khẩu</title>
     <link>https://consoicongnghe.com/posts/bitwarden/</link>
