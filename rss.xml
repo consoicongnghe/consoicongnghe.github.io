@@ -14,6 +14,18 @@
     <link>https://consoicongnghe.com</link>
   </image>
   <item>
+    <title>Apple Pay</title>
+    <link>https://consoicongnghe.com/posts/bitwarden/</link>
+    <description>Để thanh toán bằng Apple Pay, cậu mở ứng dụng Wallet, bấm đúp nút nguồn ở cạnh phải máy, quét Face ID, sau đó áp phần trên của máy (vị trí camera) lên máy quẹt thẻ của cửa hàng cậu cần thanh toán. Khi điện thoại kêu một tiếng “Ting” nghĩa là cậu đã thanh toán thành công. Vậy là xong.</description>
+    <enclosure url="https://consoicongnghe.com/posts/Apple-Pay/Apple-Pay-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/Apple-Pay/Apple-Pay-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Để thanh toán bằng Apple Pay, cậu mở ứng dụng Wallet, bấm đúp nút nguồn ở cạnh phải máy, quét Face ID, sau đó áp phần trên của máy (vị trí camera) lên máy quẹt thẻ của cửa hàng cậu cần thanh toán. Khi điện thoại kêu một tiếng “Ting” nghĩa là cậu đã thanh toán thành công. Vậy là xong.</media:text>
+      <media:title type="plain">Apple Pay</media:title>
+    </media:content>
+    <pubDate>Thu, 19 Dec 2024 20:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Hãy dùng 7-Zip thay vì WinRAR</title>
     <link>https://consoicongnghe.com/posts/bitwarden/</link>
     <description>7-zip là phần mềm xử lí file nén miễn phí mã nguồn mở uy tín lâu đời.</description>
