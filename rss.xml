@@ -74,6 +74,18 @@
     <pubDate>Fri, 06 Dec 2024 19:00:00 +0700</pubDate>
   </item>
   <item>
+    <title>Khởi tạo phân vùng ổ cứng</title>
+    <link>https://consoicongnghe.com/blog/diskmgr/</link>
+    <description>Bạn mới mua ổ cứng máy tính mới về, lắp vào máy tính rồi nhưng không thấy nó hiện lên trong This PC? Không phải do ổ hỏng đâu, có thể chỉ đơn giản là do bạn chưa khởi tạo phân vùng của ổ cứng mới thôi. Ý là, ổ mới chưa được khởi tạo lần đầu, ổ trống trơn chưa có phân vùng nên không hiện phân vùng nào lên This PC cả.</description>
+    <enclosure url="https://consoicongnghe.com/blog/diskmgr/diskmgr-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/diskmgr/diskmgr-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Bạn mới mua ổ cứng máy tính mới về, lắp vào máy tính rồi nhưng không thấy nó hiện lên trong This PC? Không phải do ổ hỏng đâu, có thể chỉ đơn giản là do bạn chưa khởi tạo phân vùng của ổ cứng mới thôi. Ý là, ổ mới chưa được khởi tạo lần đầu, ổ trống trơn chưa có phân vùng nên không hiện phân vùng nào lên This PC cả.</media:text>
+      <media:title type="plain">Khởi tạo phân vùng ổ cứng</media:title>
+    </media:content>
+    <pubDate>Sat, 30 Nov 2024 19:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Bitwarden - Phần mềm quản lí mật khẩu</title>
     <link>https://consoicongnghe.com/posts/bitwarden/</link>
     <description>Bitwarden là phần mềm quản lí mật khẩu miễn phí mã nguồn mở, đủ an toàn để những hạt cát vũ trụ như chúng mình không phải lo lắng sợ lộ mật khẩu cá nhân, nhưng lại đủ tiện lợi để sử dụng.</description>
@@ -83,7 +95,7 @@
       <media:text>Bitwarden là phần mềm quản lí mật khẩu miễn phí mã nguồn mở, đủ an toàn để những hạt cát vũ trụ như chúng mình không phải lo lắng sợ lộ mật khẩu cá nhân, nhưng lại đủ tiện lợi để sử dụng.</media:text>
       <media:title type="plain">Bitwarden - Phần mềm quản lí mật khẩu</media:title>
     </media:content>
-    <pubDate>Fri, 27 Nov 2024 19:00:00 +0700</pubDate>
+    <pubDate>Fri, 29 Nov 2024 19:00:00 +0700</pubDate>
   </item>
   <item>
     <title>Hub USB Type-C</title>

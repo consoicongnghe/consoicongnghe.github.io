@@ -7,9 +7,9 @@
 	--bg-contrast: #222222;
 	--cyan: #007A7A;
 	--cyan-hover: #009899;
-	/* file/program names */
+	/* button, file names (run as administrator, smt.jpg) */
 	--red: #DB0000;
-	/* button names (run as administrator) */
+	/* program names (This PC) */
 	--orange: #996300;
 	/* menu/submenu/etc */
 	--yellow: #6F7000;
@@ -507,14 +507,14 @@ ul.breadcrumb li a {
 @media (hover: hover) and (pointer: fine) {
 	.hiddenStringButton:hover {
 		box-shadow: 0 0px 10px var(--button-shadow);
-		text-shadow: 0 0 6px var(--text-shadow);
+		text-shadow: 0 0 2px var(--text-shadow);
 	}
 }
 
 .hiddenStringButton:active {
 	transform: translateY(1px);
 	box-shadow: 0 0px 2px var(--button-shadow);
-	text-shadow: 0 0 2px var(--text-shadow);
+	text-shadow: 0 0 2px var(--text);
 }
 
 /* other formattings */
@@ -569,6 +569,11 @@ ul.breadcrumb li a {
 	gap: 20px;
 	justify-content: center;
 	align-items: center;
+}
+
+.flex-container img,
+video {
+	width: 100%;
 }
 
 .flex-item-left {
