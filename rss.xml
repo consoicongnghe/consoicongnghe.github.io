@@ -14,6 +14,30 @@
     <link>https://consoicongnghe.com</link>
   </image>
   <item>
+    <title>Cách tạo USB cài đặt Windows</title>
+    <link>https://consoicongnghe.com/posts/tao-usb-cai-windows/</link>
+    <description>“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</description>
+    <enclosure url="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</media:text>
+      <media:title type="plain">Cách tạo USB cài đặt Windows</media:title>
+    </media:content>
+    <pubDate>Fri, 17 Jan 2025 19:00:00 +0700</pubDate>
+  </item>
+  <item>
+    <title>Quét mã QR trên iPhone</title>
+    <link>https://consoicongnghe.com/posts/iphone-qr-scan/</link>
+    <description>Tớ thường thấy chỉ có riêng mã QR ngân hàng là phải mở app ngân hàng để quét, còn các mã QR khác có người dùng app Camera, có người dùng Zalo, có người mở hẳn app QR Scanner riêng để quét. Sử dụng app Camera quét thì lâu, dùng app ngoài thì không mở được ngay từ màn hình khóa, do đó tớ tìm ra một cách quét QR trên iPhone cực nhanh gọn và đơn giản.</description>
+    <enclosure url="https://consoicongnghe.com/posts/iphone-qr-scan/iphone-qr-scan-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/iphone-qr-scan/iphone-qr-scan-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Tớ thường thấy chỉ có riêng mã QR ngân hàng là phải mở app ngân hàng để quét, còn các mã QR khác có người dùng app Camera, có người dùng Zalo, có người mở hẳn app QR Scanner riêng để quét. Sử dụng app Camera quét thì lâu, dùng app ngoài thì không mở được ngay từ màn hình khóa, do đó tớ tìm ra một cách quét QR trên iPhone cực nhanh gọn và đơn giản.</media:text>
+      <media:title type="plain">Quét mã QR trên iPhone</media:title>
+    </media:content>
+    <pubDate>Fri, 10 Jan 2025 19:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Chặn cập nhật iPhone</title>
     <link>https://consoicongnghe.com/posts/block-iphone-update/</link>
     <description>Có nhiều cách để tắt thông báo này và chặn không cho iPhone cập nhật phần mềm, cách dễ nhất có lẽ là cài profile tvOS beta vào để máy không kiểm tra cập nhật của iOS nữa.</description>
@@ -23,7 +47,7 @@
       <media:text>Có nhiều cách để tắt thông báo này và chặn không cho iPhone cập nhật phần mềm, cách dễ nhất có lẽ là cài profile tvOS beta vào để máy không kiểm tra cập nhật của iOS nữa.</media:text>
       <media:title type="plain">Chặn cập nhật iPhone</media:title>
     </media:content>
-    <pubDate>Fri, 03 Jan 2025 20:00:00 +0700</pubDate>
+    <pubDate>Fri, 03 Jan 2025 19:00:00 +0700</pubDate>
   </item>
   <item>
     <title>Tắt tính năng thanh toán trực tuyến của thẻ ngân hàng</title>
@@ -35,7 +59,7 @@
       <media:text>Khi nào cần thanh toán thì mở ứng dụng ngân hàng bật lên, thanh toán, rồi quay lại ứng dụng ngân hàng tắt nó đi. Bằng cách này, nếu kẻ gian sử dụng thông tin thẻ của cậu để thanh toán trên web, ngân hàng sẽ từ chối giao dịch.</media:text>
       <media:title type="plain">Tắt tính năng thanh toán trực tuyến của thẻ ngân hàng</media:title>
     </media:content>
-    <pubDate>Fri, 27 Dec 2024 20:00:00 +0700</pubDate>
+    <pubDate>Fri, 27 Dec 2024 18:00:00 +0700</pubDate>
   </item>
   <item>
     <title>Apple Pay</title>
@@ -47,7 +71,7 @@
       <media:text>Để thanh toán bằng Apple Pay, cậu mở ứng dụng Wallet, bấm đúp nút nguồn ở cạnh phải máy, quét Face ID, sau đó áp phần trên của mặt sau máy (vị trí camera) lên máy quẹt thẻ của cửa hàng cậu cần thanh toán. Khi điện thoại kêu một tiếng “Ting” nghĩa là cậu đã thanh toán thành công. Vậy là xong.</media:text>
       <media:title type="plain">Apple Pay</media:title>
     </media:content>
-    <pubDate>Thu, 19 Dec 2024 20:00:00 +0700</pubDate>
+    <pubDate>Thu, 19 Dec 2024 19:00:00 +0700</pubDate>
   </item>
   <item>
     <title>Hãy dùng 7-Zip thay vì WinRAR</title>
