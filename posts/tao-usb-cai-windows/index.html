@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<link rel="preload" href="/assets/css/styles.css" as="style" />
+	<title>Cách tạo USB cài đặt Windows</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.">
+	<meta name="keywords" content="USB, windows installer, boot, rufus">
+	<meta name="author" content="consoicongnghe">
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png">
+	<link rel="manifest" href="\assets\icons/site.webmanifest">
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="801">
+	<meta property="og:image:height" content="711">
+	<meta property="og:description"
+		content="“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.">
+	<meta property="og:title" content="Cách tạo USB cài đặt Windows">
+	<meta property="og:url" content="https://consoicongnghe.com/posts/tao-usb-cai-windows/">
+	<meta property="og:image" content="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
+	<!-- <meta name="google-adsense-account" content="ca-pub-4464056065715693"> -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script async src="/assets/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!-- Google search site name -->
+	<script type="application/ld+json">
+		{
+		  "@context" : "https://schema.org",
+		  "@type" : "WebSite",
+		  "name" : "Con sói công nghệ",
+		  "url" : "https://consoicongnghe.com/"
+		}
+	  </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://consoicongnghe.com",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Bài viết",
+			"item": "https://consoicongnghe.com/posts/"
+		  },{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Cách tạo USB cài đặt Windows",
+			"item": "https://consoicongnghe.com/posts/tao-usb-cai-windows/"
+		  }]
+		}
+		</script>
+</head>
+
+<body>
+	<div class="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
+			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<symbol id="icon-bars" viewBox="0 0 24 20">
+						<path
+							d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+						</path>
+					</symbol>
+				</defs>
+			</svg>
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/posts/">Bài viết</a></li>
+			<li>Cách tạo USB cài đặt Windows</li>
+		</ul>
+		<div class="indent">
+			<h1>Cách tạo USB cài đặt Windows</h1>
+			<p>Tớ biết là các cậu ngại cài lại máy. Nhỡ mất dữ liệu thì sao? Vậy nên nếu cậu cần cài lại máy mà không
+				biết làm, không biết cần sao lưu (backup) những dữ liệu gì, hãy hỏi dịch vụ của tớ!</p>
+			<p>Còn nếu cậu mong muốn thử tự làm, đầu tiên hãy backup lại dữ liệu của cậu ra khỏi ổ C, chuyển sang các ổ
+				khác đã. Sau đó mới tạo USB cài Windows. "Tại sao tớ tạo USB cài win rồi mà dùng không được?" Nếu cậu
+				hỏi ai khác họ sẽ bảo cậu dùng công cụ <a href="https://rufus.ie" target="_blank"
+					rel="noopener">Rufus</a>, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng
+				được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft
+				hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</p>
+			<h2>Nếu cậu chưa tải file iso cài đặt Windows</h2>
+			<ol>
+				<li>Cắm USB vào máy tính, đảm bảo dữ liệu trong USB đã được sao lưu.</li>
+				<li>Tải <a href="https://go.microsoft.com/fwlink/?linkid=2156295" target="_blank" rel="noopener">Media
+						Creation Tool dành cho Windows 11</a>.
+				</li>
+				<li>Mở file <span style="color: var(--red);">MediaCreationTool.exe</span> vừa tải về và làm theo hướng
+					dẫn.</li>
+			</ol>
+			<h2>Nếu cậu đã có sẵn file iso cài đặt Windows rồi</h2>
+			<ol>
+				<li>Bấm <span style="color: var(--blue);">chuột phải</span> vào USB, chọn <span
+						style="color: var(--red);">Format</span>. Ở mục <span style="color: var(--orange);">File
+						System</span>, chọn <span style="color: var(--red);">FAT32</span>, sau đó <span
+						style="color: var(--red);">Format</span>.<br>
+					<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-format-usb.png"
+						alt="command prompt split image" width="983" height="597" style="width:50%;" class="zoom200">
+				</li>
+				<li>Kiểm tra dung lượng file iso cài đặt Windows của cậu.</li>
+				<ul>
+					<li>Nếu dung lượng file <strong>nhỏ hơn 4GB</strong>: Mở file iso cài đặt Windows của cậu lên để nó
+						mount vào <span style="color: var(--orange);">File
+							Explorer</span>. Copy toàn bộ những gì có trong file iso vào trong USB.<br>
+						<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-copy-to-usb.png"
+							alt="copy windows installer to usb" width="567" height="432" style="width:50%;"
+							class="zoom150">
+					</li>
+					<li>
+						Nếu dung lượng file <strong>lớn hơn 4GB</strong>: Mở file iso cài đặt Windows của cậu lên để nó
+						mount vào <span style="color: var(--orange);">File Explorer</span>. Mở <span
+							style="color: var(--orange);">Command Prompt</span> ở chế độ Administrator, chạy dòng lệnh
+						này, thay ổ <span style="color: var(--yellow);">F:\</span> bằng ổ đang mount file iso, ổ <span
+							style="color: var(--yellow);">E:\</span> bằng mount point của USB:<br>
+						<code>Dism /Split-Image /ImageFile:F:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800</code><br>
+						<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-split-image.png"
+							alt="command prompt split image" width="1103" height="214" style="width:100%;">
+					</li>
+				</ul>
+			</ol>
+			<hr>
+			<p>Sau khi tạo xong USB, cậu khởi động lại máy, bấm liên tục nút bàn phím theo <a
+					href="/blog/archived/biosbutton/" target="_blank" rel="noopener">hướng dẫn này</a> để vào BIOS chọn
+				khởi động vào USB để tiến hành cài đặt Windows.</p>
+			<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" alt="Windows 11 Media Creation Tool"
+				width="801" height="711" style="width:50%;" class="zoom150">
+			<br>
+			<p><b>Sói</b></p>
+			<p>10/01/2024</p>
+			<hr>
+			<div style="text-align: center; margin: 0 auto 12px;"><a href="mailto:linh@consoicongnghe.com"
+					target="_blank" rel="noopener">Góp ý về bài viết này</a></div>
+		</div>
+	</div>
+</body>
+
+</html>
