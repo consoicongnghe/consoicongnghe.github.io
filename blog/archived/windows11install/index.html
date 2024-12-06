@@ -145,7 +145,7 @@
 						onclick="showHiddenString('bitlockerHidden')">kiểm tra tình trạng
 						<strong>Bitlocker</strong></button>
 					<div id="bitlockerHidden" style="display: none;">
-						<ul>
+						<ol>
 							<li><span style="color: var(--blue);">Shift+F10</span> --&gt;
 								<code>manage-bde -status</code>
 							</li>
@@ -157,6 +157,13 @@
 								Bấm chuột phải mục BitLocker, chọn <span style="color: var(--red);">New Dword
 									(32-bit) value</span>: <code>PreventDeviceEncryption</code>,
 								value=<strong>1</strong>
+							</li>
+						</ol>
+						<ul>
+							<li><strong>Chú ý:</strong> Nếu đã vào Windows và Bitlocker ở trạng thái chờ <span
+									style="color: var(--red);">Waiting for activation</span>, mở <span
+									style="color: var(--orange);">Command Prompt</span> bằng quyền Admin và gõ:
+								<code>manage-bde -off C:</code>
 							</li>
 						</ul>
 					</div>
