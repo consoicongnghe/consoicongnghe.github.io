@@ -652,3 +652,52 @@ td {
 tr:hover :not(th) {
 	background-color: var(--bg-block);
 }
+
+
+/* https://www.w3schools.com/howto/howto_js_copy_clipboard.asp */
+.copyTooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.copyTooltip .copyTooltipText {
+	visibility: hidden;
+	width: 50px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 120%;
+	left: 50%;
+	margin-left: -30px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.copyTooltip .copyTooltipText::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.copyTooltip:hover .copyTooltipText {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	resize: none;
+	max-width: 100%;
+}

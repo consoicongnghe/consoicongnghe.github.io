@@ -25,3 +25,20 @@ function topnavHamburger() {
 	// 	x.className = "topnav-hamburger";
 	// }
 }
+
+// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+// copy code button
+function copyButton() {
+	var copyText = document.getElementById("textToCopy");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	navigator.clipboard.writeText(copyText.value);
+
+	var copyTooltip = document.getElementById("cpTooltip");
+	copyTooltip.innerHTML = "Copied";
+}
+// this is for when moving the mouse out of the button
+function outFunc() {
+	var copyTooltip = document.getElementById("cpTooltip");
+	copyTooltip.innerHTML = "Copy";
+}

@@ -118,24 +118,47 @@
 				phí dạng như thế này:</p>
 			<img src="/posts/windows-hevc-extension/win-hevc-ext-error.png" alt="HEVC extension error" width="1056"
 				height="498">
-			<p><strong>Cách xử lí:</strong> Cài đặt các extension còn thiếu.</p>
+			<h2>Cách xử lí: Cài đặt các extension còn thiếu.</h2>
 			<ul>
-				<li><a href="ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq">HEVC Video Extension</a> giúp đọc các file
-					ảnh định dạng HEIC (Apple), xem các file video HEVC.</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9pmmsr1cgpwg">HEIF Video Extension</a> giúp đọc các file
-					ảnh định dạng HEIF.</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9n4d0msmp0pt">VP9 Video Extensions</a> giúp đọc các file
-					video VP9 (Google).</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9mvzqvxjbq9v">AV1 Video Extension</a> giúp đọc các file
-					video AV1 (Google).</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9n95q1zzpmh4">MPEG-2 Video Extension</a> giúp đọc các
-					MPEG-2 (Apple).</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9nctdw2w1bh8">Raw Image Extension</a> giúp đọc các file
-					ảnh định dạng raw.</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9pg2dk419drg">Webp Image Extensions</a> giúp đọc các file
-					ảnh định dạng WEBP.</li>
-				<li><a href="ms-windows-store://pdp/?ProductId=9n5tdp8vcmhs">Web Media Extensions</a> giúp đọc các file
-					OGG, codec Vorbis và Theora.</li>
+				<li>
+					Cài thủ công:
+					<ul>
+						<li><a href="ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq">HEVC Video Extension</a> giúp đọc
+							các file
+							ảnh định dạng HEIC (Apple), xem các file video HEVC.</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9pmmsr1cgpwg">HEIF Video Extension</a> giúp đọc
+							các file
+							ảnh định dạng HEIF.</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9n4d0msmp0pt">VP9 Video Extensions</a> giúp đọc
+							các file
+							video VP9 (Google).</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9mvzqvxjbq9v">AV1 Video Extension</a> giúp đọc
+							các file
+							video AV1 (Google).</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9n95q1zzpmh4">MPEG-2 Video Extension</a> giúp đọc
+							các
+							MPEG-2 (Apple).</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9nctdw2w1bh8">Raw Image Extension</a> giúp đọc
+							các file
+							ảnh định dạng raw.</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9pg2dk419drg">Webp Image Extensions</a> giúp đọc
+							các file
+							ảnh định dạng WEBP.</li>
+						<li><a href="ms-windows-store://pdp/?ProductId=9n5tdp8vcmhs">Web Media Extensions</a> giúp đọc
+							các file
+							OGG, codec Vorbis và Theora.</li>
+					</ul>
+				</li>
+				<li>
+					Cài bằng script Powershell: <div class="copyTooltip">
+						<button onclick="copyButton()" onmouseout="outFunc()">
+							<span class="copyTooltipText" id="cpTooltip">Copy</span>Copy</button>
+					</div>
+					<textarea type="text" cols="100" rows="8" readonly id="textToCopy">$appnames = @('Microsoft.HEVCVideoExtension','Microsoft.VP9VideoExtensions','Microsoft.AV1VideoExtension','Microsoft.MPEG2VideoExtension','Microsoft.HEIFImageExtension','Microsoft.WebpImageExtension','Microsoft.RawImageExtension','Microsoft.WebMediaExtensions')
+foreach ($appname in $appnames) {
+	Get-AppxPackage -AllUsers | where-object {$_.name -match $appname} | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+}</textarea>
+				</li>
 			</ul>
 			<br>
 			<p><b>Sói</b></p>
