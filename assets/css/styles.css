@@ -136,6 +136,12 @@ video {
 		transform: scale(3, 3);
 		box-shadow: 0 0 20px 3px var(--block-shadow);
 	}
+
+	/* https://css-tricks.com/hash-tag-links-padding/ */
+	h2,
+	h3 {
+		scroll-margin-top: 60px;
+	}
 }
 
 @media screen and (max-width: 800px) {
