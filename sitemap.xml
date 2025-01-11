@@ -12,22 +12,27 @@
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/blog/</loc>
+		<loc>https://consoicongnghe.com/blog/</loc>
 		<priority>0.75</priority>
 		<lastmod>2025-01-11</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/chickengang/</loc>
 		<loc>https://consoicongnghe.com/chickengang/</loc>
 		<priority>0.75</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/contact/</loc>
+		<loc>https://consoicongnghe.com/contact/</loc>
 		<priority>0.75</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/</loc>
+		<loc>https://consoicongnghe.com/posts/</loc>
 		<priority>0.75</priority>
+		<lastmod>2025-01-08</lastmod>
 		<lastmod>2025-01-08</lastmod>
 	</url>
 	<url>
@@ -42,55 +47,78 @@
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/blog/macos-gatekeeper/</loc>
+		<loc>https://consoicongnghe.com/blog/macos-gatekeeper/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-09-26</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/blog/macos-gatekeeper/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-09-26</lastmod>
+		<lastmod>2024-09-26</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
 		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-28</lastmod>
 		<lastmod>2024-11-28</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/blog/rustdesk/</loc>
+		<loc>https://consoicongnghe.com/blog/rustdesk/</loc>
 		<priority>0.50</priority>
+		<lastmod>2025-01-08</lastmod>
 		<lastmod>2025-01-08</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/archived/</loc>
+		<loc>https://consoicongnghe.com/posts/archived/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-26</lastmod>
 		<lastmod>2024-11-26</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/blog/rustdesk/</loc>
+		<loc>https://consoicongnghe.com/blog/rustdesk/</loc>
 		<priority>0.50</priority>
+		<lastmod>2025-01-08</lastmod>
 		<lastmod>2025-01-08</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/archived/</loc>
+		<loc>https://consoicongnghe.com/posts/archived/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-26</lastmod>
 		<lastmod>2024-11-26</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/bao-mat-2-lop/</loc>
 		<loc>https://consoicongnghe.com/posts/bao-mat-2-lop/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-28</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/bo-day-sac/</loc>
+		<loc>https://consoicongnghe.com/posts/bo-day-sac/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/hub-usb-type-c/</loc>
 		<loc>https://consoicongnghe.com/posts/hub-usb-type-c/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/o-cung-di-dong/</loc>
+		<loc>https://consoicongnghe.com/posts/o-cung-di-dong/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-27</lastmod>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/pin-du-phong/</loc>
 		<loc>https://consoicongnghe.com/posts/pin-du-phong/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-27</lastmod>
@@ -102,6 +130,7 @@
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/tai-nghe-airpods-2/</loc>
+		<loc>https://consoicongnghe.com/posts/tai-nghe-airpods-2/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
@@ -112,55 +141,78 @@
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/ublock-origin/</loc>
+		<loc>https://consoicongnghe.com/posts/trustedstores/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-10-16</lastmod>
+	</url>
+	<url>
+		<loc>https://consoicongnghe.com/posts/ublock-origin/</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-11-28</lastmod>
 		<lastmod>2024-11-28</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/USB/</loc>
 		<loc>https://consoicongnghe.com/posts/USB/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/usb-otg/</loc>
+		<loc>https://consoicongnghe.com/posts/usb-otg/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/win11-transparency-effects/</loc>
 		<loc>https://consoicongnghe.com/posts/win11-transparency-effects/</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-11-28</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-character-map/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-character-map/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-28</lastmod>
 		<lastmod>2024-11-28</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-clipboard-history/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-clipboard-history/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-27</lastmod>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-hevc-extension/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-hevc-extension/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-12-13</lastmod>
 		<lastmod>2024-12-13</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-refresh-desktop/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-refresh-desktop/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-27</lastmod>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-sponsorblock/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-sponsorblock/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-27</lastmod>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
 		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
+		<loc>https://consoicongnghe.com/posts/windows-widget-thoi-tiet/</loc>
 		<priority>0.50</priority>
+		<lastmod>2024-11-27</lastmod>
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/archived/android-cac-loai-giao-dien/</loc>
 		<loc>https://consoicongnghe.com/posts/archived/android-cac-loai-giao-dien/</loc>
 		<priority>0.25</priority>
 		<lastmod>2024-11-27</lastmod>
@@ -171,6 +223,7 @@
 		<lastmod>2024-11-27</lastmod>
 	</url>
 	<url>
+		<loc>https://consoicongnghe.com/posts/archived/android-root-dien-thoai-de-lam-gi/</loc>
 		<loc>https://consoicongnghe.com/posts/archived/android-root-dien-thoai-de-lam-gi/</loc>
 		<priority>0.25</priority>
 		<lastmod>2024-11-27</lastmod>
