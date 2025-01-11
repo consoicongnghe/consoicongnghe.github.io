@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<link rel="preload" href="/assets/css/styles.css" as="style" />
+	<title>Format USB định dạng FAT32</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Ở đây chỉ cách format USB bất kì về định dạng FAT32 để cài win, chạy nhạc DJ,...">
+	<meta name="keywords" content="format, usb, fat32, định dạng">
+	<meta name="author" content="consoicongnghe">
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png">
+	<link rel="manifest" href="\assets\icons/site.webmanifest">
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="2528">
+	<meta property="og:image:height" content="1166">
+	<meta property="og:description"
+		content="Ở đây chỉ cách format USB bất kì về định dạng FAT32 để cài win, chạy nhạc DJ,...">
+	<meta property="og:title" content="Format USB định dạng FAT32">
+	<meta property="og:url" content="https://consoicongnghe.com/blog/format-usb-fat32/">
+	<meta property="og:image" content="https://consoicongnghe.com/blog/format-usb-fat32/format-usb-fat32-og.jpg">
+	<!-- <meta name="google-adsense-account" content="ca-pub-4464056065715693"> -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script async src="/assets/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!-- Google search site name -->
+	<script type="application/ld+json">
+		{
+		  "@context" : "https://schema.org",
+		  "@type" : "WebSite",
+		  "name" : "Con sói công nghệ",
+		  "url" : "https://consoicongnghe.com/"
+		}
+	  </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://consoicongnghe.com",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Blog",
+			"item": "https://consoicongnghe.com/blog/"
+		  },{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Format USB định dạng FAT32",
+			"item": "https://consoicongnghe.com/blog/format-usb-fat32/"
+		  }]
+		}
+		</script>
+</head>
+
+<body>
+	<div class="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/blog/" class="active">Blog</a>
+				<a href="/posts/">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
+			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<symbol id="icon-bars" viewBox="0 0 24 20">
+						<path
+							d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+						</path>
+					</symbol>
+				</defs>
+			</svg>
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/blog/">Blog</a></li>
+			<li>Format USB FAT32</li>
+		</ul>
+		<div class="indent">
+			<h1>Format USB định dạng FAT32</h1>
+			<p>Cách format USB bất kì về định dạng FAT32 (để tương thích với máy cũ, làm USB cài win, gắn máy DJ,…).</p>
+			<h2>macOS</h2>
+			<ol>
+				<li>Mở <span style="color: var(--orange);">Disk Utility</span>, chọn <span
+						style="color: var(--yellow);">View/Show all devices</span></li>
+				<li>Chọn USB ở cột bên trái. Ở thanh phía trên bên phải, bấm <span
+						style="color: var(--red);">Erase</span>.</li>
+				<li>Mục 2 chọn <strong><span style="color: var(--green);">MS-DOS (FAT)</span></strong>. Mục 3 chọn
+					<strong><span style="color: var(--green);">GUID Partition Table</span></strong> (<em>GPT</em>).
+					Bấm <span style="color: var(--red);">Erase</span>.
+				</li>
+			</ol>
+			<video width="1478" height="960" autoplay muted loop playsinline controls>
+				<source src="/blog/format-usb-fat32/format-usb-fat32-macos.webm" type="video/webm">format USB FAT32 on
+				macOS
+			</video>
+			<h2>Windows</h2>
+			<p>Có 2 cách: Dùng <span style="color: var(--orange);">Command Prompt</span> hoặc dùng phần mềm ngoài.</p>
+			<h3>Command Prompt</h3>
+			<ol>
+				<li>Mở <span style="color: var(--orange);">Command Prompt</span> bằng quyền Administrator.</li>
+				<li>Gõ lệnh: <code>diskpart</code></li>
+				<li>Gõ lệnh: <code>list disk</code></li>
+				<li>Nhìn xem USB là ổ đĩa số mấy. Ví dụ USB là <span style="color: var(--green);">Disk 2</span>, gõ
+					lệnh: <code>select disk 2</code></li>
+				<li>Gõ lệnh: <code>clean</code></li>
+				<li>Gõ lệnh: <code>create partition primary</code></li>
+				<li>Gõ lệnh: <code>select partition 1</code></li>
+				<li>Gõ lệnh: <code>format fs=fat32 quick</code></li>
+				<li>Gõ lệnh: <code>active</code></li>
+				<li>Gõ lệnh: <code>exit</code></li>
+			</ol>
+			<h3>Dùng phần mềm ngoài</h3>
+			<ol>
+				<li>Tải phần mềm <a href="https://cdn2.minitool.com/?p=pw&amp;e=pw-free"
+						style="text-decoration: underline;">Minitool Partition Wizard</a>
+				</li>
+				<li>Cài đặt. Nhớ <strong><span style="color: var(--red);">KHÔNG</span></strong> chọn trial bản Pro, và
+					chỉ cài <span style="color: var(--green);">Partition Wizard</span>, bỏ check không cài các phần mềm
+					khác (ví dụ <span style="color: var(--orange);">Shadow Recovery</span>). Sau đó mở phần mềm lên.
+				</li>
+				<li>Bấm chuột phải vào tên USB, chọn <span style="color: var(--red);">Convert MBR Disk to GPT
+						Disk</span>. Mục tiêu là sử dụng GPT, nếu nút đó
+					ghi convert GPT to MBR thì không bấm.</li>
+				<li>Bấm chuột phải vào tên USB, chọn <span style="color: var(--red);">Delete all partitions</span></li>
+				<li>Bấm chuột phải vào phần <b>Unallocated</b> của USB, chọn <span style="color: var(--red);">Create new
+						Partition</span>. Tại hộp thoại mở ra, mục
+					File System chọn <span style="color: var(--red);">FAT32</span>, rồi bấm <span
+						style="color: var(--red);">OK</span>.</li>
+				<li>Tại góc dưới bên trái màn hình, bấm nút <span style="color: var(--red);">Apply</span>, đợi cho phần
+					mềm chạy xong.</li>
+			</ol>
+			<img src="/blog/format-usb-fat32/format-usb-fat32-done.jpg" alt="Disk Management new volume" width="940"
+				height="352" loading="lazy" class="zoom150">
+			<br>
+			<p><b>Sói</b></p>
+			<hr>
+			<div style="text-align: center; margin: 0 auto 12px;"><a href="mailto:linh@consoicongnghe.com"
+					target="_blank" rel="noopener">Góp ý về bài viết này</a></div>
+		</div>
+	</div>
+</body>
+
+</html>
