@@ -61,7 +61,7 @@ body {
 .bodyy {
 	max-width: 800px;
 	padding: 0px 8px;
-	margin: 40px auto 0px;
+	margin: 52px auto 0px;
 }
 
 
@@ -140,7 +140,7 @@ video {
 	/* https://css-tricks.com/hash-tag-links-padding/ */
 	h2,
 	h3 {
-		scroll-margin-top: 48px;
+		scroll-margin-top: 52px;
 	}
 }
 
@@ -225,7 +225,7 @@ pre {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 4px 10px 6px;
+	padding: 6px 10px 8px;
 	text-decoration: none;
 	font-size: 110%;
 	display: block;
@@ -233,7 +233,7 @@ pre {
 
 .topnav .topnav-txt {
 	float: left;
-	padding: 6px 0px 4px;
+	padding: 8px 0px 6px;
 	color: #f2f2f2;
 	font-size: 100%;
 }
