@@ -26,8 +26,20 @@
     <pubDate>Fri, 17 Jan 2025 19:00:00 +0700</pubDate>
   </item>
   <item>
+    <title>macOS Gatekeeper</title>
+    <link>https://consoicongnghe.com/blog/macos-gatekeeper</link>
+    <description>Cách bật tắt tính năng Gatekeeper trên hệ điều hành macOS.</description>
+    <enclosure url="https://consoicongnghe.com/blog/macos-gatekeeper/macos-gatekeeper-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/macos-gatekeeper/macos-gatekeeper-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Cách bật tắt tính năng Gatekeeper trên hệ điều hành macOS.</media:text>
+      <media:title type="plain">macOS Gatekeeper</media:title>
+    </media:content>
+    <pubDate>Thu, 16 Jan 2025 19:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Format USB, ổ cứng định dạng exFAT</title>
-    <link>https://consoicongnghe.com/posts/format-exfat/</link>
+    <link>https://consoicongnghe.com/blog/format-exfat/</link>
     <description>Ở đây chỉ cách format USB, ổ cứng sang định dạng exFAT để tương thích với cả hệ điều hành Windows và macOS.</description>
     <enclosure url="https://consoicongnghe.com/blog/format-exfat/format-exfat-og.jpg" type="image/jpeg" length="0"/>
     <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/format-exfat/format-exfat-og.jpg">
@@ -39,7 +51,7 @@
   </item>
   <item>
     <title>Format USB định dạng FAT32</title>
-    <link>https://consoicongnghe.com/posts/format-usb-fat32/</link>
+    <link>https://consoicongnghe.com/blog/format-usb-fat32/</link>
     <description>Ở đây chỉ cách format USB bất kì về định dạng FAT32 để cài win, chạy nhạc DJ,...</description>
     <enclosure url="https://consoicongnghe.com/blog/format-usb-fat32/format-usb-fat32-og.jpg" type="image/jpeg" length="0"/>
     <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/format-usb-fat32/format-usb-fat32-og.jpg">
