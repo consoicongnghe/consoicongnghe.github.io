@@ -26,8 +26,8 @@
 	<meta property="og:description"
 		content="“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.">
 	<meta property="og:title" content="Cách tạo USB cài đặt Windows">
-	<meta property="og:url" content="https://consoicongnghe.com/posts/tao-usb-cai-windows/">
-	<meta property="og:image" content="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
+	<meta property="og:url" content="https://consoicongnghe.com/blog/tao-usb-cai-windows/">
+	<meta property="og:image" content="https://consoicongnghe.com/blog/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
 	<!-- <meta name="google-adsense-account" content="ca-pub-4464056065715693"> -->
 	<!-- CSS -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
@@ -67,13 +67,13 @@
 		  },{
 			"@type": "ListItem",
 			"position": 2,
-			"name": "Bài viết",
-			"item": "https://consoicongnghe.com/posts/"
+			"name": "Blog",
+			"item": "https://consoicongnghe.com/blog/"
 		  },{
 			"@type": "ListItem",
 			"position": 3,
 			"name": "Cách tạo USB cài đặt Windows",
-			"item": "https://consoicongnghe.com/posts/tao-usb-cai-windows/"
+			"item": "https://consoicongnghe.com/blog/tao-usb-cai-windows/"
 		  }]
 		}
 		</script>
@@ -85,7 +85,8 @@
 		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
 		<div class="topnav-right" id="topnav-right">
 			<div class="topnav-subpages">
-				<a href="/posts/" class="active">Bài viết</a>
+				<a href="/blog/" class="active">Blog</a>
+				<a href="/posts/">Bài viết</a>
 				<a href="/about/">Giới thiệu</a>
 				<a href="/contact/">Liên hệ</a>
 			</div>
@@ -109,7 +110,7 @@
 	</div>
 	<div class="bodyy">
 		<ul class="breadcrumb">
-			<li><a href="/posts/">Bài viết</a></li>
+			<li><a href="/blog/">Blog</a></li>
 			<li>Cách tạo USB cài đặt Windows</li>
 		</ul>
 		<div class="indent">
@@ -137,7 +138,7 @@
 						style="color: var(--red);">Format</span>. Ở mục <span style="color: var(--orange);">File
 						System</span>, chọn <span style="color: var(--red);">FAT32</span>, sau đó <span
 						style="color: var(--red);">Format</span>.<br>
-					<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-format-usb.png"
+					<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-format-usb.png"
 						alt="command prompt split image" width="983" height="597" style="width:50%;" class="zoom200">
 				</li>
 				<li>Kiểm tra dung lượng file iso cài đặt Windows của cậu.</li>
@@ -145,7 +146,7 @@
 					<li>Nếu dung lượng file <strong>nhỏ hơn 4GB</strong>: Mở file iso cài đặt Windows của cậu lên để nó
 						mount vào <span style="color: var(--orange);">File
 							Explorer</span>. Copy toàn bộ những gì có trong file iso vào trong USB.<br>
-						<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-copy-to-usb.png"
+						<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-copy-to-usb.png"
 							alt="copy windows installer to usb" width="567" height="432" style="width:50%;"
 							class="zoom150">
 					</li>
@@ -156,7 +157,7 @@
 						này, thay ổ <span style="color: var(--yellow);">F:\</span> bằng ổ đang mount file iso, ổ <span
 							style="color: var(--yellow);">E:\</span> bằng mount point của USB:<br>
 						<code>Dism /Split-Image /ImageFile:F:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800</code><br>
-						<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-split-image.png"
+						<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-split-image.png"
 							alt="command prompt split image" width="1103" height="214" style="width:100%;">
 					</li>
 				</ul>
@@ -165,7 +166,7 @@
 			<p>Sau khi tạo xong USB, cậu khởi động lại máy, bấm liên tục nút bàn phím theo <a
 					href="/blog/archived/biosbutton/">hướng dẫn này</a> để vào BIOS chọn
 				khởi động vào USB để tiến hành cài đặt Windows.</p>
-			<img src="/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" alt="Windows 11 Media Creation Tool"
+			<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" alt="Windows 11 Media Creation Tool"
 				width="801" height="711" style="width:50%;" class="zoom150">
 			<br>
 			<p><b>Sói</b></p>

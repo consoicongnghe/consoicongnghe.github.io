@@ -3,12 +3,12 @@
 
 <head>
 	<link rel="preload" href="/assets/css/styles.css" as="style" />
-	<title>Nút vào BIOS</title>
+	<title>Cách khởi động vào USB boot/USB cài Windows</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta charset="UTF-8" />
 	<meta name="description" content="Danh sách nút vào BIOS của laptop/mainboard các hãng khác nhau." />
-	<meta name="keywords" content="bios" />
+	<meta name="keywords" content="bios, boot, usb, windows installer, mainboard, del" />
 	<meta name="author" content="consoicongnghe" />
 	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
 	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png" />
@@ -20,12 +20,12 @@
 	<meta name="msapplication-TileColor" content="#da532c" />
 	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml" />
 	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
-	<meta property="og:image:width" content="1222" />
-	<meta property="og:image:height" content="640" />
+	<meta property="og:image:width" content="832" />
+	<meta property="og:image:height" content="471" />
 	<meta property="og:description" content="Danh sách nút vào BIOS của laptop/mainboard các hãng khác nhau." />
-	<meta property="og:title" content="Nút vào BIOS" />
-	<meta property="og:url" content="https://consoicongnghe.com/blog/archived/biosbutton/" />
-	<meta property="og:image" content="https://consoicongnghe.com/assets/images/og-image.jpg" />
+	<meta property="og:title" content="Cách khởi động vào USB boot/USB cài Windows" />
+	<meta property="og:url" content="https://consoicongnghe.com/blog/biosbutton/" />
+	<meta property="og:image" content="https://consoicongnghe.com/blog/biosbutton/biosbutton-og.jpg" />
 	<!-- CSS -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -54,28 +54,23 @@
 	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
 	<script type="application/ld+json">
 		{
-		  "@context": "https://schema.org",
-		  "@type": "BreadcrumbList",
-		  "itemListElement": [{
-			"@type": "ListItem",
-			"position": 1,
-			"name": "Trang chủ",
-			"item": "https://consoicongnghe.com"
-		  },{
-			"@type": "ListItem",
-			"position": 2,
-			"name": "Blog",
-			"item": "https://consoicongnghe.com/blog/"
-		  },{
+			"@context": "https://consoicongnghe.com",
+			"@type": "BreadcrumbList",
+			"itemListElement": [{
+			  "@type": "ListItem",
+			  "position": 1,
+			  "name": "Trang chủ",
+			  "item": "https://consoicongnghe.com"
+			},{
+			  "@type": "ListItem",
+			  "position": 2,
+			  "name": "Blog",
+			  "item": "https://consoicongnghe.com/blog/"
+			},{
 			"@type": "ListItem",
 			"position": 3,
-			"name": "Blog trong kho",
-			"item": "https://consoicongnghe.com/blog/archived/"
-		  },{
-			"@type": "ListItem",
-			"position": 4,
-			"name": "Nút vào BIOS",
-			"item": "https://consoicongnghe.com/blog/archived/biosbutton/"
+			"name": "Cách khởi động vào USB boot/USB cài Windows",
+			"item": "https://consoicongnghe.com/blog/biosbutton/"
 		  }]
 		}
 	</script>
@@ -113,11 +108,22 @@
 	<div class="bodyy">
 		<ul class="breadcrumb">
 			<li><a href="/blog/">Blog</a></li>
-			<li><a href="/blog/archived/">Archived blog</a></li>
-			<li>Nút vào BIOS</li>
+			<li>Khởi động vào USB boot</li>
 		</ul>
 		<div class="indent">
-			<h1>Danh sách nút vào BIOS</h1>
+			<h1>Cách khởi động vào USB boot/USB cài Windows</h1>
+			<p>Cậu muốn tự mình cài lại Windows, cậu đã tạo được USB cài rồi nhưng không biết làm thế nào tiếp theo?</p>
+			<p>Thông thường các máy tính/laptop khi mới bấm nút nguồn sẽ chạy một chu trình kiểm tra phần cứng trong vài
+				giây trước khi khởi động vào Windows. Mỗi máy đều có phím tắt được lập trình sẵn để nếu phím này
+				được bấm trong vài giây này, máy sẽ chuyển vào giao diện cài đặt BIOS hoặc giao diện chọn ổ đĩa khởi
+				động. <strong>Đây là bảng phím tắt mà tớ tổng hợp được cho các hãng máy thông dụng.</strong></p>
+			<ul>
+				<li>Bất kì máy tính để bàn (<i>PC</i>) nào bấm phím <span style="color: var(--blue);">Delete</span> cũng
+					vào giao diện cài đặt BIOS.</li>
+				<li>Cách vào BIOS từ trong Windows: Mở <span style="color: var(--orange);">Terminal</span>, gõ lệnh sau:
+					<code>shutdown -r -fw -t 1</code>
+				</li>
+			</ul>
 			<h2 style="text-align: center;">Laptop</h2>
 			<div style="overflow-x:auto;">
 				<table style="text-align: center;">
@@ -159,6 +165,12 @@
 						<td></td>
 					</tr>
 					<tr>
+						<td colspan="2">Microsoft Surface</td>
+						<td>Giữ Vol+</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
 						<td colspan="2">MSI</td>
 						<td>Del / F12</td>
 						<td>F11</td>
@@ -177,6 +189,18 @@
 						<td>F12<span style="color: var(--red);">?</span></td>
 						<td></td>
 					</tr>
+					<tr>
+						<td colspan="2">Samsung</td>
+						<td>Del<span style="color: var(--red);">?</span> / F2</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2">Toshiba</td>
+						<td>Del<span style="color: var(--red);">?</span> / F2</td>
+						<td></td>
+						<td></td>
+					</tr>
 				</table>
 			</div>
 			<h2 style="text-align: center;">Desktop</h2>
@@ -190,84 +214,78 @@
 					</tr>
 					<tr>
 						<td colspan="2">Asrock</td>
-						<td>Del / F2</td>
+						<td><span style="color: var(--blue);">Del</span> / F2</td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">Acer</td>
-						<td>Del / F2</td>
+						<td><span style="color: var(--blue);">Del</span> / F2</td>
 						<td>F2</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">Asus</td>
-						<td>Del / F2</td>
+						<td><span style="color: var(--blue);">Del</span> / F2</td>
 						<td>F2</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">Dell</td>
-						<td>Del / F2</td>
+						<td><span style="color: var(--blue);">Del</span> / F2</td>
 						<td>F2 / F12</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">Gigabyte</td>
-						<td>Del / F2</td>
+						<td><span style="color: var(--blue);">Del</span> / F2</td>
 						<td>F12</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">HP</td>
-						<td>Del<span style="color: var(--red);">?</span> / F9</td>
+						<td><span style="color: var(--blue);">Del</span><span style="color: var(--red);">?</span> / F9
+						</td>
 						<td>F10</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">Lenovo</td>
-						<td>Del / F1</td>
+						<td><span style="color: var(--blue);">Del</span> / F1</td>
 						<td>F1<span style="color: var(--red);">?</span></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">MSI</td>
-						<td>Del</td>
+						<td><span style="color: var(--blue);">Del</span></td>
 						<td>F11</td>
 						<td></td>
 					</tr>
 					<tr>
-						<td colspan="2">MS Surface</td>
-						<td>Hold Vol+</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
 						<td colspan="2">Origin PC</td>
-						<td>Del / F2</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td colspan="2">Samsung</td>
-						<td>Del<span style="color: var(--red);">?</span> / F2</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td colspan="2">Toshiba</td>
-						<td>Del<span style="color: var(--red);">?</span> / F2</td>
+						<td><span style="color: var(--blue);">Del</span> / F2</td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td colspan="2">Zotac</td>
-						<td>Del</td>
+						<td><span style="color: var(--blue);">Del</span></td>
 						<td></td>
 						<td></td>
 					</tr>
 				</table>
 			</div>
+			<p>Ví dụ máy cậu là một chiếc laptop hãng Dell. Cậu tắt máy đi. Cắm USB vào. Kiểm tra bảng trên, laptop Dell
+				bấm <span style="color: var(--blue);">F2</span> là BIOS, <span style="color: var(--blue);">F12</span> là
+				boot devices. Cậu bấm nút nguồn để bật máy, ngay sau đó bấm liên tục nút <span
+					style="color: var(--blue);">F2</span> hoặc <span style="color: var(--blue);">F12</span>. Sau khi bấm
+				<span style="color: var(--blue);">F12</span>, dùng phím mũi tên để di chuyển tới mục USB
+				của cậu, rồi bấm <span style="color: var(--blue);">Enter</span> để khởi động vào nó.
+			</p>
+			<p>Nếu tại màn hình này không thấy USB của cậu, hãy tắt máy đi bật lại làm lại, nếu vẫn không được thì thử
+				rút USB ra cắm sang cổng USB khác, thậm chí thay vì cổng 3.0 xanh có chữ SS thì cắm thử vào cổng USB 2.0
+				màu đen. Vẫn không được thì cậu nên tạo lại USB, USB cài Windows tốt nhất hãy làm theo <a
+					href="/blog/tao-usb-cai-windows/" target="_blank">hướng dẫn của tớ</a> chứ đừng dùng Rufus :D</p>
 		</div>
 		<hr>
 		<div style="text-align: center; margin: 0 auto 12px;"><a href="mailto:linh@consoicongnghe.com" target="_blank"
