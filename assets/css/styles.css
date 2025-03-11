@@ -532,6 +532,8 @@ ul.breadcrumb li a {
 
 .widebodyy {
 	max-width: 1080px;
+	padding: 0px 8px;
+	margin: 52px auto 0px;
 }
 
 .block {

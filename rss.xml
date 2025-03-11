@@ -14,11 +14,23 @@
     <link>https://consoicongnghe.com</link>
   </image>
   <item>
+    <title>Cách khởi động vào USB boot/USB cài Windows</title>
+    <link>https://consoicongnghe.com/blog/biosbutton/</link>
+    <description>Danh sách nút vào BIOS của laptop/mainboard các hãng khác nhau.</description>
+    <enclosure url="https://consoicongnghe.com/blog/biosbutton/biosbutton-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/biosbutton/biosbutton-og.jpg">
+      <media:credit>consoicongnghe</media:credit>
+      <media:text>Danh sách nút vào BIOS của laptop/mainboard các hãng khác nhau.</media:text>
+      <media:title type="plain">Cách khởi động vào USB boot/USB cài Windows</media:title>
+    </media:content>
+    <pubDate>Tue, 11 Feb 2025 19:00:00 +0700</pubDate>
+  </item>
+  <item>
     <title>Cách tạo USB cài đặt Windows</title>
-    <link>https://consoicongnghe.com/posts/tao-usb-cai-windows/</link>
+    <link>https://consoicongnghe.com/blog/tao-usb-cai-windows/</link>
     <description>“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</description>
-    <enclosure url="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
+    <enclosure url="https://consoicongnghe.com/blog/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</media:text>
       <media:title type="plain">Cách tạo USB cài đặt Windows</media:title>
