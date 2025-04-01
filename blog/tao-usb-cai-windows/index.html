@@ -141,25 +141,23 @@
 					<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-format-usb.png"
 						alt="command prompt split image" width="983" height="597" style="width:50%;" class="zoom200">
 				</li>
-				<li>Kiểm tra dung lượng file iso cài đặt Windows của cậu.</li>
-				<ul>
-					<li>Nếu dung lượng file <strong>nhỏ hơn 4GB</strong>: Mở file iso cài đặt Windows của cậu lên để nó
-						mount vào <span style="color: var(--orange);">File
-							Explorer</span>. Copy toàn bộ những gì có trong file iso vào trong USB.<br>
-						<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-copy-to-usb.png"
-							alt="copy windows installer to usb" width="567" height="432" style="width:50%;"
-							class="zoom150">
-					</li>
-					<li>
-						Nếu dung lượng file <strong>lớn hơn 4GB</strong>: Mở file iso cài đặt Windows của cậu lên để nó
-						mount vào <span style="color: var(--orange);">File Explorer</span>. Mở <span
-							style="color: var(--orange);">Command Prompt</span> ở chế độ Administrator, chạy dòng lệnh
-						này, thay ổ <span style="color: var(--yellow);">F:\</span> bằng ổ đang mount file iso, ổ <span
-							style="color: var(--yellow);">E:\</span> bằng mount point của USB:<br>
-						<code>Dism /Split-Image /ImageFile:F:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800</code><br>
-						<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-split-image.png"
-							alt="command prompt split image" width="1103" height="214" style="width:100%;">
-					</li>
+				<li>Mở file iso cài đặt Windows của cậu lên để nó mount vào <span style="color: var(--orange);">File
+						Explorer</span>. Copy toàn bộ những gì có trong file iso vào trong USB. Nếu không có lỗi thì
+					không cần làm bước 3. Nếu có lỗi file quá lớn, bấm <span style="color: var(--red);">Skip</span> rồi
+					làm theo bước 3.<br>
+					<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-copy-to-usb.png"
+						alt="copy windows installer to usb" width="567" height="432" style="width:50%;" class="zoom150">
+				</li>
+				<li>
+					Nếu dung lượng file iso cài Windows <strong>lớn hơn 4GB</strong> khiến cho quá trình copy gặp lỗi:
+					Mở file iso cài đặt Windows của cậu lên để nó mount vào <span style="color: var(--orange);">File
+						Explorer</span>. Mở <span style="color: var(--orange);">Command Prompt</span> ở chế độ
+					Administrator, chạy dòng lệnh này, thay ổ <span style="color: var(--yellow);">F:\</span> bằng ổ đang
+					mount file iso, ổ <span style="color: var(--yellow);">E:\</span> bằng mount point của USB:<br>
+					<code>Dism /Split-Image /ImageFile:F:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800</code><br>
+					<img src="/blog/tao-usb-cai-windows/tao-usb-cai-windows-split-image.png"
+						alt="command prompt split image" width="1103" height="214" style="width:100%;">
+				</li>
 				</ul>
 			</ol>
 			<hr>
