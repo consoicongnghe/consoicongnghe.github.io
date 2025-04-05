@@ -125,6 +125,7 @@
 				<li>Chọn USB ở cột bên trái. Ở thanh phía trên bên phải, bấm <span
 						style="color: var(--red);">Erase</span>.</li>
 				<li>Mục 2 chọn <strong><span style="color: var(--green);">MS-DOS (FAT)</span></strong>. Mục 3 chọn
+					<strong><span style="color: var(--green);">Master Boot Record</span></strong> (<em>MBR</em>) hoặc
 					<strong><span style="color: var(--green);">GUID Partition Table</span></strong> (<em>GPT</em>).
 					Bấm <span style="color: var(--red);">Erase</span>.
 				</li>
@@ -173,17 +174,18 @@
 					</div>
 				</li>
 				<li>
-					Bấm chuột phải vào tên USB, chọn <span style="color: var(--red);">Convert MBR Disk to GPT
-						Disk</span>. Mục tiêu là sử dụng GPT, nếu nút đó ghi convert GPT to MBR thì không bấm.
+					Nếu cần dùng USB chuẩn GPT thay vì MBR (Legacy), bấm chuột phải vào tên USB, chọn <span
+						style="color: var(--red);">Convert MBR Disk to GPT Disk</span>.
 					<img src="/blog/format-usb-fat32/format-usb-fat32-converttoGPT.jpg" alt="minitool convert to gpt"
 						width="923" height="375" loading="lazy" class="zoom150">
 				</li>
 				<li>
-					Bấm chuột phải vào tên USB, chọn <span style="color: var(--red);">Delete all partitions</span>
+					Bấm chuột phải vào tên USB, chọn <span style="color: var(--red);">Delete all partitions</span>.
 				</li>
 				<li>Bấm chuột phải vào phần <b>Unallocated</b> của USB, chọn <span
-						style="color: var(--red);">Create</span>. Tại hộp thoại mở ra, mục File System chọn <span
-						style="color: var(--yellow);">FAT32</span>, rồi bấm <span style="color: var(--red);">OK</span>.
+						style="color: var(--red);">Create</span>. Tại hộp thoại mở ra, mục File System chọn
+					<strong><span style="color: var(--yellow);">FAT32</span></strong>, rồi bấm <span
+						style="color: var(--red);">OK</span>.
 					<img src="/blog/format-usb-fat32/format-usb-fat32-finalWindow.jpg"
 						alt="minitool new partition window" width="561" height="492" loading="lazy" class="zoom150">
 				</li>
