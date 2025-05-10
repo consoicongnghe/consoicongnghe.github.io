@@ -265,8 +265,17 @@ user_pref("browser.ssb.enabled", true);
 // Disable Restricted Domains
 user_pref("extensions.webextensions.restrictedDomains", "");
 
-/** Image Decode Buffer Size ***/
+/** Image Decode Buffer Size **/
 user_pref("image.mem.decode_bytes_at_a_time", 32768);
+
+/** Disable AI chatbot popup menu
+https://www.askvg.com/disable-ai-chatbot-popup-menu-shortcut-while-selecting-text-in-firefox/ **/
+user_pref("browser.ml.chat.shortcuts", false);
+
+/** enable prefetching
+https://old.reddit.com/r/firefox/comments/18tfw3w/again_some_tips_for_accelerating_firefox_using/ **/
+user_pref("network.predictor.enable-hover-on-ssl", true);
+
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
