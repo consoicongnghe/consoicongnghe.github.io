@@ -13,9 +13,6 @@
 *.js.datadome.co
 *.c.office.com
 *.js.monitor.azure.com
-*.app.adjust.com
-*.app.appsflyer.com
 *.googletagmanager.com
-*.pagead2.googlesyndication.com
 *.jnn-pa.googleapis.com
 *.imasdk.googleapis.com
