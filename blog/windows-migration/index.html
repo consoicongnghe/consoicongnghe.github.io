@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="description"
 		content="Hướng dẫn chuyển Windows sang ổ cứng mới giữ nguyên dữ liệu. Lưu ý, tốt nhất vẫn là cài lại Windows sạch sẽ.">
-	<meta name="keywords" content="USB, migrate, boot, nvme">
+	<meta name="keywords" content="migrate, boot, NVMe, RAID, AHCI, SSD">
 	<meta name="author" content="consoicongnghe">
 	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
 	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
@@ -139,9 +139,15 @@
 							Migration, rồi làm theo hướng dẫn.
 						</li>
 						<li>
-							Nếu ổ cứng nguồn và ổ cứng đích <strong>khác loại</strong> (1 SATA 1 NVMe):
+							Nếu ổ cứng nguồn và ổ cứng đích <strong>khác loại</strong> (1 SATA 1 NVMe), hoặc nếu muốn
+							<strong>chuyển từ RAID sang AHCI</strong>:
 							<ul>
-								<li>Mở <span style="color: var(--orange);">cmd</span> admin, gõ dòng lệnh sau:<br>
+								<li>
+									<strong>AN TOÀN NHẤT</strong>: Mở <span style="color: var(--orange);">cmd</span>
+									admin, gõ dòng lệnh sau để vào Safe mode lần tới khởi động:<br>
+									<code>bcdedit /set {current} safeboot minimal</code>
+								</li>
+								<li>HOẶC: Mở <span style="color: var(--orange);">cmd</span> admin, gõ dòng lệnh sau:<br>
 									<code>sc config stornvme start= boot</code>
 								</li>
 								<li>
@@ -156,10 +162,17 @@
 						</li>
 					</ul>
 				</li>
+				<li>Vào BIOS, chỉnh cài đặt cần thiết. Đổi từ RAID sang AHCI nếu cần thiết.</li>
 				<li>Khởi động vào USB boot anhdv, sử dụng <span style="color: var(--orange);">Macrium Reflect</span> để
 					clone ổ cứng.</li>
-				<li>Sau khi clone xong, tháo các ổ cứng khác ra, chỉ để lại ổ cứng chứa Windows, rồi khởi động lại máy.
-					Kiểm tra THẬT KĨ xem máy khởi động bình thường không.</li>
+				<li>
+					Sau khi clone xong, tháo các ổ cứng khác ra, chỉ để lại ổ cứng chứa Windows, rồi khởi động lại máy.
+					Kiểm tra THẬT KĨ xem máy khởi động bình thường không.<br>
+					Nếu đã bật Safe mode ở bước 2, hãy mở <span style="color: var(--orange);">cmd</span> admin, gõ dòng
+					lệnh sau
+					để tắt Safe mode:<br>
+					<code>bcdedit /deletevalue {current} safeboot</code>
+				</li>
 				<li>(optional) Cắm lại ổ cứng nguồn, vào USB boot anhdv, dùng <span
 						style="color: var(--orange);">Minitool Partition Wizard</span> để xóa Windows
 					cũ trên ổ cứng đó. Khởi động lại máy.</li>
