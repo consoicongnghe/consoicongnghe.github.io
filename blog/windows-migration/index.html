@@ -3,13 +3,13 @@
 
 <head>
 	<link rel="preload" href="/assets/css/styles.css" as="style" />
-	<title>Cách tạo USB cài đặt Windows</title>
+	<title>Cách chuyển Windows sang ổ cứng mới</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<meta name="description"
-		content="hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.">
-	<meta name="keywords" content="USB, windows installer, boot, rufus">
+		content="Hướng dẫn chuyển Windows sang ổ cứng mới giữ nguyên dữ liệu. Lưu ý, tốt nhất vẫn là cài lại Windows sạch sẽ.">
+	<meta name="keywords" content="USB, migrate, boot, nvme">
 	<meta name="author" content="consoicongnghe">
 	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
 	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
@@ -21,11 +21,11 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
 	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
-	<meta property="og:image:width" content="801">
-	<meta property="og:image:height" content="711">
+	<meta property="og:image:width" content="679">
+	<meta property="og:image:height" content="438">
 	<meta property="og:description"
-		content=" cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.">
-	<meta property="og:title" content="Cách tạo USB cài đặt Windows">
+		content="Hướng dẫn chuyển Windows sang ổ cứng mới giữ nguyên dữ liệu. Lưu ý, tốt nhất vẫn là cài lại Windows sạch sẽ.">
+	<meta property="og:title" content="Cách chuyển Windows sang ổ cứng mới">
 	<meta property="og:url" content="https://consoicongnghe.com/blog/windows-migration/">
 	<meta property="og:image" content="https://consoicongnghe.com/blog/windows-migration/windows-migration-og.jpg">
 	<!-- <meta name="google-adsense-account" content="ca-pub-4464056065715693"> -->
@@ -72,7 +72,7 @@
 		  },{
 			"@type": "ListItem",
 			"position": 3,
-			"name": "Cách tạo USB cài đặt Windows",
+			"name": "Cách chuyển Windows sang ổ cứng mới",
 			"item": "https://consoicongnghe.com/blog/windows-migration/"
 		  }]
 		}
@@ -111,14 +111,60 @@
 	<div class="bodyy">
 		<ul class="breadcrumb">
 			<li><a href="/blog/">Blog</a></li>
-			<li>Cách tạo USB cài đặt Windows</li>
+			<li>Cách chuyển Windows sang ổ cứng mới</li>
 		</ul>
 		<div class="indent">
-			<h1>Cách tạo USB cài đặt Windows</h1>
-			<p>Tớ biết là các cậu ngại cài lại máy. Nhỡ mất dữ liệu thì sao? Vậy nên nếu cậu cần cài lại máy mà không
-				biết làm, không biết cần sao lưu (backup) những dữ liệu gì, hãy hỏi dịch vụ của tớ!</p>
-			<img src="/blog/windows-migration/windows-migration-og.jpg" alt="Windows 11 Media Creation Tool" width="801"
-				height="711" style="width:50%;" class="zoom150">
+			<h1>Cách chuyển Windows sang ổ cứng mới</h1>
+			<p>Bài viết này có kiến thức nâng cao, có kiến thức chưa được kiểm chứng độ chính xác/hiệu quả, bởi vì tớ
+				vẫn còn đang thử nghiệm dần.</p>
+			<p>Bình thường, nếu đổi ổ cứng, cách tốt nhất là cài lại Windows sạch sẽ để đảm bảo thành công và máy chạy
+				ổn định nhất. Thường mình chỉ chuyển Windows (giữ nguyên phần mềm, dữ liệu) khi có những phần mềm khó
+				cài lại, hay trường hợp bất khả kháng thôi nha.</p>
+			<p>
+			<h2>Các bước chuyển Windows sang ổ cứng mới</h2>
+			<ol>
+				<li>
+					Khởi động vào Windows. Kiểm tra xem BitLocker đã tắt chưa, nếu chưa tắt cần vào Control Panel để
+					tắt. Nếu máy sử dụng Windows Home, tắt BitLocker bằng <span
+						style="color: var(--orange);">cmd</span>:<br>
+					<code>manage-bde -off C:</code>
+				</li>
+				<li>
+					Trường hợp:
+					<ul>
+						<li>Nếu ổ cứng nguồn hoặc ổ cứng đích là SSD Samsung: Hãy sử dụng tính năng <strong>Data
+								Migration</strong> của phần mềm <a
+								href="https://semiconductor.samsung.com/consumer-storage/support/tools/" target="_blank"
+								rel="noopener">Samsung Magician</a>. Cứ tải phần mềm này về máy, mở lên, chọn tab Data
+							Migration, rồi làm theo hướng dẫn.
+						</li>
+						<li>
+							Nếu ổ cứng nguồn và ổ cứng đích <strong>khác loại</strong> (1 SATA 1 NVMe):
+							<ul>
+								<li>Mở <span style="color: var(--orange);">cmd</span> admin, gõ dòng lệnh sau:<br>
+									<code>sc config stornvme start= boot</code>
+								</li>
+								<li>
+									HOẶC: Mở <span style="color: var(--orange);">regedit</span>, tìm đến khóa<br>
+									<code>HKLM\SYSTEM\CurrentControlSet\Services\stornvme</code><br>
+									Đổi giá trị của <span style="color: var(--red);">Start</span> thành <span
+										style="color: var(--green);">0</span>.<br>
+									<img src="/blog/windows-migration/windows-migration-regedit.jpg"
+										alt="Windows migration" width="907" height="316" class="zoom150">
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Khởi động vào USB boot anhdv, sử dụng <span style="color: var(--orange);">Macrium Reflect</span> để
+					clone ổ cứng.</li>
+				<li>Sau khi clone xong, tháo các ổ cứng khác ra, chỉ để lại ổ cứng chứa Windows, rồi khởi động lại máy.
+					Kiểm tra THẬT KĨ xem máy khởi động bình thường không.</li>
+				<li>(optional) Cắm lại ổ cứng nguồn, vào USB boot anhdv, dùng <span
+						style="color: var(--orange);">Minitool Partition Wizard</span> để xóa Windows
+					cũ trên ổ cứng đó. Khởi động lại máy.</li>
+			</ol>
+			</p>
 			<br>
 			<p><b>Sói</b></p>
 			<p>10/01/2024</p>
