@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<link rel="preload" href="/assets/css/styles.css" as="style" />
+	<title>Virus tạo shortcut, ẩn file trong USB</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8" />
+	<meta name="description" content="Cách xử lí khi USB dính virus tạo shortcut, ẩn hết file" />
+	<meta name="keywords" content="USB, shortcut, virus, mất file" />
+	<meta name="author" content="consoicongnghe" />
+	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="\assets\icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="\assets\icons/favicon-16x16.png" />
+	<link rel="manifest" href="\assets\icons/site.webmanifest" />
+	<link rel="mask-icon" href="\assets\icons/safari-pinned-tab.svg" color="#7b7b7b" />
+	<link rel="shortcut icon" href="\assets\icons/favicon.ico" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml" />
+	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
+	<meta property="og:image:width" content="1222" />
+	<meta property="og:image:height" content="640" />
+	<meta property="og:description" content="Cách xử lí khi USB dính virus tạo shortcut, ẩn hết file" />
+	<meta property="og:title" content="Virus tạo shortcut, ẩn file trong USB" />
+	<meta property="og:url" content="https://consoicongnghe.com/blog/archived/usb-common-virus/" />
+	<meta property="og:image" content="https://consoicongnghe.com/assets/images/og-image.jpg" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script async src="/assets/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!-- Google search site name -->
+	<script type="application/ld+json">
+		{
+		  "@context" : "https://schema.org",
+		  "@type" : "WebSite",
+		  "name" : "Con sói công nghệ",
+		  "url" : "https://consoicongnghe.com/"
+		}
+	  </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLCH42TM0W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZLCH42TM0W');
+	</script>
+
+	<!-- Google Breadcrumb https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Trang chủ",
+			"item": "https://consoicongnghe.com"
+		  },{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Blog",
+			"item": "https://consoicongnghe.com/blog/"
+		  },{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Blog trong kho",
+			"item": "https://consoicongnghe.com/blog/archived/"
+		  },{
+			"@type": "ListItem",
+			"position": 4,
+			"name": "Virus tạo shortcut, ẩn file trong USB",
+			"item": "https://consoicongnghe.com/blog/archived/usb-common-virus/"
+		  }]
+		}
+	</script>
+</head>
+
+<body>
+	<div class="topnav">
+		<b><a href="/">Sói</a></b>
+		<div class="topnav-txt">› Máy tính, điện thoại và mặt cười</div>
+		<div class="topnav-right" id="topnav-right">
+			<div class="topnav-subpages">
+				<a href="/blog/" class="active">Blog</a>
+				<a href="/posts/">Bài viết</a>
+				<a href="/about/">Giới thiệu</a>
+				<a href="/contact/">Liên hệ</a>
+			</div>
+			<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<symbol id="icon-bars" viewBox="0 0 24 20">
+						<path
+							d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z">
+						</path>
+					</symbol>
+				</defs>
+			</svg>
+			<span class="topnav-hamburger" id="topnav-hamburger" onclick="return topnavHamburger()">
+				<!-- <i class="fa fa-bars"></i> -->
+				<svg class="icon icon-bars">
+					<use xlink:href="#icon-bars"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="bodyy">
+		<ul class="breadcrumb">
+			<li><a href="/blog/">Blog</a></li>
+			<li><a href="/blog/archived/">Archived blog</a></li>
+			<li>Virus tạo shortcut, ẩn file trong USB</li>
+		</ul>
+		<div class="indent">
+			<h1>Virus tạo shortcut, ẩn file trong USB</h1>
+			<h2>Virus shortcut</h2>
+			<p>Trong danh sách file trong USB có một file shortcut .lnk có tên giống tên USB hoặc ổ cứng
+				trong máy. Cách cứu:</p>
+			<ol>
+				<li>Bấm vào thanh tìm kiếm, gõ <code>*.exe</code> và <code>*.lnk</code></li>
+				<li>Xóa toàn bộ các file .lnk và file .exe</li>
+				<li>Copy toàn bộ dữ liệu khác ra ngoài</li>
+				<li>Format USB</li>
+				<li>Copy dữ liệu vào lại USB</li>
+			</ol>
+			</li>
+			<h2>USB có dữ liệu chiếm dung lượng nhưng mở ra không thấy file đâu</h2>
+			<ol>
+				<li>Mở <span style="color: var(--orange);">Command Prompt</span> quyền admin, gõ lệnh
+					<code>attrib -h -r -s /s /d X:\*.*</code> (X là tên ổ USB, ví dụ: E, F,...)
+				</li>
+				<li>Bấm vào thanh tìm kiếm, gõ <code>*.exe</code>, xoá toàn bộ các file .exe</li>
+				<li>Copy toàn bộ dữ liệu ra ngoài</li>
+				<li>Format USB</li>
+				<li>Copy dữ liệu vào lại USB</li>
+			</ol>
+
+		</div>
+	</div>
+</body>
+
+</html>
