@@ -3,12 +3,13 @@
 
 <head>
 	<link rel="preload" href="/assets/css/styles.css" as="style" />
-	<title>macOS Gatekeeper</title>
+	<title>Format USB, ổ cứng định dạng exFAT</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<meta name="description" content="Cách bật tắt tính năng Gatekeeper trên hệ điều hành macOS.">
-	<meta name="keywords" content="macOS, Gatekeeper, Apple">
+	<meta name="description"
+		content="Ở đây chỉ cách format USB, ổ cứng sang định dạng exFAT để tương thích với cả hệ điều hành Windows và macOS.">
+	<meta name="keywords" content="format, usb, exFAT, định dạng">
 	<meta name="author" content="consoicongnghe">
 	<!-- favicon https://realfavicongenerator.net/favicon_result?file_id=p1hrguk13d1j1d1c40jt417ej6796 -->
 	<link rel="apple-touch-icon" sizes="180x180" href="\assets\icons/apple-touch-icon.png">
@@ -20,12 +21,13 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="\assets\icons/browserconfig.xml">
 	<!-- facebook metadata https://realfavicongenerator.net/social/result?file_id=p1hrh0hg5n173k1tld1dqmr3s1nd55 -->
-	<meta property="og:image:width" content="1034">
-	<meta property="og:image:height" content="800">
-	<meta property="og:description" content="Cách bật tắt tính năng Gatekeeper trên hệ điều hành macOS.">
-	<meta property="og:title" content="macOS Gatekeeper">
-	<meta property="og:url" content="https://consoicongnghe.com/blog/macos-gatekeeper/">
-	<meta property="og:image" content="https://consoicongnghe.com/blog/macos-gatekeeper/macos-gatekeeper-og.jpg">
+	<meta property="og:image:width" content="2396">
+	<meta property="og:image:height" content="1168">
+	<meta property="og:description"
+		content="Ở đây chỉ cách format USB, ổ cứng sang định dạng exFAT để tương thích với cả hệ điều hành Windows và macOS.">
+	<meta property="og:title" content="Format USB, ổ cứng định dạng exFAT">
+	<meta property="og:url" content="https://consoicongnghe.com/posts/format-exfat/">
+	<meta property="og:image" content="https://consoicongnghe.com/posts/format-exfat/format-exfat-og.jpg">
 	<!-- <meta name="google-adsense-account" content="ca-pub-4464056065715693"> -->
 	<!-- CSS -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
@@ -70,8 +72,8 @@
 		  },{
 			"@type": "ListItem",
 			"position": 3,
-			"name": "macOS Gatekeeper",
-			"item": "https://consoicongnghe.com/blog/macos-gatekeeper/"
+			"name": "Format USB, ổ cứng định dạng exFAT",
+			"item": "https://consoicongnghe.com/posts/format-exfat/"
 		  }]
 		}
 		</script>
@@ -109,46 +111,43 @@
 	<div class="bodyy">
 		<ul class="breadcrumb">
 			<li><a href="/blog/">Blog</a></li>
-			<li>macOS Gatekeeper</li>
+			<li>Format exFAT</li>
 		</ul>
 		<div class="indent">
-			<h1>macOS Gatekeeper</h1>
-			<p>Bài viết này hướng dẫn cậu cách tắt Gatekeeper trên hệ điều hành macOS để máy không chặn cậu cài ứng dụng
-				lạ nữa.</p>
-			<h2>macOS 15.x trở lên</h2>
+			<h1>Format USB, ổ cứng định dạng exFAT</h1>
+			<p>Cách format USB, ổ cứng sang định dạng exFAT (để tương thích với cả hệ điều hành Windows và
+				macOS)</p>
+			<h2>macOS</h2>
+			<ol>
+				<li>Mở <span style="color: var(--orange);">Disk Utility</span>, chọn <span
+						style="color: var(--yellow);">View/Show all devices</span></li>
+				<li>Chọn USB/ổ cứng ở cột bên trái. Ở thanh phía trên bên phải, bấm <span
+						style="color: var(--red);">Erase</span>.</li>
+				<li>Mục 2 chọn <strong><span style="color: var(--green);">exFAT</span></strong>. Mục 3 chọn
+					<strong><span style="color: var(--green);">GUID Partition Table</span></strong> (<em>GPT</em>).
+					Bấm <span style="color: var(--red);">Erase</span>.
+				</li>
+			</ol>
+			<video width="1478" height="960" autoplay muted loop playsinline controls>
+				<source src="/posts/format-exfat/format-exfat-macos.webm" type="video/webm">format exFAT on macOS
+			</video>
+			<h2>Windows</h2>
 			<div class="flex-container">
-				<div class="flex-item-left" style="flex: 70%;">
+				<div class="flex-item-left">
 					<ol>
-						<li>Tải <b><a href="gatekeeper-disable.mobileconfig">file cấu hình Disable Gatekeeper</a></b>.
-						</li>
-						<li>Mở file vừa tải, hộp thoại review hiện ra, bấm <span style="color: var(--red);">OK</span>.
-						</li>
-						<li>Mở <span style="color: var(--orange);">System Settings</span>, ở cột bên trái chọn <span
-								style="color: var(--yellow);">Profile Downloaded</span>, nhấp đúp (<i>double-click</i>)
-							vào <span style="color: var(--red);">Disable Gatekeeper</span>.
-						</li>
-						<li>Tại hộp thoại hiện ra, bấm <span style="color: var(--red);">Install...</span>. Nhập mật
-							khẩu.
-						</li>
+						<li>Mở <span style="color: var(--orange);">This PC</span>.</li>
+						<li>Bấm chuột phải vào USB/ổ cứng, chọn <span style="color: var(--red);">Format...</span>.</li>
+						<li>Ở mục <span style="color: var(--yellow);">File system</span>, chọn <strong><span
+									style="color: var(--green);">exFAT</span></strong>.</li>
+						<li>Check ô <span style="color: var(--green);">Quick Format</span>, sau đó bấm <span
+								style="color: var(--red);">Start</span>, đợi chạy xong là được.</li>
 					</ol>
 				</div>
-				<div class="flex-item-right" style="flex: 30%;">
-					<img src="/blog/macos-gatekeeper/macos-gatekeeper-install.jpg"
-						alt="install profile Disable Gatekeeper" width="827" height="737" class="zoom300">
+				<div class="flex-item-right">
+					<img src="/posts/format-exfat/format-exfat-windows.png" alt="format exFAT using This PC" width="251"
+						height="453" loading="lazy" class="zoom150">
 				</div>
 			</div>
-			<p>Để tắt Gatekeeper, vào lại <span style="color: var(--orange);">System Settings</span>/<span
-					style="color: var(--yellow);">General/Device Management</span>, chọn profile <span
-					style="color: var(--red);">Disable Gatekeeper</span>, bấm nút dấu trừ để xoá profile đó đi.
-			</p>
-			<h2>macOS 14.x trở về trước</h2>
-			<ol>
-				<li>Mở <span style="color: var(--orange);">Terminal</span>.</li>
-				<li>Chạy lệnh <code>sudo spctl --master-disable</code></li>
-				<li>Nhập mật khẩu máy.</li>
-			</ol>
-			<p>Để tắt Gatekeeper, chạy lệnh <code>sudo spctl --master-enable</code> trong <span
-					style="color: var(--orange);">Terminal</span>.</p>
 			<br>
 			<p><b>Sói</b></p>
 			<hr>
