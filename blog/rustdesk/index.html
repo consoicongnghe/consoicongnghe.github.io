@@ -122,21 +122,31 @@
 					<tr>
 						<td>
 							<p style="text-align: center;"><strong><a
-										href="https://cp.consoicongnghe.com/upload/rustdesk-host%3Drustdesk.consoisongnghe.com%2Ckey%3D5rpNpF64oFhmvk6Cg8EHkkyNgCtewhNLFQDfCtxJ8h8%3D.exe"
-										target="_blank" rel="noopener"
+										href="https://cp.consoicongnghe.com/z/rustdesk-host%3Drustdesk.consoicongnghe.com%2Ckey%3D5rpNpF64oFhmvk6Cg8EHkkyNgCtewhNLFQDfCtxJ8h8%3D.exe"
 										style="font-size: 1.5em; color: var(--green);">=&gt; Đây. Máy
 										cậu dùng Windows thì cậu bấm vào đây &lt;=</a></strong></p>
 							<p>Nếu cậu dùng máy Mac/MacBook của Apple dùng chip M (đời 2020 trở lên) thì bấm vào
-								<strong><a
-										href="https://github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-aarch64.dmg"
-										target="_blank" rel="noopener"
+								<strong><a id="rd-mac-arm" href="#"
 										style="font-size: 1.4em; color: var(--red);">đây</a></strong>.
 							</p>
 							<p style="font-size: 0.9em; margin-bottom: 20px;">Còn nếu máy Mac dùng chip Intel thì bấm
-								vào <strong><a
-										href="https://github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-x86_64.dmg"
-										target="_blank" rel="noopener"
+								vào <strong><a id="rd-mac-intel" href="#"
 										style="font-size: 1.2em; color: var(--blue);">link này</a></strong>.</p>
+							<script>
+								(async () => {
+									const res = await fetch('https://api.github.com/repos/rustdesk/rustdesk/releases/latest', {
+										headers: { 'Accept': 'application/vnd.github+json' }
+									});
+									const rel = await res.json();
+									const assets = rel.assets || [];
+
+									const arm = assets.find(a => /-aarch64\.dmg$/i.test(a.name));
+									const intel = assets.find(a => /-x86_64\.dmg$/i.test(a.name));
+
+									if (arm) document.getElementById('rd-mac-arm').href = arm.browser_download_url;
+									if (intel) document.getElementById('rd-mac-intel').href = intel.browser_download_url;
+								})();
+							</script>
 						</td>
 					</tr>
 				</table>
