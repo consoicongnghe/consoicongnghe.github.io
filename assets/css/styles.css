@@ -1,5 +1,9 @@
 /*-------------AUTO THEME-----------*/
 /* light theme */
+html {
+	color-scheme: light dark;
+}
+
 :root {
 	--text: #000;
 	--bg: #f2f2f2;

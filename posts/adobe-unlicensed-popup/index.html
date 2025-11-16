@@ -3,6 +3,8 @@
 
 <head>
 	<link rel="preload" href="/assets/css/styles.css" as="style" />
+	<meta name="theme-color" content="#f6f6f6" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)">
 	<title>Hướng dẫn sửa lỗi Unlicensed popup cho bộ phần mềm Adobe trên Windows</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,8 +28,8 @@
 	<meta property="og:description"
 		content="Cách sửa lỗi popup This unlicensed Adobe app will be disabled soon/has been disabled trên máy tính Windows.">
 	<meta property="og:title" content="Hướng dẫn sửa lỗi Unlicensed popup cho bộ phần mềm Adobe trên Windows">
-	<meta property="og:url" content="https://consoicongnghe.com/blog/adobe-unlicensed-popup/">
-	<meta property="og:image" content="https://consoicongnghe.com/blog/adobe-unlicensed-popup/unlicensedpopup-og.jpg">
+	<meta property="og:url" content="https://consoicongnghe.com/posts/adobe-unlicensed-popup/">
+	<meta property="og:image" content="https://consoicongnghe.com/posts/adobe-unlicensed-popup/unlicensedpopup-og.jpg">
 	<!-- CSS -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -72,7 +74,7 @@
 			"@type": "ListItem",
 			"position": 3,
 			"name": "Adobe Unlicensed popup",
-			"item": "https://consoicongnghe.com/blog/adobe-unlicensed-popup/"
+			"item": "https://consoicongnghe.com/posts/adobe-unlicensed-popup/"
 			}]
 		}
 		</script>
@@ -117,7 +119,7 @@
 			<h1>Hướng dẫn sửa lỗi Unlicensed popup cho bộ phần mềm Adobe trên Windows</h1>
 			<p>Như các cậu đã biết, trong sự kiện Samsung Unpacked 2024 vừa qua, video stream của sự kiện bất ngờ hiển
 				thị cửa sổ cảnh báo sử dụng trái phép phần mềm của Adobe:</p>
-			<p><img src="/blog/adobe-unlicensed-popup/ss-unpacked-adobe.jpg" alt="samsung unpacked 2024 adobe popup"
+			<p><img src="/posts/adobe-unlicensed-popup/ss-unpacked-adobe.jpg" alt="samsung unpacked 2024 adobe popup"
 					width="1080" height="601" style="width:100%"></p>
 			<p>Khi máy cậu đang dùng Adobe bình thường mà gặp lỗi này, hãy làm theo hướng dẫn sau:</p>
 			<ol>
@@ -128,8 +130,8 @@
 					<p>Mở Start Menu, gõ tìm kiếm <code>powershell</code>. Bấm chuột phải vào Windows Powershell, chọn
 						<span style="color: var(--red);">Run as administrator</span>.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/4powershell.jpg" alt="powershell run as admin" width="829"
-							height="680" style="width:50%" class="zoom150"></p>
+					<p><img src="/posts/adobe-unlicensed-popup/4powershell.jpg" alt="powershell run as admin"
+							width="829" height="680" style="width:50%" class="zoom150"></p>
 				</li>
 				<li>
 					<p>Dán cụm này vào Windows Powershell (bằng cách bấm
@@ -140,29 +142,29 @@
 					<p>Sau đó bấm <span style="color: var(--blue);">Enter</span> 1 lần, rồi đóng
 						Powershell.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/5powershell.jpg" alt="powershell run as admin" width="545"
-							height="187" loading="lazy" style="width:50%" class="zoom150"></p>
+					<p><img src="/posts/adobe-unlicensed-popup/5powershell.jpg" alt="powershell run as admin"
+							width="545" height="187" loading="lazy" style="width:50%" class="zoom150"></p>
 				</li>
 				<li>
 					<p>Mở Start menu, gõ tìm kiếm <code>notepad</code>. Bấm chuột phải vào Notepad, chọn <span
 							style="color: var(--red);">Run as administrator</span>.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/6notepad.jpg" alt="notepad run as admin" width="669"
+					<p><img src="/posts/adobe-unlicensed-popup/6notepad.jpg" alt="notepad run as admin" width="669"
 							height="355" loading="lazy" style="width:50%"></p>
 					<p>Mở menu <span style="color: var(--yellow);">File/Open</span>.</p>
-					<p><img src="/blog/adobe-unlicensed-popup/7open.jpg" alt="notepad open" width="254" height="264"
+					<p><img src="/posts/adobe-unlicensed-popup/7open.jpg" alt="notepad open" width="254" height="264"
 							loading="lazy" style="width:50%"></p>
 					<p>Trong cửa sổ thư mục hiện ra, di chuyển tới <code>C:/Windows/system32/drivers/etc</code></p>
-					<p><img src="/blog/adobe-unlicensed-popup/7directory.jpg" alt="notepad open host directory"
+					<p><img src="/posts/adobe-unlicensed-popup/7directory.jpg" alt="notepad open host directory"
 							width="381" height="188" loading="lazy" style="width:50%"></p>
 					<p>Bấm vào mục chọn ở góc dưới bên phải, chọn <span style="color: var(--red);">All
 							files</span>.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/7hostallfile.jpg" alt="notepad all files" width="551"
+					<p><img src="/posts/adobe-unlicensed-popup/7hostallfile.jpg" alt="notepad all files" width="551"
 							height="273" loading="lazy" style="width:50%"></p>
 					<p>Mở file tên là <span style="color: var(--red);">hosts</span>.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/7host.jpg" alt="notepad open host directory" width="459"
+					<p><img src="/posts/adobe-unlicensed-popup/7host.jpg" alt="notepad open host directory" width="459"
 							height="133" loading="lazy" style="width:50%"></p>
 					<p><strong>Chú ý:</strong> Trên macOS, mở Terminal, gõ <code>sudo nano /etc/hosts</code>
 					</p>
@@ -173,7 +175,7 @@
 							style="color: var(--blue);">Ctrl+A</span> để chọn tất cả, sau
 						đó <span style="color: var(--blue);">Ctrl+C</span> để copy.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/8copy.jpg" alt="host link copy content" width="178"
+					<p><img src="/posts/adobe-unlicensed-popup/8copy.jpg" alt="host link copy content" width="178"
 							height="129" loading="lazy" style="width:50%"></p>
 				</li>
 				<li>
@@ -182,7 +184,7 @@
 							style="color: var(--blue);">Ctrl+V</span> (<i>Paste</i>) để dán nội dung mới copy ở
 						bước trước vào file <span style="color: var(--red);">host</span>.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/9paste.jpg" alt="notepad open host directory" width="396"
+					<p><img src="/posts/adobe-unlicensed-popup/9paste.jpg" alt="notepad open host directory" width="396"
 							height="251" loading="lazy" style="width:50%"></p>
 					<p>Sau đó bấm <span style="color: var(--blue);">Ctrl+S</span> (<i>Save</i>) để lưu file.</p>
 				</li>
@@ -191,7 +193,7 @@
 							style="color: var(--yellow);">Power</span>, chọn <span
 							style="color: var(--red);">Restart</span>.
 					</p>
-					<p><img src="/blog/adobe-unlicensed-popup/9restart.jpg" alt="Windows restart" width="147"
+					<p><img src="/posts/adobe-unlicensed-popup/9restart.jpg" alt="Windows restart" width="147"
 							height="232" loading="lazy" style="width:50%"></p>
 				</li>
 				<li>

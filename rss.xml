@@ -27,10 +27,10 @@
   </item>
   <item>
     <title>Cách tạo USB cài đặt Windows</title>
-    <link>https://consoicongnghe.com/blog/tao-usb-cai-windows/</link>
+    <link>https://consoicongnghe.com/posts/tao-usb-cai-windows/</link>
     <description>“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</description>
-    <enclosure url="https://consoicongnghe.com/blog/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/tao-usb-cai-windows/tao-usb-cai-windows-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>“Tại sao tớ tạo USB cài win rồi mà dùng không được?” Nếu cậu hỏi ai khác họ sẽ bảo cậu dùng công cụ Rufus, nhưng Rufus sẽ chuyển USB của cậu sang GPT, không dùng được cho các máy cũ dùng Legacy boot (CSM) thay vì UEFI. Tớ trước giờ vẫn dùng cách do chính Microsoft hướng dẫn, đảm bảo tương thích với mọi loại máy từ Legacy tới UEFI.</media:text>
       <media:title type="plain">Cách tạo USB cài đặt Windows</media:title>
@@ -39,10 +39,10 @@
   </item>
   <item>
     <title>macOS Gatekeeper</title>
-    <link>https://consoicongnghe.com/blog/macos-gatekeeper</link>
+    <link>https://consoicongnghe.com/posts/macos-gatekeeper</link>
     <description>Cách bật tắt tính năng Gatekeeper trên hệ điều hành macOS.</description>
-    <enclosure url="https://consoicongnghe.com/blog/macos-gatekeeper/macos-gatekeeper-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/macos-gatekeeper/macos-gatekeeper-og.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/macos-gatekeeper/macos-gatekeeper-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/macos-gatekeeper/macos-gatekeeper-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>Cách bật tắt tính năng Gatekeeper trên hệ điều hành macOS.</media:text>
       <media:title type="plain">macOS Gatekeeper</media:title>
@@ -51,10 +51,10 @@
   </item>
   <item>
     <title>Format USB, ổ cứng định dạng exFAT</title>
-    <link>https://consoicongnghe.com/blog/format-exfat/</link>
+    <link>https://consoicongnghe.com/posts/format-exfat/</link>
     <description>Ở đây chỉ cách format USB, ổ cứng sang định dạng exFAT để tương thích với cả hệ điều hành Windows và macOS.</description>
-    <enclosure url="https://consoicongnghe.com/blog/format-exfat/format-exfat-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/format-exfat/format-exfat-og.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/format-exfat/format-exfat-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/format-exfat/format-exfat-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>Ở đây chỉ cách format USB, ổ cứng sang định dạng exFAT để tương thích với cả hệ điều hành Windows và macOS.</media:text>
       <media:title type="plain">Format USB, ổ cứng định dạng exFAT</media:title>
@@ -63,10 +63,10 @@
   </item>
   <item>
     <title>Format USB định dạng FAT32</title>
-    <link>https://consoicongnghe.com/blog/format-usb-fat32/</link>
+    <link>https://consoicongnghe.com/posts/format-usb-fat32/</link>
     <description>Ở đây chỉ cách format USB bất kì về định dạng FAT32 để cài win, chạy nhạc DJ,...</description>
-    <enclosure url="https://consoicongnghe.com/blog/format-usb-fat32/format-usb-fat32-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/format-usb-fat32/format-usb-fat32-og.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/format-usb-fat32/format-usb-fat32-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/format-usb-fat32/format-usb-fat32-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>Ở đây chỉ cách format USB bất kì về định dạng FAT32 để cài win, chạy nhạc DJ,...</media:text>
       <media:title type="plain">Format USB định dạng FAT32</media:title>
@@ -147,10 +147,10 @@
   </item>
   <item>
     <title>Khởi tạo phân vùng ổ cứng</title>
-    <link>https://consoicongnghe.com/blog/diskmgr/</link>
+    <link>https://consoicongnghe.com/posts/diskmgr/</link>
     <description>Bạn mới mua ổ cứng máy tính mới về, lắp vào máy tính rồi nhưng không thấy nó hiện lên trong This PC? Không phải do ổ hỏng đâu, có thể chỉ đơn giản là do bạn chưa khởi tạo phân vùng của ổ cứng mới thôi. Ý là, ổ mới chưa được khởi tạo lần đầu, ổ trống trơn chưa có phân vùng nên không hiện phân vùng nào lên This PC cả.</description>
-    <enclosure url="https://consoicongnghe.com/blog/diskmgr/diskmgr-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/diskmgr/diskmgr-og.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/diskmgr/diskmgr-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/diskmgr/diskmgr-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>Bạn mới mua ổ cứng máy tính mới về, lắp vào máy tính rồi nhưng không thấy nó hiện lên trong This PC? Không phải do ổ hỏng đâu, có thể chỉ đơn giản là do bạn chưa khởi tạo phân vùng của ổ cứng mới thôi. Ý là, ổ mới chưa được khởi tạo lần đầu, ổ trống trơn chưa có phân vùng nên không hiện phân vùng nào lên This PC cả.</media:text>
       <media:title type="plain">Khởi tạo phân vùng ổ cứng</media:title>
@@ -255,10 +255,10 @@
   </item>
   <item>
 	<title>Hướng dẫn sửa lỗi Unlicensed popup cho bộ phần mềm Adobe trên Windows</title>
-    <link>https://consoicongnghe.com/blog/adobe-unlicensed-popup/</link>
+    <link>https://consoicongnghe.com/posts/adobe-unlicensed-popup/</link>
     <description>Cách sửa lỗi popup This unlicensed Adobe app will be disabled soon/has been disabled trên máy tính Windows.</description>
-    <enclosure url="https://consoicongnghe.com/blog/adobe-unlicensed-popup/unlicensedpopup-og.jpg" type="image/jpeg" length="0"/>
-    <media:content type="image/jpeg" url="https://consoicongnghe.com/blog/adobe-unlicensed-popup/unlicensedpopup-og.jpg">
+    <enclosure url="https://consoicongnghe.com/posts/adobe-unlicensed-popup/unlicensedpopup-og.jpg" type="image/jpeg" length="0"/>
+    <media:content type="image/jpeg" url="https://consoicongnghe.com/posts/adobe-unlicensed-popup/unlicensedpopup-og.jpg">
       <media:credit>consoicongnghe</media:credit>
       <media:text>Cách sửa lỗi popup This unlicensed Adobe app will be disabled soon/has been disabled trên máy tính Windows.</media:text>
       <media:title type="plain">Hướng dẫn sửa lỗi Unlicensed popup cho bộ phần mềm Adobe trên Windows</media:title>
