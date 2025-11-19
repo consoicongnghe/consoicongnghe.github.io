@@ -166,8 +166,7 @@
 						<table>
 							<tr>
 								<td>Tải xong bộ cài của RustDesk thì cậu mở nó lên, cài vào máy nhé. Sau đó cậu mở
-									RustDesk lên, gửi
-									ID và password qua cho tớ.</td>
+									RustDesk lên, gửi ID và password qua cho tớ.</td>
 							</tr>
 						</table>
 					</div>
@@ -180,29 +179,62 @@
 				<div class="flex-item-right" style="flex: 20%;"><img src="/blog/rustdesk/rustdesk-id-pw.png"
 						alt="RustDesk ID and password" width="210" height="260" style="width:100%;"></div>
 			</div>
-			<div style="text-align: center;"><button onclick="showHiddenString('hiddenString1')">Cấu hình</button></div>
-			<div id="hiddenString1" style="display: none;">
-				<div style="overflow-x:auto;">
-					<table style="text-align: left; width: fit-content;">
-						<tr style="border-bottom: 2px solid var(--cyan)">
-							<th>ID server</th>
-							<td>rustdesk.consoicongnghe.com
-							</td>
-						</tr>
-						<tr>
-							<th>Key</th>
-							<td>
-								<textarea type="text" cols="44" rows="1" readonly
-									id="textToCopy">5rpNpF64oFhmvk6Cg8EHkkyNgCtewhNLFQDfCtxJ8h8=</textarea>
-								<div class="copyTooltip">
-									<button onclick="copyButton()" onmouseout="outFunc()">
-										<span class="copyTooltipText" id="cpTooltip">Copy</span>Copy</button>
-								</div>
-							</td>
-						</tr>
-					</table>
+			<style>
+				.rust-config {
+					--f: clamp(0.9rem, 1.2vw, 1rem);
+					display: flex;
+					align-items: stretch;
+					gap: 12px;
+					text-indent: 0
+				}
+
+				.rust-config pre {
+					margin: 0;
+					padding: 2px 6px;
+					font-size: var(--f);
+					white-space: normal;
+					word-break: break-all;
+					flex: 1;
+					max-width: calc(100% - 96px);
+					line-height: 1.2
+				}
+
+				.rust-copy-btn {
+					background: var(--bg-block);
+					border: 0;
+					width: 64px;
+					min-width: 64px;
+					height: calc(var(--f)*2);
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0;
+					border-radius: 0;
+					cursor: pointer;
+					white-space: nowrap;
+					font-size: calc(var(--f)*0.95)
+				}
+
+				@media(max-width:420px) {
+					.rust-config {
+						--f: clamp(0.7rem, 2.5vw, 0.85rem)
+					}
+
+					.rust-config pre {
+						max-width: calc(100% - 80px)
+					}
+				}
+			</style>
+			<details style="margin: 0 auto; max-width: 760px;">
+				<summary>Cấu hình</summary>
+				<div>
+					<div class="rust-config">
+						<pre
+							id="configText">9JSP4gGOKhHdDZGRRZETOh2dlR3Qn5UertGSFhzZDZza21GaG9GN2YEcOBnc1IiOikXZrJCLiIiOikGchJCLiIiOikXYsVmciwiIt92YuUGan52Zu92Yp92cu92Yus2clRGdzVnciojI0N3boJye</pre>
+						<button class="rust-copy-btn" data-copy-target="configText">Copy</button>
+					</div>
 				</div>
-			</div>
+			</details>
 			<br>
 			<p><b>Sói</b></p>
 		</div>
