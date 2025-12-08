@@ -174,7 +174,6 @@
 			<b>HOÀN THÀNH OOBE, KHỞI ĐỘNG VÀO DESKTOP</b>
 			<hr />
 			<ul>
-				<!-- <li>Kiểm tra phiên bản Windows, nâng cấp lên <b>Pro</b></li> -->
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString2')"
 						style="color: var(--red);">GuestSetup1.cmd</button>
 					<div id="hiddenString2" style="display: none;">
@@ -194,7 +193,8 @@
 			<b>RESTART</b>
 			<hr />
 			<ul>
-				<li>Nếu sử dụng GPU NVIDIA 40xx-, cài driver GPU 566.36 trước</li>
+				<li>Tắt Defender's virus protection</li>
+				<li>Nếu sử dụng GPU NVIDIA 30xx-, cài driver GPU 566.36 trước</li>
 				<li>Kết nối internet / import wifi</li>
 				<li>Check ô "Receive updates for other Microsoft products", Check for updates</li>
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString3')"
@@ -230,15 +230,6 @@
 			<hr />
 			<ul>
 				<li>Tắt Defender's virus protection</li>
-				<li><span style="color: var(--orange);">Rustdesk</span>:
-					<ul>
-						<li><span style="color: var(--yellow);">/network</span>: Paste config từ clipboard ra (hoặc điền
-							config trong <a href="/blog/rustdesk/" target="_blank" rel="noopener">này</a>)</li>
-						<li><span style="color: var(--yellow);">/security</span>: bật remote cfg modification, đặt
-							permanent pw
-						</li>
-					</ul>
-				</li>
 				<li><span style="color: var(--orange);">Task Manager</span>: <code>Startup apps</code></li>
 				<!-- <li><span style="color: var(--orange);">Control Panel</span>: <code>Fast Startup</code></li> -->
 				<li><i>(setup personal programs, Adobe các thứ)</i></li>
