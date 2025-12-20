@@ -131,7 +131,7 @@
 						<ul>
 							<li>Export wifi</li>
 							<li>User folders</li>
-							<li>(Firefox, OBS, steam userdata, qbittorrent, TrafficMonitor)</li>
+							<li>(Web browsers' user data, OBS, steam userdata, qbittorrent, TrafficMonitor)</li>
 							<li>Experimental: Desktop icon layout</li>
 						</ul>
 					</div>
@@ -174,20 +174,26 @@
 			<h2>HOÀN THÀNH OOBE, KHỞI ĐỘNG VÀO DESKTOP</h2>
 			<hr />
 			<ul>
-				<li>Nếu sử dụng GPU NVIDIA 30xx-, cài driver GPU 566.36 trước</li>
-				<li>Kết nối internet / import wifi</li>
+				<li>Nếu sử dụng GPU NVIDIA 30xx-, cài driver GPU v566.36 trước. Các đời sau cài <a
+						href="https://www.nvidia.com/en-us/drivers/" target="_blank" rel="noopener">driver mới nhất</a>
+					trước.
+				</li>
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString2')"
 						style="color: var(--red);">GuestSetup1.cmd</button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
-							<li>Đổi tên ổ C:/ thành "Windows"</li>
-							<li><span style="color: var(--yellow);">/PostInstall/GroupPolicy/</span> --&gt; copy sang
-								<span style="color: var(--yellow);">C:/Windows/system32</span>
-							</li>
-							<li><span style="color: var(--yellow);">/RegTweaks/</span><span
+							<li>Chỉnh <span style="color: var(--orange);">Terminal</span> luôn chạy quyền admin</li>
+							<li>Đổi tên ổ C:/ thành <code>Windows</code></li>
+							<li>Đổi tên PC nếu muốn (trong <span style="color: var(--yellow);">System
+									Settings/System/About/</span></li>
+							<li><span style="color: var(--yellow);">/Windows/RegTweaks/</span><span
 									style="color: var(--red);">windows11_postInstall.reg</span></li>
-							<li><span style="color: var(--yellow);">/PostInstall/RegTweaks/r1_script/</span><span
+							<li><span
+									style="color: var(--yellow);">/Windows/PostInstall/RegTweaks/r1_script/</span><span
 									style="color: var(--red);">1_guest.cmd</span></li>
+							<li>Cập nhật <span style="color: var(--orange);">App Installer</span>: <span
+									style="color: var(--yellow);">/Windows/PostInstall/winget/offline/</span><span
+									style="color: var(--red);">*</span></li>
 						</ul>
 					</div>
 				</li>
@@ -195,53 +201,79 @@
 			</ul>
 			<hr />
 			<ul>
-				<li>Tắt Defender's virus protection</li>
-				<li>Check ô "Receive updates for other Microsoft products", Check for updates</li>
+				<li>Check ô <code>Receive updates for other Microsoft products</code>, <span
+						style="color: var(--red);">Check for updates</span></li>
+				<li>Kết nối internet / import wifi</li>
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString3')"
 						style="color: var(--red);">GuestSetup2.cmd</button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
-							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
-									style="color: var(--red);">MsStore_UpdateAll.ps1</span> --&gt; open <span
-									style="color: var(--orange);">MS Store</span>
+							<li>Tắt <span style="color: var(--orange);">Defender</span>'s <span
+									style="color: var(--red);">Realtime virus protection</span></li>
+							<li><span style="color: var(--yellow);">/Windows/PostInstall/winget/</span><span
+									style="color: var(--red);">MsStore_UpdateAll.ps1</span> --&gt; open <a
+									href="ms-windows-store://">MS Store</a>
 							</li>
-							<li>Cài đặt Unikey, Office</li>
-							<li><span style="color: var(--yellow);">/Driver/VCRedist/</span><span
+							<li>Cài đặt <a href="https://www.unikey.org/download.html" target="_blank"
+									rel="noopener">Unikey</a></li>
+							<li>Cài đặt <a href="/posts/windows-hevc-extension/" target="_blank"
+									rel="noopener">Microsoft Media Extensions</a></li>
+							<li>Cài đặt <a
+									href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/"
+									target="_blank" rel="noopener">Visual C++ Redistributable Runtimes</a>: <span
+									style="color: var(--yellow);">/Windows/Driver/VCRedist/</span><span
 									style="color: var(--red);">install_all.bat</span></li>
-							<li><span style="color: var(--yellow);">/Driver/fonts/</span> --&gt; cài toàn bộ</li>
 							<li>Restore User folder đã backup</li>
+							<li>Cài <a
+									href="https://updates.cdn-apple.com/2020/windows/001-36880-20200831-dd7a918b-e5de-4145-add4-c835639d9476/ProResRAW.msi"
+									target="_blank" rel="noopener">Apple ProRes RAW</a>, cập nhật <span
+									style="color: var(--orange);">Terminal</span>, cài <a
+									href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0#:~:text=%2ENET%20Desktop%20Runtime%2010%2E0%2E1,-The"
+									target="_blank" rel="noopener">MS .NET Desktop Runtime</a>: <span
+									style="color: var(--yellow);">/Windows/PostInstall/winget/</span><span
+									style="color: var(--red);">1_guest.cmd</span></li>
+							<li>Cài đặt <a href="/posts/7-zip/" target="_blank" rel="noopener">7-zip</a>, <a
+									href="https://www.codecguide.com/download_k-lite_codec_pack_full.htm"
+									target="_blank" rel="noopener">K-Lite Codec Pack</a>, <a
+									href="https://github.com/zhongyang219/TrafficMonitor" target="_blank"
+									rel="noopener">TrafficMonitor</a>, <a href="/blog/rustdesk/" target="_blank"
+									rel="noopener">RustDesk</a>, custom cursor</li>
+							<li>Cài đặt <a href="https://gravesoft.dev/office_c2r_links" target="_blank"
+									rel="noopener">Microsoft Office</a></li>
+							<li>Cài đặt font VN: <span style="color: var(--yellow);">/Windows/Driver/fonts/</span>
+							</li>
 							<li><span style="color: var(--orange);">Snipping Tool: </span><span
 									style="color: var(--yellow);">/settings</span>: tắt autosave, tắt multiple
 								windows</li>
-							<li><span style="color: var(--yellow);">/PostInstall/winget/</span><span
-									style="color: var(--red);">1_guest.cmd</span></li>
-							<li><span style="color: var(--orange);">Control Panel: </span><code>Screen timeouts</code>
-							</li>
 							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
-							<li>Dọn sạch ổ C:/</li>
+							<li>Dọn sạch ổ <span style="color: var(--yellow);">C:/</span></li>
 							<li>Xóa <span style="color: var(--yellow);">C:\z\</span></li>
 						</ul>
 					</div>
 				</li>
-				<li>(<span style="color: var(--yellow);">/Programs/1sthing/</span>, Chrome, TrafficMonitor)</li>
-				<li>(Đổi tên PC, di chuyển vị trí folder Downloads)</li>
+				<li><span style="color: var(--yellow);">Control Panel\Hardware and Sound\Power Options</span><span
+						style="color: var(--orange);">\Edit Plan Settings</span> và <span
+						style="color: var(--orange);">\System Settings</span>
+				</li>
+				<li><i>(di chuyển vị trí folder <span style="color: var(--yellow);">~/Downloads</span>)</i></li>
+				<li><i>(<span style="color: var(--yellow);">/Programs/1sthing/</span>, <a
+							href="https://www.google.com/chrome/" target="_blank" rel="noopener">Chrome</a>, <a
+							href="https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe" target="_blank"
+							rel="noopener">Steam</a> + <span
+							style="color: var(--yellow);">/Programs/zInstallers/</span>, <a
+							href="https://www.hwinfo.com/download/" target="_blank" rel="noopener">hwinfo</a>, <a
+							href="https://notepad-plus-plus.org/downloads/" target="_blank"
+							rel="noopener">notepad++</a>)</i>
+				</li>
 				<li><b>RESTART</b></li>
 			</ul>
 			<hr />
 			<ul>
-				<li>Tắt Defender's virus protection</li>
-				<li><span style="color: var(--orange);">Task Manager</span>: <code>Startup apps</code></li>
-				<!-- <li><span style="color: var(--orange);">Control Panel</span>: <code>Fast Startup</code></li> -->
+				<li>Tắt <span style="color: var(--orange);">Defender</span>'s <span style="color: var(--red);">Realtime
+						virus protection</span></li>
+				<li>Tối ưu <span style="color: var(--orange);">Task Manager</span> (tab <code>Startup apps</code>)</li>
 				<li><i>(setup personal programs, Adobe các thứ)</i></li>
 			</ul>
-			<hr />
-			<p>
-				Trường hợp cài gấp: Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString6')"
-					style="color: var(--red);">QuickGuest.cmd</button><span id="hiddenString6" style="display: none;">
-					Chrome, Unikey, (Office), 1_guest + GrpPolicy + RestorePostInstall + post-install.reg + reclaim
-					script</span>, kết nối internet, sau đó chạy <span
-					style="color: var(--red);">GuestSetupCleanup.cmd</span>.
-			</p>
 			<br />
 			<p><b>Sói</b></p>
 			<hr>
