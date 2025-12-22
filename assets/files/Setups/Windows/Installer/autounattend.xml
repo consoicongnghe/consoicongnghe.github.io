@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&Locale=en-US&Keyboard=00000409&GeoLocation=251&ProcessorArchitecture=x86&ProcessorArchitecture=amd64&ProcessorArchitecture=arm64&HidePowerShellWindows=true&ComputerNameMode=Script&ComputerNameScript=return+%27cscn-%7B0%3AD3%7D%27+-f+%28+Get-Random+-Minimum+0+-Maximum+999+%29%3B&CompactOsMode=Default&TimeZoneMode=Explicit&TimeZone=SE+Asia+Standard+Time&PartitionMode=Interactive&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&InstallFromMode=Automatic&PEMode=Default&UserAccountMode=InteractiveLocal&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=Hidden&ShowFileExtensions=true&LaunchToThisPC=true&TaskbarSearch=Hide&TaskbarIconsMode=Custom&TaskbarIconsXml=%3CLayoutModificationTemplate+xmlns%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FLayoutModification%22+xmlns%3Adefaultlayout%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FFullDefaultLayout%22+xmlns%3Astart%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FStartLayout%22+xmlns%3Ataskbar%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FTaskbarLayout%22+Version%3D%221%22%3E%0D%0A++%3CCustomTaskbarLayoutCollection+PinListPlacement%3D%22Replace%22%3E%0D%0A++++%3Cdefaultlayout%3ATaskbarLayout%3E%0D%0A++++++%3Ctaskbar%3ATaskbarPinList%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.Windows.Explorer%22+%2F%3E%0D%0A++++++%3C%2Ftaskbar%3ATaskbarPinList%3E%0D%0A++++%3C%2Fdefaultlayout%3ATaskbarLayout%3E%0D%0A++%3C%2FCustomTaskbarLayoutCollection%3E%0D%0A%3C%2FLayoutModificationTemplate%3E&DisableWidgets=true&LeftTaskbar=true&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableUac=true&DisableFastStartup=true&EnableLongPaths=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&DisablePointerPrecision=true&DeleteWindowsOld=true&EffectsMode=Default&DesktopIconsMode=Custom&IconRecycleBin=true&IconThisPC=true&StartFoldersMode=Default&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=On&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Light&AppsColorTheme=Light&AccentColor=%2300b7c3&WallpaperMode=Script&WallpaperScript=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27%5CWindows%5Cbackground.png%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++return+%5BIO.File%5D%3A%3AReadAllBytes%28+%24found+%29%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMixedReality=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOpenSSHClient=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShellISE=true&RemoveRecall=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveWallet=true&RemoveWeather=true&RemoveWindowsMediaPlayer=true&RemoveWordPad=true&RemoveXboxApps=true&SystemScript0=Set-Volume+-DriveLetter+C+-NewFileSystemLabel+%22Windows%22%0D%0Aforeach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27%5CPrograms%5CzInstallers%5C7z*.exe%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++Start-Process+-FilePath+%24found+-ArgumentList+%27%2FS+%2FD%3D%22C%3A%5CProgram+Files%5C7-Zip%22%27+-Wait%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B%0D%0A%24params+%3D+%40%7B%0D%0A++++Path+%3D+%27Registry%3A%3AHKLM%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%27%3B%0D%0A%7D%3B%0D%0ANew-Item+%40params+-ErrorAction+%27SilentlyContinue%27%3B%0D%0ASet-ItemProperty+%40params+-Name+%27NoDriveAutoRun%27+-Type+%27DWord%27+-Value+%24%28%0D%0A++++%28+1+-shl+26+%29+-+1%3B+%23+0x3FFFFFF%0D%0A%29%3B%0D%0ASet-ItemProperty+%40params+-Name+%27NoDriveTypeAutoRun%27+-Type+%27DWord%27+-Value+%24%28%0D%0A++++%28+1+-shl+8+%29+-+1%3B+%23+0xFF%0D%0A%29%3B&SystemScriptType0=Ps1&FirstLogonScript0=%26+%28%5BScriptBlock%5D%3A%3ACreate%28%28irm+https%3A%2F%2Fget.activated.win%29%29%29+%2Fhwid%0D%0ARemove-Item+%22C%3A%5CUsers%5CPublic%5CDesktop%5CMicrosoft+Edge.lnk%22%0D%0ARemove-Item+%22%24env%3AUSERPROFILE%5CDesktop%5CMicrosoft+Edge.lnk%22%0D%0Apowercfg+-change+-monitor-timeout-ac+15%0D%0Apowercfg+-change+-monitor-timeout-dc+5%0D%0Apowercfg+-change+-standby-timeout-ac+0%0D%0Apowercfg+-change+-standby-timeout-dc+10%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.HEVCVideoExtension%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.VP9VideoExtensions%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.AV1VideoExtension%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.MPEG2VideoExtension%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.HEIFImageExtension%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.WebpImageExtension%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.RawImageExtension%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-AppxPackage+-AllUsers+%22Microsoft.WebMediaExtensions%22+%7C+ForEach-Object+%7BAdd-AppxPackage+-DisableDevelopmentMode+-Register+%22%24%28%24_.InstallLocation%29%5CAppXManifest.xml%22%7D%0D%0AGet-NetConnectionProfile+-InterfaceAlias+%27Ethernet*%27+%7C+Set-NetConnectionProfile+-NetworkCategory+%27Private%27%3B&FirstLogonScriptType0=Ps1&FirstLogonScript1=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%3B+Block+Bing+Extension%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5COffice%5C16.0%5CCommon%5COfficeUpdate%5D%0D%0A%22PreventBingInstall%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Edge+desktop+shortcut%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CEdgeUpdate%5D%0D%0A%22CreateDesktopShortcutDefault%22%3Ddword%3A00000000%0D%0A%22RemoveDesktopShortcutDefault%22%3Ddword%3A00000001%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CMyComputer%5CNameSpace%5C%7BF0D63F85-37EC-4097-B30D-61B4A8917118%7D%5D%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CMyComputer%5CNameSpace%5C%7Bf86fa3ab-70d2-4fc7-9c99-fcbf05467f3a%7D%5D%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CCLSID%5C%7B018D5C66-4533-4307-9B53-224DE2ED1FE6%7D%5D%0D%0A%22System.IsPinnedToNameSpaceTree%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CSerialize%5D%0D%0A%22StartupDelayInMSec%22%3Ddword%3A00000000%0D%0A%0D%0A%3Blower+windows+delays%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CDesktop%5D%0D%0A%22AutoEndTasks%22%3D%221%22%0D%0A%22HungAppTimeout%22%3D%221000%22%0D%0A%22MenuShowDelay%22%3D%228%22%0D%0A%22WaitToKillAppTimeout%22%3D%222000%22%0D%0A%22LowLevelHooksTimeout%22%3D%221000%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CMouse%5D%0D%0A%22MouseHoverTime%22%3D%228%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%5D%0D%0A%22NoLowDiskSpaceChecks%22%3Ddword%3A00000001%0D%0A%22LinkResolveIgnoreLinkInfo%22%3Ddword%3A00000001%0D%0A%22NoResolveSearch%22%3Ddword%3A00000001%0D%0A%22NoResolveTrack%22%3Ddword%3A00000001%0D%0A%22NoInternetOpenWith%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5D%0D%0A%22WaitToKillServiceTimeout%22%3D%222000%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CKeyboard%5D%0D%0A%22PrintScreenKeyForSnippingEnabled%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+set+date+and+time+VN%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CInternational%5CGeo%5D%0D%0A%22Nation%22%3D%22251%22%0D%0A%22Name%22%3D%22VN%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CInternational%5C%F0%9F%8C%8E%F0%9F%8C%8F%F0%9F%8C%8D%5D%0D%0A%22Calendar%22%3D%22Gregorian%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CTimeZoneInformation%E2%80%8B%5D%0D%0A%22TimeZoneKeyName%22%3D%22SE+Asia+Standard+Time%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CInternational%5D%0D%0A%22Locale%22%3D%2200000C00%22%0D%0A%22LocaleName%22%3D%22en-001%22%0D%0A%22s1159%22%3D%22AM%22%0D%0A%22s2359%22%3D%22PM%22%0D%0A%22sCurrency%22%3D%22XDR%22%0D%0A%22sDate%22%3D%22%2F%22%0D%0A%22sDecimal%22%3D%22.%22%0D%0A%22sGrouping%22%3D%223%3B0%22%0D%0A%22sLanguage%22%3D%22ZZZ%22%0D%0A%22sList%22%3D%22%2C%22%0D%0A%22sLongDate%22%3D%22dddd%2C+d+MMMM+yyyy%22%0D%0A%22sMonDecimalSep%22%3D%22.%22%0D%0A%22sMonGrouping%22%3D%223%3B0%22%0D%0A%22sMonThousandSep%22%3D%22%2C%22%0D%0A%22sNativeDigits%22%3D%220123456789%22%0D%0A%22sNegativeSign%22%3D%22-%22%0D%0A%22sPositiveSign%22%3D%22%22%0D%0A%22sShortDate%22%3D%22dd%2FMM%2Fyy%22%0D%0A%22sThousand%22%3D%22%2C%22%0D%0A%22sTime%22%3D%22%3A%22%0D%0A%22sTimeFormat%22%3D%22h%3Amm%3Ass+tt%22%0D%0A%22sShortTime%22%3D%22h%3Amm+tt%22%0D%0A%22sYearMonth%22%3D%22MMMM+yyyy%22%0D%0A%22iCalendarType%22%3D%221%22%0D%0A%22iCountry%22%3D%22388%22%0D%0A%22iCurrDigits%22%3D%222%22%0D%0A%22iCurrency%22%3D%220%22%0D%0A%22iDate%22%3D%221%22%0D%0A%22iDigits%22%3D%222%22%0D%0A%22NumShape%22%3D%221%22%0D%0A%22iFirstDayOfWeek%22%3D%220%22%0D%0A%22iFirstWeekOfYear%22%3D%220%22%0D%0A%22iLZero%22%3D%221%22%0D%0A%22iMeasure%22%3D%220%22%0D%0A%22iNegCurr%22%3D%221%22%0D%0A%22iNegNumber%22%3D%221%22%0D%0A%22iPaperSize%22%3D%229%22%0D%0A%22iTime%22%3D%220%22%0D%0A%22iTimePrefix%22%3D%220%22%0D%0A%22iTLZero%22%3D%220%22%0D%0A%0D%0A%3B+hide+widget+button%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22TaskbarDa%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+restart+apps+when+sign-in%0D%0A%5BHKEY_CURRENT_USER%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CWinlogon%5D%0D%0A%22RestartApps%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Restore+previous+folders+at+logon+%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22PersistBrowsers%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+remove+video+folder+from+this+PC%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CNonEnum%5D%0D%0A%22%7BA0953C92-50DC-43bf-BE83-3742FED03C9C%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7BA0953C92-50DC-43bf-BE83-3742FED03C9C%7D%5D%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%0D%0A%3Bremove+music+folder+from+this+PC%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CNonEnum%5D%0D%0A%22%7B1CF1260C-4DD0-4ebb-811F-33C572699FDE%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7B1CF1260C-4DD0-4ebb-811F-33C572699FDE%7D%5D%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%0D%0A%0D%0A%3Bremove+home+and+gallery+from+navigation+bar+in+Explorer%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7Be88865ea-0e1c-4e20-9aa6-edcd0212c87c%7D%5D%0D%0A%40%3D%22Gallery%22%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CNonEnum%5D%0D%0A%22%7Be88865ea-0e1c-4e20-9aa6-edcd0212c87c%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7Bf874310e-b6b7-47dc-bc84-b9e6b38f5903%7D%5D%0D%0A%0D%0A%3B+hide+language+bar%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CCTF%5CLangBar%5D%0D%0A%22ShowStatus%22%3Ddword%3A00000003%0D%0A%0D%0A%3B+disable+language+hot+keys%0D%0A%5BHKEY_CURRENT_USER%5CKeyboard+Layout%5CToggle%5D%0D%0A%22Language+Hotkey%22%3D%223%22%0D%0A%22Hotkey%22%3D%223%22%0D%0A%22Layout+Hotkey%22%3D%223%22%0D%0A%0D%0A%3B+touchpad+settings%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPrecisionTouchPad%5D%0D%0A%22LeaveOnWithMouse%22%3Ddword%3A00000001%0D%0A%22ThreeFingerTapEnabled%22%3Ddword%3A00000004%0D%0A%22FourFingerTapEnabled%22%3Ddword%3A00000004%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPrecisionTouchPad%5CStatus%5D%0D%0A%22Enabled%22%3Ddword%3A00000001%0D%0A%0D%0A&FirstLogonScriptType1=Reg&RestartExplorer=true&WdacMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&Locale=en-US&Keyboard=00000409&GeoLocation=251&ProcessorArchitecture=x86&ProcessorArchitecture=amd64&ProcessorArchitecture=arm64&HidePowerShellWindows=true&ComputerNameMode=Script&ComputerNameScript=return+%27cscn-%7B0%3AD3%7D%27+-f+%28+Get-Random+-Minimum+0+-Maximum+999+%29%3B&CompactOsMode=Default&TimeZoneMode=Explicit&TimeZone=SE+Asia+Standard+Time&PartitionMode=Interactive&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&InstallFromMode=Automatic&PEMode=Default&UserAccountMode=InteractiveLocal&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=Hidden&ShowFileExtensions=true&LaunchToThisPC=true&TaskbarSearch=Hide&TaskbarIconsMode=Custom&TaskbarIconsXml=%3CLayoutModificationTemplate+xmlns%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FLayoutModification%22+xmlns%3Adefaultlayout%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FFullDefaultLayout%22+xmlns%3Astart%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FStartLayout%22+xmlns%3Ataskbar%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FTaskbarLayout%22+Version%3D%221%22%3E%0D%0A++%3CCustomTaskbarLayoutCollection+PinListPlacement%3D%22Replace%22%3E%0D%0A++++%3Cdefaultlayout%3ATaskbarLayout%3E%0D%0A++++++%3Ctaskbar%3ATaskbarPinList%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.Windows.Explorer%22+%2F%3E%0D%0A++++++%3C%2Ftaskbar%3ATaskbarPinList%3E%0D%0A++++%3C%2Fdefaultlayout%3ATaskbarLayout%3E%0D%0A++%3C%2FCustomTaskbarLayoutCollection%3E%0D%0A%3C%2FLayoutModificationTemplate%3E&DisableWidgets=true&LeftTaskbar=true&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableUac=true&DisableFastStartup=true&EnableLongPaths=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&DisablePointerPrecision=true&DeleteWindowsOld=true&EffectsMode=Default&DeleteEdgeDesktopIcon=true&DesktopIconsMode=Custom&IconRecycleBin=true&IconThisPC=true&StartFoldersMode=Default&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=On&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Light&AppsColorTheme=Light&AccentColor=%2300b7c3&WallpaperMode=Script&WallpaperScript=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27%5CWindows%5Cbackground.png%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++return+%5BIO.File%5D%3A%3AReadAllBytes%28+%24found+%29%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&LockScreenMode=Script&LockScreenScript=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27%5CWindows%5Cbackground.png%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++return+%5BIO.File%5D%3A%3AReadAllBytes%28+%24found+%29%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&Remove3DViewer=true&RemoveBingSearch=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMixedReality=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOpenSSHClient=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShellISE=true&RemoveRecall=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveWallet=true&RemoveWeather=true&RemoveWindowsMediaPlayer=true&RemoveWordPad=true&RemoveXboxApps=true&SystemScript0=Set-Volume+-DriveLetter+C+-NewFileSystemLabel+%22Windows%22%0D%0Aforeach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27%5CPrograms%5CzInstallers%5C7z*.exe%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++Start-Process+-FilePath+%24found+-ArgumentList+%27%2FS+%2FD%3D%22C%3A%5CProgram+Files%5C7-Zip%22%27+-Wait%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B%0D%0A%24params+%3D+%40%7B%0D%0A++++Path+%3D+%27Registry%3A%3AHKLM%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%27%3B%0D%0A%7D%3B%0D%0ANew-Item+%40params+-ErrorAction+%27SilentlyContinue%27%3B%0D%0ASet-ItemProperty+%40params+-Name+%27NoDriveAutoRun%27+-Type+%27DWord%27+-Value+%24%28%0D%0A++++%28+1+-shl+26+%29+-+1%3B+%23+0x3FFFFFF%0D%0A%29%3B%0D%0ASet-ItemProperty+%40params+-Name+%27NoDriveTypeAutoRun%27+-Type+%27DWord%27+-Value+%24%28%0D%0A++++%28+1+-shl+8+%29+-+1%3B+%23+0xFF%0D%0A%29%3B&SystemScriptType0=Ps1&FirstLogonScript0=powercfg+-change+-monitor-timeout-ac+15%0D%0Apowercfg+-change+-monitor-timeout-dc+5%0D%0Apowercfg+-change+-standby-timeout-ac+0%0D%0Apowercfg+-change+-standby-timeout-dc+10%0D%0AGet-NetConnectionProfile+-InterfaceAlias+%27Ethernet*%27+%7C+Set-NetConnectionProfile+-NetworkCategory+%27Private%27%3B&FirstLogonScriptType0=Ps1&FirstLogonScript1=%3B+%2D%2D-+CONTEXT+MENU+TWEAKS+%2D%2D-%0D%0A%3B+Add+Take+ownership+to+context+menu%0D%0A%5BHKEY_CLASSES_ROOT%5C*%5Cshell%5Crunas%5D%0D%0A%40%3D%22Take+ownership%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22NoWorkingDirectory%22%3D%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5C*%5Cshell%5Crunas%5Ccommand%5D%0D%0A%40%3D%22cmd.exe+%2Fc+takeown+%2Ff+%5C%22%251%5C%22+%26%26+icacls+%5C%22%251%5C%22+%2Fgrant+administrators%3AF%22%0D%0A%22IsolatedCommand%22%3D%22cmd.exe+%2Fc+takeown+%2Ff+%5C%22%251%5C%22+%26%26+icacls+%5C%22%251%5C%22+%2Fgrant+administrators%3AF%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5Crunas%5D%0D%0A%40%3D%22Take+ownership%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22NoWorkingDirectory%22%3D%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5Crunas%5Ccommand%5D%0D%0A%40%3D%22cmd.exe+%2Fc+takeown+%2Ff+%5C%22%251%5C%22+%2Fr+%2Fd+y+%26%26+icacls+%5C%22%251%5C%22+%2Fgrant+administrators%3AF+%2Ft%22%0D%0A%22IsolatedCommand%22%3D%22cmd.exe+%2Fc+takeown+%2Ff+%5C%22%251%5C%22+%2Fr+%2Fd+y+%26%26+icacls+%5C%22%251%5C%22+%2Fgrant+administrators%3AF+%2Ft%22%0D%0A%0D%0A%3B+Hide+%27Give+access+to%27+context+menu%0D%0A%5B-HKEY_CLASSES_ROOT%5C*%5Cshellex%5CContextMenuHandlers%5CSharing%5D%0D%0A%5B-HKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshellex%5CContextMenuHandlers%5CSharing%5D%0D%0A%5B-HKEY_CLASSES_ROOT%5CDirectory%5Cshellex%5CContextMenuHandlers%5CSharing%5D%0D%0A%5B-HKEY_CLASSES_ROOT%5CDrive%5Cshellex%5CContextMenuHandlers%5CSharing%5D%0D%0A%0D%0A%3B+Remove+%22Include+in+Library%22%0D%0A%5B-HKEY_CLASSES_ROOT%5CFolder%5CShellEx%5CContextMenuHandlers%5CLibrary+Location%5D%0D%0A%0D%0A%3B+Boost+desktop+context+menu+time+by+removing+graphics+menus%0D%0A%5B-HKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshellex%5CContextMenuHandlers%5Cigfxcui%5D%0D%0A%5B-HKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshellex%5CContextMenuHandlers%5CigfxDTCM%5D%0D%0A%5B-HKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshellex%5CContextMenuHandlers%5CNvCplDesktopContext%5D%0D%0A%5B-HKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshellex%5CContextMenuHandlers%5CACE%5D%0D%0A%0D%0A%3B+%2D%2D-+EXPLORER+%26+UI+TWEAKS+%2D%2D-%0D%0A%3B+Remove+%27-+Shortcut%27+suffix+from+new+shortcuts%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5D%0D%0A%22link%22%3Dhex%3A00%2C00%2C00%2C00%0D%0A%0D%0A%3B+Open+File+Explorer+to+%22This+PC%22+%281%29+instead+of+Quick+Access+%282%29%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22LaunchTo%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Show+known+file+extensions+%28HideFileExt+%3D+0%29%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22HideFileExt%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Show+hidden+files+%28Hidden+%3D+1%29%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22Hidden%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Disable+Sharing+Wizard%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22SharingWizardOn%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Hide+Sync+Provider+Notifications%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22ShowSyncProviderNotifications%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Show+file+operations+details+%28Enthusiast+Mode%29%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5COperationStatusManager%5D%0D%0A%22EnthusiastMode%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Aero+Shake%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22DisallowShaking%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Restore+previous+folders+at+logon%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22PersistBrowsers%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+%22How+do+you+want+to+open+this+file%3F%22+prompt%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CExplorer%5D%0D%0A%22NoNewAppAlert%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Hide+%22Recently+Added%22+apps+in+Start+Menu%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CExplorer%5D%0D%0A%22HideRecentlyAddedApps%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Ensure+%22Most+Used%22+apps+are+allowed+%28Removing+disable+key%29%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%5CNoStartMenuMFUprogramsList%5D%0D%0A%0D%0A%3B+Force+Control+Panel+to+Icons+View+%28StartupPage%3D1%2C+AllItemsIconView%3D1%29%0D%0A%3B+Note%3A+We+remove+them+to+default+to+Categories+if+requested%2C+but+setting+them+sets+to+Icons.%0D%0A%3B+Based+on+your+request+%22SetControlPanelCategories%22%2C+we+DELETE+these+values.%0D%0A%5B-HKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CControlPanel%5D%0D%0A%0D%0A%3B+Hide+Desktop+icon+from+This+PC+namespace%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CMyComputer%5CNameSpace%5C%7BB4BFCC3A-DB2C-424C-B029-7FE99A87C641%7D%5D%0D%0A%0D%0A%3B+Show%2FHide+Desktop+Icons+%280+%3D+Show%2C+1+%3D+Hide%29%0D%0A%3B+Show+This+PC%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CNewStartPanel%5D%0D%0A%22%7B20D04FE0-3AEA-1069-A2D8-08002B30309D%7D%22%3Ddword%3A00000000%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CClassicStartMenu%5D%0D%0A%22%7B20D04FE0-3AEA-1069-A2D8-08002B30309D%7D%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Hide+User+Folder%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CNewStartPanel%5D%0D%0A%22%7B59031a47-3f72-44a7-89c5-5595fe6b30ee%7D%22%3Ddword%3A00000001%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CClassicStartMenu%5D%0D%0A%22%7B59031a47-3f72-44a7-89c5-5595fe6b30ee%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Hide+Control+Panel%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CNewStartPanel%5D%0D%0A%22%7B5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0%7D%22%3Ddword%3A00000001%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CClassicStartMenu%5D%0D%0A%22%7B5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Hide+Network%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CNewStartPanel%5D%0D%0A%22%7BF02C1A0D-BE21-4350-88B0-7367FC96EF3C%7D%22%3Ddword%3A00000001%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CHideDesktopIcons%5CClassicStartMenu%5D%0D%0A%22%7BF02C1A0D-BE21-4350-88B0-7367FC96EF3C%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+F1+Help+Key+%28Ensure+it+is+NOT+disabled+by+removing+the+dummy+key+if+it+exists%29%0D%0A%5B-HKEY_CURRENT_USER%5CSoftware%5CClasses%5CTypeLib%5C%7B8cec5860-07a1-11d9-b15e-000d56bfe6ee%7D%5C1.0%5C0%5Cwin32%5D%0D%0A%0D%0A%3B+%2D%2D-+SYSTEM+%26+PERFORMANCE+%2D%2D-%0D%0A%3B+Lower+UAC+Level+%28ConsentPromptBehaviorAdmin%3A+0+%3D+No+prompt%2FElevate%29%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5D%0D%0A%22ConsentPromptBehaviorAdmin%22%3Ddword%3A00000000%0D%0A%22PromptOnSecureDesktop%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Enable+NumLock+at+startup%0D%0A%5BHKEY_USERS%5C.DEFAULT%5CControl+Panel%5CKeyboard%5D%0D%0A%22InitialKeyboardIndicators%22%3D%222147483650%22%0D%0A%0D%0A%3B+Enable+NTFS+Long+Paths%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CFileSystem%5D%0D%0A%22LongPathsEnabled%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+NTFS+Last+Access+Update+%280+%3D+User+Managed%2FEnabled%2C+1+%3D+Disabled%29%0D%0A%3B+User+requested+%22EnableNTFSLastAccess%22+-%3E+set+to+0%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CFileSystem%5D%0D%0A%22NtfsDisableLastAccessUpdate%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Disable+Autoplay%2FAutorun%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAutoplayHandlers%5D%0D%0A%22DisableAutoplay%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%5D%0D%0A%22NoDriveTypeAutoRun%22%3Ddword%3A000000ff%0D%0A%0D%0A%3B+Lower+windows+delays%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CDesktop%5D%0D%0A%22AutoEndTasks%22%3D%221%22%0D%0A%22HungAppTimeout%22%3D%221000%22%0D%0A%22MenuShowDelay%22%3D%228%22%0D%0A%22WaitToKillAppTimeout%22%3D%222000%22%0D%0A%22LowLevelHooksTimeout%22%3D%221000%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5D%0D%0A%22WaitToKillServiceTimeout%22%3D%222000%22%0D%0A%0D%0A%3B+Disable+%22Hi%22+First+Logon+Animation%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5D%0D%0A%22EnableFirstLogonAnimation%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Disable+Sound+Scheme+Changing%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CPersonalization%5D%0D%0A%22NoChangingSoundScheme%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Startup+Sound%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CAuthentication%5CLogonUI%5CBootAnimation%5D%0D%0A%22DisableStartupSound%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CEditionOverrides%5D%0D%0A%22UserSetting_DisableStartupSound%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Accessibility+Keys+%28Sticky%2C+Toggle%2C+Filter%29%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CAccessibility%5CStickyKeys%5D%0D%0A%22Flags%22%3D%22506%22%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CAccessibility%5CToggleKeys%5D%0D%0A%22Flags%22%3D%2258%22%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CAccessibility%5CKeyboard+Response%5D%0D%0A%22Flags%22%3D%22122%22%0D%0A%0D%0A%3B+%2D%2D-+PRIVACY+%26+UPDATES+%2D%2D-%0D%0A%3B+Enable+Windows+Update+for+other+Microsoft+Products%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindowsUpdate%5D%0D%0A%22AllowMUUpdateService%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+Windows+Update+Auto+Download+%28AUOptions%3D4%3A+Auto+download%2Fsched+install.+Disable%3D2%3A+Notify+to+download%29%0D%0A%3B+User+requested+%22EnableUpdateAutoDownload%22.+This+typically+means+setting+to+Default+%284%29.%0D%0A%3B+We+will+remove+the+restriction+key+to+let+it+default+to+Auto.%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindowsUpdate%5CAU%5D%0D%0A%0D%0A%3B+Disable+Automatic+Restart+after+Update+%28Use+dummy+debugger%29%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CImage+File+Execution+Options%5CMusNotification.exe%5D%0D%0A%22Debugger%22%3D%22cmd.exe%22%0D%0A%0D%0A%3B+Disable+Maintenance+Wake+Up%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSchedule%5CMaintenance%5D%0D%0A%22WakeUp%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Delivery+Optimization%3A+Restrict+P2P+to+Local+Network+%281%29%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CDeliveryOptimization%5D%0D%0A%22DODownloadMode%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+WiFi+Sense+%28Allow+reporting+and+auto+connect%29%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CPolicyManager%5Cdefault%5CWiFi%5CAllowWiFiHotSpotReporting%5D%0D%0A%22value%22%3Ddword%3A00000001%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CPolicyManager%5Cdefault%5CWiFi%5CAllowAutoConnectToWiFiSenseHotspots%5D%0D%0A%22value%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+SmartScreen+%28Ensure+Disable+keys+are+removed%29%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CSystem%5CEnableSmartScreen%5D%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CMicrosoftEdge%5CPhishingFilter%5D%0D%0A%0D%0A%3B+Enable+Biometrics%2C+Camera%2C+Mic+%28Remove+Deny+policies%29%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CBiometrics%5D%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CAppPrivacy%5D%0D%0A%0D%0A%3B+Hide+Defender+Tray+Icon%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows+Defender+Security+Center%5CSystray%5D%0D%0A%22HideSystray%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Hide+Account+Protection+Warning%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows+Security+Health%5CState%5D%0D%0A%22AccountProtection_MicrosoftAccount_Disconnected%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Media+Player+Sharing+%26+Online+Access%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindowsMediaPlayer%5D%0D%0A%22PreventLibrarySharing%22%3Ddword%3A00000001%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWMDRM%5D%0D%0A%22DisableOnline%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+%2D%2D-+LOCK+SCREEN+%26+SIGN+IN+%2D%2D-%0D%0A%3B+Disable+Lock+Screen%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CPersonalization%5D%0D%0A%22NoLockScreen%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Hide+Network+from+Lock+Screen%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CSystem%5D%0D%0A%22DontDisplayNetworkSelectionUI%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+Sleep+Button+in+Start+Menu+%28ShowSleepOption+%3D+1%29%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFlyoutMenuSettings%5D%0D%0A%22ShowSleepOption%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+Automatic+Restart+Sign+On+%28Removing+the+Disable+key%29%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5CDisableAutomaticRestartSignOn%5D%0D%0A%0D%0A%3B+%2D%2D-+CLOUD+%26+SHARED+EXPERIENCES+%2D%2D-%0D%0A%3B+Enable+Clipboard+History%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CClipboard%5D%0D%0A%22EnableClipboardHistory%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Enable+Shared+Experiences%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCDP%5D%0D%0A%22RomeSdkChannelUserAuthzPolicy%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+%2D%2D-+FOLDER+VIEW+SETTINGS+%28SHOW%2FHIDE%29+%2D%2D-%0D%0A%3B+Hide+3D+Objects+from+Explorer%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CMyComputer%5CNameSpace%5C%7B0DB7E03F-FC29-4DC6-9020-FF41B59E513A%7D%5D%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7B31C0DD25-9439-4F12-BF41-7FF4EDA38722%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Hide%22%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CWow6432Node%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7B31C0DD25-9439-4F12-BF41-7FF4EDA38722%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Hide%22%0D%0A%0D%0A%3B+Show+Desktop+in+Explorer%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7BB4BFCC3A-DB2C-424C-B029-7FE99A87C641%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Show%22%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CWow6432Node%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7BB4BFCC3A-DB2C-424C-B029-7FE99A87C641%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Show%22%0D%0A%0D%0A%3B+Show+Documents+in+Explorer%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7Bf42ee2d3-909f-4907-8871-4c22fc0bf756%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Show%22%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CWow6432Node%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7Bf42ee2d3-909f-4907-8871-4c22fc0bf756%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Show%22%0D%0A%0D%0A%3B+Show+Downloads+in+Explorer%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7B7d83ee9b-2244-4e70-b1f5-5393042af1e4%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Show%22%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CWow6432Node%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7B7d83ee9b-2244-4e70-b1f5-5393042af1e4%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Show%22%0D%0A%0D%0A%3B+Hide+Pictures+in+Explorer%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7B3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Hide%22%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CWow6432Node%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CFolderDescriptions%5C%7B3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA%7D%5CPropertyBag%5D%0D%0A%22ThisPCPolicy%22%3D%22Hide%22%0D%0A%0D%0A%3B+Remove+Video%2FMusic%2F%3BPicture+Folders+from+This+PC%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CNonEnum%5D%0D%0A%22%7BA0953C92-50DC-43bf-BE83-3742FED03C9C%7D%22%3Ddword%3A00000001%0D%0A%22%7B1CF1260C-4DD0-4ebb-811F-33C572699FDE%7D%22%3Ddword%3A00000001%0D%0A%3B%22%7B3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7BA0953C92-50DC-43bf-BE83-3742FED03C9C%7D%5D%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7B1CF1260C-4DD0-4ebb-811F-33C572699FDE%7D%5D%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7B3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA%7D%5D%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Remove+Gallery+from+navigation%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CDesktop%5CNameSpace%5C%7Be88865ea-0e1c-4e20-9aa6-edcd0212c87c%7D%5D%0D%0A%40%3D%22Gallery%22%0D%0A%22HiddenByDefault%22%3Ddword%3A00000001%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CNonEnum%5D%0D%0A%22%7Be88865ea-0e1c-4e20-9aa6-edcd0212c87c%7D%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+%2D%2D-+APP+TWEAKS+%2D%2D-%0D%0A%3B+Block+Bing+Extension%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5COffice%5C16.0%5CCommon%5COfficeUpdate%5D%0D%0A%22PreventBingInstall%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Edge+desktop+shortcut%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CEdgeUpdate%5D%0D%0A%22CreateDesktopShortcutDefault%22%3Ddword%3A00000000%0D%0A%22RemoveDesktopShortcutDefault%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Edge+startup+boost%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CEdge%5D%0D%0A%22StartupBoostEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Unpin+Creative+Cloud%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CAdobe%5CCreativeCloud%5D%0D%0A%22unPinCCF%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+7-zip+Context+Menu+%28Cascaded%29%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5C7-Zip-Zstandard%5COptions%5D%0D%0A%22ContextMenu%22%3Ddword%3A00001126%0D%0A%0D%0A%3B+%2D%2D-+REMOVED+%2F+DISABLED+FEATURES+%28GROUP+POLICY+CONVERSIONS%29+%2D%2D-%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5COneDrive%5D%0D%0A%22PreventNetworkTrafficPreUserSignIn%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CDataCollection%5D%0D%0A%22MicrosoftEdgeDataOptIn%22%3Ddword%3A00000000%0D%0A%22AllowTelemetry%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%5D%0D%0A%22AllowOnlineTips%22%3Ddword%3A00000000%0D%0A%22NoInternetOpenWith%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CPolicyManager%5Cdefault%5CNewsAndInterests%5CAllowNewsAndInterests%5D%0D%0A%22value%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CDsh%5D%0D%0A%22AllowNewsAndInterests%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CCloudContent%5D%0D%0A%22DisableSoftLanding%22%3Ddword%3A00000001%0D%0A%22DisableWindowsConsumerFeatures%22%3Ddword%3A00000001%0D%0A%22DisableConsumerAccountStateContent%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CDataCollection%5D%0D%0A%22AllowDesktopAnalyticsProcessing%22%3Ddword%3A00000000%0D%0A%22AllowDeviceNameInTelemetry%22%3Ddword%3A00000000%0D%0A%22AllowTelemetry%22%3Ddword%3A00000001%0D%0A%22DoNotShowFeedbackNotifications%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindows+Search%5D%0D%0A%22AllowCortana%22%3Ddword%3A00000000%0D%0A%22SearchOnTaskbarMode%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Disable+Windows+AI+Recall%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CWindowsAI%5D%0D%0A%22DisableAIDataAnalysis%22%3Ddword%3A00000001%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindowsAI%5D%0D%0A%22DisableAIDataAnalysis%22%3Ddword%3A00000001%0D%0A%22AllowRecallEnablement%22%3Ddword%3A00000000%0D%0A%22TurnOffSavingSnapshots%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Notepad+AI+features%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CWindowsNotepad%5D%0D%0A%22DisableAIFeatures%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Paint+AI%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CPaint%5D%0D%0A%22DisableCocreator%22%3Ddword%3A00000001%0D%0A%22DisableGenerativeFill%22%3Ddword%3A00000001%0D%0A%22DisableImageCreator%22%3Ddword%3A00000001%0D%0A%22DisableGenerativeErase%22%3Ddword%3A00000001%0D%0A%22DisableRemoveBackground%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Windows+Copilot%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CWindowsCopilot%5D%0D%0A%22TurnOffWindowsCopilot%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Chat+Icon%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindows+Chat%5D%0D%0A%22ChatIcon%22%3Ddword%3A00000003%0D%0A%0D%0A%3B+Disable+Task+View%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CExplorer%5D%0D%0A%22HideTaskViewButton%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Restart+apps+on+sign-in%0D%0A%5BHKEY_CURRENT_USER%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CWinlogon%5D%0D%0A%22RestartApps%22%3Ddword%3A00000001%0D%0A%0D%0A%3B+Disable+Start+Menu+Web+Search%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CSearch%5D%0D%0A%22BingSearchEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%3B+Disable+Feedback%0D%0A%5BHKEY_CURRENT_USER%5CSOFTWARE%5CMicrosoft%5CSiuf%5CRules%5D%0D%0A%22NumberOfSIUFInPeriod%22%3Ddword%3A00000000&FirstLogonScriptType1=Reg&RestartExplorer=true&WdacMode=Skip&AppLockerMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -61,11 +61,11 @@
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>2</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\Specialize.ps1' -Raw | Invoke-Expression;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\Specialize.ps1"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>3</Order>
@@ -73,7 +73,7 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>4</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\DefaultUser.ps1' -Raw | Invoke-Expression;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\DefaultUser.ps1"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>5</Order>
@@ -85,11 +85,11 @@
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>2</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\Specialize.ps1' -Raw | Invoke-Expression;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\Specialize.ps1"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>3</Order>
@@ -97,7 +97,7 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>4</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\DefaultUser.ps1' -Raw | Invoke-Expression;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\DefaultUser.ps1"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>5</Order>
@@ -109,11 +109,11 @@
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>2</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\Specialize.ps1' -Raw | Invoke-Expression;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\Specialize.ps1"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>3</Order>
@@ -121,7 +121,7 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>4</Order>
-					<Path>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\DefaultUser.ps1' -Raw | Invoke-Expression;"</Path>
+					<Path>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\DefaultUser.ps1"</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>5</Order>
@@ -161,7 +161,7 @@
 			<FirstLogonCommands>
 				<SynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<CommandLine>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\FirstLogon.ps1' -Raw | Invoke-Expression;"</CommandLine>
+					<CommandLine>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\FirstLogon.ps1"</CommandLine>
 				</SynchronousCommand>
 			</FirstLogonCommands>
 		</component>
@@ -175,7 +175,7 @@
 			<FirstLogonCommands>
 				<SynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<CommandLine>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\FirstLogon.ps1' -Raw | Invoke-Expression;"</CommandLine>
+					<CommandLine>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\FirstLogon.ps1"</CommandLine>
 				</SynchronousCommand>
 			</FirstLogonCommands>
 		</component>
@@ -189,7 +189,7 @@
 			<FirstLogonCommands>
 				<SynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<CommandLine>powershell.exe -WindowStyle Hidden -NoProfile -Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\FirstLogon.ps1' -Raw | Invoke-Expression;"</CommandLine>
+					<CommandLine>powershell.exe -WindowStyle "Hidden" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\FirstLogon.ps1"</CommandLine>
 				</SynchronousCommand>
 			</FirstLogonCommands>
 		</component>
@@ -245,7 +245,7 @@ Set-StrictMode -Version 'Latest';
 		}
 		Start-Sleep -Milliseconds 50;
 	}
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; 'C:\Windows\Setup\Scripts\SetComputerName.log';
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; 'C:\Windows\Setup\Scripts\SetComputerName.log';
 		</File>
 		<File path="C:\Windows\Setup\Scripts\RemovePackages.ps1">
 $selectors = @(
@@ -322,7 +322,7 @@ $logfile = 'C:\Windows\Setup\Scripts\RemovePackages.log';
 		}
 		$result | ConvertTo-Json -Depth 3 -Compress;
 	}
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; $logfile;
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; $logfile;
 		</File>
 		<File path="C:\Windows\Setup\Scripts\RemoveCapabilities.ps1">
 $selectors = @(
@@ -378,7 +378,7 @@ $logfile = 'C:\Windows\Setup\Scripts\RemoveCapabilities.log';
 		}
 		$result | ConvertTo-Json -Depth 3 -Compress;
 	}
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; $logfile;
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; $logfile;
 		</File>
 		<File path="C:\Windows\Setup\Scripts\RemoveFeatures.ps1">
 $selectors = @(
@@ -425,7 +425,7 @@ $logfile = 'C:\Windows\Setup\Scripts\RemoveFeatures.log';
 		}
 		$result | ConvertTo-Json -Depth 3 -Compress;
 	}
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; $logfile;
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; $logfile;
 		</File>
 		<File path="C:\Windows\Setup\Scripts\TaskbarLayoutModification.xml">
 &lt;LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" Version="1"&gt;
@@ -705,6 +705,14 @@ function Set-WallpaperImage {
 }
 Set-WallpaperImage -LiteralPath 'C:\Windows\Setup\Scripts\Wallpaper';
 		</File>
+		<File path="C:\Windows\Setup\Scripts\GetLockScreenImage.ps1">
+foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
+    if( $found = Join-Path -Path $drive.RootDirectory -ChildPath '\Windows\background.png' -Resolve -ErrorAction 'SilentlyContinue' ) {
+        return [IO.File]::ReadAllBytes( $found );
+    }
+}
+'Cannot find any files that match pattern.' | Write-Warning;
+		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-01.ps1">
 Set-Volume -DriveLetter C -NewFileSystemLabel "Windows"
 foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
@@ -726,26 +734,322 @@ Set-ItemProperty @params -Name 'NoDriveTypeAutoRun' -Type 'DWord' -Value $(
 );
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-02.ps1">
-&amp; ([ScriptBlock]::Create((irm https://get.activated.win))) /hwid
-Remove-Item "C:\Users\Public\Desktop\Microsoft Edge.lnk"
-Remove-Item "$env:USERPROFILE\Desktop\Microsoft Edge.lnk"
 powercfg -change -monitor-timeout-ac 15
 powercfg -change -monitor-timeout-dc 5
 powercfg -change -standby-timeout-ac 0
 powercfg -change -standby-timeout-dc 10
-Get-AppxPackage -AllUsers "Microsoft.HEVCVideoExtension" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.VP9VideoExtensions" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.AV1VideoExtension" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.MPEG2VideoExtension" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.HEIFImageExtension" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.WebpImageExtension" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.RawImageExtension" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage -AllUsers "Microsoft.WebMediaExtensions" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 Get-NetConnectionProfile -InterfaceAlias 'Ethernet*' | Set-NetConnectionProfile -NetworkCategory 'Private';
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-03.reg">
 Windows Registry Editor Version 5.00
 
+; --- CONTEXT MENU TWEAKS ---
+; Add Take ownership to context menu
+[HKEY_CLASSES_ROOT\*\shell\runas]
+@="Take ownership"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\*\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" &amp;&amp; icacls \"%1\" /grant administrators:F"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" &amp;&amp; icacls \"%1\" /grant administrators:F"
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas]
+@="Take ownership"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" /r /d y &amp;&amp; icacls \"%1\" /grant administrators:F /t"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" /r /d y &amp;&amp; icacls \"%1\" /grant administrators:F /t"
+
+; Hide 'Give access to' context menu
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\Sharing]
+
+; Remove "Include in Library"
+[-HKEY_CLASSES_ROOT\Folder\ShellEx\ContextMenuHandlers\Library Location]
+
+; Boost desktop context menu time by removing graphics menus
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\igfxcui]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\igfxDTCM]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\NvCplDesktopContext]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\ACE]
+
+; --- EXPLORER &amp; UI TWEAKS ---
+; Remove '- Shortcut' suffix from new shortcuts
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+
+; Open File Explorer to "This PC" (1) instead of Quick Access (2)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+; Show known file extensions (HideFileExt = 0)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000
+
+; Show hidden files (Hidden = 1)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000000
+
+; Disable Sharing Wizard
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"SharingWizardOn"=dword:00000000
+
+; Hide Sync Provider Notifications
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+; Show file operations details (Enthusiast Mode)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager]
+"EnthusiastMode"=dword:00000001
+
+; Disable Aero Shake
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisallowShaking"=dword:00000001
+
+; Restore previous folders at logon
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"PersistBrowsers"=dword:00000001
+
+; Disable "How do you want to open this file?" prompt
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoNewAppAlert"=dword:00000001
+
+; Hide "Recently Added" apps in Start Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+; Ensure "Most Used" apps are allowed (Removing disable key)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoStartMenuMFUprogramsList]
+
+; Force Control Panel to Icons View (StartupPage=1, AllItemsIconView=1)
+; Note: We remove them to default to Categories if requested, but setting them sets to Icons.
+; Based on your request "SetControlPanelCategories", we DELETE these values.
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
+
+; Hide Desktop icon from This PC namespace
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+
+; Show/Hide Desktop Icons (0 = Show, 1 = Hide)
+; Show This PC
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+
+; Hide User Folder
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000001
+
+; Hide Control Panel
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000001
+
+; Hide Network
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001
+
+; Enable F1 Help Key (Ensure it is NOT disabled by removing the dummy key if it exists)
+[-HKEY_CURRENT_USER\Software\Classes\TypeLib\{8cec5860-07a1-11d9-b15e-000d56bfe6ee}\1.0\0\win32]
+
+; --- SYSTEM &amp; PERFORMANCE ---
+; Lower UAC Level (ConsentPromptBehaviorAdmin: 0 = No prompt/Elevate)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000
+
+; Enable NumLock at startup
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2147483650"
+
+; Enable NTFS Long Paths
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001
+
+; Enable NTFS Last Access Update (0 = User Managed/Enabled, 1 = Disabled)
+; User requested "EnableNTFSLastAccess" -&gt; set to 0
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:00000000
+
+; Disable Autoplay/Autorun
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+"DisableAutoplay"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+; Lower windows delays
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"
+"HungAppTimeout"="1000"
+"MenuShowDelay"="8"
+"WaitToKillAppTimeout"="2000"
+"LowLevelHooksTimeout"="1000"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="2000"
+
+; Disable "Hi" First Logon Animation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableFirstLogonAnimation"=dword:00000000
+
+; Disable Sound Scheme Changing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoChangingSoundScheme"=dword:00000001
+
+; Disable Startup Sound
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation]
+"DisableStartupSound"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\EditionOverrides]
+"UserSetting_DisableStartupSound"=dword:00000001
+
+; Disable Accessibility Keys (Sticky, Toggle, Filter)
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="58"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"="122"
+
+; --- PRIVACY &amp; UPDATES ---
+; Enable Windows Update for other Microsoft Products
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"AllowMUUpdateService"=dword:00000001
+
+; Enable Windows Update Auto Download (AUOptions=4: Auto download/sched install. Disable=2: Notify to download)
+; User requested "EnableUpdateAutoDownload". This typically means setting to Default (4).
+; We will remove the restriction key to let it default to Auto.
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+
+; Disable Automatic Restart after Update (Use dummy debugger)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MusNotification.exe]
+"Debugger"="cmd.exe"
+
+; Disable Maintenance Wake Up
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
+"WakeUp"=dword:00000000
+
+; Delivery Optimization: Restrict P2P to Local Network (1)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000001
+
+; Enable WiFi Sense (Allow reporting and auto connect)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting]
+"value"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots]
+"value"=dword:00000001
+
+; Enable SmartScreen (Ensure Disable keys are removed)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System\EnableSmartScreen]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+
+; Enable Biometrics, Camera, Mic (Remove Deny policies)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+
+; Hide Defender Tray Icon
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
+"HideSystray"=dword:00000001
+
+; Hide Account Protection Warning
+[HKEY_CURRENT_USER\Software\Microsoft\Windows Security Health\State]
+"AccountProtection_MicrosoftAccount_Disconnected"=dword:00000001
+
+; Disable Media Player Sharing &amp; Online Access
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsMediaPlayer]
+"PreventLibrarySharing"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+
+; --- LOCK SCREEN &amp; SIGN IN ---
+; Disable Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+
+; Hide Network from Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DontDisplayNetworkSelectionUI"=dword:00000001
+
+; Enable Sleep Button in Start Menu (ShowSleepOption = 1)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowSleepOption"=dword:00000001
+
+; Enable Automatic Restart Sign On (Removing the Disable key)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\DisableAutomaticRestartSignOn]
+
+; --- CLOUD &amp; SHARED EXPERIENCES ---
+; Enable Clipboard History
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000001
+
+; Enable Shared Experiences
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CDP]
+"RomeSdkChannelUserAuthzPolicy"=dword:00000001
+
+; --- FOLDER VIEW SETTINGS (SHOW/HIDE) ---
+; Hide 3D Objects from Explorer
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag]
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag]
+"ThisPCPolicy"="Hide"
+
+; Show Desktop in Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag]
+"ThisPCPolicy"="Show"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag]
+"ThisPCPolicy"="Show"
+
+; Show Documents in Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag]
+"ThisPCPolicy"="Show"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag]
+"ThisPCPolicy"="Show"
+
+; Show Downloads in Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag]
+"ThisPCPolicy"="Show"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag]
+"ThisPCPolicy"="Show"
+
+; Hide Pictures in Explorer
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}\PropertyBag]
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}\PropertyBag]
+"ThisPCPolicy"="Hide"
+
+; Remove Video/Music/;Picture Folders from This PC
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{A0953C92-50DC-43bf-BE83-3742FED03C9C}"=dword:00000001
+"{1CF1260C-4DD0-4ebb-811F-33C572699FDE}"=dword:00000001
+;"{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+"HiddenByDefault"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+"HiddenByDefault"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+"HiddenByDefault"=dword:00000001
+
+; Remove Gallery from navigation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
+@="Gallery"
+"HiddenByDefault"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}"=dword:00000001
+
+; --- APP TWEAKS ---
 ; Block Bing Extension
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate]
 "PreventBingInstall"=dword:00000001
@@ -755,154 +1059,100 @@ Windows Registry Editor Version 5.00
 "CreateDesktopShortcutDefault"=dword:00000000
 "RemoveDesktopShortcutDefault"=dword:00000001
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{F0D63F85-37EC-4097-B30D-61B4A8917118}]
+; Disable Edge startup boost
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"StartupBoostEnabled"=dword:00000000
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+; Unpin Creative Cloud
+[HKEY_CURRENT_USER\Software\Policies\Adobe\CreativeCloud]
+"unPinCCF"=dword:00000001
 
-[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
-"System.IsPinnedToNameSpaceTree"=dword:00000000
+; 7-zip Context Menu (Cascaded)
+[HKEY_CURRENT_USER\Software\7-Zip-Zstandard\Options]
+"ContextMenu"=dword:00001126
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
-"StartupDelayInMSec"=dword:00000000
+; --- REMOVED / DISABLED FEATURES (GROUP POLICY CONVERSIONS) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
 
-;lower windows delays
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"AutoEndTasks"="1"
-"HungAppTimeout"="1000"
-"MenuShowDelay"="8"
-"WaitToKillAppTimeout"="2000"
-"LowLevelHooksTimeout"="1000"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"MicrosoftEdgeDataOptIn"=dword:00000000
+"AllowTelemetry"=dword:00000000
 
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseHoverTime"="8"
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoLowDiskSpaceChecks"=dword:00000001
-"LinkResolveIgnoreLinkInfo"=dword:00000001
-"NoResolveSearch"=dword:00000001
-"NoResolveTrack"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"AllowOnlineTips"=dword:00000000
 "NoInternetOpenWith"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
-"WaitToKillServiceTimeout"="2000"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\NewsAndInterests\AllowNewsAndInterests]
+"value"=dword:00000000
 
-[HKEY_CURRENT_USER\Control Panel\Keyboard]
-"PrintScreenKeyForSnippingEnabled"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
+"AllowNewsAndInterests"=dword:00000000
 
-; set date and time VN
-[HKEY_CURRENT_USER\Control Panel\International\Geo]
-"Nation"="251"
-"Name"="VN"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableSoftLanding"=dword:00000001
+"DisableWindowsConsumerFeatures"=dword:00000001
+"DisableConsumerAccountStateContent"=dword:00000001
 
-[HKEY_CURRENT_USER\Control Panel\International\&#x1F30E;&#x1F30F;&#x1F30D;]
-"Calendar"="Gregorian"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowDesktopAnalyticsProcessing"=dword:00000000
+"AllowDeviceNameInTelemetry"=dword:00000000
+"AllowTelemetry"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation&#x200B;]
-"TimeZoneKeyName"="SE Asia Standard Time"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+"SearchOnTaskbarMode"=dword:00000000
 
-[HKEY_CURRENT_USER\Control Panel\International]
-"Locale"="00000C00"
-"LocaleName"="en-001"
-"s1159"="AM"
-"s2359"="PM"
-"sCurrency"="XDR"
-"sDate"="/"
-"sDecimal"="."
-"sGrouping"="3;0"
-"sLanguage"="ZZZ"
-"sList"=","
-"sLongDate"="dddd, d MMMM yyyy"
-"sMonDecimalSep"="."
-"sMonGrouping"="3;0"
-"sMonThousandSep"=","
-"sNativeDigits"="0123456789"
-"sNegativeSign"="-"
-"sPositiveSign"=""
-"sShortDate"="dd/MM/yy"
-"sThousand"=","
-"sTime"=":"
-"sTimeFormat"="h:mm:ss tt"
-"sShortTime"="h:mm tt"
-"sYearMonth"="MMMM yyyy"
-"iCalendarType"="1"
-"iCountry"="388"
-"iCurrDigits"="2"
-"iCurrency"="0"
-"iDate"="1"
-"iDigits"="2"
-"NumShape"="1"
-"iFirstDayOfWeek"="0"
-"iFirstWeekOfYear"="0"
-"iLZero"="1"
-"iMeasure"="0"
-"iNegCurr"="1"
-"iNegNumber"="1"
-"iPaperSize"="9"
-"iTime"="0"
-"iTimePrefix"="0"
-"iTLZero"="0"
+; Disable Windows AI Recall
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+"AllowRecallEnablement"=dword:00000000
+"TurnOffSavingSnapshots"=dword:00000001
 
-; hide widget button
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"TaskbarDa"=dword:00000000
+; Disable Notepad AI features
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\WindowsNotepad]
+"DisableAIFeatures"=dword:00000001
 
-; restart apps when sign-in
+; Disable Paint AI
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Paint]
+"DisableCocreator"=dword:00000001
+"DisableGenerativeFill"=dword:00000001
+"DisableImageCreator"=dword:00000001
+"DisableGenerativeErase"=dword:00000001
+"DisableRemoveBackground"=dword:00000001
+
+; Disable Windows Copilot
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+; Disable Chat Icon
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Chat]
+"ChatIcon"=dword:00000003
+
+; Disable Task View
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HideTaskViewButton"=dword:00000001
+
+; Restart apps on sign-in
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
 "RestartApps"=dword:00000001
 
-; Restore previous folders at logon 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"PersistBrowsers"=dword:00000001
+; Disable Start Menu Web Search
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000
 
-; remove video folder from this PC
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
-"{A0953C92-50DC-43bf-BE83-3742FED03C9C}"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
-"HiddenByDefault"=dword:00000001
-
-;remove music folder from this PC
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
-"{1CF1260C-4DD0-4ebb-811F-33C572699FDE}"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
-"HiddenByDefault"=dword:00000001
-
-
-;remove home and gallery from navigation bar in Explorer
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
-@="Gallery"
-"HiddenByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
-"{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}"=dword:00000001
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{f874310e-b6b7-47dc-bc84-b9e6b38f5903}]
-
-; hide language bar
-[HKEY_CURRENT_USER\Software\Microsoft\CTF\LangBar]
-"ShowStatus"=dword:00000003
-
-; disable language hot keys
-[HKEY_CURRENT_USER\Keyboard Layout\Toggle]
-"Language Hotkey"="3"
-"Hotkey"="3"
-"Layout Hotkey"="3"
-
-; touchpad settings
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
-"LeaveOnWithMouse"=dword:00000001
-"ThreeFingerTapEnabled"=dword:00000004
-"FourFingerTapEnabled"=dword:00000004
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad\Status]
-"Enabled"=dword:00000001
+; Disable Feedback
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
 		</File>
 		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
 $scripts = @(
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\GetComputerName.ps1' -Raw | Invoke-Expression &gt; 'C:\Windows\Setup\Scripts\ComputerName.txt';
-		Start-Process -FilePath ( Get-Process -Id $PID ).Path -ArgumentList '-NoProfile', '-Command', 'Get-Content -LiteralPath "C:\Windows\Setup\Scripts\SetComputerName.ps1" -Raw | Invoke-Expression;' -WindowStyle 'Hidden';
+		&amp; 'C:\Windows\Setup\Scripts\GetComputerName.ps1' &gt; 'C:\Windows\Setup\Scripts\ComputerName.txt';
+		Start-Process -FilePath ( Get-Process -Id $PID ).Path -ArgumentList '-ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\SetComputerName.ps1"' -WindowStyle 'Hidden';
 		Start-Sleep -Seconds 10;
 	};
 	{
@@ -918,13 +1168,13 @@ $scripts = @(
 		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications" /v ConfigureChatAutoInstall /t REG_DWORD /d 0 /f;
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\RemovePackages.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\RemovePackages.ps1';
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\RemoveCapabilities.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\RemoveCapabilities.ps1';
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\RemoveFeatures.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\RemoveFeatures.ps1';
 	};
 	{
 		net.exe accounts /maxpwage:UNLIMITED;
@@ -944,6 +1194,9 @@ $scripts = @(
 	};
 	{
 		icacls.exe C:\ /remove:g "*S-1-5-11"
+	};
+	{
+		Remove-Item -LiteralPath 'C:\Users\Public\Desktop\Microsoft Edge.lnk' -ErrorAction 'SilentlyContinue' -Verbose;
 	};
 	{
 		Set-ExecutionPolicy -Scope 'LocalMachine' -ExecutionPolicy 'RemoteSigned' -Force;
@@ -979,21 +1232,30 @@ $scripts = @(
 		reg.exe add "HKLM\Software\Policies\Microsoft\Edge\Recommended" /v StartupBoostEnabled /t REG_DWORD /d 0 /f;
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetStartPins.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\SetStartPins.ps1';
 	};
 	{
 		reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\StickyKeys" /v Flags /t REG_SZ /d 10 /f;
 	};
 	{
 		try {
-		  $bytes = Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\GetWallpaper.ps1' -Raw | Invoke-Expression;
+		  $bytes = &amp; 'C:\Windows\Setup\Scripts\GetWallpaper.ps1';
 		  [System.IO.File]::WriteAllBytes( 'C:\Windows\Setup\Scripts\Wallpaper', $bytes );
 		} catch {
 		  $_;
 		}
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\unattend-01.ps1' -Raw | Invoke-Expression;
+		try {
+		  $bytes = &amp; 'C:\Windows\Setup\Scripts\GetLockScreenImage.ps1';
+		  [System.IO.File]::WriteAllBytes( 'C:\Windows\Setup\Scripts\LockScreenImage', $bytes );
+		  reg.exe add "HKLM\Software\Microsoft\Windows\CurrentVersion\PersonalizationCSP" /v LockScreenImagePath /t REG_SZ /d "C:\Windows\Setup\Scripts\LockScreenImage" /f;
+		} catch {
+		  $_;
+		}
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-01.ps1';
 	};
 );
 
@@ -1017,7 +1279,7 @@ $scripts = @(
     "`r`n" * 3;
     $complete += $increment;
   }
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; "C:\Windows\Setup\Scripts\Specialize.log";
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\Specialize.log";
 		</File>
 		<File path="C:\Windows\Setup\Scripts\UserOnce.ps1">
 $scripts = @(
@@ -1029,6 +1291,9 @@ $scripts = @(
 	};
 	{
 		[System.Diagnostics.EventLog]::WriteEntry( 'UnattendGenerator', "User '$env:USERNAME' has requested to unlock the Start menu layout.", [System.Diagnostics.EventLogEntryType]::Information, 1 );
+	};
+	{
+		Remove-Item -LiteralPath "${env:USERPROFILE}\Desktop\Microsoft Edge.lnk" -ErrorAction 'SilentlyContinue' -Verbose;
 	};
 	{
 		Set-ItemProperty -LiteralPath 'Registry::HKCU\AppEvents\Schemes' -Name '(Default)' -Type 'String' -Value '.None';
@@ -1070,10 +1335,10 @@ $scripts = @(
 		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{a0953c92-50dc-43bf-be83-3742fed03c9c}' -Value 1 -Type 'DWord';
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetColorTheme.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\SetColorTheme.ps1';
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetWallpaper.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\SetWallpaper.ps1';
 	};
 	{
 		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {
@@ -1102,7 +1367,7 @@ $scripts = @(
     "`r`n" * 3;
     $complete += $increment;
   }
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; "$env:TEMP\UserOnce.log";
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "$env:TEMP\UserOnce.log";
 		</File>
 		<File path="C:\Windows\Setup\Scripts\DefaultUser.ps1">
 $scripts = @(
@@ -1129,7 +1394,7 @@ $scripts = @(
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v ShowTaskViewButton /t REG_DWORD /d 0 /f;
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\TurnOffSystemSounds.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\TurnOffSystemSounds.ps1';
 	};
 	{
 		$names = @(
@@ -1185,7 +1450,7 @@ $scripts = @(
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\DWM" /v ColorPrevalence /t REG_DWORD /d 0 /f;
 	};
 	{
-		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -WindowStyle Hidden -NoProfile -Command \""Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\UserOnce.ps1' -Raw | Invoke-Expression;\""" /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -WindowStyle \""Hidden\"" -ExecutionPolicy \""Unrestricted\"" -NoProfile -File \""C:\Windows\Setup\Scripts\UserOnce.ps1\""" /f;
 	};
 );
 
@@ -1209,7 +1474,7 @@ $scripts = @(
     "`r`n" * 3;
     $complete += $increment;
   }
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";
 		</File>
 		<File path="C:\Windows\Setup\Scripts\FirstLogon.ps1">
 $scripts = @(
@@ -1217,7 +1482,7 @@ $scripts = @(
 		cmd.exe /c "rmdir C:\Windows.old";
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\unattend-02.ps1' -Raw | Invoke-Expression;
+		&amp; 'C:\Windows\Setup\Scripts\unattend-02.ps1';
 	};
 	{
 		reg.exe import "C:\Windows\Setup\Scripts\unattend-03.reg";
@@ -1251,7 +1516,7 @@ $scripts = @(
     "`r`n" * 3;
     $complete += $increment;
   }
-} *&gt;&amp;1 | Out-String -Stream &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";
 		</File>
 	</Extensions>
 </unattend>
