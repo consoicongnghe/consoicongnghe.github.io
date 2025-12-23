@@ -146,9 +146,10 @@
 			<ul>
 				<li>Check Windows edition, go Pro.</li>
 				<li>(Rename PC, C:/, change Download folder location)</li>
-				<li>Windows/PostInstall/GroupPolicy: copy to C:/Windows/system32</li>
-				<li>Windows/PostInstall/RegTweak/ReclaimWindows/1_guest (+Unpin +UninsOnedrive +UninsMSapps)</li>
-				<li>Windows/RegTweaks --&gt; windows post-install</li>
+				<li>zInstallScripts/PostInstall/GroupPolicy: copy to C:/Windows/system32</li>
+				<li>zInstallScripts/PostInstall/RegTweak/ReclaimWindows/1_guest (+Unpin +UninsOnedrive +UninsMSapps)
+				</li>
+				<li>zInstallScripts/RegTweaks --&gt; windows post-install</li>
 			</ul>
 			<b>RESTART</b>
 			<hr />
@@ -159,7 +160,7 @@
 				<li>check for updates</li>
 				<li>Windows/Driver/fonts</li>
 				<li>Windows/Driver/VCRedist</li>
-				<li>Windows/PostInstall/winget --&gt; MicrosoftStoreAppUpdater.ps1 --&gt; open MS Store</li>
+				<li>zInstallScripts/PostInstall/winget --&gt; MicrosoftStoreAppUpdater.ps1 --&gt; open MS Store</li>
 				<li>setup chrome, office, unikey, (adobe, trafficMonitor)</li>
 				<li>Programs/Chrome --&gt; Ublock Origin, SponsorBlock, FastForward, Run In Background</li>
 				<li>
@@ -175,7 +176,7 @@
 			<b>RESTART</b>
 			<hr />
 			<ul>
-				<li>Windows/PostInstall/winget --&gt; 1_guest.cmd</li>
+				<li>zInstallScripts/PostInstall/winget --&gt; 1_guest.cmd</li>
 				<li>UWP apps: Store, HEIC plugin, Spotify, Discord, Realtek Audio Console </li>
 				<li>post-update: control panel/power options</li>
 				<li>graphics settings (in Settings) -&gt; GPU scheduling OFF</li>

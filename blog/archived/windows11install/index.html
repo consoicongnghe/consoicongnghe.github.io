@@ -122,17 +122,18 @@
 			<h1>Các bước cài đặt Windows 11 của Sói</h1>
 			<h2>BACKUP</h2>
 			<ul>
-				<li>Danh sách chương trình đã cài đặt trong Control Panel</li>
+				<li>Chụp lại danh sách chương trình đã cài đặt trong Control Panel</li>
 				<li>Bookmark trong trình duyệt web (trừ khi đã bật đồng bộ hóa)</li>
 				<li>Kiểm tra Recycle Bin</li>
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString1')"
 						style="color: var(--red);">BackupPreInstall.cmd</button>
 					<div id="hiddenString1" style="display: none;">
 						<ul>
-							<li>Export wifi</li>
-							<li>User folders</li>
-							<li>(Web browsers' user data, OBS, steam userdata, qbittorrent, TrafficMonitor)</li>
-							<li>Experimental: Desktop icon layout</li>
+							<li>Copy các folder thường dùng trong C:/Users:/[tên user]. Ví dụ: Desktop, Downloads,
+								Documents,...</li>
+							<li>(Web browsers' User Data folders, OBS settings folder, Steam userdata folder,
+								qBittorrent settings, TrafficMonitor)</li>
+							<li>Export wifi profiles</li>
 						</ul>
 					</div>
 				</li>
@@ -140,8 +141,9 @@
 			<h2>CÀI ĐẶT WINDOWS BẰNG BỘ CÀI ISO</h2>
 			<hr />
 			<ul>
-				<li>OOBE (lần đầu khởi động): <span style="color: var(--blue);">Shift+F10</span> --&gt;
-					<code>start ms-cxh:localonly</code>
+				<li>Tránh không nối mạng khi bị yêu cầu tại màn hình chào: <span
+						style="color: var(--blue);">Shift+F10</span>
+					--&gt; chạy <code>start ms-cxh:localonly</code>
 				</li>
 				<li>ngoài ra trên laptop nhớ <button class="hiddenStringButton"
 						onclick="showHiddenString('bitlockerHidden')">kiểm tra tình trạng
@@ -174,25 +176,24 @@
 			<h2>HOÀN THÀNH OOBE, KHỞI ĐỘNG VÀO DESKTOP</h2>
 			<hr />
 			<ul>
-				<li>Nếu sử dụng GPU NVIDIA 30xx-, cài driver GPU v566.36 trước. Các đời sau cài <a
-						href="https://www.nvidia.com/en-us/drivers/" target="_blank" rel="noopener">driver mới nhất</a>
-					trước.
+				<li>Nếu sử dụng GPU NVIDIA RTX 30xx-, cài driver v566.36 trước khi nối mạng! Các đời sau cài <a
+						href="https://www.nvidia.com/en-us/drivers/" target="_blank" rel="noopener">driver mới nhất</a>.
 				</li>
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString2')"
 						style="color: var(--red);">GuestSetup1.cmd</button>
 					<div id="hiddenString2" style="display: none;">
 						<ul>
-							<li>Chỉnh <span style="color: var(--orange);">Terminal</span> luôn chạy quyền admin</li>
+							<li>Chỉnh cài đặt của <span style="color: var(--orange);">Terminal</span> sao cho luôn chạy
+								bằng quyền admin</li>
 							<li>Đổi tên ổ C:/ thành <code>Windows</code></li>
 							<li>Đổi tên PC nếu muốn (trong <span style="color: var(--yellow);">System
-									Settings/System/About/</span></li>
-							<li><span style="color: var(--yellow);">/Windows/RegTweaks/</span><span
+									Settings/System/About/</span>)</li>
+							<li><span style="color: var(--yellow);">/zInstallScripts/RegTweaks/</span><span
 									style="color: var(--red);">windows11_postInstall.reg</span></li>
-							<li><span
-									style="color: var(--yellow);">/Windows/PostInstall/RegTweaks/r1_script/</span><span
+							<li><span style="color: var(--yellow);">/zInstallScripts/RegTweaks/r1_script/</span><span
 									style="color: var(--red);">1_guest.cmd</span></li>
 							<li>Cập nhật <span style="color: var(--orange);">App Installer</span>: <span
-									style="color: var(--yellow);">/Windows/PostInstall/winget/offline/</span><span
+									style="color: var(--yellow);">/zInstallScripts/PostInstall/winget/offline/</span><span
 									style="color: var(--red);">*</span></li>
 						</ul>
 					</div>
@@ -201,16 +202,16 @@
 			</ul>
 			<hr />
 			<ul>
+				<li>Kết nối internet / import wifi</li>
 				<li>Check ô <code>Receive updates for other Microsoft products</code>, <span
 						style="color: var(--red);">Check for updates</span></li>
-				<li>Kết nối internet / import wifi</li>
 				<li>Chạy <button class="hiddenStringButton" onclick="showHiddenString('hiddenString3')"
 						style="color: var(--red);">GuestSetup2.cmd</button>
 					<div id="hiddenString3" style="display: none;">
 						<ul>
 							<li>Tắt <span style="color: var(--orange);">Defender</span>'s <span
 									style="color: var(--red);">Realtime virus protection</span></li>
-							<li><span style="color: var(--yellow);">/Windows/PostInstall/winget/</span><span
+							<li><span style="color: var(--yellow);">/zInstallScripts/PostInstall/winget/</span><span
 									style="color: var(--red);">MsStore_UpdateAll.ps1</span> --&gt; open <a
 									href="ms-windows-store://">MS Store</a>
 							</li>
@@ -230,7 +231,7 @@
 									style="color: var(--orange);">Terminal</span>, cài <a
 									href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0#:~:text=%2ENET%20Desktop%20Runtime%2010%2E0%2E1,-The"
 									target="_blank" rel="noopener">MS .NET Desktop Runtime</a>: <span
-									style="color: var(--yellow);">/Windows/PostInstall/winget/</span><span
+									style="color: var(--yellow);">/zInstallScripts/PostInstall/winget/</span><span
 									style="color: var(--red);">1_guest.cmd</span></li>
 							<li>Cài đặt <a href="/posts/7-zip/" target="_blank" rel="noopener">7-zip</a>, <a
 									href="https://www.codecguide.com/download_k-lite_codec_pack_full.htm"
@@ -247,7 +248,6 @@
 								windows</li>
 							<li>activ win+office: <code>irm https://get.activated.win | iex</code></li>
 							<li>Dọn sạch ổ <span style="color: var(--yellow);">C:/</span></li>
-							<li>Xóa <span style="color: var(--yellow);">C:\z\</span></li>
 						</ul>
 					</div>
 				</li>
@@ -265,13 +265,13 @@
 							href="https://notepad-plus-plus.org/downloads/" target="_blank"
 							rel="noopener">notepad++</a>)</i>
 				</li>
+				<li>Tối ưu <span style="color: var(--orange);">Task Manager</span> (tab <code>Startup apps</code>)</li>
 				<li><b>RESTART</b></li>
 			</ul>
 			<hr />
 			<ul>
-				<li>Tắt <span style="color: var(--orange);">Defender</span>'s <span style="color: var(--red);">Realtime
-						virus protection</span></li>
-				<li>Tối ưu <span style="color: var(--orange);">Task Manager</span> (tab <code>Startup apps</code>)</li>
+				<li>(Tắt <span style="color: var(--orange);">Defender</span>'s <span style="color: var(--red);">Realtime
+						virus protection</span>)</li>
 				<li><i>(setup personal programs, Adobe các thứ)</i></li>
 			</ul>
 			<br />
