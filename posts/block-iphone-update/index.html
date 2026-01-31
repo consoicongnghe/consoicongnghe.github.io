@@ -134,11 +134,30 @@
 			<div class="flex-container">
 				<div class="flex-item-left">
 					<ol>
-						<li>Trên iPhone/iPad, tải profile noota-26.mobileconfig: <strong><a
-									href="https://f.itsnebula.net/noota-26.mobileconfig" rel="noopener">Link
+						<li id="block-ios-update-link">Trên iPhone/iPad, tải profile về: <strong><a
+									href="https://f.itsnebula.net/noota-18.mobileconfig" rel="noopener">Link
 									gốc</a></strong> | <strong><a
-									href="/posts/block-iphone-update/noota-26.mobileconfig" rel="noopener">Mirror
+									href="/posts/block-iphone-update/noota-18.mobileconfig" rel="noopener">Mirror
 									CSCN</a></strong> </li>
+						<script>
+							(function () {
+								// 1. Get the current year's last 2 digits
+								const currentYearShort = new Date().getFullYear().toString().slice(-2);
+
+								// 2. Find the specific list item
+								const container = document.getElementById('block-ios-update-link');
+
+								if (container) {
+									// 3. Loop through all links inside that list item
+									const links = container.getElementsByTagName('a');
+
+									for (let link of links) {
+										// 4. Replace 'noota-XX' with 'noota-' + current year
+										link.href = link.href.replace(/noota-\d{2}/, 'noota-' + currentYearShort);
+									}
+								}
+							})();
+						</script>
 						<li>Bấm <span style="color: var(--red);">Allow</span> nếu được hỏi.
 							<img src="/posts/block-iphone-update/block-iphone-update-download.jpg"
 								alt="Tải profile chặn cập nhật iPhone" width="1170" height="529" class="zoom200"
