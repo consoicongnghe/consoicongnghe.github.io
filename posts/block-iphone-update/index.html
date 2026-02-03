@@ -127,18 +127,37 @@
 				</div>
 				<div class="flex-item-right">
 					<img src="/posts/block-iphone-update/block-iphone-update-noti.jpg" alt="Thông báo cập nhật iPhone"
-						width="1170" height="1647" class="zoom200">
+						width="1205" height="1494" class="zoom200">
 				</div>
 			</div>
 			<h2>Cách chặn cập nhật iPhone</h2>
 			<div class="flex-container">
 				<div class="flex-item-left">
 					<ol>
-						<li>Trên iPhone/iPad, tải profile noota-18.mobileconfig: <strong><a
+						<li id="block-ios-update-link">Trên iPhone/iPad, tải profile về: <strong><a
 									href="https://f.itsnebula.net/noota-18.mobileconfig" rel="noopener">Link
 									gốc</a></strong> | <strong><a
 									href="/posts/block-iphone-update/noota-18.mobileconfig" rel="noopener">Mirror
 									CSCN</a></strong> </li>
+						<script>
+							(function () {
+								// 1. Get the current year's last 2 digits
+								const currentYearShort = new Date().getFullYear().toString().slice(-2);
+
+								// 2. Find the specific list item
+								const container = document.getElementById('block-ios-update-link');
+
+								if (container) {
+									// 3. Loop through all links inside that list item
+									const links = container.getElementsByTagName('a');
+
+									for (let link of links) {
+										// 4. Replace 'noota-XX' with 'noota-' + current year
+										link.href = link.href.replace(/noota-\d{2}/, 'noota-' + currentYearShort);
+									}
+								}
+							})();
+						</script>
 						<li>Bấm <span style="color: var(--red);">Allow</span> nếu được hỏi.
 							<img src="/posts/block-iphone-update/block-iphone-update-download.jpg"
 								alt="Tải profile chặn cập nhật iPhone" width="1170" height="529" class="zoom200"
@@ -148,7 +167,7 @@
 								style="color: var(--yellow);">Profile and Device Management</span> hoặc <span
 								style="color: var(--yellow);">VPN &amp; Device Management</span>).
 						</li>
-						<li>Chọn <span style="color: var(--red);">tvOS Beta Profile</span> vừa mới tải, bấm <span
+						<li>Chọn <span style="color: var(--purple);">tvOS Beta Profile</span> vừa mới tải, bấm <span
 								style="color: var(--red);">Install</span>. Gõ mật khẩu, bấm <span
 								style="color: var(--red);">Install</span>, sau đó bấm <span
 								style="color: var(--red);">Install</span> một lần nữa.
@@ -158,7 +177,7 @@
 				</div>
 				<div class="flex-item-right">
 					<img src="/posts/block-iphone-update/block-iphone-update-install.jpg"
-						alt="Cài đặt profile chặn cập nhật iPhone" width="1170" height="1437" class="zoom250">
+						alt="Cài đặt profile chặn cập nhật iPhone" width="1206" height="1457" class="zoom250">
 				</div>
 			</div>
 			<p>Vậy là xong. Bây giờ khi cậu vào <span style="color: var(--yellow);">Settings/General/Software

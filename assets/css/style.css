@@ -11,16 +11,18 @@ html {
 	--bg-contrast: #222222;
 	--cyan: #007A7A;
 	--cyan-hover: #009899;
-	/* button, file names (run as administrator, smt.jpg) */
+	/* file names (e.g. abc.jpg) */
+	--purple: #e000e0;
+	/* buttons (e.g. run as administrator) */
 	--red: #DB0000;
 	/* program names (This PC) */
-	--orange: #996300;
+	--orange: #994300;
 	/* menu/submenu/etc */
 	--yellow: #6F7000;
 	/*text to copy, codes*/
 	--green: #008000;
 	/*keyboard shortcuts, combinations*/
-	--blue: #0000FF;
+	--blue: #0040FF;
 	/* translate something? in nghieng */
 	--block-shadow: rgba(0, 0, 0, 0.1);
 	--button-shadow: rgba(0, 0, 0, 0.5);
@@ -37,7 +39,8 @@ html {
 		--bg-contrast: #f2f2f2;
 		--cyan: #0fffff;
 		--cyan-hover: #1FFFFF;
-		--red: #FF3D3D;
+		--purple: #ff00ff;
+		--red: #FF3333;
 		--orange: #FFA500;
 		--yellow: #FFFF00;
 		--green: #00ff00;
