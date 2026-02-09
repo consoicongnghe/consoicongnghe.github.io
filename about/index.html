@@ -140,11 +140,33 @@
 				:&#60;
 			</p>
 			<hr>
-			<p>Donate ở đây nà:<br>
-				<span style="margin-left: 30px;">Techcombank: 101100 / consoicongnghe (NGUYEN TUAN LINH)</span>
+			<style>
+				.donate-desktop {
+					display: inline;
+				}
+
+				.donate-mobile {
+					display: none;
+				}
+
+				@media screen and (max-width: 800px) {
+					.donate-desktop {
+						display: none;
+					}
+
+					.donate-mobile {
+						display: inline;
+					}
+				}
+			</style>
+			<p style="text-align: center; text-indent: 0;">Donate ở đây nà:<br>
+				<span class="donate-desktop">Techcombank - 101100 - NGUYEN TUAN LINH</span>
+				<a href="https://dl.vietqr.io/pay?app=tcb&ba=101100@tcb&bn=NGUYEN%20TUAN%20LINH" class="donate-mobile"
+					style="text-align: center; text-indent: 0;">Techcombank - 101100 - NGUYEN
+					TUAN LINH</a>
 			</p>
 			<img src="/assets/images/Linh-QRbank.png" alt="Bank QR code donate" class="zoom200" width="400" height="400"
-				style="width:200px; transform-origin:bottom center">
+				style="width:200px; transform-origin:bottom center;">
 		</div>
 	</div>
 </body>
