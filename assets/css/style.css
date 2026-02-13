@@ -108,6 +108,12 @@ video {
 	box-shadow: 0 0 5px 2px var(--block-shadow);
 }
 
+
+h1 {
+	text-align: center;
+	color: var(--cyan);
+}
+
 /* NOT on mobile (so only on PC n stuff) */
 @media (hover: hover) and (pointer: fine) {
 	a:hover {
@@ -176,12 +182,6 @@ ol {
 	text-indent: 0px;
 	padding-left: 30px;
 }
-
-h1 {
-	text-align: center;
-	color: var(--cyan);
-}
-
 
 /* code formatting */
 code {
