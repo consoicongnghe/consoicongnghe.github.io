@@ -133,13 +133,25 @@
 				<li>Webcam, microphone, loa, fingerprint</li>
 				<li>Ổ cứng (CrystalDisk)</li>
 				<li>Cắm sạc: lỏng hay không</li>
-				<li>Wifi, Bluetooth </li>
-				<ul>
-					<li>Macbook specific: cycle count</li>
-					<li>Windows specific:
-						<code>powercfg /batteryreport /output "%USERPROFILE%/Desktop/batt.html"</code>
-					</li>
-				</ul>
+				<li>Wifi, Bluetooth</li>
+				<li>Pin:
+					<ul>
+						<li>MacBook: <div style="display: flex; align-items: center;">
+								<pre id="macbookconfigText"
+									style="white-space: nowrap; overflow-x: auto; flex: 1; color: var(--green);">ioreg -rn AppleSmartBattery | awk '/"AppleRawMaxCapacity"/{m=$3} /"DesignCapacity"/{d=$3} /"CycleCount"/{c=$3} END{printf "Raw Health: %.2f%% (%d/%d mAh) | Cycles: %d\n",m/d*100,m,d,c}' && system_profiler SPPowerDataType | awk -F': ' '/Maximum Capacity/{print "OS Reported Health: " $2}'</pre>
+								<button class="code-copy-button" data-copy-target="macbookconfigText"
+									style="margin-left: 10px;">Copy</button>
+							</div>
+						</li>
+						<li>Windows: <div style="display: flex; align-items: center;">
+								<pre id="windowsConfigText"
+									style="white-space: nowrap; overflow-x: auto; flex: 1; color: var(--green);">powercfg /batteryreport /output "%USERPROFILE%/Desktop/batt.html"</pre>
+								<button class="code-copy-button" data-copy-target="windowsConfigText"
+									style="margin-left: 10px;">Copy</button>
+							</div>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<hr>
