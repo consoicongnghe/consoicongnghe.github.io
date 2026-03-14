@@ -716,3 +716,20 @@ textarea {
 	resize: none;
 	max-width: 100%;
 }
+
+/* copy button */
+.code-copy-button {
+	background: var(--bg-block);
+	border: 0;
+	width: 64px;
+	min-width: 64px;
+	height: calc(var(--f)*2);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border-radius: 0;
+	cursor: pointer;
+	white-space: nowrap;
+	font-size: calc(var(--f)*0.95)
+}

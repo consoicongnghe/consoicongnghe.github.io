@@ -26,64 +26,54 @@ function topnavHamburger() {
 	// }
 }
 
-// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
 // copy code button
-function copyButton() {
-	var copyText = document.getElementById("textToCopy");
-	copyText.select();
-	copyText.setSelectionRange(0, 99999);
-	navigator.clipboard.writeText(copyText.value);
-
-	var copyTooltip = document.getElementById("cpTooltip");
-	copyTooltip.innerHTML = "Copied";
-}
-// this is for when moving the mouse out of the button
-function outFunc() {
-	var copyTooltip = document.getElementById("cpTooltip");
-	copyTooltip.innerHTML = "Copy";
-}
-
-// Reusable copy-button initializer
-// Buttons should have attribute `data-copy-target="<id>"` where the target element contains the text to copy.
-// Example: <button data-copy-target="configText" class="rust-copy-btn">Copy</button>
-function initCopyButtons(selector) {
-	selector = selector || '[data-copy-target]';
-	function initButton(btn) {
-		if (btn.__copyInit) return; // prevent double-init
-		btn.__copyInit = true;
-		btn.addEventListener('click', function () {
-			var targetId = btn.getAttribute('data-copy-target');
-			if (!targetId) return;
-			var el = document.getElementById(targetId);
-			if (!el) return;
-			var text = (el.innerText || el.textContent || '').trim();
-			if (!navigator.clipboard || !navigator.clipboard.writeText) return;
-			navigator.clipboard.writeText(text).then(function () {
-				// immediate success state
-				btn.style.transition = 'none';
-				var prevLabel = btn.textContent;
-				btn.textContent = 'Copied';
-				btn.style.background = 'var(--cyan,cyan)';
-				btn.style.color = 'black';
-				// force reflow
-				void btn.offsetWidth;
-				// enable transition for revert
-				btn.style.transition = 'background 400ms linear, color 400ms linear';
-				// start revert after 1.2s, restore label at middle of fade
-				setTimeout(function () {
-					btn.style.background = 'var(--bg-block)';
-					btn.style.color = '';
-					setTimeout(function () {
-						btn.textContent = prevLabel;
-						btn.style.transition = '';
-					}, 200);
-				}, 1200);
-			}).catch(function () { /* ignore errors */ });
+document.querySelectorAll('.code-copy-button').forEach(button => {
+	button.addEventListener('click', () => {
+		const target = button.getAttribute('data-copy-target');
+		const text = document.getElementById(target).textContent;
+		const originalText = button.textContent;
+		const originalColor = button.style.color;
+		copyToClipboard(text).then(() => {
+			button.textContent = 'Copied!';
+			button.style.color = 'var(--cyan)';
+			setTimeout(() => {
+				button.textContent = originalText;
+				button.style.color = originalColor;
+			}, 2000);
+		}).catch(err => {
+			console.error('Failed to copy: ', err);
+			button.textContent = 'Failed';
+			button.style.color = 'var(--cyan)';
+			setTimeout(() => {
+				button.textContent = originalText;
+				button.style.color = originalColor;
+			}, 2000);
 		});
-	}
+	});
+});
 
-	var buttons = document.querySelectorAll(selector);
-	for (var i = 0; i < buttons.length; i++) initButton(buttons[i]);
+function copyToClipboard(text) {
+	if (navigator.clipboard && window.isSecureContext) {
+		return navigator.clipboard.writeText(text);
+	} else {
+		// Fallback for older browsers or non-HTTPS contexts
+		const textArea = document.createElement("textarea");
+		textArea.value = text;
+		textArea.style.position = "fixed";
+		textArea.style.left = "-999999px";
+		textArea.style.top = "-999999px";
+		document.body.appendChild(textArea);
+		textArea.focus();
+		textArea.select();
+		try {
+			document.execCommand('copy');
+			return Promise.resolve();
+		} catch (err) {
+			return Promise.reject(err);
+		} finally {
+			document.body.removeChild(textArea);
+		}
+	}
 }
 
 // Auto-init on DOMContentLoaded
