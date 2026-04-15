@@ -1,0 +1,400 @@
+Windows Registry Editor Version 5.00
+
+; --- CONTEXT MENU TWEAKS ---
+; Add Take ownership to context menu
+[HKEY_CLASSES_ROOT\*\shell\runas]
+@="Take ownership"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\*\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" && icacls \"%1\" /grant administrators:F"
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas]
+@="Take ownership"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" /r /d y && icacls \"%1\" /grant administrators:F /t"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" /r /d y && icacls \"%1\" /grant administrators:F /t"
+
+; Hide 'Give access to' context menu
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\Sharing]
+
+; Remove "Include in Library"
+[-HKEY_CLASSES_ROOT\Folder\ShellEx\ContextMenuHandlers\Library Location]
+
+; Boost desktop context menu time by removing graphics menus
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\igfxcui]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\igfxDTCM]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\NvCplDesktopContext]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\ACE]
+
+; --- EXPLORER & UI TWEAKS ---
+; Remove '- Shortcut' suffix from new shortcuts
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+
+; Open File Explorer to "This PC" (1) instead of Quick Access (2)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+; Show known file extensions (HideFileExt = 0)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000
+
+; Show hidden files (Hidden = 1)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000000
+
+; Disable Sharing Wizard
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"SharingWizardOn"=dword:00000000
+
+; Hide Sync Provider Notifications
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+; Show file operations details (Enthusiast Mode)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager]
+"EnthusiastMode"=dword:00000001
+
+; Disable Aero Shake
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisallowShaking"=dword:00000001
+
+; Restore previous folders at logon
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"PersistBrowsers"=dword:00000001
+
+; Disable "How do you want to open this file?" prompt
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoNewAppAlert"=dword:00000001
+
+; Hide "Recently Added" apps in Start Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+; Ensure "Most Used" apps are allowed (Removing disable key)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoStartMenuMFUprogramsList]
+
+; Force Control Panel to Icons View (StartupPage=1, AllItemsIconView=1)
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
+
+; Hide Desktop icon from This PC namespace
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+
+; Show/Hide Desktop Icons (0 = Show, 1 = Hide)
+; Show This PC
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+
+; Hide User Folder
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000001
+
+; Hide Control Panel
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000001
+
+; Hide Network
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001
+
+; Enable F1 Help Key (Ensure it is NOT disabled by removing the dummy key if it exists)
+[-HKEY_CURRENT_USER\Software\Classes\TypeLib\{8cec5860-07a1-11d9-b15e-000d56bfe6ee}\1.0\0\win32]
+
+; --- SYSTEM & PERFORMANCE ---
+; Lower UAC Level (ConsentPromptBehaviorAdmin: 0 = No prompt/Elevate)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000
+
+; Enable NumLock at startup
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2147483650"
+
+; Enable NTFS Long Paths
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001
+
+; Enable NTFS Last Access Update (0 = User Managed/Enabled, 1 = Disabled)
+; User requested "EnableNTFSLastAccess" -> set to 0
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:00000000
+
+; Disable Autoplay/Autorun
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+"DisableAutoplay"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+; Lower windows delays
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"
+"HungAppTimeout"="1000"
+"MenuShowDelay"="8"
+"WaitToKillAppTimeout"="2000"
+"LowLevelHooksTimeout"="1000"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="2000"
+
+; Disable "Hi" First Logon Animation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableFirstLogonAnimation"=dword:00000000
+
+; Disable Sound Scheme Changing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoChangingSoundScheme"=dword:00000001
+
+; Disable Startup Sound
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation]
+"DisableStartupSound"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\EditionOverrides]
+"UserSetting_DisableStartupSound"=dword:00000001
+
+; Disable Accessibility Keys (Sticky, Toggle, Filter)
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="58"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"="122"
+
+; --- PRIVACY & UPDATES ---
+; Enable Windows Update for other Microsoft Products
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"AllowMUUpdateService"=dword:00000001
+
+; Enable Windows Update Auto Download (AUOptions=4: Auto download/sched install. Disable=2: Notify to download)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+
+; Disable Automatic Restart after Update (Use dummy debugger)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MusNotification.exe]
+"Debugger"="cmd.exe"
+
+; Disable Maintenance Wake Up
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
+"WakeUp"=dword:00000000
+
+; Delivery Optimization: Restrict P2P to Local Network (1)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000001
+
+; Enable WiFi Sense (Allow reporting and auto connect)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting]
+"value"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots]
+"value"=dword:00000001
+
+; Enable SmartScreen (Ensure Disable keys are removed)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System\EnableSmartScreen]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+
+; Enable Biometrics, Camera, Mic (Remove Deny policies)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+
+; Hide Defender Tray Icon
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
+"HideSystray"=dword:00000001
+
+; Hide Account Protection Warning
+[HKEY_CURRENT_USER\Software\Microsoft\Windows Security Health\State]
+"AccountProtection_MicrosoftAccount_Disconnected"=dword:00000001
+
+; Disable Media Player Sharing & Online Access
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsMediaPlayer]
+"PreventLibrarySharing"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+
+; --- LOCK SCREEN & SIGN IN ---
+; Disable Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+
+; Hide Network from Lock Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DontDisplayNetworkSelectionUI"=dword:00000001
+
+; Enable Sleep Button in Start Menu (ShowSleepOption = 1)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowSleepOption"=dword:00000001
+
+; Enable Automatic Restart Sign On (Removing the Disable key)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\DisableAutomaticRestartSignOn]
+
+; --- CLOUD & SHARED EXPERIENCES ---
+; Enable Clipboard History
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000001
+
+; Enable Shared Experiences
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CDP]
+"RomeSdkChannelUserAuthzPolicy"=dword:00000001
+
+; Remove Video/Music/;Picture Folders from This PC
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{A0953C92-50DC-43bf-BE83-3742FED03C9C}"=dword:00000001
+"{1CF1260C-4DD0-4ebb-811F-33C572699FDE}"=dword:00000001
+;"{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+"HiddenByDefault"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+"HiddenByDefault"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+"HiddenByDefault"=dword:00000001
+
+; Remove Gallery from navigation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
+@="Gallery"
+"HiddenByDefault"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}"=dword:00000001
+
+; --- APP TWEAKS ---
+; Block Bing Extension
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate]
+"PreventBingInstall"=dword:00000001
+
+; Disable Edge desktop shortcut
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate]
+"CreateDesktopShortcutDefault"=dword:00000000
+"RemoveDesktopShortcutDefault"=dword:00000001
+
+; Disable Edge startup boost
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"StartupBoostEnabled"=dword:00000000
+
+; Unpin Creative Cloud
+[HKEY_CURRENT_USER\Software\Policies\Adobe\CreativeCloud]
+"unPinCCF"=dword:00000001
+
+; 7-zip Context Menu (Cascaded)
+[HKEY_CURRENT_USER\Software\7-Zip-Zstandard\Options]
+"ContextMenu"=dword:00001126
+
+; --- REMOVED / DISABLED FEATURES (GROUP POLICY CONVERSIONS) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"MicrosoftEdgeDataOptIn"=dword:00000000
+"AllowTelemetry"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"AllowOnlineTips"=dword:00000000
+"NoInternetOpenWith"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\NewsAndInterests\AllowNewsAndInterests]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds]
+"EnableFeeds"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
+"AllowNewsAndInterests"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableSoftLanding"=dword:00000001
+"DisableWindowsConsumerFeatures"=dword:00000001
+"DisableConsumerAccountStateContent"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowDesktopAnalyticsProcessing"=dword:00000000
+"AllowDeviceNameInTelemetry"=dword:00000000
+"AllowTelemetry"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+"SearchOnTaskbarMode"=dword:00000000
+
+; Disable Windows AI Recall
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+"AllowRecallEnablement"=dword:00000000
+"TurnOffSavingSnapshots"=dword:00000001
+
+; Disable Notepad AI features
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\WindowsNotepad]
+"DisableAIFeatures"=dword:00000001
+
+; Disable Paint AI
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Paint]
+"DisableCocreator"=dword:00000001
+"DisableGenerativeFill"=dword:00000001
+"DisableImageCreator"=dword:00000001
+"DisableGenerativeErase"=dword:00000001
+"DisableRemoveBackground"=dword:00000001
+
+; Disable Windows Copilot
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+; Disable Chat Icon
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Chat]
+"ChatIcon"=dword:00000003
+
+; Disable Task View
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HideTaskViewButton"=dword:00000001
+
+; Restart apps on sign-in
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"RestartApps"=dword:00000001
+
+; Disable Start Menu Web Search
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000
+
+; Disable Feedback
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+
+; Enable System-Wide Location Service
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Allow"
+
+; Allow Apps to Access Location
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Allow"
+
+; Allow Classic Desktop Apps (Non-Store) to Access Location
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location\NonPackaged]
+"Value"="Allow"
+
+; Disable Lenovo utility hook for Magnifier shortcut
+; https://www.reddit.com/r/thinkpad/comments/jf4z9s/comment/m3hi7gz/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Lenovo\ShortcutKey\AppLaunch\Ex_13\UIAccess]
+"File"=-
+
+; Set 3-Finger Tap to Middle Mouse Button
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"ThreeFingerTapEnabled"=dword:00000001
+"ThreeFingerTapAction"=dword:00000004
+
+; Extend pause windows update duration menu
+; https://www.majorgeeks.com/content/page/how_to_pause_windows_updates_for_longer_than_5_weeks_or_as_long_as_you_want.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"FlightSettingsMaxPauseDays"=dword:0000016c
